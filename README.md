@@ -228,3 +228,21 @@ There is one connected USB device, called *iBridge*
 to the chip running iOS and providing access to the FaceTime HD camera (that's
 why `uvcvideo` detects it), the Touch Bar (that's why it's shown as an
 additonal input device in the Xorg log) and the Touch ID button.
+
+`usb-devices` shows that `iBridge` exposes four interfaces:
+```
+T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  4 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
+P:  Vendor=05ac ProdID=8600 Rev=01.01
+S:  Manufacturer=Apple Inc.
+S:  Product=iBridge
+S:  SerialNumber=nomac?123456
+C:  #Ifs= 4 Cfg#= 1 Atr=e0 MxPwr=0mA
+I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=(none)
+I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=(none)
+I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
+I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
+```
+
+The two `video` interfaces could be the FaceTime HD camera and the Touch Bar,
+while the two `HID` interfaces could be the Touch Bar and the Touch ID button.
