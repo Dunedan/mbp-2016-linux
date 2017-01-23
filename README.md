@@ -96,9 +96,13 @@ didn't work so far.
 Graphical output is working out of the box.
 
 During boot screen becomes garbled once Linux does modeswitching,
-till Xorg finally starts. As a workaround disabling KMS (`i915.modeset=0`) helps.
+till Xorg finally starts. As a workaround disabling KMS (`i915.modeset=0`)
+helps.
 
-Connecting external displays via USB-C-to-Displayport cables is untested.
+Connecting external displays via USB-C-to-DisplayPort cables works fine,
+including connections with daisy-chaining/MST. An actual tested and working
+setup includes concurrent output on the internal display and two external
+displays daisy-chained together with Full HD each.
 
 ### AMD
 
