@@ -127,11 +127,15 @@ CONFIG_SPI_PXA2XX_PCI=m
 After loading the driver the Touchpad isn't working from time to time. Reloading
 the driver multiple times seems to fix it.
 
+To get proper size detection for the touchpad follow the instructions in
+https://gist.github.com/roadrunner2/1289542a748d9a104e7baec6a92f9cd7#keyboardtouchpad
+
 The Esc and function keys are part of the [Touch Bar](#touch-bar) and therefore
 not working as of now! Also the Caps Lock LED isn't working.
 
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
+
 
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=99891
@@ -250,3 +254,10 @@ I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
 
 The two `video` interfaces could be the FaceTime HD camera and the Touch Bar,
 while the two `HID` interfaces could be the Touch Bar and the Touch ID button.
+
+
+### Links
+
+* Excellent collection providing a status of hardware support for the MacBook
+  Pro 2016 as well:
+  https://gist.github.com/roadrunner2/1289542a748d9a104e7baec6a92f9cd7
