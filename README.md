@@ -109,10 +109,11 @@ displays daisy-chained together with Full HD each.
 
 ### AMD
 
-unknown
+Working since Linux 4.9.
 
 See also:
 
+* https://gist.github.com/roadrunner2/1289542a748d9a104e7baec6a92f9cd7#gistcomment-1981040
 * https://lists.freedesktop.org/archives/amd-gfx/2016-November/003673.html
 
 
@@ -138,7 +139,6 @@ not working as of now! Also the Caps Lock LED isn't working.
 
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
-
 
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=99891
