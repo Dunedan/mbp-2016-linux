@@ -26,7 +26,7 @@ appreciated.
 | [Bluetooth](#bluetooth) | :x: not working |
 | [FaceTime HD camera](#facetime-hd-camera) | :x: not working |
 | [Graphics card](#graphics-card) (Intel) | :heavy_check_mark: working |
-| [Graphics card](#graphics-card) (AMD) | unknown |
+| [Graphics card](#graphics-card) (AMD) | :heavy_check_mark: working |
 | [Keyboard & Touchpad](#keyboard--touchpad) | :heavy_check_mark: working with out-of-tree driver |
 | [Keyboard backlight](#keyboard-backlight) | :x: not working |
 | [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working with out-of-tree patch |
