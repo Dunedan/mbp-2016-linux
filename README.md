@@ -88,6 +88,9 @@ Uses a different USB product id (`0x8600`) than previous versions (`0x8501`). A
 naive patch to enable the usual Apple iSight quirks for this product id as well,
 didn't work so far.
 
+Firmware extracting using `isight-firmware-tools` works as usual. Loading the
+firmware fails, maybe because one is already loaded.
+
 
 ## Graphics card
 
