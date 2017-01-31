@@ -155,7 +155,8 @@ working either.
 
 ## NVMe
 
-Isn't detected automatically, needs out-of-tree patch to work:
+Isn't detected automatically on MacBookPro 13,1 and MacBookPro 13,2, needs
+out-of-tree patch to work there:
 http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html
 
 Alternative workaround:
@@ -163,6 +164,9 @@ Alternative workaround:
 modprobe nvme
 echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
 ```
+
+As the MacBookPro13,3 uses a different chipset for NVMe it works there out
+of the box.
 
 See also:
 * https://unix.stackexchange.com/questions/283154/accessing-the-nvme-flash-drive-of-the-april-2016-macbook-12-a1534
