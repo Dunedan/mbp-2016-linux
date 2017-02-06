@@ -34,7 +34,7 @@ appreciated.
 | [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
 | [Temperature & fan sensors](#temperature--fan-sensors) | :heavy_check_mark: working |
 | [Thunderbolt](#thunderbolt) | untested, patch available |
-| [Touch Bar](#touch-bar) | :x: not working |
+| [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree utility |
 | [Touch ID](#touch-id) | :x: not working |
 | [USB](#usb) | :heavy_check_mark: working |
 | [Wi-Fi](#wi-fi) | :x: not working |
@@ -205,25 +205,12 @@ See also:
 
 ## Touch Bar
 
-Not working out of the box, but initial success to get it working with basic
-functionality.
+Not working out of the box, but thanks to @roadrunner2 basic functionality
+is working using the [touchbar.c](touchbar.c) utility.
 
-Booting a Windows VM with installed Boot Camp drivers and passed through iBridge
-USB device under Linux properly initializes the Touch Bar with its default
-layout featuring special functions like screen dimming and media control keys.
-These keys are then usable under Linux when the Windows VM isn't running anymore
-and are mapped to traditional function keys (which means that based on the
-layout `KEY_F3` and `KEY_F4` aren't accessible right now). So e.g. play/pause is
-mapped to `KEY_F8` and increase volume to `KEY_F12`.
-
-Another difference to macOS is that the Touch Bar isn't switching off after a
-minute, but instead after more than an hour. Probably the one minute switch-off
-is initiated by macOS, while the later one is initiated directly by iBridge.
-
-[touchbar-init.pcapng](touchbar-init.pcapng) contains a capture of the USB
-packets Windows uses to initialize the Touch Bar (unclear if the first packet is
-even relevant). For somebody with some USB and Linux kernel knowledge it should
-be trivial to implement that as a Linux driver.
+Missing functionality includes dimming and automatic switch off, of the Touch
+Bar when idle and the advanced functionality with custom graphics Apple offers
+in macOS.
 
 
 ## Touch ID
