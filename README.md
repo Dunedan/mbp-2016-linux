@@ -208,6 +208,9 @@ See also:
 Not working out of the box, but thanks to @roadrunner2 basic functionality
 is working using the [touchbar.c](touchbar.c) utility.
 
+Using the Touch Bar in special keys mode still generates key events for function
+keys, so the special keys are currently not really useable.
+
 Missing functionality includes dimming and automatic switch off, of the Touch
 Bar when idle and the advanced functionality with custom graphics Apple offers
 in macOS.
