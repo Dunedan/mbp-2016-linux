@@ -252,7 +252,7 @@ to the chip running iOS and providing access to the FaceTime HD camera (that's
 why `uvcvideo` detects it), the Touch Bar (that's why it's shown as an
 additonal input device in the Xorg log) and the Touch ID button.
 
-`usb-devices` shows that `iBridge` exposes four interfaces:
+`usb-devices` shows that *iBridge* exposes four interfaces:
 ```
 T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  4 Spd=480 MxCh= 0
 D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
@@ -270,6 +270,28 @@ I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
 The two `video` interfaces could be the FaceTime HD camera and the Touch Bar,
 while the two `HID` interfaces could be the Touch Bar and the Touch ID button.
 
+Booting macOS as a VM interestingly leads to the following changed output of
+`usb-devices`:
+```
+T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  2 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
+P:  Vendor=05ac ProdID=8600 Rev=01.01
+S:  Manufacturer=Apple Inc.
+S:  Product=iBridge
+S:  SerialNumber=nomac?123456
+C:  #Ifs= 8 Cfg#= 2 Atr=e0 MxPwr=0mA
+I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
+I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=(none)
+I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
+I:  If#= 3 Alt= 0 #EPs= 2 Cls=10() Sub=00 Prot=00 Driver=(none)
+I:  If#= 4 Alt= 0 #EPs= 0 Cls=02(commc) Sub=0d Prot=00 Driver=(none)
+I:  If#= 5 Alt= 0 #EPs= 0 Cls=0a(data ) Sub=00 Prot=01 Driver=(none)
+I:  If#= 6 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
+I:  If#= 7 Alt= 0 #EPs= 2 Cls=ff(vend.) Sub=f9 Prot=11 Driver=(none)
+```
+
+Seems like macOS somehow initalizes some additional capabilities of the
+*iBridge*.
 
 ### Links
 
