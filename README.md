@@ -206,14 +206,11 @@ See also:
 ## Touch Bar
 
 Not working out of the box, but thanks to @roadrunner2 basic functionality
-is working using the [touchbar.c](touchbar.c) utility.
+is working using the driver you can find at:
+https://github.com/roadrunner2/macbook12-spi-driver/blob/touchbar-driver-hid-driver/appletb.c
 
-Using the Touch Bar in special keys mode still generates key events for function
-keys, so the special keys are currently not really useable.
-
-Missing functionality includes dimming and automatic switch off, of the Touch
-Bar when idle and the advanced functionality with custom graphics Apple offers
-in macOS.
+Missing is as of now just automatic dimming and the advanced functionality
+with custom graphics Apple offers in macOS.
 
 
 ## Touch ID
