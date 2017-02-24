@@ -175,7 +175,12 @@ See also:
 
 ## Screen
 
-Works out of the box including adjustable screen brightness.
+Works out of the box.
+
+Adjustable screen brightness only works out of the box for the models without
+additional AMD Radeon GPU (MacBookPro13,1 and MacBookPro13,2). For the
+MacBookPro13,3 with additional AMD Radeon GPU the following patch is necessary:
+https://bugzilla.kernel.org/show_bug.cgi?id=105051#c32
 
 The only oddity noticed so far, is that the EDID data for the 13" model
 describes two modes: `2560x1600` and `2880x1800`. Xorg probes and sets the
