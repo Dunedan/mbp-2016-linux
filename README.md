@@ -3,18 +3,19 @@
 The following document provides an overview about Linux support for the Apple
 MacBook Pro 2016 line.
 
-The MacBook Pro 2016 shares surprisingly many components with the Retina MacBook
-(e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets, ...), so
-figuring out how things work on one device should benefit both device families.
+The MacBook Pro 2016 shares surprisingly many components with the Retina
+MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
+...), so figuring out how things work on one device should benefit both device
+families.
 
 The checks if hardware work below were mostly done with Debian/unstable and
 Ubuntu 16.10 with Linux 4.8 to 4.10.
 
 ## Contribution
 
-If you want to contribute to get Linux running smoothly on the MacBook Pro 2016,
-report all findings how to get devices working as pull requests! All help is
-appreciated.
+If you want to contribute to get Linux running smoothly on the MacBook Pro
+2016, report all findings how to get devices working as pull requests! All help
+is appreciated.
 
 
 ## Current status
@@ -34,7 +35,7 @@ appreciated.
 | [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
 | [Temperature & fan sensors](#temperature--fan-sensors) | :heavy_check_mark: working |
 | [Thunderbolt](#thunderbolt) | untested, patch available |
-| [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree utility |
+| [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree driver |
 | [Touch ID](#touch-id) | :x: not working |
 | [USB](#usb) | :heavy_check_mark: working |
 | [Wi-Fi](#wi-fi) | :x: not working |
@@ -56,15 +57,16 @@ See also:
 
 ## Battery
 
-Working fine, including the interface to get current capacity, temperature, etc.
+Working fine, including the interface to get current capacity, temperature,
+etc.
 
 
 ## Bluetooth
 
 Not working.
 
-Uses the same ACPI ID `BCM2E7C` as the Retina MacBooks, so certainly it's also a
-`BCM43241`.
+Uses the same ACPI ID `BCM2E7C` as the Retina MacBooks, so certainly it's also
+a `BCM43241`.
 
 
 See also:
@@ -85,8 +87,8 @@ Detected at boot, but not working:
 ```
 
 Uses a different USB product id (`0x8600`) than previous versions (`0x8501`). A
-naive patch to enable the usual Apple iSight quirks for this product id as well,
-didn't work so far.
+naive patch to enable the usual Apple iSight quirks for this product id as
+well, didn't work so far.
 
 Firmware extracting using `isight-firmware-tools` works as usual. Loading the
 firmware fails, maybe because one is already loaded.
@@ -119,23 +121,23 @@ See also:
 
 ## Keyboard & Touchpad
 
-Basic keyboard and touchpad functionality is working with the out-of-tree driver
-developed for the Retina Macbook (https://github.com/cb22/macbook12-spi-driver).
-As described on the Github page the DSDT has to be patched to get it working.
+Basic keyboard and touchpad functionality is working with the out-of-tree
+driver developed for the Retina Macbook
+(https://github.com/cb22/macbook12-spi-driver). As described on the Github page
+the DSDT has to be patched to get it working.
 Also ensure you have the `PXA2XX` SPI driver available:
 ```
 CONFIG_SPI_PXA2XX=m
 CONFIG_SPI_PXA2XX_PCI=m
 ```
 
-After loading the driver the Touchpad isn't working from time to time. Reloading
-the driver multiple times seems to fix it.
+After loading the driver the Touchpad isn't working from time to time.
+Reloading the driver multiple times seems to fix it.
 
-To get proper size detection for the touchpad follow the instructions in
-https://gist.github.com/roadrunner2/1289542a748d9a104e7baec6a92f9cd7#keyboardtouchpad
+The Esc and function keys are part of the Touch Bar, so follow the
+instructions for the [Touch Bar](#touch-bar) to get it working.
 
-The Esc and function keys are part of the [Touch Bar](#touch-bar) and therefore
-not working as of now! Also the Caps Lock LED isn't working.
+The Caps Lock LED isn't working.
 
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
@@ -234,8 +236,8 @@ Works out of the box.
 supported by the `brcmfmac` driver
 * Only 2.4Ghz APs are shown
 * Connecting to an AP barely works or fails directly
-* Problem doesn't seem to be specific to the MacBook Pro 2016, probably firmware
-related
+* Problem doesn't seem to be specific to the MacBook Pro 2016, probably
+firmware related
 
 See also:
 
