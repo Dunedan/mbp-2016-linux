@@ -297,6 +297,39 @@ I:  If#= 7 Alt= 0 #EPs= 2 Cls=ff(vend.) Sub=f9 Prot=11 Driver=(none)
 Seems like macOS somehow initalizes some additional capabilities of the
 *iBridge*.
 
+### Disable auto-boot
+
+Apple introduced an "auto-boot" feature with the MacBook Pro 2016 causing the
+notebook to be switched on, whenever the screen lid is opened. By modifying a
+NVRAM variable this can be (luckily) disabled again.
+
+How to do that from macOS as well as enabling the startup chime again is
+documented e.g. at
+http://www.idownloadblog.com/2016/10/31/how-to-stop-the-new-macbook-pro-from-automatically-turning-on-when-the-lid-is-open/
+
+To disable auto boot from within Linux, ensure that `efivarfs` is mounted and
+run:
+```
+printf "\x07\x00\x00\x00\x00" > /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82
+```
+
+If you get "No space left on device" errors, it's probably because of
+`dump-type0-*`-variables written by the Linux kernel taking up all space.
+Removing them solves the problem:
+```
+for i in $(find /sys/firmware/efi/efivars/ -name 'dump-type0*'); do chattr -i $i; rm $i; done
+```
+
+With disabled auto boot the MacBook Pro will show the battery percentage for a
+brief second as an image on the screen whenever you open the lid or plug in the
+power cord while the lid is open.
+
+To reenable auto boot again run:
+```
+chattr -i /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82
+rm /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82
+```
+
 ### Links
 
 * Excellent collection providing a status of hardware support for the MacBook
