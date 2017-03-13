@@ -98,11 +98,12 @@ firmware fails, maybe because one is already loaded.
 
 ### Intel
 
-Graphical output is working out of the box.
-
-During boot screen becomes garbled once Linux does modeswitching,
-till Xorg finally starts. As a workaround disabling KMS (`i915.modeset=0`)
-helps.
+Graphical output using the Intel GPU is working out of the box on the
+MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
+with dedicated AMD GPU, only the AMD is enabled when booting a OS which isn't
+macOS, so you have to follow the instructions in the following link to enable
+the integrated Intel GPU, if you want to use it:
+https://github.com/Dunedan/mbp-2016-linux/issues/6#issuecomment-286168538
 
 Connecting external displays via USB-C-to-DisplayPort cables works fine,
 including connections with daisy-chaining/MST. An actual tested and working
