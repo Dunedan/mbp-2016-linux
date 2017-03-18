@@ -25,9 +25,9 @@ is appreciated.
 | [Audio input & output](#audio-input--output) | :x: not working |
 | [Battery](#battery) | :heavy_check_mark: working |
 | [Bluetooth](#bluetooth) | :x: not working |
-| [FaceTime HD camera](#facetime-hd-camera) | :x: not working |
-| [Graphics card](#graphics-card) (Intel) | :heavy_check_mark: working |
-| [Graphics card](#graphics-card) (AMD) | :heavy_check_mark: working |
+| [FaceTime HD camera](#facetime-hd-camera) | :heavy_check_mark: working |
+| [Graphics card](#intel) (Intel) | :heavy_check_mark: working |
+| [Graphics card](#amd) (AMD) | :heavy_check_mark: working |
 | [Keyboard & Touchpad](#keyboard--touchpad) | :heavy_check_mark: working with out-of-tree driver |
 | [Keyboard backlight](#keyboard-backlight) | :x: not working |
 | [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working with out-of-tree patch |
@@ -76,22 +76,10 @@ See also:
 
 ## FaceTime HD camera
 
-Detected at boot, but not working:
+Working, but requires the following additional option for `uvcvideo` for now:
 ```
-[    4.455993] uvcvideo: Found UVC 1.50 device iBridge (05ac:8600)
-[    4.461559] uvcvideo: UVC non compliance - GET_DEF(PROBE) not supported. Enabling workaround.
-[    4.462403] uvcvideo: Failed to query (129) UVC probe control : -32 (exp. 34).
-[    4.464181] uvcvideo: Failed to initialize the device (-5).
-[    4.466247] usbcore: registered new interface driver uvcvideo
-[    4.466248] USB Video Class driver (1.1.1)
+echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
 ```
-
-Uses a different USB product id (`0x8600`) than previous versions (`0x8501`). A
-naive patch to enable the usual Apple iSight quirks for this product id as
-well, didn't work so far.
-
-Firmware extracting using `isight-firmware-tools` works as usual. Loading the
-firmware fails, maybe because one is already loaded.
 
 
 ## Graphics card
