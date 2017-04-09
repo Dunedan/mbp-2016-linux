@@ -30,7 +30,7 @@ is appreciated.
 | [Graphics card](#amd) (AMD) | :heavy_check_mark: working |
 | [Keyboard & Touchpad](#keyboard--touchpad) | :heavy_check_mark: working with out-of-tree driver |
 | [Keyboard backlight](#keyboard-backlight) | :x: not working |
-| [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working with out-of-tree patch |
+| [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working |
 | [Screen](#screen) | :heavy_check_mark: working |
 | [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
 | [Temperature & fan sensors](#temperature--fan-sensors) | :heavy_check_mark: working |
@@ -146,15 +146,15 @@ working either.
 
 ## NVMe
 
-Isn't detected automatically on MacBookPro 13,1 and MacBookPro 13,2, needs
-out-of-tree patch to work there:
-http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html
-
-Alternative workaround:
-```
-modprobe nvme
-echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
-```
+MacBookPro 13,1 and MacBookPro 13,2:
+- works with kernels >= 4.11
+- lower versions of kernel need out-of-tree patch:
+ http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html
+- alternative workaround:
+ ```
+ modprobe nvme
+ echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
+ ```
 
 As the MacBookPro13,3 uses a different chipset for NVMe it works there out
 of the box.
