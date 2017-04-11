@@ -76,7 +76,14 @@ See also:
 
 ## FaceTime HD camera
 
-Working, but requires the following additional option for `uvcvideo` for now:
+In the MacBookPro13,1 (without Touch Bar) the FaceTime HD camera is connected
+via PCIe, like in previous MacBook Pros. It's proper function is untested, but
+it's likely that the [`bcwc_pcie`](https://github.com/patjak/bcwc_pcie/wiki)
+driver will work.
+
+The models with Touch Bar have the FaceTime HD camera connected through the
+iBridge device via USB. They are exposed as regular USB video devices and work
+after applying the following quirk using the `uvcvideo` driver:
 ```
 echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
 ```
@@ -239,7 +246,7 @@ See also:
 
 ### iBridge
 
-There is one connected USB device, called *iBridge*
+The models with Touch Bar feature an additional USB device, called *iBridge*
 (*Bus 001 Device 002: ID 05ac:8600 Apple, Inc.*). It's probably the interface
 to the chip running iOS and providing access to the FaceTime HD camera (that's
 why `uvcvideo` detects it), the Touch Bar (that's why it's shown as an
