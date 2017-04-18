@@ -228,12 +228,15 @@ Works out of the box.
 
 ## Wi-Fi
 
-* device (*Broadcom Limited BCM43602 802.11ac Wireless LAN SoC (rev 02)*) is
-supported by the `brcmfmac` driver
+The MacBookPro13,1 comes with a `Broadcom Limited BCM4350 802.11ac Wireless
+Network Adapter` which works fine out of the box using the `brcmfmac` driver
+(ensure you got the matching firmware package installed).
+
+The MacBookPro13,2 and MacBookPro13,3 come with a `Broadcom Limited BCM43602
+802.11ac Wireless LAN SoC (rev 02)` which is also supported by `brcmfmac`, but
+has several issues, which could simply be firmware related:
 * Only 2.4Ghz APs are shown
 * Connecting to an AP barely works or fails directly
-* Problem doesn't seem to be specific to the MacBook Pro 2016, probably
-firmware related
 
 See also:
 
