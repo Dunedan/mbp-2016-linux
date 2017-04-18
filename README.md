@@ -29,11 +29,10 @@ is appreciated.
 | [Graphics card](#intel) (Intel) | :heavy_check_mark: working |
 | [Graphics card](#amd) (AMD) | :heavy_check_mark: working |
 | [Keyboard & Touchpad](#keyboard--touchpad) | :heavy_check_mark: working with out-of-tree driver |
-| [Keyboard backlight](#keyboard-backlight) | :x: not working |
 | [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working |
 | [Screen](#screen) | :heavy_check_mark: working |
 | [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
-| [Temperature & fan sensors](#temperature--fan-sensors) | :heavy_check_mark: working |
+| [System Management Controller](#system-management-controller) | :x: working partially |
 | [Thunderbolt](#thunderbolt) | untested, patch available |
 | [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree driver |
 | [Touch ID](#touch-id) | :x: not working |
@@ -143,14 +142,6 @@ See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=108331
 
 
-## Keyboard backlight
-
-Not working, it's just powered off.
-
-Probably the ambient light sensor used for the keyboard backlight isn't
-working either.
-
-
 ## NVMe
 
 MacBookPro 13,1 and MacBookPro 13,2:
@@ -192,9 +183,15 @@ For a detailed look into the EDID data, check out
 Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
 
 
-## Temperature & fan sensors
+## System Management Controller
 
-Work out of the box.
+The System Management Controller is responsible for interactions with sensors,
+fans and keyboard backlight.
+
+Fans, temperature and voltage sensors work out of the box using the `applesmc`
+kernel module, while accelerometer, ambient light sensors and keyboard
+backlight don't work yet. For these non-working parts, the SMC keys `applesmc`
+expects aren't available.
 
 
 ## Thunderbolt
