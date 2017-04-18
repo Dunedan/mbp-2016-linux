@@ -43,7 +43,7 @@ is appreciated.
 | [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree driver |
 | [Touch ID](#touch-id) | :x: not working |
 | [USB](#usb) | :heavy_check_mark: working |
-| [Wi-Fi](#wi-fi) | :x: not working |
+| [Wi-Fi](#wi-fi) | :heavy_check_mark: working for MacBookPro13,1<br />:x: not working for MacBookPro13,2 & MacBookPro13,3 |
 
 
 ## Booting
