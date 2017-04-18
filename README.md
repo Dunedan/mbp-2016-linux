@@ -8,8 +8,10 @@ MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
 ...), so figuring out how things work on one device should benefit both device
 families.
 
-The checks if hardware work below were mostly done with Debian/unstable and
-Ubuntu 16.10 with Linux 4.8 to 4.10.
+The checks if hardware works below were done with multiple Linux distributions.
+To state the obvious: The newer the kernel the better. If in doubt which kernel
+to use, the latest significant improvements are part of Linux 4.11.
+
 
 ## Contribution
 
@@ -243,6 +245,20 @@ See also:
 
 
 ## Misc
+
+### History of improvements per kernel version
+
+#### 4.9
+
+* Working AMD graphics of the MacBookPro13,3 (which is the only model with both
+  Intel and AMD graphics).
+
+#### 4.11
+
+* The NVMe controller in the MacBookPro13,1 and MacBookPro13,2 is now working
+  out of the box (the one in the MacBookPreo13,3 was already working before).
+* When booting with kernel modesetting (KMS) the screen isn't scrambled during
+  boot anymore.
 
 ### iBridge
 
