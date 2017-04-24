@@ -15,7 +15,7 @@ echo "getting hwinfo"
 sudo hwinfo > "$dir"/hwinfo.txt
 
 echo "getting lspci"
-lspci -vvnn > "$dir"/lspci
+sudo lspci -vvnn > "$dir"/lspci
 
 echo "getting lsusb"
 sudo lsusb -v > "$dir"/lsusb
