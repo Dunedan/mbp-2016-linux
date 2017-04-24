@@ -195,9 +195,9 @@ The System Management Controller is responsible for interactions with sensors,
 fans and keyboard backlight.
 
 Fans, temperature and voltage sensors work out of the box using the `applesmc`
-kernel module, while accelerometer, ambient light sensors and keyboard
-backlight don't work yet. For these non-working parts, the SMC keys `applesmc`
-expects aren't available.
+kernel module, while the ambient light sensors only work in the MacBookPro13,1
+and accelerometer sensors and keyboard backlight don't work for any model yet.
+For these non-working parts, the SMC keys `applesmc` expects aren't available.
 
 
 ## Thunderbolt
