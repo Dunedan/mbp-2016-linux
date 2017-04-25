@@ -85,9 +85,8 @@ See also:
 ## FaceTime HD camera
 
 In the MacBookPro13,1 (without Touch Bar) the FaceTime HD camera is connected
-via PCIe, like in previous MacBook Pros. It's proper function is untested, but
-it's likely that the [`bcwc_pcie`](https://github.com/patjak/bcwc_pcie/wiki)
-driver will work.
+via PCIe, like in previous MacBook Pro's. It's working with the
+[`bcwc_pcie`](https://github.com/patjak/bcwc_pcie/wiki) driver.
 
 The models with Touch Bar have the FaceTime HD camera connected through the
 iBridge device via USB. They are exposed as regular USB video devices and work
