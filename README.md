@@ -140,8 +140,6 @@ Reloading the driver multiple times seems to fix it.
 The Esc and function keys are part of the Touch Bar, so follow the
 instructions for the [Touch Bar](#touch-bar) to get it working.
 
-The Caps Lock LED isn't working.
-
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
 
