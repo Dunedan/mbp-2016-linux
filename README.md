@@ -46,12 +46,6 @@ is appreciated.
 | [Wi-Fi](#wi-fi) | :heavy_check_mark: working for MacBookPro13,1<br />:x: not working for MacBookPro13,2 & MacBookPro13,3 |
 
 
-## Booting
-
-To boot Linux properly, it's necessary to set `intremap=nosid` as kernel boot
-parameter.
-
-
 ## Audio input & output
 
 Not working, neither the internal speakers/microphone nor the headphone jack.
