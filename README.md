@@ -60,6 +60,7 @@ What's working is audio via HDMI or any USB-connected audio device, so that can
 act as a workaround until internal audio is working.
 
 See also:
+* https://bugzilla.kernel.org/show_bug.cgi?id=195671
 * https://bugzilla.kernel.org/show_bug.cgi?id=110561
 
 
