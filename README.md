@@ -48,8 +48,9 @@ is appreciated.
 
 ## Booting
 
-To boot Linux properly, it's necessary to set `intremap=nosid` as kernel boot
-parameter.
+To boot Linux version earlier than 4.10 properly, it's necessary to set
+`intremap=nosid` as kernel boot parameter. From 4.10 onwards that's not
+necessary anymore.
 
 
 ## Audio input & output
@@ -257,6 +258,11 @@ See also:
 
 * Working AMD graphics of the MacBookPro13,3 (which is the only model with both
   Intel and AMD graphics).
+
+#### 4.10
+
+* `intremap=nosid` as kernel boot parameter not necessary anymore, although
+  it's unclear why.
 
 #### 4.11
 
