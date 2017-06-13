@@ -8,6 +8,10 @@ MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
 ...), so figuring out how things work on one device should benefit both device
 families.
 
+As the Apple MacBook Pro 2017 are nearly identical to their 2016 counterparts,
+everything noted should apply to them as well, although that's still untested.
+Feedback regarding that is welcome.
+
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. If in doubt which kernel
 to use, the latest significant improvements are part of Linux 4.11.
