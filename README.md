@@ -143,18 +143,20 @@ See also:
 
 ## NVMe
 
-MacBookPro 13,1 and MacBookPro 13,2:
-- works with kernels >= 4.11
-- lower versions of kernel need out-of-tree patch:
- http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html
-- alternative workaround:
- ```
- modprobe nvme
- echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
- ```
+Works out of the box with Linux 4.11 and above.
 
-As the MacBookPro13,3 uses a different chipset for NVMe it works there out
-of the box.
+The MacBookPro 13,1 or MacBookPro 13,2 on earlier versions of Linux need an
+out-of-tree patch
+(http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html) or the
+following workaround:
+```
+modprobe nvme
+echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
+```
+
+The SSDs used in the MacBook Pros don't seem to support APST. As it's currently
+unknown how power saving works for those SSDs it's likely they consume way more
+power than they need to, therefore reducing the battery life.
 
 See also:
 * https://unix.stackexchange.com/questions/283154/accessing-the-nvme-flash-drive-of-the-april-2016-macbook-12-a1534
