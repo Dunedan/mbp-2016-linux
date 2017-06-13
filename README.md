@@ -38,7 +38,7 @@ is appreciated.
 | [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working |
 | [Screen](#screen) | :heavy_check_mark: working |
 | [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
-| [System Management Controller](#system-management-controller) | :x: working partially |
+| [System Management Controller](#system-management-controller) | :heavy_check_mark: working for MacBookPro13,1<br />:x: working partially for MacBookPro13,2 & MacBookPro13,3 |
 | [Thunderbolt](#thunderbolt) | untested, patch available |
 | [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree driver |
 | [Touch ID](#touch-id) | :x: not working |
@@ -185,12 +185,12 @@ Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
 ## System Management Controller
 
 The System Management Controller is responsible for interactions with sensors,
-fans and keyboard backlight.
+fans.
 
 Fans, temperature and voltage sensors work out of the box using the `applesmc`
-kernel module, while the ambient light sensors only work in the MacBookPro13,1
-and accelerometer sensors and keyboard backlight don't work for any model yet.
-For these non-working parts, the SMC keys `applesmc` expects aren't available.
+kernel module, while the ambient light sensors only work in the MacBookPro13,1.
+
+An accelerometer doesn't seem to be available at all.
 
 
 ## Thunderbolt
