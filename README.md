@@ -180,6 +180,8 @@ For a detailed look into the EDID data, check out
 ## Suspend & Hibernation
 
 Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
+@roadrunner2 did some work in this area. You'll find some details about it in
+https://github.com/cb22/macbook12-spi-driver/pull/30#issuecomment-306316034
 
 
 ## System Management Controller
