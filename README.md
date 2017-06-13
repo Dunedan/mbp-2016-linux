@@ -128,16 +128,7 @@ See also:
 
 Basic keyboard and touchpad functionality is working with the out-of-tree
 driver developed for the Retina Macbook
-(https://github.com/cb22/macbook12-spi-driver). As described on the Github page
-the DSDT has to be patched to get it working.
-Also ensure you have the `PXA2XX` SPI driver available:
-```
-CONFIG_SPI_PXA2XX=m
-CONFIG_SPI_PXA2XX_PCI=m
-```
-
-After loading the driver the Touchpad isn't working from time to time.
-Reloading the driver multiple times seems to fix it.
+(https://github.com/cb22/macbook12-spi-driver).
 
 The Esc and function keys are part of the Touch Bar, so follow the
 instructions for the [Touch Bar](#touch-bar) to get it working.
