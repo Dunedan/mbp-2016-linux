@@ -74,6 +74,10 @@ See also:
 Working fine, including the interface to get current capacity, temperature,
 etc.
 
+Battery life is still suboptimal, because power saving modes for several
+devices, like display (panel self refresh), SSD or the Thunderbolt
+controllers, aren't working yet. You can expected a battery life of less
+than 4 hours.
 
 ## Bluetooth
 
