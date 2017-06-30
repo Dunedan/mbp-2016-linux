@@ -162,6 +162,12 @@ modprobe nvme
 echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
 ```
 
+The MacBookPro13,1, MacBookPro13,2, MacBookPro14,1 and MacBookPro14,2
+occasionally can't properly initialize the NVMe controller after Linux took
+over from the boot manager, resulting in timeout messages and the inability to
+access the SSD and therefore the failure to boot. The only workaround known so
+far is to reboot until the problem isn't triggered.
+
 The SSDs used in the MacBook Pros don't seem to support APST. As it's currently
 unknown how power saving works for those SSDs it's likely they consume way more
 power than they need to, therefore reducing the battery life.
