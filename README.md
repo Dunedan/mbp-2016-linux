@@ -1,16 +1,17 @@
-# State of Linux on the MacBook Pro 2016
+# State of Linux on the MacBook Pro 2016 & 2017
 
-The following document provides an overview about Linux support for the Apple
-MacBook Pro 2016 line.
+The following document provides an overview about Linux support for Apple's
+MacBook Pro 2016 and MacBook Pro 2017 models.
 
 The MacBook Pro 2016 shares surprisingly many components with the Retina
 MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
 ...), so figuring out how things work on one device should benefit both device
 families.
 
-As the Apple MacBook Pro 2017 are nearly identical to their 2016 counterparts,
-everything noted should apply to them as well, although that's still untested.
-Feedback regarding that is welcome.
+The Apple MacBook Pro 2017 models are nearly identical to their 2016
+counterparts, except for the use of newer Intels Kaby Lake processors instead
+of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
+15-inch models.
 
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. If in doubt which kernel
@@ -152,8 +153,8 @@ Basic keyboard and touchpad functionality is working with the out-of-tree
 driver developed for the Retina Macbook
 (https://github.com/cb22/macbook12-spi-driver).
 
-The Esc and function keys are part of the Touch Bar, so follow the
-instructions for the [Touch Bar](#touch-bar) to get it working.
+The Esc and function keys are part of the Touch Bar in all Touch Bar-models, so
+follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
