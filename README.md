@@ -17,7 +17,7 @@ To state the obvious: The newer the kernel the better. If in doubt which kernel
 to use, the latest significant improvements are part of Linux 4.11.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
-identifier is on several occasions below), check
+identifier is used on several occasions below), check
 https://support.apple.com/en-us/HT201300
 
 
@@ -32,22 +32,22 @@ is appreciated.
 
 | Device  | Status |
 | ------- | ------ |
-| [Audio input & output](#audio-input--output) | :x: not working |
-| [Battery](#battery) | :heavy_check_mark: working |
-| [Bluetooth](#bluetooth) | :x: not working |
-| [FaceTime HD camera](#facetime-hd-camera) | :heavy_check_mark: working |
-| [Graphics card](#intel) (Intel) | :heavy_check_mark: working |
-| [Graphics card](#amd) (AMD) | :heavy_check_mark: working |
-| [Keyboard & Touchpad](#keyboard--touchpad) | :heavy_check_mark: working with out-of-tree driver |
-| [NVMe](#nvme) (internal SSD) | :heavy_check_mark: working |
-| [Screen](#screen) | :heavy_check_mark: working |
-| [Suspend & Hibernation](#suspend--hibernation) | :x: not working |
-| [System Management Controller](#system-management-controller) | :heavy_check_mark: working for MacBookPro13,1<br />:x: working partially for MacBookPro13,2 & MacBookPro13,3 |
-| [Thunderbolt](#thunderbolt) | untested, patch available |
-| [Touch Bar](#touch-bar) | :heavy_check_mark: basic functionality with out-of-tree driver |
-| [Touch ID](#touch-id) | :x: not working |
-| [USB](#usb) | :heavy_check_mark: working |
-| [Wi-Fi](#wi-fi) | :heavy_check_mark: working for MacBookPro13,1<br />:x: not working for MacBookPro13,2 & MacBookPro13,3 |
+| [Audio input & output](#audio-input--output) | ![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
+| [Battery](#battery) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Bluetooth](#bluetooth) | ![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
+| [FaceTime HD camera](#facetime-hd-camera) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Graphics card](#intel) (Intel) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) |
+| [Keyboard & Touchpad](#keyboard--touchpad) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Suspend & Hibernation](#suspend--hibernation) |![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
+| [System Management Controller](#system-management-controller) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
+| [Thunderbolt](#thunderbolt) | ![all models unknown](https://img.shields.io/badge/all_models-unknown-lightgrey.svg) |
+| [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
+| [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
+| [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
 
 
 ## Booting
@@ -58,6 +58,8 @@ necessary anymore.
 
 
 ## Audio input & output
+
+![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 
 Not working, neither the internal speakers/microphone nor the headphone jack.
 
@@ -71,6 +73,8 @@ See also:
 
 ## Battery
 
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Working fine, including the interface to get current capacity, temperature,
 etc.
 
@@ -80,6 +84,8 @@ controllers, aren't working yet. You can expected a battery life of less
 than 4 hours.
 
 ## Bluetooth
+
+![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 
 Not working.
 
@@ -93,6 +99,8 @@ See also:
 
 
 ## FaceTime HD camera
+
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
 In the MacBookPro13,1 (without Touch Bar) the FaceTime HD camera is connected
 via PCIe, like in previous MacBook Pro's. It's working with the
@@ -110,6 +118,8 @@ echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
 
 ### Intel
 
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
 with dedicated AMD GPU, only the AMD is enabled when booting a OS which isn't
@@ -124,6 +134,8 @@ displays daisy-chained together with Full HD each.
 
 ### AMD
 
+![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Working since Linux 4.9.
 
 See also:
@@ -133,6 +145,8 @@ See also:
 
 
 ## Keyboard & Touchpad
+
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
 Basic keyboard and touchpad functionality is working with the out-of-tree
 driver developed for the Retina Macbook
@@ -150,6 +164,8 @@ See also:
 
 
 ## NVMe
+
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
 Works out of the box with Linux 4.11 and above.
 
@@ -179,6 +195,8 @@ See also:
 
 ## Screen
 
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Works out of the box.
 
 Adjustable screen brightness only works out of the box for the models without
@@ -195,12 +213,16 @@ For a detailed look into the EDID data, check out
 
 ## Suspend & Hibernation
 
+![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+
 Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
 @roadrunner2 did some work in this area. You'll find some details about it in
 https://github.com/cb22/macbook12-spi-driver/pull/30#issuecomment-306316034
 
 
 ## System Management Controller
+
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
 
 The System Management Controller is responsible for interactions with sensors,
 fans.
@@ -213,6 +235,8 @@ An accelerometer doesn't seem to be available at all.
 
 ## Thunderbolt
 
+![MacBookPro13,1 unknown](https://img.shields.io/badge/MacBookPro13%2C1-unknown-lightgrey.svg) ![MacBookPro13,2 unknown](https://img.shields.io/badge/MacBookPro13%2C2-unknown-lightgrey.svg) ![MacBookPro13,3 unknown](https://img.shields.io/badge/MacBookPro13%2C3-unknown-lightgrey.svg) ![MacBookPro14,1 unknown](https://img.shields.io/badge/MacBookPro14%2C1-unknown-lightgrey.svg) ![MacBookPro14,2 unknown](https://img.shields.io/badge/MacBookPro14%2C2-unknown-lightgrey.svg) ![MacBookPro14,3 unknown](https://img.shields.io/badge/MacBookPro14%2C3-unknown-lightgrey.svg)
+
 Untested, but probably working with the following patch:
 https://gist.github.com/l1k/3ffbd63ac337fa85530f6db3e9ee77e9
 
@@ -221,6 +245,8 @@ See also:
 
 
 ## Touch Bar
+
+![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
 
 Not working out of the box, but thanks to @roadrunner2 basic functionality
 is working using the driver you can find at:
@@ -232,15 +258,21 @@ offers in macOS.
 
 ## Touch ID
 
+![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+
 Not working.
 
 
 ## USB
 
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Works out of the box.
 
 
 ## Wi-Fi
+
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 
 The MacBookPro13,1 comes with a `Broadcom Limited BCM4350 802.11ac Wireless
 Network Adapter` which works fine out of the box using the `brcmfmac` driver
