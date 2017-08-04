@@ -159,6 +159,10 @@ follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 Beside the actual keyboard the power button and the lid close event work out of
 the box.
 
+Palm rejection based on touch-sizes and disable-touchpad-while-typing are working 
+with [this patch](https://gist.github.com/peterychuang/5cf9bf527bc26adef47d714c758a5509)
+to [libinput](https://cgit.freedesktop.org/wayland/libinput) (master branch).
+
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=99891
 * https://bugzilla.kernel.org/show_bug.cgi?id=108331
