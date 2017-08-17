@@ -29,4 +29,7 @@ else
     cp $global_log "$dir"/Xorg.0.log
 fi
 
+echo "getting DSDT"
+sudo cat /sys/firmware/acpi/tables/DSDT > dsdt.dat
+
 echo "done!"
