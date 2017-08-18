@@ -108,8 +108,11 @@ via PCIe, like in previous MacBook Pro's. It's working with the
 [`bcwc_pcie`](https://github.com/patjak/bcwc_pcie/wiki) driver.
 
 The models with Touch Bar have the FaceTime HD camera connected through the
-iBridge device via USB. They are exposed as regular USB video devices and work
-after applying the following quirk using the `uvcvideo` driver:
+iBridge device via USB. They are exposed as regular USB video devices and are
+supported by the `uvcvideo` driver starting with Linux 4.13 out of the box.
+Previous Linux versions need the following quirk for `uvcvideo` to get them to
+work properly:
+
 ```
 echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
 ```
@@ -313,9 +316,13 @@ See also:
 #### 4.11
 
 * The NVMe controller in the MacBookPro13,1 and MacBookPro13,2 is now working
-  out of the box (the one in the MacBookPreo13,3 was already working before).
+  out of the box (the one in the MacBookPro13,3 was already working before).
 * When booting with kernel modesetting (KMS) the screen isn't scrambled during
   boot anymore.
+
+#### 4.13
+
+* On the Touch Bar models the FaceTime HD camera is working out of the box.
 
 ### iBridge
 
