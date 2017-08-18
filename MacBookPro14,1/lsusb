@@ -5,13 +5,13 @@ Device Descriptor:
   bDescriptorType         1
   bcdUSB               3.00
   bDeviceClass            9 Hub
-  bDeviceSubClass         0 
+  bDeviceSubClass         0 Unused
   bDeviceProtocol         3 
   bMaxPacketSize0         9
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0003 3.0 root hub
-  bcdDevice            4.11
-  iManufacturer           3 Linux 4.11.6-3-ARCH xhci-hcd
+  bcdDevice            4.12
+  iManufacturer           3 Linux 4.12.0-mbp-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:07:00.0
   bNumConfigurations      1
@@ -33,7 +33,7 @@ Device Descriptor:
       bAlternateSetting       0
       bNumEndpoints           1
       bInterfaceClass         9 Hub
-      bInterfaceSubClass      0 
+      bInterfaceSubClass      0 Unused
       bInterfaceProtocol      0 Full speed (or root) hub
       iInterface              0 
       Endpoint Descriptor:
@@ -89,13 +89,13 @@ Device Descriptor:
   bDescriptorType         1
   bcdUSB               2.00
   bDeviceClass            9 Hub
-  bDeviceSubClass         0 
+  bDeviceSubClass         0 Unused
   bDeviceProtocol         1 Single TT
   bMaxPacketSize0        64
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0002 2.0 root hub
-  bcdDevice            4.11
-  iManufacturer           3 Linux 4.11.6-3-ARCH xhci-hcd
+  bcdDevice            4.12
+  iManufacturer           3 Linux 4.12.0-mbp-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:07:00.0
   bNumConfigurations      1
@@ -117,7 +117,7 @@ Device Descriptor:
       bAlternateSetting       0
       bNumEndpoints           1
       bInterfaceClass         9 Hub
-      bInterfaceSubClass      0 
+      bInterfaceSubClass      0 Unused
       bInterfaceProtocol      0 Full speed (or root) hub
       iInterface              0 
       Endpoint Descriptor:
@@ -154,13 +154,13 @@ Device Descriptor:
   bDescriptorType         1
   bcdUSB               3.00
   bDeviceClass            9 Hub
-  bDeviceSubClass         0 
+  bDeviceSubClass         0 Unused
   bDeviceProtocol         3 
   bMaxPacketSize0         9
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0003 3.0 root hub
-  bcdDevice            4.11
-  iManufacturer           3 Linux 4.11.6-3-ARCH xhci-hcd
+  bcdDevice            4.12
+  iManufacturer           3 Linux 4.12.0-mbp-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:00:14.0
   bNumConfigurations      1
@@ -182,7 +182,7 @@ Device Descriptor:
       bAlternateSetting       0
       bNumEndpoints           1
       bInterfaceClass         9 Hub
-      bInterfaceSubClass      0 
+      bInterfaceSubClass      0 Unused
       bInterfaceProtocol      0 Full speed (or root) hub
       iInterface              0 
       Endpoint Descriptor:
@@ -241,13 +241,13 @@ Device Descriptor:
   bDescriptorType         1
   bcdUSB               2.00
   bDeviceClass            9 Hub
-  bDeviceSubClass         0 
+  bDeviceSubClass         0 Unused
   bDeviceProtocol         1 Single TT
   bMaxPacketSize0        64
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0002 2.0 root hub
-  bcdDevice            4.11
-  iManufacturer           3 Linux 4.11.6-3-ARCH xhci-hcd
+  bcdDevice            4.12
+  iManufacturer           3 Linux 4.12.0-mbp-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:00:14.0
   bNumConfigurations      1
@@ -269,7 +269,7 @@ Device Descriptor:
       bAlternateSetting       0
       bNumEndpoints           1
       bInterfaceClass         9 Hub
-      bInterfaceSubClass      0 
+      bInterfaceSubClass      0 Unused
       bInterfaceProtocol      0 Full speed (or root) hub
       iInterface              0 
       Endpoint Descriptor:
