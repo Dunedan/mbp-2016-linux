@@ -156,6 +156,12 @@ Basic keyboard and touchpad functionality is working with the out-of-tree
 driver developed for the Retina Macbook
 (https://github.com/cb22/macbook12-spi-driver).
 
+For some keyboard layouts, e.g. german, <>| and ^° might be swapped. You can work around that with this Xmodmap config:
+```
+keycode 49 = less greater less greater bar brokenbar bar
+keycode 94 = dead_circumflex degree dead_circumflex degree U2032 U2033 U2032
+```
+
 The Esc and function keys are part of the Touch Bar in all Touch Bar-models, so
 follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 
