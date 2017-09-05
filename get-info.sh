@@ -30,6 +30,6 @@ else
 fi
 
 echo "getting DSDT"
-sudo cat /sys/firmware/acpi/tables/DSDT > dsdt.dat
+sudo cat /sys/firmware/acpi/tables/DSDT > "$dir"/dsdt.dat
 
 echo "done!"
