@@ -317,12 +317,23 @@ See also:
 
 * The NVMe controller in the MacBookPro13,1 and MacBookPro13,2 is now working
   out of the box (the one in the MacBookPro13,3 was already working before).
+  ([linux/commit/124298b](https://github.com/torvalds/linux/commit/124298bd03acebd9c9da29a794718aca31bec1f7))
 * When booting with kernel modesetting (KMS) the screen isn't scrambled during
   boot anymore.
 
 #### 4.13
 
 * On the Touch Bar models the FaceTime HD camera is working out of the box.
+  ([linux/commit/7b848ed](https://github.com/torvalds/linux/commit/7b848ed60f409ce860023c79aa9a5c8d1833ebab))
+
+#### 4.14
+
+* Includes the foundation for upstreaming the
+  [`applespi`](https://github.com/cb22/macbook12-spi-driver)-driver.
+  ([linux/commit/ca9ef3a](https://github.com/torvalds/linux/commit/ca9ef3ab68d3530ac93d4254f9e47724ea51758d),
+  [linux/commit/899596e](https://github.com/torvalds/linux/commit/899596e090ea21918c55cbccea594be840af44ea),
+  [linux/commit/75fc70e](https://github.com/torvalds/linux/commit/75fc70e07314347465c7df6d6b79535cf3db0e2a),
+  [linux/commit/630b3af](https://github.com/torvalds/linux/commit/630b3aff8a51c90ef15b59c9560ac35e40e7ec09))
 
 ### iBridge
 
