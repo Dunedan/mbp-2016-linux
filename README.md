@@ -35,7 +35,7 @@ is appreciated.
 | ------- | ------ |
 | [Audio input & output](#audio-input--output) | ![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
 | [Battery](#battery) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Bluetooth](#bluetooth) | ![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
+| [Bluetooth](#bluetooth) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [FaceTime HD camera](#facetime-hd-camera) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Graphics card](#intel) (Intel) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) |
@@ -86,18 +86,24 @@ than 4 hours.
 
 ## Bluetooth
 
-![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Not working.
+Working with out-of-tree kernel patch.
 
-Uses the same ACPI ID `BCM2E7C` as the Retina MacBooks, so certainly it's also
-a `BCM43241`.
+You need to compile a custom kernel with the patch set from
+https://github.com/roadrunner2/linux/tree/hci_bcm-4.14 and the configuration
+option `CONFIG_BT_HCIUART_BCM` set.
 
+Afterwards you're able to use `btattach` to attach the Bluetooth serial device.
+The tty to use might differ:
+
+```
+sudo btattach --bredr /dev/ttyS5 -P bcm
+```
 
 See also:
+* https://github.com/Dunedan/mbp-2016-linux/issues/29
 * https://bugzilla.kernel.org/show_bug.cgi?id=110901
-* https://www.spinics.net/lists/linux-bluetooth/msg66167.html
-
 
 ## FaceTime HD camera
 
