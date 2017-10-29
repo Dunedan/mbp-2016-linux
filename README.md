@@ -292,7 +292,7 @@ The MacBookPro13,1 comes with a `Broadcom Limited BCM4350 802.11ac Wireless
 Network Adapter` which works fine out of the box using the `brcmfmac` driver
 (ensure you got the matching firmware package installed).
 
-The MacBookPro13,2 and MacBookPro13,3 come with a `Broadcom Limited BCM43602
+The MacBookPro13,2, MacBookPro13,3, MacBookPro14,2, and MacBookPro14,4 come with a `Broadcom Limited BCM43602
 802.11ac Wireless LAN SoC (rev 02)` which is also supported by `brcmfmac`, but
 has several issues, which could simply be firmware related:
 * Only 2.4Ghz APs are shown
