@@ -31,24 +31,30 @@ is appreciated.
 
 ## Current status
 
-| Device  | Status |
-| ------- | ------ |
-| [Audio input & output](#audio-input--output) | ![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
-| [Battery](#battery) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Bluetooth](#bluetooth) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [FaceTime HD camera](#facetime-hd-camera) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Graphics card](#intel) (Intel) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) |
-| [Keyboard & Touchpad](#keyboard--touchpad) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Suspend & Hibernation](#suspend--hibernation) |![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
-| [System Management Controller](#system-management-controller) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
-| [Thunderbolt](#thunderbolt) | ![all models unknown](https://img.shields.io/badge/all_models-unknown-lightgrey.svg) |
-| [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
-| [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
-| [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
+| Device  | 13,1 | 13,2 | 13,3 | 14,1 | 14,2 | 14,3 |
+| ------- | ---- | ---- | ---- | ---- | ---- | ---- |
+| [Audio input & output](#audio-input--output) | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| [Battery](#battery) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Bluetooth](#bluetooth) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [FaceTime HD camera](#facetime-hd-camera) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Graphics card](#intel) (Intel) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Graphics card](#amd) (AMD) | :white_circle: | :white_circle: | :white_check_mark: | :white_circle: | :white_circle: | :white_check_mark: |
+| [Keyboard & Touchpad](#keyboard--touchpad) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [NVMe](#nvme) (internal SSD) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Screen](#screen) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Suspend & Hibernation](#suspend--hibernation) | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: | :red_circle: |
+| [System Management Controller](#system-management-controller) | :white_check_mark: | :white_check_mark:<sup>*</sup> | :white_check_mark:<sup>*</sup> | :white_check_mark: | :white_check_mark:<sup>*</sup> | :white_check_mark:<sup>*</sup> |
+| [Thunderbolt](#thunderbolt) | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: |
+| [Touch Bar](#touch-bar) | :white_circle: | :white_check_mark:<sup>*</sup> | :white_check_mark:<sup>*</sup> | :white_circle: | :white_check_mark:<sup>*</sup> | :white_check_mark:<sup>*</sup> |
+| [Touch ID](#touch-id) | :white_circle: | :red_circle: | :red_circle: | :white_circle: | :red_circle: | :red_circle: |
+| [USB](#usb) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [Wi-Fi](#wi-fi) | :white_check_mark: | :red_circle: | :red_circle: | :white_check_mark: | :red_circle: | :red_circle: |
+
+:white_check_mark: working
+:white_check_mark:<sup>*</sup> partially working
+:red_circle: not working
+:white_circle: not available
+:grey_question: unknown
 
 
 ## Booting
