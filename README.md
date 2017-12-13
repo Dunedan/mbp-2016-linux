@@ -44,7 +44,7 @@ is appreciated.
 | [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Suspend & Hibernation](#suspend--hibernation) |![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
 | [System Management Controller](#system-management-controller) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
-| [Thunderbolt](#thunderbolt) | ![all models unknown](https://img.shields.io/badge/all_models-unknown-lightgrey.svg) |
+| [Thunderbolt](#thunderbolt) | ![MacBookPro13,1 unknown](https://img.shields.io/badge/MacBookPro13%2C1-unknown-lightgrey.svg) ![MacBookPro13,2 unknown](https://img.shields.io/badge/MacBookPro13%2C2-unknown-lightgrey.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,1 unknown](https://img.shields.io/badge/MacBookPro14%2C1-unknown-lightgrey.svg) ![MacBookPro14,2 unknown](https://img.shields.io/badge/MacBookPro14%2C2-unknown-lightgrey.svg) ![MacBookPro14,3 unknown](https://img.shields.io/badge/MacBookPro14%2C3-unknown-lightgrey.svg) |
 | [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
 | [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
@@ -249,9 +249,12 @@ An accelerometer doesn't seem to be available at all.
 
 ## Thunderbolt
 
-![MacBookPro13,1 unknown](https://img.shields.io/badge/MacBookPro13%2C1-unknown-lightgrey.svg) ![MacBookPro13,2 unknown](https://img.shields.io/badge/MacBookPro13%2C2-unknown-lightgrey.svg) ![MacBookPro13,3 unknown](https://img.shields.io/badge/MacBookPro13%2C3-unknown-lightgrey.svg) ![MacBookPro14,1 unknown](https://img.shields.io/badge/MacBookPro14%2C1-unknown-lightgrey.svg) ![MacBookPro14,2 unknown](https://img.shields.io/badge/MacBookPro14%2C2-unknown-lightgrey.svg) ![MacBookPro14,3 unknown](https://img.shields.io/badge/MacBookPro14%2C3-unknown-lightgrey.svg)
+![MacBookPro13,1 unknown](https://img.shields.io/badge/MacBookPro13%2C1-unknown-lightgrey.svg) ![MacBookPro13,2 unknown](https://img.shields.io/badge/MacBookPro13%2C2-unknown-lightgrey.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,1 unknown](https://img.shields.io/badge/MacBookPro14%2C1-unknown-lightgrey.svg) ![MacBookPro14,2 unknown](https://img.shields.io/badge/MacBookPro14%2C2-unknown-lightgrey.svg) ![MacBookPro14,3 unknown](https://img.shields.io/badge/MacBookPro14%2C3-unknown-lightgrey.svg)
 
-Untested, but probably working with the following patch:
+Tested on the Macbook13,3 with a HP Thunderbolt 3 Dock. Displayport
+Port with a 4k Display with 60 Hz works.
+
+Untested on other models, but probably working with the following patch:
 https://gist.github.com/l1k/3ffbd63ac337fa85530f6db3e9ee77e9
 
 See also:
