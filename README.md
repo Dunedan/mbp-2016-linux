@@ -249,15 +249,15 @@ An accelerometer doesn't seem to be available at all.
 
 ## Thunderbolt
 
-!![all models working](https://img.shields.io/badge/all_models-working-green.svg)
+![all models working](https://img.shields.io/badge/all_models-working-green.svg)
+Works out of the box with Linux 4.13 and above.
+
 Tested on the Macbook13,3 with a HP Thunderbolt 3 Dock. Displayport
 Port with a 4k Display with 60 Hz works. The (PCI) Ethernet inside the
 dock and USB/Audio from the dock work too.
 
-Untested on other models, but probably working with the following patch:
+On older Linux version you will the following patch:
 https://gist.github.com/l1k/3ffbd63ac337fa85530f6db3e9ee77e9
-
-The patch is included in Linux mailine beginning from 4.13
 
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=189731
@@ -336,7 +336,8 @@ See also:
 
 * On the Touch Bar models the FaceTime HD camera is working out of the box.
   ([linux/commit/7b848ed](https://github.com/torvalds/linux/commit/7b848ed60f409ce860023c79aa9a5c8d1833ebab))
-
+  * Includes support for the Alpine Ridge 4C 2016 Thunderbolt Chip used in the Macbooks
+  
 #### 4.14
 
 * Includes the foundation for upstreaming the
