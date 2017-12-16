@@ -249,7 +249,8 @@ An accelerometer doesn't seem to be available at all.
 
 ## Thunderbolt
 
-![all models working](https://img.shields.io/badge/all_models-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+
 Works out of the box with Linux 4.13 and above.
 
 Tested on the Macbook13,3 with a HP Thunderbolt 3 Dock. Displayport
