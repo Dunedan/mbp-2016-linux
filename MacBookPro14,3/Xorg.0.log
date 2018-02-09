@@ -1,0 +1,804 @@
+[     9.721] 
+X.Org X Server 1.19.6
+Release Date: 2017-12-20
+[     9.721] X Protocol Version 11, Revision 0
+[     9.721] Build Operating System: Linux 4.4.0-101-generic x86_64 Ubuntu
+[     9.721] Current Operating System: Linux hostname 4.13.0-32-generic #35-Ubuntu SMP Thu Jan 25 09:13:46 UTC 2018 x86_64
+[     9.721] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.13.0-32-generic.efi.signed root=UUID=18f14c5a-4485-4f3d-946a-4552c006cbe4 ro quiet splash vt.handoff=1
+[     9.721] Build Date: 26 January 2018  03:33:09PM
+[     9.721] xorg-server 2:1.19.6-1ubuntu1 (For technical support please see http://www.ubuntu.com/support) 
+[     9.721] Current version of pixman: 0.34.0
+[     9.721] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     9.721] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     9.721] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Feb  9 21:35:33 2018
+[     9.721] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     9.721] (==) No Layout section.  Using the first Screen section.
+[     9.721] (==) No screen section available. Using defaults.
+[     9.721] (**) |-->Screen "Default Screen Section" (0)
+[     9.721] (**) |   |-->Monitor "<default monitor>"
+[     9.722] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     9.722] (==) Automatically adding devices
+[     9.722] (==) Automatically enabling devices
+[     9.722] (==) Automatically adding GPU devices
+[     9.722] (==) Automatically binding GPU devices
+[     9.722] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     9.722] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     9.722] 	Entry deleted from font path.
+[     9.722] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     9.722] 	Entry deleted from font path.
+[     9.722] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     9.722] 	Entry deleted from font path.
+[     9.722] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     9.722] 	Entry deleted from font path.
+[     9.722] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     9.722] 	Entry deleted from font path.
+[     9.722] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[     9.722] (==) ModulePath set to "/usr/lib/x86_64-linux-gnu/xorg/extra-modules,/usr/lib/xorg/extra-modules,/usr/lib/xorg/modules"
+[     9.722] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     9.722] (II) Loader magic: 0x5571fa094020
+[     9.722] (II) Module ABI versions:
+[     9.722] 	X.Org ANSI C Emulation: 0.4
+[     9.722] 	X.Org Video Driver: 23.0
+[     9.722] 	X.Org XInput driver : 24.1
+[     9.722] 	X.Org Server Extension : 10.0
+[     9.722] (++) using VT number 7
+
+[     9.722] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     9.722] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     9.727] (--) PCI:*(0:1:0:0) 1002:67ef:106b:0179 rev 192, Mem @ 0xb0000000/268435456, 0xc0000000/2097152, 0x82600000/262144, I/O @ 0x00004000/256, BIOS @ 0x????????/131072
+[     9.727] (II) LoadModule: "glx"
+[     9.728] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     9.731] (II) Module glx: vendor="X.Org Foundation"
+[     9.731] 	compiled for 1.19.6, module version = 1.0.0
+[     9.731] 	ABI class: X.Org Server Extension, version 10.0
+[     9.731] (II) Applying OutputClass "AMDgpu" to /dev/dri/card0
+[     9.731] 	loading driver: amdgpu
+[     9.731] (==) Matched amdgpu as autoconfigured driver 0
+[     9.731] (==) Matched ati as autoconfigured driver 1
+[     9.731] (==) Matched ati as autoconfigured driver 2
+[     9.731] (==) Matched modesetting as autoconfigured driver 3
+[     9.731] (==) Matched fbdev as autoconfigured driver 4
+[     9.731] (==) Matched vesa as autoconfigured driver 5
+[     9.731] (==) Assigned the driver to the xf86ConfigLayout
+[     9.731] (II) LoadModule: "amdgpu"
+[     9.731] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[     9.732] (II) Module amdgpu: vendor="X.Org Foundation"
+[     9.732] 	compiled for 1.19.3, module version = 1.4.0
+[     9.732] 	Module class: X.Org Video Driver
+[     9.732] 	ABI class: X.Org Video Driver, version 23.0
+[     9.732] (II) LoadModule: "ati"
+[     9.732] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[     9.732] (II) Module ati: vendor="X.Org Foundation"
+[     9.733] 	compiled for 1.19.3, module version = 7.10.0
+[     9.733] 	Module class: X.Org Video Driver
+[     9.733] 	ABI class: X.Org Video Driver, version 23.0
+[     9.806] (II) LoadModule: "radeon"
+[     9.806] (II) Loading /usr/lib/xorg/modules/drivers/radeon_drv.so
+[     9.808] (II) Module radeon: vendor="X.Org Foundation"
+[     9.808] 	compiled for 1.19.3, module version = 7.10.0
+[     9.808] 	Module class: X.Org Video Driver
+[     9.808] 	ABI class: X.Org Video Driver, version 23.0
+[     9.808] (II) LoadModule: "modesetting"
+[     9.808] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     9.808] (II) Module modesetting: vendor="X.Org Foundation"
+[     9.809] 	compiled for 1.19.6, module version = 1.19.6
+[     9.809] 	Module class: X.Org Video Driver
+[     9.809] 	ABI class: X.Org Video Driver, version 23.0
+[     9.809] (II) LoadModule: "fbdev"
+[     9.809] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     9.809] (II) Module fbdev: vendor="X.Org Foundation"
+[     9.809] 	compiled for 1.19.3, module version = 0.4.4
+[     9.809] 	Module class: X.Org Video Driver
+[     9.809] 	ABI class: X.Org Video Driver, version 23.0
+[     9.809] (II) LoadModule: "vesa"
+[     9.809] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     9.809] (II) Module vesa: vendor="X.Org Foundation"
+[     9.809] 	compiled for 1.19.3, module version = 2.3.4
+[     9.809] 	Module class: X.Org Video Driver
+[     9.809] 	ABI class: X.Org Video Driver, version 23.0
+[     9.809] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[     9.809] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[     9.811] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     9.811] (II) FBDEV: driver for framebuffer: fbdev
+[     9.811] (II) VESA: driver for VESA chipsets: vesa
+[     9.825] (II) [KMS] Kernel modesetting enabled.
+[     9.829] (WW) Falling back to old probe method for modesetting
+[     9.829] (WW) Falling back to old probe method for fbdev
+[     9.829] (II) Loading sub module "fbdevhw"
+[     9.829] (II) LoadModule: "fbdevhw"
+[     9.829] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     9.829] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     9.829] 	compiled for 1.19.6, module version = 0.0.2
+[     9.829] 	ABI class: X.Org Video Driver, version 23.0
+[     9.829] (WW) Falling back to old probe method for vesa
+[     9.829] (II) AMDGPU(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     9.829] (==) AMDGPU(0): Depth 24, (--) framebuffer bpp 32
+[     9.829] (II) AMDGPU(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[     9.829] (==) AMDGPU(0): Default visual is TrueColor
+[     9.829] (==) AMDGPU(0): RGB weight 888
+[     9.829] (II) AMDGPU(0): Using 8 bits per RGB (8 bit DAC)
+[     9.829] (--) AMDGPU(0): Chipset: "AMD Radeon (TM) RX Graphics" (ChipID = 0x67ef)
+[     9.829] (II) Loading sub module "fb"
+[     9.829] (II) LoadModule: "fb"
+[     9.829] (II) Loading /usr/lib/xorg/modules/libfb.so
+[     9.829] (II) Module fb: vendor="X.Org Foundation"
+[     9.829] 	compiled for 1.19.6, module version = 1.0.0
+[     9.829] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     9.829] (II) Loading sub module "dri2"
+[     9.829] (II) LoadModule: "dri2"
+[     9.829] (II) Module "dri2" already built-in
+[     9.875] (II) Loading sub module "glamoregl"
+[     9.875] (II) LoadModule: "glamoregl"
+[     9.875] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[     9.883] (II) Module glamoregl: vendor="X.Org Foundation"
+[     9.883] 	compiled for 1.19.6, module version = 1.0.0
+[     9.883] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     9.883] (II) glamor: OpenGL accelerated X.org driver based.
+[     9.892] (II) glamor: EGL version 1.5 (DRI2):
+[     9.894] (II) AMDGPU(0): glamor detected, initialising EGL layer.
+[     9.894] (==) AMDGPU(0): TearFree property default: auto
+[     9.894] (II) AMDGPU(0): KMS Pageflipping: enabled
+[     9.899] (II) AMDGPU(0): Output eDP has no monitor section
+[     9.928] (II) AMDGPU(0): Output DisplayPort-0 has no monitor section
+[     9.961] (II) AMDGPU(0): Output DisplayPort-1 has no monitor section
+[     9.993] (II) AMDGPU(0): Output DisplayPort-2 has no monitor section
+[    10.025] (II) AMDGPU(0): Output DisplayPort-3 has no monitor section
+[    10.032] (II) AMDGPU(0): EDID for output eDP
+[    10.032] (II) AMDGPU(0): Manufacturer: APP  Model: a030  Serial#: 0
+[    10.032] (II) AMDGPU(0): Year: 2015  Week: 38
+[    10.032] (II) AMDGPU(0): EDID Version: 1.4
+[    10.033] (II) AMDGPU(0): Digital Display Input
+[    10.033] (II) AMDGPU(0): 10 bits per channel
+[    10.033] (II) AMDGPU(0): Digital interface is DisplayPort
+[    10.033] (II) AMDGPU(0): Max Image Size [cm]: horiz.: 33  vert.: 21
+[    10.033] (II) AMDGPU(0): Gamma: 2.20
+[    10.033] (II) AMDGPU(0): No DPMS capabilities specified
+[    10.033] (II) AMDGPU(0): Supported color encodings: RGB 4:4:4 
+[    10.033] (II) AMDGPU(0): First detailed timing is preferred mode
+[    10.033] (II) AMDGPU(0): Preferred mode is native pixel format and refresh rate
+[    10.033] (II) AMDGPU(0): redX: 0.680 redY: 0.320   greenX: 0.265 greenY: 0.690
+[    10.033] (II) AMDGPU(0): blueX: 0.150 blueY: 0.052   whiteX: 0.312 whiteY: 0.329
+[    10.033] (II) AMDGPU(0): Manufacturer's mask: 0
+[    10.033] (II) AMDGPU(0): Supported detailed timing:
+[    10.033] (II) AMDGPU(0): clock: 328.9 MHz   Image Size:  331 x 207 mm
+[    10.033] (II) AMDGPU(0): h_active: 2880  h_sync: 2888  h_sync_end 2920 h_blank_end 2960 h_border: 0
+[    10.033] (II) AMDGPU(0): v_active: 1800  v_sync: 1838  v_sync_end 1846 v_blanking: 1852 v_border: 0
+[    10.033] (II) AMDGPU(0): Monitor name: Color LCD
+[    10.033] (II) AMDGPU(0): EDID (in hex):
+[    10.033] (II) AMDGPU(0): 	00ffffffffffff00061030a000000000
+[    10.033] (II) AMDGPU(0): 	26190104b5211578020f91ae5243b026
+[    10.033] (II) AMDGPU(0): 	0d505400000001010101010101010101
+[    10.033] (II) AMDGPU(0): 	0101010101017c804050b00834700820
+[    10.033] (II) AMDGPU(0): 	68084bcf1000001a0000001000000000
+[    10.033] (II) AMDGPU(0): 	00000000000000000000000000fc0043
+[    10.033] (II) AMDGPU(0): 	6f6c6f72204c43440a20202000000010
+[    10.033] (II) AMDGPU(0): 	000000000000000000000000000000c1
+[    10.033] (II) AMDGPU(0): Printing probed modes for output eDP
+[    10.033] (II) AMDGPU(0): Modeline "2880x1800"x60.0  328.92  2880 2888 2920 2960  1800 1838 1846 1852 +hsync -vsync (111.1 kHz eP)
+[    10.033] (II) AMDGPU(0): Modeline "1920x1200"x60.0  193.48  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync (74.6 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1920x1080"x60.0  173.11  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync (67.2 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1600x1200"x60.0  161.23  1600 1712 1880 2160  1200 1203 1207 1245 -hsync +vsync (74.6 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1680x1050"x60.0  146.36  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1400x1050"x60.0  121.79  1400 1488 1632 1864  1050 1053 1057 1089 -hsync +vsync (65.3 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1280x1024"x59.9  109.10  1280 1368 1496 1712  1024 1027 1034 1063 -hsync +vsync (63.7 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1440x900"x60.0  106.68  1440 1528 1672 1904  900 903 909 934 -hsync +vsync (56.0 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1280x960"x60.0  101.34  1280 1360 1488 1696  960 963 967 996 -hsync +vsync (59.8 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1280x854"x60.0   89.34  1280 1352 1480 1680  854 857 867 887 -hsync +vsync (53.2 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1280x800"x60.0   83.71  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.8 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1280x720"x60.0   74.65  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.9 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1152x768"x59.9   71.95  1152 1216 1328 1504  768 771 781 798 -hsync +vsync (47.8 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "1024x768"x59.9   63.53  1024 1072 1176 1328  768 771 775 798 -hsync +vsync (47.8 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "848x480"x59.9   31.65  848 872 952 1056  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "720x480"x59.9   26.85  720 744 808 896  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    10.033] (II) AMDGPU(0): Modeline "640x480"x59.9   23.98  640 664 720 800  480 483 487 500 -hsync +vsync (30.0 kHz)
+[    10.065] (II) AMDGPU(0): EDID for output DisplayPort-0
+[    10.097] (II) AMDGPU(0): EDID for output DisplayPort-1
+[    10.129] (II) AMDGPU(0): EDID for output DisplayPort-2
+[    10.161] (II) AMDGPU(0): EDID for output DisplayPort-3
+[    10.161] (II) AMDGPU(0): Output eDP connected
+[    10.161] (II) AMDGPU(0): Output DisplayPort-0 disconnected
+[    10.161] (II) AMDGPU(0): Output DisplayPort-1 disconnected
+[    10.161] (II) AMDGPU(0): Output DisplayPort-2 disconnected
+[    10.161] (II) AMDGPU(0): Output DisplayPort-3 disconnected
+[    10.161] (II) AMDGPU(0): Using exact sizes for initial modes
+[    10.161] (II) AMDGPU(0): Output eDP using initial mode 2880x1800 +0+0
+[    10.161] (II) AMDGPU(0): mem size init: gart size :ffe3a000 vram size: s:fe0ca000 visible:e0ca000
+[    10.161] (==) AMDGPU(0): DPI set to (96, 96)
+[    10.161] (==) AMDGPU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    10.161] (II) Loading sub module "ramdac"
+[    10.161] (II) LoadModule: "ramdac"
+[    10.161] (II) Module "ramdac" already built-in
+[    10.161] (II) UnloadModule: "radeon"
+[    10.161] (II) Unloading radeon
+[    10.161] (II) UnloadModule: "modesetting"
+[    10.161] (II) Unloading modesetting
+[    10.162] (II) UnloadModule: "fbdev"
+[    10.162] (II) Unloading fbdev
+[    10.162] (II) UnloadSubModule: "fbdevhw"
+[    10.162] (II) Unloading fbdevhw
+[    10.162] (II) UnloadModule: "vesa"
+[    10.162] (II) Unloading vesa
+[    10.162] (--) Depth 24 pixmap format is 32 bpp
+[    10.164] (II) AMDGPU(0): [DRI2] Setup complete
+[    10.164] (II) AMDGPU(0): [DRI2]   DRI driver: radeonsi
+[    10.164] (II) AMDGPU(0): [DRI2]   VDPAU driver: radeonsi
+[    10.164] (II) AMDGPU(0): Front buffer pitch: 11776 bytes
+[    10.165] (II) AMDGPU(0): SYNC extension fences enabled
+[    10.165] (II) AMDGPU(0): Present extension enabled
+[    10.165] (==) AMDGPU(0): DRI3 enabled
+[    10.165] (==) AMDGPU(0): Backing store enabled
+[    10.165] (II) AMDGPU(0): Direct rendering enabled
+[    10.169] (II) AMDGPU(0): Use GLAMOR acceleration.
+[    10.169] (II) AMDGPU(0): Acceleration enabled
+[    10.169] (==) AMDGPU(0): DPMS enabled
+[    10.169] (==) AMDGPU(0): Silken mouse enabled
+[    10.169] (II) AMDGPU(0): Set up textured video (glamor)
+[    10.169] (II) AMDGPU(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[    10.170] (--) RandR disabled
+[    10.177] (II) SELinux: Disabled on system
+[    10.181] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+[    10.181] (II) AIGLX: enabled GLX_ARB_create_context
+[    10.181] (II) AIGLX: enabled GLX_ARB_create_context_profile
+[    10.181] (II) AIGLX: enabled GLX_EXT_create_context_es{,2}_profile
+[    10.182] (II) AIGLX: enabled GLX_INTEL_swap_event
+[    10.182] (II) AIGLX: enabled GLX_SGI_swap_control
+[    10.182] (II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
+[    10.182] (II) AIGLX: enabled GLX_ARB_fbconfig_float
+[    10.182] (II) AIGLX: enabled GLX_EXT_fbconfig_packed_float
+[    10.182] (II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+[    10.182] (II) AIGLX: enabled GLX_ARB_create_context_robustness
+[    10.185] (II) AIGLX: Loaded and initialized radeonsi
+[    10.185] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    10.187] (II) AMDGPU(0): Setting screen physical size to 762 x 476
+[    10.252] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    10.252] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    10.252] (II) LoadModule: "libinput"
+[    10.252] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    10.254] (II) Module libinput: vendor="X.Org Foundation"
+[    10.254] 	compiled for 1.19.5, module version = 0.26.0
+[    10.254] 	Module class: X.Org XInput Driver
+[    10.254] 	ABI class: X.Org XInput driver, version 24.1
+[    10.254] (II) Using input driver 'libinput' for 'Power Button'
+[    10.254] (**) Power Button: always reports core events
+[    10.254] (**) Option "Device" "/dev/input/event3"
+[    10.254] (**) Option "_source" "server/udev"
+[    10.254] (II) event3  - (II) Power Button: (II) is tagged by udev as: Keyboard
+[    10.254] (II) event3  - (II) Power Button: (II) device is a keyboard
+[    10.254] (II) event3  - (II) Power Button: (II) device removed
+[    10.272] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    10.272] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    10.272] (**) Option "xkb_model" "pc105"
+[    10.272] (**) Option "xkb_layout" "fi"
+[    10.272] (**) Option "xkb_variant" "nodeadkeys"
+[    10.281] (II) event3  - (II) Power Button: (II) is tagged by udev as: Keyboard
+[    10.281] (II) event3  - (II) Power Button: (II) device is a keyboard
+[    10.282] (II) config/udev: Adding input device Video Bus (/dev/input/event4)
+[    10.282] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    10.282] (II) Using input driver 'libinput' for 'Video Bus'
+[    10.282] (**) Video Bus: always reports core events
+[    10.282] (**) Option "Device" "/dev/input/event4"
+[    10.282] (**) Option "_source" "server/udev"
+[    10.282] (II) event4  - (II) Video Bus: (II) is tagged by udev as: Keyboard
+[    10.282] (II) event4  - (II) Video Bus: (II) device is a keyboard
+[    10.282] (II) event4  - (II) Video Bus: (II) device removed
+[    10.300] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:01/LNXVIDEO:00/input/input4/event4"
+[    10.300] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    10.300] (**) Option "xkb_model" "pc105"
+[    10.300] (**) Option "xkb_layout" "fi"
+[    10.300] (**) Option "xkb_variant" "nodeadkeys"
+[    10.300] (II) event4  - (II) Video Bus: (II) is tagged by udev as: Keyboard
+[    10.300] (II) event4  - (II) Video Bus: (II) device is a keyboard
+[    10.300] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    10.300] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    10.300] (II) Using input driver 'libinput' for 'Power Button'
+[    10.300] (**) Power Button: always reports core events
+[    10.300] (**) Option "Device" "/dev/input/event1"
+[    10.300] (**) Option "_source" "server/udev"
+[    10.301] (II) event1  - (II) Power Button: (II) is tagged by udev as: Keyboard
+[    10.301] (II) event1  - (II) Power Button: (II) device is a keyboard
+[    10.301] (II) event1  - (II) Power Button: (II) device removed
+[    10.316] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    10.316] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    10.316] (**) Option "xkb_model" "pc105"
+[    10.316] (**) Option "xkb_layout" "fi"
+[    10.316] (**) Option "xkb_variant" "nodeadkeys"
+[    10.317] (II) event1  - (II) Power Button: (II) is tagged by udev as: Keyboard
+[    10.317] (II) event1  - (II) Power Button: (II) device is a keyboard
+[    10.318] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    10.318] (II) No input driver specified, ignoring this device.
+[    10.318] (II) This device may have been added with another device file.
+[    10.319] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    10.319] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    10.319] (II) Using input driver 'libinput' for 'Sleep Button'
+[    10.319] (**) Sleep Button: always reports core events
+[    10.319] (**) Option "Device" "/dev/input/event2"
+[    10.319] (**) Option "_source" "server/udev"
+[    10.319] (II) event2  - (II) Sleep Button: (II) is tagged by udev as: Keyboard
+[    10.319] (II) event2  - (II) Sleep Button: (II) device is a keyboard
+[    10.319] (II) event2  - (II) Sleep Button: (II) device removed
+[    10.352] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    10.352] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    10.352] (**) Option "xkb_model" "pc105"
+[    10.352] (**) Option "xkb_layout" "fi"
+[    10.352] (**) Option "xkb_variant" "nodeadkeys"
+[    10.353] (II) event2  - (II) Sleep Button: (II) is tagged by udev as: Keyboard
+[    10.353] (II) event2  - (II) Sleep Button: (II) device is a keyboard
+[    10.354] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event10)
+[    10.354] (II) No input driver specified, ignoring this device.
+[    10.354] (II) This device may have been added with another device file.
+[    10.355] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=11 (/dev/input/event11)
+[    10.355] (II) No input driver specified, ignoring this device.
+[    10.355] (II) This device may have been added with another device file.
+[    10.355] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event6)
+[    10.355] (II) No input driver specified, ignoring this device.
+[    10.356] (II) This device may have been added with another device file.
+[    10.356] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event7)
+[    10.356] (II) No input driver specified, ignoring this device.
+[    10.356] (II) This device may have been added with another device file.
+[    10.357] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event8)
+[    10.357] (II) No input driver specified, ignoring this device.
+[    10.357] (II) This device may have been added with another device file.
+[    10.358] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event9)
+[    10.358] (II) No input driver specified, ignoring this device.
+[    10.358] (II) This device may have been added with another device file.
+[    10.359] (II) config/udev: Adding input device Dell Dell USB Entry Keyboard (/dev/input/event5)
+[    10.359] (**) Dell Dell USB Entry Keyboard: Applying InputClass "libinput keyboard catchall"
+[    10.359] (II) Using input driver 'libinput' for 'Dell Dell USB Entry Keyboard'
+[    10.359] (**) Dell Dell USB Entry Keyboard: always reports core events
+[    10.359] (**) Option "Device" "/dev/input/event5"
+[    10.359] (**) Option "_source" "server/udev"
+[    10.360] (II) event5  - (II) Dell Dell USB Entry Keyboard: (II) is tagged by udev as: Keyboard
+[    10.360] (II) event5  - (II) Dell Dell USB Entry Keyboard: (II) device is a keyboard
+[    10.360] (II) event5  - (II) Dell Dell USB Entry Keyboard: (II) device removed
+[    10.380] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:413C:2107.0001/input/input5/event5"
+[    10.380] (II) XINPUT: Adding extended input device "Dell Dell USB Entry Keyboard" (type: KEYBOARD, id 10)
+[    10.380] (**) Option "xkb_model" "pc105"
+[    10.380] (**) Option "xkb_layout" "fi"
+[    10.380] (**) Option "xkb_variant" "nodeadkeys"
+[    10.382] (II) event5  - (II) Dell Dell USB Entry Keyboard: (II) is tagged by udev as: Keyboard
+[    10.382] (II) event5  - (II) Dell Dell USB Entry Keyboard: (II) device is a keyboard
+[    10.382] (II) config/udev: Adding input device (unnamed) (/dev/ttyS4)
+[    10.382] (II) No input driver specified, ignoring this device.
+[    10.382] (II) This device may have been added with another device file.
+[    10.383] (II) config/udev: Adding input device (unnamed) (/dev/ttyS5)
+[    10.383] (II) No input driver specified, ignoring this device.
+[    10.383] (II) This device may have been added with another device file.
+[    10.383] (II) config/udev: Adding input device (unnamed) (/dev/ttyS6)
+[    10.383] (II) No input driver specified, ignoring this device.
+[    10.383] (II) This device may have been added with another device file.
+[    10.383] (II) config/udev: Adding input device (unnamed) (/dev/ttyS0)
+[    10.383] (II) No input driver specified, ignoring this device.
+[    10.383] (II) This device may have been added with another device file.
+[    10.384] (II) config/udev: Adding input device (unnamed) (/dev/ttyS1)
+[    10.384] (II) No input driver specified, ignoring this device.
+[    10.384] (II) This device may have been added with another device file.
+[    10.384] (II) config/udev: Adding input device (unnamed) (/dev/ttyS10)
+[    10.384] (II) No input driver specified, ignoring this device.
+[    10.384] (II) This device may have been added with another device file.
+[    10.384] (II) config/udev: Adding input device (unnamed) (/dev/ttyS11)
+[    10.385] (II) No input driver specified, ignoring this device.
+[    10.385] (II) This device may have been added with another device file.
+[    10.385] (II) config/udev: Adding input device (unnamed) (/dev/ttyS12)
+[    10.385] (II) No input driver specified, ignoring this device.
+[    10.385] (II) This device may have been added with another device file.
+[    10.385] (II) config/udev: Adding input device (unnamed) (/dev/ttyS13)
+[    10.385] (II) No input driver specified, ignoring this device.
+[    10.385] (II) This device may have been added with another device file.
+[    10.385] (II) config/udev: Adding input device (unnamed) (/dev/ttyS14)
+[    10.385] (II) No input driver specified, ignoring this device.
+[    10.385] (II) This device may have been added with another device file.
+[    10.386] (II) config/udev: Adding input device (unnamed) (/dev/ttyS15)
+[    10.386] (II) No input driver specified, ignoring this device.
+[    10.386] (II) This device may have been added with another device file.
+[    10.386] (II) config/udev: Adding input device (unnamed) (/dev/ttyS16)
+[    10.386] (II) No input driver specified, ignoring this device.
+[    10.386] (II) This device may have been added with another device file.
+[    10.386] (II) config/udev: Adding input device (unnamed) (/dev/ttyS17)
+[    10.386] (II) No input driver specified, ignoring this device.
+[    10.386] (II) This device may have been added with another device file.
+[    10.387] (II) config/udev: Adding input device (unnamed) (/dev/ttyS18)
+[    10.387] (II) No input driver specified, ignoring this device.
+[    10.387] (II) This device may have been added with another device file.
+[    10.387] (II) config/udev: Adding input device (unnamed) (/dev/ttyS19)
+[    10.387] (II) No input driver specified, ignoring this device.
+[    10.387] (II) This device may have been added with another device file.
+[    10.387] (II) config/udev: Adding input device (unnamed) (/dev/ttyS2)
+[    10.387] (II) No input driver specified, ignoring this device.
+[    10.387] (II) This device may have been added with another device file.
+[    10.388] (II) config/udev: Adding input device (unnamed) (/dev/ttyS20)
+[    10.388] (II) No input driver specified, ignoring this device.
+[    10.388] (II) This device may have been added with another device file.
+[    10.388] (II) config/udev: Adding input device (unnamed) (/dev/ttyS21)
+[    10.388] (II) No input driver specified, ignoring this device.
+[    10.388] (II) This device may have been added with another device file.
+[    10.389] (II) config/udev: Adding input device (unnamed) (/dev/ttyS22)
+[    10.389] (II) No input driver specified, ignoring this device.
+[    10.389] (II) This device may have been added with another device file.
+[    10.389] (II) config/udev: Adding input device (unnamed) (/dev/ttyS23)
+[    10.389] (II) No input driver specified, ignoring this device.
+[    10.389] (II) This device may have been added with another device file.
+[    10.389] (II) config/udev: Adding input device (unnamed) (/dev/ttyS24)
+[    10.389] (II) No input driver specified, ignoring this device.
+[    10.389] (II) This device may have been added with another device file.
+[    10.390] (II) config/udev: Adding input device (unnamed) (/dev/ttyS25)
+[    10.390] (II) No input driver specified, ignoring this device.
+[    10.390] (II) This device may have been added with another device file.
+[    10.390] (II) config/udev: Adding input device (unnamed) (/dev/ttyS26)
+[    10.390] (II) No input driver specified, ignoring this device.
+[    10.390] (II) This device may have been added with another device file.
+[    10.390] (II) config/udev: Adding input device (unnamed) (/dev/ttyS27)
+[    10.390] (II) No input driver specified, ignoring this device.
+[    10.390] (II) This device may have been added with another device file.
+[    10.391] (II) config/udev: Adding input device (unnamed) (/dev/ttyS28)
+[    10.391] (II) No input driver specified, ignoring this device.
+[    10.391] (II) This device may have been added with another device file.
+[    10.391] (II) config/udev: Adding input device (unnamed) (/dev/ttyS29)
+[    10.391] (II) No input driver specified, ignoring this device.
+[    10.391] (II) This device may have been added with another device file.
+[    10.391] (II) config/udev: Adding input device (unnamed) (/dev/ttyS3)
+[    10.391] (II) No input driver specified, ignoring this device.
+[    10.391] (II) This device may have been added with another device file.
+[    10.392] (II) config/udev: Adding input device (unnamed) (/dev/ttyS30)
+[    10.392] (II) No input driver specified, ignoring this device.
+[    10.392] (II) This device may have been added with another device file.
+[    10.392] (II) config/udev: Adding input device (unnamed) (/dev/ttyS31)
+[    10.392] (II) No input driver specified, ignoring this device.
+[    10.392] (II) This device may have been added with another device file.
+[    10.392] (II) config/udev: Adding input device (unnamed) (/dev/ttyS7)
+[    10.392] (II) No input driver specified, ignoring this device.
+[    10.392] (II) This device may have been added with another device file.
+[    10.393] (II) config/udev: Adding input device (unnamed) (/dev/ttyS8)
+[    10.393] (II) No input driver specified, ignoring this device.
+[    10.393] (II) This device may have been added with another device file.
+[    10.393] (II) config/udev: Adding input device (unnamed) (/dev/ttyS9)
+[    10.393] (II) No input driver specified, ignoring this device.
+[    10.393] (II) This device may have been added with another device file.
+[    10.393] (II) config/udev: Adding input device (unnamed) (/dev/input/mice)
+[    10.393] (II) No input driver specified, ignoring this device.
+[    10.393] (II) This device may have been added with another device file.
+[    10.393] (II) config/udev: Adding input device (unnamed) (/dev/console)
+[    10.394] (II) No input driver specified, ignoring this device.
+[    10.394] (II) This device may have been added with another device file.
+[    10.394] (II) config/udev: Adding input device (unnamed) (/dev/ptmx)
+[    10.394] (II) No input driver specified, ignoring this device.
+[    10.394] (II) This device may have been added with another device file.
+[    10.394] (II) config/udev: Adding input device (unnamed) (/dev/tty)
+[    10.394] (II) No input driver specified, ignoring this device.
+[    10.394] (II) This device may have been added with another device file.
+[    10.394] (II) config/udev: Adding input device (unnamed) (/dev/tty0)
+[    10.394] (II) No input driver specified, ignoring this device.
+[    10.394] (II) This device may have been added with another device file.
+[    10.394] (II) config/udev: Adding input device (unnamed) (/dev/tty1)
+[    10.394] (II) No input driver specified, ignoring this device.
+[    10.394] (II) This device may have been added with another device file.
+[    10.395] (II) config/udev: Adding input device (unnamed) (/dev/tty10)
+[    10.395] (II) No input driver specified, ignoring this device.
+[    10.395] (II) This device may have been added with another device file.
+[    10.395] (II) config/udev: Adding input device (unnamed) (/dev/tty11)
+[    10.395] (II) No input driver specified, ignoring this device.
+[    10.395] (II) This device may have been added with another device file.
+[    10.395] (II) config/udev: Adding input device (unnamed) (/dev/tty12)
+[    10.395] (II) No input driver specified, ignoring this device.
+[    10.395] (II) This device may have been added with another device file.
+[    10.395] (II) config/udev: Adding input device (unnamed) (/dev/tty13)
+[    10.395] (II) No input driver specified, ignoring this device.
+[    10.395] (II) This device may have been added with another device file.
+[    10.395] (II) config/udev: Adding input device (unnamed) (/dev/tty14)
+[    10.396] (II) No input driver specified, ignoring this device.
+[    10.396] (II) This device may have been added with another device file.
+[    10.396] (II) config/udev: Adding input device (unnamed) (/dev/tty15)
+[    10.396] (II) No input driver specified, ignoring this device.
+[    10.396] (II) This device may have been added with another device file.
+[    10.396] (II) config/udev: Adding input device (unnamed) (/dev/tty16)
+[    10.396] (II) No input driver specified, ignoring this device.
+[    10.396] (II) This device may have been added with another device file.
+[    10.396] (II) config/udev: Adding input device (unnamed) (/dev/tty17)
+[    10.396] (II) No input driver specified, ignoring this device.
+[    10.396] (II) This device may have been added with another device file.
+[    10.397] (II) config/udev: Adding input device (unnamed) (/dev/tty18)
+[    10.397] (II) No input driver specified, ignoring this device.
+[    10.397] (II) This device may have been added with another device file.
+[    10.397] (II) config/udev: Adding input device (unnamed) (/dev/tty19)
+[    10.397] (II) No input driver specified, ignoring this device.
+[    10.397] (II) This device may have been added with another device file.
+[    10.397] (II) config/udev: Adding input device (unnamed) (/dev/tty2)
+[    10.397] (II) No input driver specified, ignoring this device.
+[    10.397] (II) This device may have been added with another device file.
+[    10.397] (II) config/udev: Adding input device (unnamed) (/dev/tty20)
+[    10.397] (II) No input driver specified, ignoring this device.
+[    10.397] (II) This device may have been added with another device file.
+[    10.398] (II) config/udev: Adding input device (unnamed) (/dev/tty21)
+[    10.398] (II) No input driver specified, ignoring this device.
+[    10.398] (II) This device may have been added with another device file.
+[    10.398] (II) config/udev: Adding input device (unnamed) (/dev/tty22)
+[    10.398] (II) No input driver specified, ignoring this device.
+[    10.398] (II) This device may have been added with another device file.
+[    10.398] (II) config/udev: Adding input device (unnamed) (/dev/tty23)
+[    10.398] (II) No input driver specified, ignoring this device.
+[    10.398] (II) This device may have been added with another device file.
+[    10.398] (II) config/udev: Adding input device (unnamed) (/dev/tty24)
+[    10.398] (II) No input driver specified, ignoring this device.
+[    10.398] (II) This device may have been added with another device file.
+[    10.398] (II) config/udev: Adding input device (unnamed) (/dev/tty25)
+[    10.398] (II) No input driver specified, ignoring this device.
+[    10.398] (II) This device may have been added with another device file.
+[    10.399] (II) config/udev: Adding input device (unnamed) (/dev/tty26)
+[    10.399] (II) No input driver specified, ignoring this device.
+[    10.399] (II) This device may have been added with another device file.
+[    10.399] (II) config/udev: Adding input device (unnamed) (/dev/tty27)
+[    10.399] (II) No input driver specified, ignoring this device.
+[    10.399] (II) This device may have been added with another device file.
+[    10.399] (II) config/udev: Adding input device (unnamed) (/dev/tty28)
+[    10.399] (II) No input driver specified, ignoring this device.
+[    10.399] (II) This device may have been added with another device file.
+[    10.399] (II) config/udev: Adding input device (unnamed) (/dev/tty29)
+[    10.399] (II) No input driver specified, ignoring this device.
+[    10.399] (II) This device may have been added with another device file.
+[    10.399] (II) config/udev: Adding input device (unnamed) (/dev/tty3)
+[    10.400] (II) No input driver specified, ignoring this device.
+[    10.400] (II) This device may have been added with another device file.
+[    10.400] (II) config/udev: Adding input device (unnamed) (/dev/tty30)
+[    10.400] (II) No input driver specified, ignoring this device.
+[    10.400] (II) This device may have been added with another device file.
+[    10.400] (II) config/udev: Adding input device (unnamed) (/dev/tty31)
+[    10.400] (II) No input driver specified, ignoring this device.
+[    10.400] (II) This device may have been added with another device file.
+[    10.400] (II) config/udev: Adding input device (unnamed) (/dev/tty32)
+[    10.400] (II) No input driver specified, ignoring this device.
+[    10.400] (II) This device may have been added with another device file.
+[    10.400] (II) config/udev: Adding input device (unnamed) (/dev/tty33)
+[    10.400] (II) No input driver specified, ignoring this device.
+[    10.400] (II) This device may have been added with another device file.
+[    10.401] (II) config/udev: Adding input device (unnamed) (/dev/tty34)
+[    10.401] (II) No input driver specified, ignoring this device.
+[    10.401] (II) This device may have been added with another device file.
+[    10.401] (II) config/udev: Adding input device (unnamed) (/dev/tty35)
+[    10.401] (II) No input driver specified, ignoring this device.
+[    10.401] (II) This device may have been added with another device file.
+[    10.401] (II) config/udev: Adding input device (unnamed) (/dev/tty36)
+[    10.401] (II) No input driver specified, ignoring this device.
+[    10.401] (II) This device may have been added with another device file.
+[    10.401] (II) config/udev: Adding input device (unnamed) (/dev/tty37)
+[    10.401] (II) No input driver specified, ignoring this device.
+[    10.401] (II) This device may have been added with another device file.
+[    10.401] (II) config/udev: Adding input device (unnamed) (/dev/tty38)
+[    10.401] (II) No input driver specified, ignoring this device.
+[    10.401] (II) This device may have been added with another device file.
+[    10.402] (II) config/udev: Adding input device (unnamed) (/dev/tty39)
+[    10.402] (II) No input driver specified, ignoring this device.
+[    10.402] (II) This device may have been added with another device file.
+[    10.402] (II) config/udev: Adding input device (unnamed) (/dev/tty4)
+[    10.402] (II) No input driver specified, ignoring this device.
+[    10.402] (II) This device may have been added with another device file.
+[    10.402] (II) config/udev: Adding input device (unnamed) (/dev/tty40)
+[    10.402] (II) No input driver specified, ignoring this device.
+[    10.402] (II) This device may have been added with another device file.
+[    10.402] (II) config/udev: Adding input device (unnamed) (/dev/tty41)
+[    10.402] (II) No input driver specified, ignoring this device.
+[    10.402] (II) This device may have been added with another device file.
+[    10.402] (II) config/udev: Adding input device (unnamed) (/dev/tty42)
+[    10.402] (II) No input driver specified, ignoring this device.
+[    10.402] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty43)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty44)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty45)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty46)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty47)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty48)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.403] (II) config/udev: Adding input device (unnamed) (/dev/tty49)
+[    10.403] (II) No input driver specified, ignoring this device.
+[    10.403] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty5)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty50)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty51)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty52)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty53)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.404] (II) config/udev: Adding input device (unnamed) (/dev/tty54)
+[    10.404] (II) No input driver specified, ignoring this device.
+[    10.404] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty55)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty56)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty57)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty58)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty59)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.405] (II) config/udev: Adding input device (unnamed) (/dev/tty6)
+[    10.405] (II) No input driver specified, ignoring this device.
+[    10.405] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty60)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty61)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty62)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty63)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty7)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.406] (II) config/udev: Adding input device (unnamed) (/dev/tty8)
+[    10.406] (II) No input driver specified, ignoring this device.
+[    10.406] (II) This device may have been added with another device file.
+[    10.407] (II) config/udev: Adding input device (unnamed) (/dev/tty9)
+[    10.407] (II) No input driver specified, ignoring this device.
+[    10.407] (II) This device may have been added with another device file.
+[    10.407] (II) config/udev: Adding input device (unnamed) (/dev/ttyprintk)
+[    10.407] (II) No input driver specified, ignoring this device.
+[    10.407] (II) This device may have been added with another device file.
+[    15.944] (II) AMDGPU(0): EDID vendor "APP", prod id 41008
+[    15.944] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    15.945] (II) AMDGPU(0): Modeline "2880x1800"x0.0  328.92  2880 2888 2920 2960  1800 1838 1846 1852 +hsync -vsync (111.1 kHz eP)
+[    16.149] (II) AMDGPU(0): EDID vendor "APP", prod id 41008
+[    16.149] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    16.149] (II) AMDGPU(0): Modeline "2880x1800"x0.0  328.92  2880 2888 2920 2960  1800 1838 1846 1852 +hsync -vsync (111.1 kHz eP)
+[    16.289] (II) AMDGPU(0): EDID vendor "APP", prod id 41008
+[    16.289] (II) AMDGPU(0): Printing DDC gathered Modelines:
+[    16.289] (II) AMDGPU(0): Modeline "2880x1800"x0.0  328.92  2880 2888 2920 2960  1800 1838 1846 1852 +hsync -vsync (111.1 kHz eP)
