@@ -345,11 +345,20 @@ See also:
 
 ### iBridge
 
-The models with Touch Bar feature an additional USB device, called *iBridge*
-(*Bus 001 Device 002: ID 05ac:8600 Apple, Inc.*). It's probably the interface
-to the chip running iOS and providing access to the FaceTime HD camera (that's
-why `uvcvideo` detects it), the Touch Bar (that's why it's shown as an
-additonal input device in the Xorg log) and the Touch ID button.
+The models with Touch Bar feature an additional USB device, called `iBridge`
+(`Bus 001 Device 002: ID 05ac:8600 Apple, Inc.`). It's the interface to the
+embedded T1-chip running iOS and providing access to the FaceTime HD camera,
+the Touch Bar and Touch ID.
+
+A prerequisite for all devices connected to the iBridge to work is a
+firmware stored by macOS on the EFI system partition (ESP). For the time being
+the easiest way to keep this firmware available is to install Linux in
+addition to macOS and keeping the contents of the original ESP in place.
+
+If the iBridge couldn't be initialized (e.g. because the firmware is
+missing), instead of the usual USB device, the following USB device is
+present: `Apple Mobile Device [Recovery Mode]` (`Bus 001 Device 003: ID
+05ac:1281 Apple, Inc.`)
 
 `usb-devices` shows that *iBridge* exposes four interfaces:
 ```
