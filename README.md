@@ -15,7 +15,7 @@ of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
 
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. If in doubt which kernel
-to use, the latest significant improvements are part of Linux 4.13.
+to use, the latest significant improvements are part of Linux 4.16.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
 identifier is used on several occasions below), check
@@ -88,21 +88,15 @@ than 4 hours.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Working with out-of-tree kernel patch.
+Works out of the box with Linux 4.16 and above, except for the models without
+Touch Bar, which still suffer from a bug and need an additional patch as noted
+in https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
 
-You need to compile a custom kernel with the patch set from
-https://github.com/roadrunner2/linux/tree/hci_bcm-4.14 and the configuration
-option `CONFIG_BT_HCIUART_BCM` set.
-
-Afterwards you're able to use `btattach` to attach the Bluetooth serial device.
-The tty to use might differ:
-
-```
-sudo btattach --bredr /dev/ttyS5 -P bcm
-```
+For older kernel versions you need to compile a custom kernel with an
+additional patch set. For details check
+https://github.com/Dunedan/mbp-2016-linux/issues/29
 
 See also:
-* https://github.com/Dunedan/mbp-2016-linux/issues/29
 * https://bugzilla.kernel.org/show_bug.cgi?id=110901
 
 ## FaceTime HD camera
@@ -342,6 +336,13 @@ See also:
   [linux/commit/899596e](https://github.com/torvalds/linux/commit/899596e090ea21918c55cbccea594be840af44ea),
   [linux/commit/75fc70e](https://github.com/torvalds/linux/commit/75fc70e07314347465c7df6d6b79535cf3db0e2a),
   [linux/commit/630b3af](https://github.com/torvalds/linux/commit/630b3aff8a51c90ef15b59c9560ac35e40e7ec09))
+
+#### 4.16
+
+* Bluetooth is now working out of the box.
+  ([linux/commit/8353b4a](https://github.com/torvalds/linux/commit/8353b4a636f2c83de748656acc6b6a8757d7a0ff),
+  [linux/commit/8bfa7e1](https://github.com/torvalds/linux/commit/8bfa7e1e03aca3626b82857850a1e18ae0ed291d),
+  [linux/commit/4c33162](https://github.com/torvalds/linux/commit/4c33162c1ad0d3524455d6c10de2a05847ad5617))
 
 ### iBridge
 
