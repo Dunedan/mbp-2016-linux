@@ -282,22 +282,21 @@ Works out of the box.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 
-The MacBookPro13,1 comes with a `Broadcom Limited BCM4350 802.11ac Wireless
-Network Adapter` which works fine out of the box using the `brcmfmac` driver
-(ensure you got the matching firmware package installed).
+The MacBook Pro models without Touch Bar come with a `Broadcom Limited BCM4350
+802.11ac Wireless Network Adapter` which works fine out of the box using the
+`brcmfmac` driver (ensure you got the matching firmware package installed).
 
-The MacBookPro13,2, MacBookPro13,3, MacBookPro14,2, and MacBookPro14,3 come with a `Broadcom Limited BCM43602
+The MacBook Pro models with Touch Bar come with a `Broadcom Limited BCM43602
 802.11ac Wireless LAN SoC (rev 02)` which is also supported by `brcmfmac`, but
-has several issues, which could simply be firmware related:
+has several issues rendering it unusable, caused by the available firmware.
+The issues are caused by failing country detection and are:
 * Only 2.4Ghz APs are shown
 * Connecting to an AP barely works or fails directly
 
-See also:
-
-* https://bugzilla.kernel.org/show_bug.cgi?id=193121
-* https://bugzilla.kernel.org/show_bug.cgi?id=100201
-* https://bugzilla.kernel.org/show_bug.cgi?id=103201
-
+According to Broadcom releasing a fixed firmware would require verification to
+ensure that it complies with regulartory limits, which is very unlikely to
+happen as it wouldn't provide enough return on investment for them (see
+https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
 ## Misc
 
