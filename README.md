@@ -1,7 +1,7 @@
-# State of Linux on the MacBook Pro 2016 & 2017
+# State of Linux on the MacBook Pro 2016, 2017, and 2018
 
 The following document provides an overview about Linux support for Apple's
-MacBook Pro 2016 and MacBook Pro 2017 models.
+MacBook Pro 2016, 2017, and 2018 models.
 
 The MacBook Pro 2016 shares surprisingly many components with the Retina
 MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
