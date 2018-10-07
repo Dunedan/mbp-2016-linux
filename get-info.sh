@@ -29,7 +29,7 @@ else
     cp $global_log "$dir"/Xorg.0.log
 fi
 
-echo "getting DSDT"
-sudo cat /sys/firmware/acpi/tables/DSDT > "$dir"/dsdt.dat
+echo "getting ACPI tables"
+sudo acpidump > "$dir"/acpidump
 
 echo "done!"
