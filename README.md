@@ -28,6 +28,8 @@ If you want to contribute to get Linux running smoothly on the MacBook Pro
 2016, report all findings how to get devices working as pull requests! All help
 is appreciated.
 
+There is also a chat available via gitter for discussions:
+[![Gitter chat](https://badges.gitter.im/Dunedan/mbp-2016-linux.png)](https://gitter.im/mbp-2016-linux/Lobby)
 
 ## Current status
 
