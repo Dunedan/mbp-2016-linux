@@ -92,6 +92,10 @@ Works out of the box with Linux 4.16 and above, except for the models without
 Touch Bar, which still suffer from a bug and need an additional patch as noted
 in https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
 
+Transmitting audio using A2DP is still choppy for unknown reasons, maybe
+because the Bluetooth support is limited to lower bandwidth applications so
+far.
+
 For older kernel versions you need to compile a custom kernel with an
 additional patch set. For details check
 https://github.com/Dunedan/mbp-2016-linux/issues/29
