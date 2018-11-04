@@ -1,63 +1,3 @@
-[243358.885461] CPU0: Package temperature above threshold, cpu clock throttled (total events = 122319)
-[243358.885489] CPU5: Package temperature above threshold, cpu clock throttled (total events = 122319)
-[243358.885490] CPU1: Package temperature above threshold, cpu clock throttled (total events = 122319)
-[243358.885492] CPU3: Package temperature above threshold, cpu clock throttled (total events = 122319)
-[243358.885492] CPU7: Package temperature above threshold, cpu clock throttled (total events = 122178)
-[243358.886450] CPU2: Core temperature/speed normal
-[243358.886451] CPU6: Core temperature/speed normal
-[243358.886452] CPU3: Package temperature/speed normal
-[243358.886453] CPU7: Package temperature/speed normal
-[243358.886453] CPU6: Package temperature/speed normal
-[243358.886456] CPU2: Package temperature/speed normal
-[243358.886501] CPU5: Package temperature/speed normal
-[243358.886501] CPU1: Package temperature/speed normal
-[243358.886503] CPU4: Package temperature/speed normal
-[243358.886504] CPU0: Package temperature/speed normal
-[243669.897466] CPU7: Package temperature above threshold, cpu clock throttled (total events = 122435)
-[243669.897467] CPU3: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897500] CPU2: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897501] CPU1: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897503] CPU4: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897504] CPU6: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897505] CPU5: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.897507] CPU0: Package temperature above threshold, cpu clock throttled (total events = 122576)
-[243669.898442] CPU7: Package temperature/speed normal
-[243669.898443] CPU3: Package temperature/speed normal
-[243669.898478] CPU5: Package temperature/speed normal
-[243669.898478] CPU1: Package temperature/speed normal
-[243669.898480] CPU4: Package temperature/speed normal
-[243669.898481] CPU0: Package temperature/speed normal
-[243669.898483] CPU2: Package temperature/speed normal
-[243669.898483] CPU6: Package temperature/speed normal
-[243970.224446] CPU6: Core temperature above threshold, cpu clock throttled (total events = 101911)
-[243970.224447] CPU2: Core temperature above threshold, cpu clock throttled (total events = 101911)
-[243970.224450] CPU2: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224452] CPU6: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224487] CPU5: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224488] CPU4: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224490] CPU1: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224490] CPU0: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224492] CPU3: Package temperature above threshold, cpu clock throttled (total events = 122909)
-[243970.224493] CPU7: Package temperature above threshold, cpu clock throttled (total events = 122768)
-[243970.225452] CPU6: Core temperature/speed normal
-[243970.225453] CPU2: Core temperature/speed normal
-[243970.225455] CPU2: Package temperature/speed normal
-[243970.225457] CPU6: Package temperature/speed normal
-[243970.225491] CPU7: Package temperature/speed normal
-[243970.225492] CPU3: Package temperature/speed normal
-[243970.225494] CPU0: Package temperature/speed normal
-[243970.225494] CPU1: Package temperature/speed normal
-[243970.225496] CPU5: Package temperature/speed normal
-[243970.225497] CPU4: Package temperature/speed normal
-[244846.231416] CPU2: Core temperature above threshold, cpu clock throttled (total events = 101972)
-[244846.231417] CPU6: Core temperature above threshold, cpu clock throttled (total events = 101972)
-[244846.231418] CPU1: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231420] CPU5: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231421] CPU6: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231445] CPU2: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231448] CPU4: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231449] CPU0: Package temperature above threshold, cpu clock throttled (total events = 122973)
-[244846.231451] CPU3: Package temperature above threshold, cpu clock throttled (total events = 122973)
 [244846.231452] CPU7: Package temperature above threshold, cpu clock throttled (total events = 122832)
 [244846.232437] CPU2: Core temperature/speed normal
 [244846.232438] CPU6: Core temperature/speed normal
@@ -1209,3 +1149,67 @@
 [310129.074252] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
 [310130.184389] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
 [310131.703123] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+[310617.517094] parport 0x908 (WARNING): CTR: wrote 0x0c, read 0xff
+[310617.517102] parport 0x908 (WARNING): DATA: wrote 0xaa, read 0xff
+[310617.517103] parport 0x908: You gave this address, but there is probably no parallel port there!
+[310617.517145] parport0: PC-style at 0x908 [PCSPP,TRISTATE]
+[310617.613788] parport 0xb0a (WARNING): CTR: wrote 0x0c, read 0xff
+[310617.613800] parport 0xb0a (WARNING): DATA: wrote 0xaa, read 0xff
+[310617.613802] parport 0xb0a: You gave this address, but there is probably no parallel port there!
+[310617.613852] parport1: PC-style at 0xb0a [PCSPP,TRISTATE]
+[310617.717919] parport 0xd0c (WARNING): CTR: wrote 0x0c, read 0xff
+[310617.717934] parport 0xd0c (WARNING): DATA: wrote 0xaa, read 0xff
+[310617.717937] parport 0xd0c: You gave this address, but there is probably no parallel port there!
+[310617.717982] parport2: PC-style at 0xd0c [PCSPP,TRISTATE]
+[310618.040354] lp: driver loaded but no devices found
+[310618.067102] SCSI subsystem initialized
+[310618.087838] st: Version 20160209, fixed bufsize 32768, s/g segs 256
+[311585.577121] xhci_hcd 0000:00:14.0: Port resume took longer than 20000 msec, port status = 0x400e03
+[311595.817091] xhci_hcd 0000:00:14.0: xHCI host not responding to stop endpoint command.
+[311595.817124] xhci_hcd 0000:00:14.0: xHCI host controller not responding, assume dead
+[311595.817130] xhci_hcd 0000:00:14.0: HC died; cleaning up
+[311595.817203] usb 1-3: USB disconnect, device number 2
+[311595.857135] appletb: Disconnected from keyboard input device
+[311595.933130] appletb: Disconnected from touchpad input device
+[311595.977537] appletb: Failed to disable auto-pm on touchbar device (-16)
+[311595.977540] appletb: Failed to set touchbar mode to 3 (-19)
+[311595.977542] appletb: Failed to disable auto-pm on touchbar device (-16)
+[311595.977543] appletb: Failed to disable auto-pm on touchbar device (-16)
+[311595.977544] appletb: Failed to set touchbar display to 1 (-19)
+[311595.977546] apple-touchbar 0003:05AC:8600.0001: module remove done.
+[311595.977602] apple-touchbar 0003:05AC:8600.0002: module remove done.
+[311595.977759] usb usb1-port3: couldn't allocate usb_device
+[312150.665976] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312150.703127] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+[312151.216580] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312152.333693] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312177.653324] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312178.189431] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312179.248801] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312205.168580] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312205.212397] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312206.221977] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312232.176834] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312232.222058] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312532.206474] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312533.327388] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[312533.421899] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+[312736.671212] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312736.740315] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+[312737.259972] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312761.709109] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[312785.143650] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[312785.276944] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+[313976.607667] parport 0x908 (WARNING): CTR: wrote 0x0c, read 0xff
+[313976.607679] parport 0x908 (WARNING): DATA: wrote 0xaa, read 0xff
+[313976.607680] parport 0x908: You gave this address, but there is probably no parallel port there!
+[313976.607722] parport0: PC-style at 0x908 [PCSPP,TRISTATE]
+[313976.694647] parport 0xb0a (WARNING): CTR: wrote 0x0c, read 0xff
+[313976.694663] parport 0xb0a (WARNING): DATA: wrote 0xaa, read 0xff
+[313976.694667] parport 0xb0a: You gave this address, but there is probably no parallel port there!
+[313976.694723] parport1: PC-style at 0xb0a [PCSPP,TRISTATE]
+[313976.794421] parport 0xd0c (WARNING): CTR: wrote 0x0c, read 0xff
+[313976.794433] parport 0xd0c (WARNING): DATA: wrote 0xaa, read 0xff
+[313976.794434] parport 0xd0c: You gave this address, but there is probably no parallel port there!
+[313976.794477] parport2: PC-style at 0xd0c [PCSPP,TRISTATE]
+[313977.077490] lp: driver loaded but no devices found

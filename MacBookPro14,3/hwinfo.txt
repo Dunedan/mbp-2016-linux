@@ -7,7 +7,7 @@ kernel version is 4.19
 ----- /proc/cmdline end -----
 debug = 0xff7ffff7
 probe = 0x15938fcdaa17fcf9fffe (+memory +pci +isapnp +net +floppy +misc +misc.serial +misc.par +misc.floppy +serial +cpu +bios +monitor +mouse +scsi +usb -usb.mods +modem +modem.usb +parallel +parallel.lp +parallel.zip -isa -isa.isdn +isdn +kbd +prom +sbus +int +braille +braille.alva +braille.fhp +braille.ht -ignx11 +sys -bios.vbe -isapnp.old -isapnp.new -isapnp.mod +braille.baum -manual +fb +pppoe -scan +pcmcia +fork -parallel.imm +s390 +cpuemu -sysfs -s390disks +udev +block +block.cdrom +block.part +edd +edd.mod -bios.ddc -bios.fb -bios.mode +input +block.mods +bios.vesa -cpuemu.debug -scsi.noserial +wlan -bios.crc -hal +bios.vram +bios.acpi -bios.ddc.ports=0 +modules.pata -net.eeprom +x86emu=dump -max -lxrc)
-shm: attached segment 179994640 at 0x7f6cd41f6000
+shm: attached segment 214466576 at 0x7f2814dd2000
 >> hal.1: read hal data
 >> floppy.1: get nvram
 >> floppy.2: klog info
@@ -369,12 +369,12 @@ x86emu: could not init vm
 ----- /proc/interrupts -----
     0:          9          0          0          0          0          0          0          0  IR-IO-APIC   2-edge      timer
     8:          0          0          0          0          0          1          0          0  IR-IO-APIC   8-edge      rtc0
-    9:          0  414885777          0          0          0          0          0          0  IR-IO-APIC   9-fasteoi   acpi
+    9:          0  421561543          0          0          0          0          0          0  IR-IO-APIC   9-fasteoi   acpi
    16:          0          0          0          0          0          0          0          0  IR-IO-APIC  16-fasteoi   i801_smbus, i2c_designware.0, idma64.0
    20:          0          0          0     225896          0          0          0          0  IR-IO-APIC  20-fasteoi   idma64.2, ttyS1
    21:          0          0          0          0          0          0          0          0  IR-IO-APIC  21-fasteoi   idma64.3
    22:          0          0          0          0          0          0          0          0  IR-IO-APIC  22-fasteoi   pxa2xx-spi.4, idma64.4
-   23:          0          0          0          0          0          0          0   11077008  IR-IO-APIC  23-fasteoi   pxa2xx-spi.5, idma64.5
+   23:          0          0          0          0          0          0          0   11100470  IR-IO-APIC  23-fasteoi   pxa2xx-spi.5, idma64.5
    24:          0          0          0          0          0          0          0          0  DMAR-MSI   0-edge      dmar0
    25:          0          0          0          0          0          0          0          0  DMAR-MSI   1-edge      dmar1
    28:          0          0          0          0          0          0          0          0  IR-PCI-MSI 2637824-edge      pciehp
@@ -385,30 +385,30 @@ x86emu: could not init vm
    35:          0          0          0          0          0          0          0          0  IR-PCI-MSI 64552960-edge      pciehp
    36:          0          0          0          0          0          0        342          0  IR-PCI-MSI 3145728-edge      thunderbolt
    37:          0          0          0          0          0          0          0        349  IR-PCI-MSI 3145729-edge      thunderbolt
-   52:          0          0      17814          0    6803957          0          0          0  IR-PCI-MSI 1048576-edge      nvme0q0, nvme0q1
-   53:          0    3109688       3699   38105997       1963       1355        205       3713  IR-PCI-MSI 327680-edge      xhci_hcd
+   52:          0          0      17814          0    6844964          0          0          0  IR-PCI-MSI 1048576-edge      nvme0q0, nvme0q1
+   53:          0    3109693       3833   38882861       1963       1355        205       3713  IR-PCI-MSI 327680-edge      xhci_hcd
    54:          0     143992      74778    1137994       1905       4190          0    2983598  IR-PCI-MSI 3670016-edge      xhci_hcd
    55:          0          0     129683          0      63749     288831          0     376570  IR-PCI-MSI 65536000-edge      xhci_hcd
    56:        349          0          0          0          0          0          0          0  IR-PCI-MSI 65011712-edge      thunderbolt
    57:          0        349          0          0          0          0          0          0  IR-PCI-MSI 65011713-edge      thunderbolt
    72:          0          0         30          0          0          0          0          0  IR-PCI-MSI 360448-edge      mei_me
    73:          0          0          0          0          0        184          0          0  IR-PCI-MSI 32768-edge      i915
-   74:          0          0          0          0          0          0    7209757          0  IR-PCI-MSI 524288-edge      amdgpu
-   75:          0          0          0          0          0          0          0    7723350  IR-PCI-MSI 1572864-edge      brcmf_pcie_intr
-  NMI:       1296       4978       1246       1243       1095       1174       1131       1576   Non-maskable interrupts
-  LOC:   64910469   88410131   61657550   61300771   59509832   60668182   60682727   55139160   Local timer interrupts
+   74:          0          0          0          0          0          0    7241954          0  IR-PCI-MSI 524288-edge      amdgpu
+   75:          0          0          0          0          0          0          0    7770128  IR-PCI-MSI 1572864-edge      brcmf_pcie_intr
+  NMI:       1305       5039       1252       1250       1101       1180       1137       1583   Non-maskable interrupts
+  LOC:   65420551   89355833   62161449   61760876   59971070   61122434   61173535   55592901   Local timer interrupts
   SPU:          0          0          0          0          0          0          0          0   Spurious interrupts
-  PMI:       1296       4978       1246       1243       1095       1174       1131       1576   Performance monitoring interrupts
+  PMI:       1305       5039       1252       1250       1101       1180       1137       1583   Performance monitoring interrupts
   IWI:         43         25         43         58         75         54         40         72   IRQ work interrupts
   RTR:          0          0          0          0          0          0          0          0   APIC ICR read retries
-  RES:   11884502   24427532    3511908    2847768    2205527    1691765    1165116    2053651   Rescheduling interrupts
-  CAL:   11257358   10129519   11855682   12724415   11985569   13038665   12412207   11937484   Function call interrupts
-  TLB:   11161423   10039790   11759427   12626957   11887893   12941656   12314988   11838402   TLB shootdowns
+  RES:   11972687   24789682    3537972    2864713    2218613    1700654    1173677    2064112   Rescheduling interrupts
+  CAL:   11289589   10162859   11894171   12768628   12030525   13077070   12446963   11975625   Function call interrupts
+  TLB:   11192945   10072469   11797206   12670426   11932115   12979404   12349063   11875867   TLB shootdowns
   TRM:     287772     287772     287772     287772     287772     287772     287772     287357   Thermal event interrupts
   THR:          0          0          0          0          0          0          0          0   Threshold APIC interrupts
   DFR:          0          0          0          0          0          0          0          0   Deferred Error APIC interrupts
   MCE:          0          0          0          0          0          0          0          0   Machine check exceptions
-  MCP:        998        999        999        999        999        999        999        999   Machine check polls
+  MCP:       1010       1011       1011       1011       1011       1011       1011       1011   Machine check polls
   HYP:          0          0          0          0          0          0          0          0   Hypervisor callback interrupts
   HRE:          0          0          0          0          0          0          0          0   Hyper-V reenlightenment interrupts
   HVS:          0          0          0          0          0          0          0          0   Hyper-V stimer0 interrupts
@@ -435,7 +435,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1699.648
+  cpu MHz		: 1790.812
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -462,7 +462,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1912.788
+  cpu MHz		: 1880.652
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -489,7 +489,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1647.483
+  cpu MHz		: 1794.920
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -516,7 +516,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1395.488
+  cpu MHz		: 1861.860
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -543,7 +543,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1326.675
+  cpu MHz		: 1843.100
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -570,7 +570,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1366.790
+  cpu MHz		: 1790.382
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -597,7 +597,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1905.259
+  cpu MHz		: 1895.374
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -624,7 +624,7 @@ x86emu: could not init vm
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1689.164
+  cpu MHz		: 1882.953
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -654,7 +654,7 @@ x86emu: could not init vm
   meminfo:    0x3e4537000
   xen balloon:    0x0
 >> pci.1: sysfs drivers
------ sysfs driver list (id 0xd27c3d424e078b70) -----
+----- sysfs driver list (id 0x53e10423e904a404) -----
       parport_pc: /devices/platform/parport_pc.3340
       parport_pc: /devices/platform/parport_pc.2312
       parport_pc: /devices/platform/parport_pc.2826
@@ -739,12 +739,13 @@ x86emu: could not init vm
        processor: /devices/system/cpu/cpu2
        processor: /devices/system/cpu/cpu0
            ppdev: module = ppdev
+              st: module = st
+              sr: module = sr_mod
+              sd: module = sd_mod
  Generic 10G PHY: module = libphy
      Generic PHY: module = libphy
         applespi: /devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5/spi_master/spi2/spi-APP000D:00
         applespi: module = applespi
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
   apple-touchbar: module = appletb
      hid-generic: module = hid_generic
           pciehp: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:04.0/0000:7b:04.0:pcie204
@@ -759,16 +760,11 @@ x86emu: could not init vm
           system: /devices/pnp0/00:04
           system: /devices/pnp0/00:00
    snd-usb-audio: module = snd_usb_audio
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
           usbhid: module = usbhid
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
         uvcvideo: module = uvcvideo
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
              usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb5
              usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb3
              usb: /devices/pci0000:00/0000:00:14.0/usb1
-             usb: /devices/pci0000:00/0000:00:14.0/usb1/1-3
              usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6
              usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb4
              usb: /devices/pci0000:00/0000:00:14.0/usb2
@@ -1883,12 +1879,12 @@ i/o:0 0xc000 - 0xdfff (0x2000) "PCI Bus 0000:b7"
 i/o:0 0xffff - 0xffff (0x01) "pnp 00:00"
 irq:0  0 (        9) "2-edge      timer"
 irq:0  8 (        1) "8-edge      rtc0"
-irq:0  9 (414885777) "9-fasteoi   acpi"
+irq:0  9 (421561543) "9-fasteoi   acpi"
 irq:0 16 (        0) "16-fasteoi   i801_smbus" "i2c_designware.0" "idma64.0"
 irq:0 20 (   225896) "20-fasteoi   idma64.2" "ttyS1"
 irq:0 21 (        0) "21-fasteoi   idma64.3"
 irq:0 22 (        0) "22-fasteoi   pxa2xx-spi.4" "idma64.4"
-irq:0 23 ( 11077008) "23-fasteoi   pxa2xx-spi.5" "idma64.5"
+irq:0 23 ( 11100470) "23-fasteoi   pxa2xx-spi.5" "idma64.5"
 irq:0 24 (        0) "0-edge      dmar0"
 irq:0 25 (        0) "1-edge      dmar1"
 irq:0 28 (        0) "2637824-edge      pciehp"
@@ -1899,16 +1895,16 @@ irq:0 34 (        0) "64520192-edge      pciehp"
 irq:0 35 (        0) "64552960-edge      pciehp"
 irq:0 36 (      342) "3145728-edge      thunderbolt"
 irq:0 37 (      349) "3145729-edge      thunderbolt"
-irq:0 52 (  6821771) "1048576-edge      nvme0q0" "nvme0q1"
-irq:0 53 ( 41226620) "327680-edge      xhci_hcd"
+irq:0 52 (  6862778) "1048576-edge      nvme0q0" "nvme0q1"
+irq:0 53 ( 42003623) "327680-edge      xhci_hcd"
 irq:0 54 (  4346457) "3670016-edge      xhci_hcd"
 irq:0 55 (   858833) "65536000-edge      xhci_hcd"
 irq:0 56 (      349) "65011712-edge      thunderbolt"
 irq:0 57 (      349) "65011713-edge      thunderbolt"
 irq:0 72 (       30) "360448-edge      mei_me"
 irq:0 73 (      184) "32768-edge      i915"
-irq:0 74 (  7209757) "524288-edge      amdgpu"
-irq:0 75 (  7723350) "1572864-edge      brcmf_pcie_intr"
+irq:0 74 (  7241954) "524288-edge      amdgpu"
+irq:0 75 (  7770128) "1572864-edge      brcmf_pcie_intr"
 dma:1 4 "cascade"
 ----- misc resources end -----
 >> parallel.1: pp mod
@@ -1934,14 +1930,8 @@ dma:1 4 "cascade"
 ----- exec: "/sbin/modprobe ide-disk " -----
   modprobe: FATAL: Module ide-disk not found in directory /lib/modules/4.19.0-rc4-amd64
 ----- return code: ? -----
------ exec: "/sbin/modprobe sr_mod " -----
------ return code: ? -----
------ exec: "/sbin/modprobe sd_mod " -----
------ return code: ? -----
------ exec: "/sbin/modprobe st " -----
------ return code: ? -----
 >> block.2: sysfs drivers
------ sysfs driver list (id 0xff292cd7f462fa3b) -----
+----- sysfs driver list (id 0x6dfd43a461474483) -----
       parport_pc: module = parport_pc
         coretemp: /devices/platform/coretemp.0
         coretemp: module = coretemp
@@ -2031,8 +2021,6 @@ dma:1 4 "cascade"
      Generic PHY: module = libphy
         applespi: /devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5/spi_master/spi2/spi-APP000D:00
         applespi: module = applespi
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
   apple-touchbar: module = appletb
      hid-generic: module = hid_generic
           pciehp: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:04.0/0000:7b:04.0:pcie204
@@ -2047,16 +2035,11 @@ dma:1 4 "cascade"
           system: /devices/pnp0/00:04
           system: /devices/pnp0/00:00
    snd-usb-audio: module = snd_usb_audio
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
           usbhid: module = usbhid
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
         uvcvideo: module = uvcvideo
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
              usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb5
              usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb3
              usb: /devices/pci0000:00/0000:00:14.0/usb1
-             usb: /devices/pci0000:00/0000:00:14.0/usb1/1-3
              usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6
              usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb4
              usb: /devices/pci0000:00/0000:00:14.0/usb2
@@ -2173,167 +2156,15 @@ partitions:
   block: name = nvme0n1p2, path = /class/block/nvme0n1p2
     dev = 259:2
 >> scsi.1: scsi modules
------ exec: "/sbin/modprobe sg " -----
------ return code: ? -----
 >> scsi.2: scsi tape
 sysfs: no such class: scsi_tape
 >> scsi.3: scsi generic
 sysfs: no such class: scsi_generic
 >> usb.1: sysfs drivers
------ sysfs driver list (id 0x0684bfe8a9bbf804) -----
-      parport_pc: module = parport_pc
-        coretemp: /devices/platform/coretemp.0
-        coretemp: module = coretemp
-       reg-dummy: /devices/platform/reg-dummy
-        iTCO_wdt: module = iTCO_wdt
-      pxa2xx-spi: /devices/pci0000:00/0000:00:1e.2/pxa2xx-spi.4
-      pxa2xx-spi: /devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5
-      pxa2xx-spi: module = spi_pxa2xx_platform
-         hci_bcm: module = hci_uart
-     dw-apb-uart: /devices/pci0000:00/0000:00:1e.1/dw-apb-uart.3
-     dw-apb-uart: /devices/pci0000:00/0000:00:19.0/dw-apb-uart.1
-     dw-apb-uart: /devices/pci0000:00/0000:00:1e.0/dw-apb-uart.2
-  i2c_designware: /devices/pci0000:00/0000:00:15.0/i2c_designware.0
- efi-framebuffer: /devices/platform/efi-framebuffer.0
-       hci_intel: module = hci_uart
-         vboxdrv: module = vboxdrv
-         vboxdrv: /devices/platform/vboxdrv.0
-      alarmtimer: /devices/platform/alarmtimer
-          idma64: /devices/pci0000:00/0000:00:1e.3/idma64.5
-          idma64: /devices/pci0000:00/0000:00:1e.1/idma64.3
-          idma64: /devices/pci0000:00/0000:00:1e.2/idma64.4
-          idma64: /devices/pci0000:00/0000:00:1e.0/idma64.2
-          idma64: module = idma64
-          idma64: /devices/pci0000:00/0000:00:15.0/idma64.0
-      serial8250: /devices/platform/serial8250
-        applesmc: /devices/platform/applesmc.768
-        applesmc: module = applesmc
-          pcspkr: module = pcspkr
-          pcspkr: /devices/platform/pcspkr
-      parport_pc: module = parport_pc
-        xhci_hcd: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0
-        xhci_hcd: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0
-        xhci_hcd: module = xhci_pci
-        xhci_hcd: /devices/pci0000:00/0000:00:14.0
-          shpchp: module = shpchp
-            nvme: /devices/pci0000:00/0000:00:1b.0/0000:02:00.0
-            nvme: module = nvme
-        pcieport: /devices/pci0000:00/0000:00:1c.0
-        pcieport: /devices/pci0000:00/0000:00:01.2
-        pcieport: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0
-        pcieport: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:00.0
-        pcieport: /devices/pci0000:00/0000:00:01.0
-        pcieport: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0
-        pcieport: /devices/pci0000:00/0000:00:1b.0
-        pcieport: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:01.0
-        pcieport: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:04.0
-        pcieport: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0
-        pcieport: /devices/pci0000:00/0000:00:01.1
-        pcieport: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:00.0
-        pcieport: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:01.0
-        pcieport: /devices/pci0000:00/0000:00:01.1/0000:04:00.0
-        pcieport: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:04.0
-      intel-lpss: /devices/pci0000:00/0000:00:1e.2
-      intel-lpss: /devices/pci0000:00/0000:00:19.0
-      intel-lpss: /devices/pci0000:00/0000:00:1e.0
-      intel-lpss: /devices/pci0000:00/0000:00:15.0
-      intel-lpss: /devices/pci0000:00/0000:00:1e.3
-      intel-lpss: /devices/pci0000:00/0000:00:1e.1
-      intel-lpss: module = intel_lpss_pci
-        pci-stub: module = pci_stub
-        brcmfmac: /devices/pci0000:00/0000:00:1c.0/0000:03:00.0
-        brcmfmac: module = brcmfmac
-          mei_me: /devices/pci0000:00/0000:00:16.0
-          mei_me: module = mei_me
-          amdgpu: /devices/pci0000:00/0000:00:01.0/0000:01:00.0
-          amdgpu: module = amdgpu
-      i801_smbus: module = i2c_i801
-      i801_smbus: /devices/pci0000:00/0000:00:1f.4
-     thunderbolt: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:00.0/0000:06:00.0
-     thunderbolt: module = thunderbolt
-     thunderbolt: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:00.0/0000:7c:00.0
-            i915: /devices/pci0000:00/0000:00:02.0
-            i915: module = i915
-       processor: /devices/system/cpu/cpu7
-       processor: /devices/system/cpu/cpu5
-       processor: /devices/system/cpu/cpu3
-       processor: /devices/system/cpu/cpu1
-       processor: /devices/system/cpu/cpu6
-       processor: /devices/system/cpu/cpu4
-       processor: /devices/system/cpu/cpu2
-       processor: /devices/system/cpu/cpu0
-           ppdev: module = ppdev
-              st: module = st
-              sr: module = sr_mod
-              sd: module = sd_mod
- Generic 10G PHY: module = libphy
-     Generic PHY: module = libphy
-        applespi: /devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5/spi_master/spi2/spi-APP000D:00
-        applespi: module = applespi
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-  apple-touchbar: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
-  apple-touchbar: module = appletb
-     hid-generic: module = hid_generic
-          pciehp: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:04.0/0000:7b:04.0:pcie204
-          pciehp: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:04.0/0000:05:04.0:pcie204
-          pciehp: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7b:02.0:pcie204
-          pciehp: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:05:02.0:pcie204
-          pciehp: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:01.0/0000:7b:01.0:pcie204
-          pciehp: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:01.0/0000:05:01.0:pcie204
-        rtc_cmos: /devices/pnp0/00:01
-      apple-gmux: /devices/pnp0/00:02
-          system: /devices/pnp0/00:03
-          system: /devices/pnp0/00:04
-          system: /devices/pnp0/00:00
-   snd-usb-audio: module = snd_usb_audio
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-          usbhid: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-          usbhid: module = usbhid
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-        uvcvideo: module = uvcvideo
-        uvcvideo: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
-             usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb5
-             usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb3
-             usb: /devices/pci0000:00/0000:00:14.0/usb1
-             usb: /devices/pci0000:00/0000:00:14.0/usb1/1-3
-             usb: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6
-             usb: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb4
-             usb: /devices/pci0000:00/0000:00:14.0/usb2
-             usb: module = usbcore
-        brcmfmac: module = brcmfmac
-             hub: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6/6-0:1.0
-             hub: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb3/3-0:1.0
-             hub: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb4/4-0:1.0
-             hub: /devices/pci0000:00/0000:00:14.0/usb1/1-0:1.0
-             hub: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb5/5-0:1.0
-             hub: module = usbcore
-             hub: /devices/pci0000:00/0000:00:14.0/usb2/2-0:1.0
-       cdc_ether: module = cdc_ether
-            asix: module = asix
-           r8152: module = r8152
-           usbfs: module = usbcore
-        brcmfmac: module = brcmfmac
-    hci_uart_bcm: /devices/pci0000:00/0000:00:1e.0/dw-apb-uart.2/serial1/serial1-0
-    hci_uart_bcm: module = hci_uart
-     hci_uart_h5: module = hci_uart
-          hci-ti: module = hci_uart
-    hci_uart_qca: module = hci_uart
-           video: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:01/LNXVIDEO:00
-           video: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01
-              ac: /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0003:00
-             sbs: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:8d/PNP0C09:00/ACPI0001:00/ACPI0002:00
-        smbus_hc: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:8d/PNP0C09:00/ACPI0001:00
-          button: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00
-          button: /devices/LNXSYSTM:00/LNXPWRBN:00
-          button: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00
-          button: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00
-              ec: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:8d/PNP0C09:00
------ sysfs driver list end -----
 >> usb.2: usb
   usb dev: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb5
   usb dev: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb3
   usb dev: /devices/pci0000:00/0000:00:14.0/usb1
-  usb dev: /devices/pci0000:00/0000:00:14.0/usb1/1-3
   usb dev: /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6
   usb dev: /devices/pci0000:00/0000:00:01.1/0000:04:00.0/0000:05:02.0/0000:07:00.0/usb4
   usb dev: /devices/pci0000:00/0000:00:14.0/usb2
@@ -2378,42 +2209,6 @@ sysfs: no such class: scsi_generic
     product = "xHCI Host Controller"
     serial = "0000:07:00.0"
     bcdDevice = 0419
-    speed = "480"
-  usb device: name = 1-3:1.2
-    path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-    modalias = "usb:v05ACp8600d0101dcEFdsc02dp01ic03isc01ip01in02"
-    bInterfaceNumber = 2
-    bInterfaceClass = 3
-    bInterfaceSubClass = 1
-    bInterfaceProtocol = 1
-    if: 1-3:1.2 @ /devices/pci0000:00/0000:00:14.0/usb1/1-3
-    bDeviceClass = 239
-    bDeviceSubClass = 2
-    bDeviceProtocol = 1
-    idVendor = 0x05ac
-    idProduct = 0x8600
-    manufacturer = "Apple Inc."
-    product = "iBridge"
-    bcdDevice = 0101
-    speed = "480"
-  usb device: name = 1-3
-    path = /devices/pci0000:00/0000:00:14.0/usb1/1-3
-  usb device: name = 1-3:1.0
-    path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-    modalias = "usb:v05ACp8600d0101dcEFdsc02dp01ic0Eisc01ip00in00"
-    bInterfaceNumber = 0
-    bInterfaceClass = 14
-    bInterfaceSubClass = 1
-    bInterfaceProtocol = 0
-    if: 1-3:1.0 @ /devices/pci0000:00/0000:00:14.0/usb1/1-3
-    bDeviceClass = 239
-    bDeviceSubClass = 2
-    bDeviceProtocol = 1
-    idVendor = 0x05ac
-    idProduct = 0x8600
-    manufacturer = "Apple Inc."
-    product = "iBridge"
-    bcdDevice = 0101
     speed = "480"
   usb device: name = usb6
     path = /devices/pci0000:00/0000:00:01.2/0000:7a:00.0/0000:7b:02.0/0000:7d:00.0/usb6
@@ -2475,40 +2270,6 @@ sysfs: no such class: scsi_generic
     serial = "0000:7d:00.0"
     bcdDevice = 0419
     speed = "480"
-  usb device: name = 1-3:1.3
-    path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-    modalias = "usb:v05ACp8600d0101dcEFdsc02dp01ic03isc00ip01in03"
-    bInterfaceNumber = 3
-    bInterfaceClass = 3
-    bInterfaceSubClass = 0
-    bInterfaceProtocol = 1
-    if: 1-3:1.3 @ /devices/pci0000:00/0000:00:14.0/usb1/1-3
-    bDeviceClass = 239
-    bDeviceSubClass = 2
-    bDeviceProtocol = 1
-    idVendor = 0x05ac
-    idProduct = 0x8600
-    manufacturer = "Apple Inc."
-    product = "iBridge"
-    bcdDevice = 0101
-    speed = "480"
-  usb device: name = 1-3:1.1
-    path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
-    modalias = "usb:v05ACp8600d0101dcEFdsc02dp01ic0Eisc02ip00in01"
-    bInterfaceNumber = 1
-    bInterfaceClass = 14
-    bInterfaceSubClass = 2
-    bInterfaceProtocol = 0
-    if: 1-3:1.1 @ /devices/pci0000:00/0000:00:14.0/usb1/1-3
-    bDeviceClass = 239
-    bDeviceSubClass = 2
-    bDeviceProtocol = 1
-    idVendor = 0x05ac
-    idProduct = 0x8600
-    manufacturer = "Apple Inc."
-    product = "iBridge"
-    bcdDevice = 0101
-    speed = "480"
   usb device: name = 2-0:1.0
     path = /devices/pci0000:00/0000:00:14.0/usb2/2-0:1.0
     modalias = "usb:v1D6Bp0003d0419dc09dsc00dp03ic09isc00ip00in00"
@@ -2527,18 +2288,11 @@ sysfs: no such class: scsi_generic
     serial = "0000:00:14.0"
     bcdDevice = 0419
     speed = "5000"
-removed: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-removed: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-removed: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
 >> usb.3.1: joydev mod
 >> usb.3.2: evdev mod
 >> usb.3.3: input
   input: name = input9, path = /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:01/input/input9
     no dev - ignored
-  input: name = event9, path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10/event9
-    dev = 13:73
-    input device: bus = hid, bus_id = 0003:05AC:8600.0001 driver = apple-touchbar
-      path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
   input: name = input7, path = /devices/platform/pcspkr/input/input7
     no dev - ignored
   input: name = mice, path = /devices/virtual/input/mice
@@ -2548,8 +2302,6 @@ removed: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
     input device: bus = platform, bus_id = pcspkr driver = pcspkr
       path = /devices/platform/pcspkr
   input: name = input5, path = /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input5
-    no dev - ignored
-  input: name = input10, path = /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10
     no dev - ignored
   input: name = event5, path = /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input5/event5
     dev = 13:69
@@ -2608,11 +2360,11 @@ sysfs: no such class: usb
 ----- return code: ? -----
 >> edd.2: edd info
 >> modem.1: serial
-******  started child process 9481 (15s/120s)  ******
-******  stopped child process 9481 (120s)  ******
+******  started child process 26551 (15s/120s)  ******
+******  stopped child process 26551 (120s)  ******
 >> mouse.2: serial
-******  started child process 9482 (20s/20s)  ******
-******  stopped child process 9482 (20s)  ******
+******  started child process 26552 (20s/20s)  ******
+******  stopped child process 26552 (20s)  ******
 >> input.1: joydev mod
 >> input.1.1: evdev mod
 >> input.2: input
@@ -2622,7 +2374,7 @@ sysfs: no such class: usb
   P: Phys=applespi/input0
   S: Sysfs=/devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5/spi_master/spi2/spi-APP000D:00/input/input0
   U: Uniq=
-  H: Handlers=sysrq kbd leds event0 tbkbd 
+  H: Handlers=sysrq kbd leds event0 
   B: PROP=0
   B: EV=120003
   B: KEY=10000 0 0 0 6300001000 3800000000 710effd063c0001f ff7ffffffffffffe
@@ -2633,7 +2385,7 @@ sysfs: no such class: usb
   P: Phys=applespi/input1
   S: Sysfs=/devices/pci0000:00/0000:00:1e.3/pxa2xx-spi.5/spi_master/spi2/spi-APP000D:00/input/input1
   U: Uniq=
-  H: Handlers=mouse0 event1 tbtpad 
+  H: Handlers=mouse0 event1 
   B: PROP=5
   B: EV=f
   B: KEY=e520 10000 0 0 0 0
@@ -2710,27 +2462,16 @@ sysfs: no such class: usb
   B: EV=3
   B: KEY=3e000b00000000 0 0 0
   
-  I: Bus=0003 Vendor=05ac Product=8600 Version=0101
-  N: Name="Apple Inc. iBridge"
-  P: Phys=usb-0000:00:14.0-3/input2
-  S: Sysfs=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10
-  U: Uniq=
-  H: Handlers=kbd event9 
-  B: PROP=0
-  B: EV=100013
-  B: KEY=1006300001000 3800000000 10e00000180001f f800000000000002
-  B: MSC=10
-  
 ----- /proc/bus/input/devices end -----
 bus = 28, name = Apple SPI Keyboard
-  handlers = sysrq kbd leds event0 tbkbd
+  handlers = sysrq kbd leds event0
   key = 000000000001000000000000000000000000000000000000000000000000000000000063000010000000003800000000710effd063c0001fff7ffffffffffffe
   mouse buttons = 0
   mouse wheels = 0
   is_mouse = 0
   is_joystick = 0
 bus = 28, name = Apple SPI Touchpad
-  handlers = mouse0 event1 tbtpad
+  handlers = mouse0 event1
   key = 000000000000e52000000000000100000000000000000000000000000000000000000000000000000000000000000000
   rel = 0000000000000003
   abs = 027f800000000003
@@ -2792,13 +2533,6 @@ bus = 25, name = Video Bus
   is_mouse = 0
   is_joystick = 0
 unknown non-USB input device
-bus = 3, name = Apple Inc. iBridge
-  handlers = kbd event9
-  key = 00010063000010000000003800000000010e00000180001ff800000000000002
-  mouse buttons = 0
-  mouse wheels = 0
-  is_mouse = 0
-  is_joystick = 0
 >> kbd.2: uml
 >> cpu.1: cpuinfo
 ----- /proc/cpuinfo -----
@@ -2809,7 +2543,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1863.528
+  cpu MHz		: 1723.201
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2836,7 +2570,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 2642.631
+  cpu MHz		: 1977.811
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2863,7 +2597,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1932.262
+  cpu MHz		: 1257.102
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2890,7 +2624,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 2329.459
+  cpu MHz		: 1569.935
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2917,7 +2651,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 2053.247
+  cpu MHz		: 1600.429
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2944,7 +2678,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1705.316
+  cpu MHz		: 1320.291
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2971,7 +2705,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 2042.778
+  cpu MHz		: 1439.112
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -2998,7 +2732,7 @@ bus = 3, name = Apple Inc. iBridge
   model name	: Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz
   stepping	: 9
   microcode	: 0x8e
-  cpu MHz		: 1974.290
+  cpu MHz		: 1314.917
   cache size	: 8192 KB
   physical id	: 0
   siblings	: 8
@@ -3070,7 +2804,7 @@ Timeout waiting for PADO packets
 >> int.2: cdrom
 >> int.3: media
 >> int.4.1: /dev/nvme0n1
-  read_block0: 512 bytes (4s, 999998us)
+  read_block0: 512 bytes (4s, 999997us)
   mbr sig: 0x00000000
 >> int.4: floppy
 >> int.5: edd
@@ -3997,19 +3731,19 @@ Timeout waiting for PADO packets
   E: POWER_SUPPLY_CAPACITY=88
   E: POWER_SUPPLY_CHARGE_FULL=5400000
   E: POWER_SUPPLY_CHARGE_FULL_DESIGN=6669000
-  E: POWER_SUPPLY_CHARGE_NOW=5819000
-  E: POWER_SUPPLY_CURRENT_AVG=377000
-  E: POWER_SUPPLY_CURRENT_NOW=335000
+  E: POWER_SUPPLY_CHARGE_NOW=5844000
+  E: POWER_SUPPLY_CURRENT_AVG=0
+  E: POWER_SUPPLY_CURRENT_NOW=0
   E: POWER_SUPPLY_CYCLE_COUNT=315
   E: POWER_SUPPLY_MANUFACTURER=SMP
   E: POWER_SUPPLY_MODEL_NAME=bq20z451
   E: POWER_SUPPLY_NAME=BAT0
   E: POWER_SUPPLY_PRESENT=1
-  E: POWER_SUPPLY_STATUS=Charging
+  E: POWER_SUPPLY_STATUS=Full
   E: POWER_SUPPLY_TECHNOLOGY=Li-ion
-  E: POWER_SUPPLY_TEMP=325
+  E: POWER_SUPPLY_TEMP=341
   E: POWER_SUPPLY_VOLTAGE_MIN_DESIGN=11490000
-  E: POWER_SUPPLY_VOLTAGE_NOW=13033000
+  E: POWER_SUPPLY_VOLTAGE_NOW=12943000
   E: SUBSYSTEM=power_supply
   
   P: /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:8d/PNP0C09:00/ACPI0001:00/ACPI0002:00/power_supply/sbs-charger
@@ -5500,275 +5234,6 @@ Timeout waiting for PADO packets
   E: TYPE=9/0/1
   E: USEC_INITIALIZED=16026579
   
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3
-  N: bus/usb/001/002
-  E: BUSNUM=001
-  E: DEVNAME=/dev/bus/usb/001/002
-  E: DEVNUM=002
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3
-  E: DEVTYPE=usb_device
-  E: DRIVER=usb
-  E: ID_BUS=usb
-  E: ID_MODEL=iBridge
-  E: ID_MODEL_ENC=iBridge
-  E: ID_MODEL_ID=8600
-  E: ID_REVISION=0101
-  E: ID_SERIAL=Apple_Inc._iBridge
-  E: ID_USB_INTERFACES=:0e0100:0e0200:030101:030001:100000:020d00:0a0001:fff911:
-  E: ID_VENDOR=Apple_Inc.
-  E: ID_VENDOR_ENC=Apple\x20Inc.
-  E: ID_VENDOR_FROM_DATABASE=Apple, Inc.
-  E: ID_VENDOR_ID=05ac
-  E: MAJOR=189
-  E: MINOR=1
-  E: PRODUCT=5ac/8600/101
-  E: SUBSYSTEM=usb
-  E: TYPE=239/2/1
-  E: USEC_INITIALIZED=1883366
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-  E: DEVTYPE=usb_interface
-  E: DRIVER=uvcvideo
-  E: ID_USB_CLASS_FROM_DATABASE=Miscellaneous Device
-  E: ID_USB_PROTOCOL_FROM_DATABASE=Interface Association
-  E: ID_VENDOR_FROM_DATABASE=Apple, Inc.
-  E: INTERFACE=14/1/0
-  E: MODALIAS=usb:v05ACp8600d0101dcEFdsc02dp01ic0Eisc01ip00in00
-  E: PRODUCT=5ac/8600/101
-  E: SUBSYSTEM=usb
-  E: TYPE=239/2/1
-  E: USEC_INITIALIZED=16084965
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/media0
-  N: media0
-  E: DEVNAME=/dev/media0
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/media0
-  E: MAJOR=243
-  E: MINOR=0
-  E: SUBSYSTEM=media
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video0
-  N: video0
-  S: v4l/by-id/usb-Apple_Inc._iBridge-video-index0
-  S: v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index0
-  E: COLORD_DEVICE=1
-  E: COLORD_KIND=camera
-  E: DEVLINKS=/dev/v4l/by-id/usb-Apple_Inc._iBridge-video-index0 /dev/v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index0
-  E: DEVNAME=/dev/video0
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video0
-  E: ID_BUS=usb
-  E: ID_FOR_SEAT=video4linux-pci-0000_00_14_0-usb-0_3_1_0
-  E: ID_MODEL=iBridge
-  E: ID_MODEL_ENC=iBridge
-  E: ID_MODEL_ID=8600
-  E: ID_PATH=pci-0000:00:14.0-usb-0:3:1.0
-  E: ID_PATH_TAG=pci-0000_00_14_0-usb-0_3_1_0
-  E: ID_REVISION=0101
-  E: ID_SERIAL=Apple_Inc._iBridge
-  E: ID_TYPE=video
-  E: ID_USB_DRIVER=uvcvideo
-  E: ID_USB_INTERFACES=:0e0100:0e0200:030101:030001:100000:020d00:0a0001:fff911:
-  E: ID_USB_INTERFACE_NUM=00
-  E: ID_V4L_CAPABILITIES=:capture:
-  E: ID_V4L_PRODUCT=iBridge: FaceTime HD Camera (Bu
-  E: ID_V4L_VERSION=2
-  E: ID_VENDOR=Apple_Inc.
-  E: ID_VENDOR_ENC=Apple\x20Inc.
-  E: ID_VENDOR_ID=05ac
-  E: MAJOR=81
-  E: MINOR=0
-  E: SUBSYSTEM=video4linux
-  E: TAGS=:uaccess:seat:
-  E: USEC_INITIALIZED=16400834
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video1
-  N: video1
-  S: v4l/by-id/usb-Apple_Inc._iBridge-video-index1
-  S: v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index1
-  E: COLORD_DEVICE=1
-  E: COLORD_KIND=camera
-  E: DEVLINKS=/dev/v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index1 /dev/v4l/by-id/usb-Apple_Inc._iBridge-video-index1
-  E: DEVNAME=/dev/video1
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video1
-  E: ID_BUS=usb
-  E: ID_FOR_SEAT=video4linux-pci-0000_00_14_0-usb-0_3_1_0
-  E: ID_MODEL=iBridge
-  E: ID_MODEL_ENC=iBridge
-  E: ID_MODEL_ID=8600
-  E: ID_PATH=pci-0000:00:14.0-usb-0:3:1.0
-  E: ID_PATH_TAG=pci-0000_00_14_0-usb-0_3_1_0
-  E: ID_REVISION=0101
-  E: ID_SERIAL=Apple_Inc._iBridge
-  E: ID_TYPE=video
-  E: ID_USB_DRIVER=uvcvideo
-  E: ID_USB_INTERFACES=:0e0100:0e0200:030101:030001:100000:020d00:0a0001:fff911:
-  E: ID_USB_INTERFACE_NUM=00
-  E: ID_V4L_CAPABILITIES=:capture:
-  E: ID_V4L_PRODUCT=iBridge: FaceTime HD Camera (Bu
-  E: ID_V4L_VERSION=2
-  E: ID_VENDOR=Apple_Inc.
-  E: ID_VENDOR_ENC=Apple\x20Inc.
-  E: ID_VENDOR_ID=05ac
-  E: MAJOR=81
-  E: MINOR=1
-  E: SUBSYSTEM=video4linux
-  E: TAGS=:uaccess:seat:
-  E: USEC_INITIALIZED=16402777
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
-  E: DEVTYPE=usb_interface
-  E: DRIVER=uvcvideo
-  E: ID_USB_CLASS_FROM_DATABASE=Miscellaneous Device
-  E: ID_USB_PROTOCOL_FROM_DATABASE=Interface Association
-  E: ID_VENDOR_FROM_DATABASE=Apple, Inc.
-  E: INTERFACE=14/2/0
-  E: MODALIAS=usb:v05ACp8600d0101dcEFdsc02dp01ic0Eisc02ip00in01
-  E: PRODUCT=5ac/8600/101
-  E: SUBSYSTEM=usb
-  E: TYPE=239/2/1
-  E: USEC_INITIALIZED=16084754
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-  E: DEVTYPE=usb_interface
-  E: DRIVER=usbhid
-  E: ID_USB_CLASS_FROM_DATABASE=Miscellaneous Device
-  E: ID_USB_PROTOCOL_FROM_DATABASE=Interface Association
-  E: ID_VENDOR_FROM_DATABASE=Apple, Inc.
-  E: INTERFACE=3/1/1
-  E: MODALIAS=usb:v05ACp8600d0101dcEFdsc02dp01ic03isc01ip01in02
-  E: PRODUCT=5ac/8600/101
-  E: SUBSYSTEM=usb
-  E: TYPE=239/2/1
-  E: USEC_INITIALIZED=16086797
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-  E: DRIVER=apple-touchbar
-  E: HID_ID=0003:000005AC:00008600
-  E: HID_NAME=Apple Inc. iBridge
-  E: HID_PHYS=usb-0000:00:14.0-3/input2
-  E: HID_UNIQ=
-  E: MODALIAS=hid:b0003g0001v000005ACp00008600
-  E: SUBSYSTEM=hid
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/hidraw/hidraw0
-  N: hidraw0
-  E: DEVNAME=/dev/hidraw0
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/hidraw/hidraw0
-  E: MAJOR=246
-  E: MINOR=0
-  E: SUBSYSTEM=hidraw
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10
-  E: EV=100013
-  E: ID_BUS=usb
-  E: ID_FOR_SEAT=input-pci-0000_00_14_0-usb-0_3_1_2
-  E: ID_INPUT=1
-  E: ID_INPUT_KEY=1
-  E: ID_MODEL=iBridge
-  E: ID_MODEL_ENC=iBridge
-  E: ID_MODEL_ID=8600
-  E: ID_PATH=pci-0000:00:14.0-usb-0:3:1.2
-  E: ID_PATH_TAG=pci-0000_00_14_0-usb-0_3_1_2
-  E: ID_REVISION=0101
-  E: ID_SERIAL=Apple_Inc._iBridge
-  E: ID_TYPE=hid
-  E: ID_USB_DRIVER=usbhid
-  E: ID_USB_INTERFACES=:0e0100:0e0200:030101:030001:100000:020d00:0a0001:fff911:
-  E: ID_USB_INTERFACE_NUM=02
-  E: ID_VENDOR=Apple_Inc.
-  E: ID_VENDOR_ENC=Apple\x20Inc.
-  E: ID_VENDOR_ID=05ac
-  E: KEY=1006300001000 3800000000 10e00000180001f f800000000000002
-  E: MODALIAS=input:b0003v05ACp8600e0101-e0,1,4,14,k71,72,73,78,A3,A4,A5,CC,E0,E1,E5,E6,F0,ram4,lsfw
-  E: MSC=10
-  E: NAME="Apple Inc. iBridge"
-  E: PHYS="usb-0000:00:14.0-3/input2"
-  E: PRODUCT=3/5ac/8600/101
-  E: PROP=0
-  E: SUBSYSTEM=input
-  E: TAGS=:seat:
-  E: UNIQ=""
-  E: USEC_INITIALIZED=20614670
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10/event9
-  N: input/event9
-  S: input/by-id/usb-Apple_Inc._iBridge-event-if02
-  S: input/by-path/pci-0000:00:14.0-usb-0:3:1.2-event
-  E: BACKSPACE=guess
-  E: DEVLINKS=/dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.2-event /dev/input/by-id/usb-Apple_Inc._iBridge-event-if02
-  E: DEVNAME=/dev/input/event9
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10/event9
-  E: ID_BUS=usb
-  E: ID_INPUT=1
-  E: ID_INPUT_KEY=1
-  E: ID_MODEL=iBridge
-  E: ID_MODEL_ENC=iBridge
-  E: ID_MODEL_ID=8600
-  E: ID_PATH=pci-0000:00:14.0-usb-0:3:1.2
-  E: ID_PATH_TAG=pci-0000_00_14_0-usb-0_3_1_2
-  E: ID_REVISION=0101
-  E: ID_SERIAL=Apple_Inc._iBridge
-  E: ID_TYPE=hid
-  E: ID_USB_DRIVER=usbhid
-  E: ID_USB_INTERFACES=:0e0100:0e0200:030101:030001:100000:020d00:0a0001:fff911:
-  E: ID_USB_INTERFACE_NUM=02
-  E: ID_VENDOR=Apple_Inc.
-  E: ID_VENDOR_ENC=Apple\x20Inc.
-  E: ID_VENDOR_ID=05ac
-  E: LIBINPUT_DEVICE_GROUP=3/5ac/8600:usb-0000:00:14.0-3
-  E: MAJOR=13
-  E: MINOR=73
-  E: SUBSYSTEM=input
-  E: TAGS=:power-switch:
-  E: USEC_INITIALIZED=20686114
-  E: XKBLAYOUT=us
-  E: XKBMODEL=pc105
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-  E: DEVTYPE=usb_interface
-  E: DRIVER=usbhid
-  E: ID_USB_CLASS_FROM_DATABASE=Miscellaneous Device
-  E: ID_USB_PROTOCOL_FROM_DATABASE=Interface Association
-  E: ID_VENDOR_FROM_DATABASE=Apple, Inc.
-  E: INTERFACE=3/0/1
-  E: MODALIAS=usb:v05ACp8600d0101dcEFdsc02dp01ic03isc00ip01in03
-  E: PRODUCT=5ac/8600/101
-  E: SUBSYSTEM=usb
-  E: TYPE=239/2/1
-  E: USEC_INITIALIZED=16136008
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
-  E: DRIVER=apple-touchbar
-  E: HID_ID=0003:000005AC:00008600
-  E: HID_NAME=Apple Inc. iBridge
-  E: HID_PHYS=usb-0000:00:14.0-3/input3
-  E: HID_UNIQ=
-  E: MODALIAS=hid:b0003g0001v000005ACp00008600
-  E: SUBSYSTEM=hid
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002/hidraw/hidraw1
-  N: hidraw1
-  E: DEVNAME=/dev/hidraw1
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002/hidraw/hidraw1
-  E: MAJOR=246
-  E: MINOR=1
-  E: SUBSYSTEM=hidraw
-  
-  P: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/usbmisc/hiddev0
-  N: usb/hiddev0
-  E: DEVNAME=/dev/usb/hiddev0
-  E: DEVPATH=/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/usbmisc/hiddev0
-  E: MAJOR=180
-  E: MINOR=0
-  E: SUBSYSTEM=usbmisc
-  
   P: /devices/pci0000:00/0000:00:14.0/usb2
   N: bus/usb/002/001
   E: BUSNUM=002
@@ -6017,7 +5482,7 @@ Timeout waiting for PADO packets
   S: disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L
   S: disk/by-id/nvme-eui.00253830241f4028
   S: disk/by-path/pci-0000:02:00.0-nvme-1
-  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028 /dev/disk/by-path/pci-0000:02:00.0-nvme-1 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L
+  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L /dev/disk/by-path/pci-0000:02:00.0-nvme-1
   E: DEVNAME=/dev/nvme0n1
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1
   E: DEVTYPE=disk
@@ -6044,7 +5509,7 @@ Timeout waiting for PADO packets
   S: disk/by-partuuid/28c7ccdc-a0ac-4739-8c01-beb094efe87b
   S: disk/by-path/pci-0000:02:00.0-nvme-1-part1
   S: disk/by-uuid/5F66-17ED
-  E: DEVLINKS=/dev/disk/by-partlabel/EFI\x20System\x20Partition /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part1 /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part1 /dev/disk/by-id/nvme-eui.00253830241f4028-part1 /dev/disk/by-label/EFI /dev/disk/by-partuuid/28c7ccdc-a0ac-4739-8c01-beb094efe87b /dev/disk/by-uuid/5F66-17ED
+  E: DEVLINKS=/dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part1 /dev/disk/by-partlabel/EFI\x20System\x20Partition /dev/disk/by-label/EFI /dev/disk/by-id/nvme-eui.00253830241f4028-part1 /dev/disk/by-partuuid/28c7ccdc-a0ac-4739-8c01-beb094efe87b /dev/disk/by-uuid/5F66-17ED /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part1
   E: DEVNAME=/dev/nvme0n1p1
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1/nvme0n1p1
   E: DEVTYPE=partition
@@ -6117,7 +5582,7 @@ Timeout waiting for PADO packets
   S: disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part3
   S: disk/by-id/nvme-eui.00253830241f4028-part3
   S: disk/by-path/pci-0000:02:00.0-nvme-1-part3
-  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028-part3 /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part3 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part3
+  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028-part3 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part3 /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part3
   E: DEVNAME=/dev/nvme0n1p3
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1/nvme0n1p3
   E: DEVTYPE=partition
@@ -6144,7 +5609,7 @@ Timeout waiting for PADO packets
   S: disk/by-partuuid/7e004141-5fde-e84b-809e-0328e409d04c
   S: disk/by-path/pci-0000:02:00.0-nvme-1-part4
   S: disk/by-uuid/5977010766141373429
-  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028-part4 /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part4 /dev/disk/by-label/tank /dev/disk/by-uuid/5977010766141373429 /dev/disk/by-partuuid/7e004141-5fde-e84b-809e-0328e409d04c /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part4
+  E: DEVLINKS=/dev/disk/by-id/nvme-eui.00253830241f4028-part4 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part4 /dev/disk/by-uuid/5977010766141373429 /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part4 /dev/disk/by-label/tank /dev/disk/by-partuuid/7e004141-5fde-e84b-809e-0328e409d04c
   E: DEVNAME=/dev/nvme0n1p4
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1/nvme0n1p4
   E: DEVTYPE=partition
@@ -6187,7 +5652,7 @@ Timeout waiting for PADO packets
   S: disk/by-partuuid/1c6e8e3e-afbd-434f-b595-c7de950ec781
   S: disk/by-path/pci-0000:02:00.0-nvme-1-part5
   S: disk/by-uuid/fc8e705c-9cc6-4714-9ac0-3546d7c52387
-  E: DEVLINKS=/dev/disk/by-path/pci-0000:02:00.0-nvme-1-part5 /dev/disk/by-id/nvme-eui.00253830241f4028-part5 /dev/disk/by-partuuid/1c6e8e3e-afbd-434f-b595-c7de950ec781 /dev/disk/by-partlabel/boot /dev/disk/by-uuid/fc8e705c-9cc6-4714-9ac0-3546d7c52387 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part5
+  E: DEVLINKS=/dev/disk/by-partlabel/boot /dev/disk/by-path/pci-0000:02:00.0-nvme-1-part5 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part5 /dev/disk/by-id/nvme-eui.00253830241f4028-part5 /dev/disk/by-partuuid/1c6e8e3e-afbd-434f-b595-c7de950ec781 /dev/disk/by-uuid/fc8e705c-9cc6-4714-9ac0-3546d7c52387
   E: DEVNAME=/dev/nvme0n1p5
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1/nvme0n1p5
   E: DEVTYPE=partition
@@ -6227,7 +5692,7 @@ Timeout waiting for PADO packets
   S: disk/by-partuuid/720c7f9d-9e21-4a04-a306-5233bb34b964
   S: disk/by-path/pci-0000:02:00.0-nvme-1-part6
   S: disk/by-uuid/a555f396-dd1d-4096-a861-24b29d3ec77e
-  E: DEVLINKS=/dev/disk/by-path/pci-0000:02:00.0-nvme-1-part6 /dev/disk/by-id/nvme-eui.00253830241f4028-part6 /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part6 /dev/disk/by-partuuid/720c7f9d-9e21-4a04-a306-5233bb34b964 /dev/disk/by-uuid/a555f396-dd1d-4096-a861-24b29d3ec77e
+  E: DEVLINKS=/dev/disk/by-path/pci-0000:02:00.0-nvme-1-part6 /dev/disk/by-partuuid/720c7f9d-9e21-4a04-a306-5233bb34b964 /dev/disk/by-id/nvme-eui.00253830241f4028-part6 /dev/disk/by-uuid/a555f396-dd1d-4096-a861-24b29d3ec77e /dev/disk/by-id/nvme-APPLE_SSD_SM0512L_C02730400E3HRF71L-part6
   E: DEVNAME=/dev/nvme0n1p6
   E: DEVPATH=/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/nvme/nvme0/nvme0n1/nvme0n1p6
   E: DEVTYPE=partition
@@ -8992,7 +8457,7 @@ Timeout waiting for PADO packets
   S: disk/by-id/dm-uuid-CRYPT-LUKS1-a555f396dd1d4096a86124b29d3ec77e-nvme0n1p6_crypt
   S: disk/by-uuid/9d1b6e8a-2d1a-46f8-a803-82bdbd81991a
   S: mapper/nvme0n1p6_crypt
-  E: DEVLINKS=/dev/disk/by-id/dm-name-nvme0n1p6_crypt /dev/disk/by-id/dm-uuid-CRYPT-LUKS1-a555f396dd1d4096a86124b29d3ec77e-nvme0n1p6_crypt /dev/disk/by-uuid/9d1b6e8a-2d1a-46f8-a803-82bdbd81991a /dev/mapper/nvme0n1p6_crypt
+  E: DEVLINKS=/dev/disk/by-id/dm-uuid-CRYPT-LUKS1-a555f396dd1d4096a86124b29d3ec77e-nvme0n1p6_crypt /dev/disk/by-id/dm-name-nvme0n1p6_crypt /dev/disk/by-uuid/9d1b6e8a-2d1a-46f8-a803-82bdbd81991a /dev/mapper/nvme0n1p6_crypt
   E: DEVNAME=/dev/dm-0
   E: DEVPATH=/devices/virtual/block/dm-0
   E: DEVTYPE=disk
@@ -9408,32 +8873,6 @@ Timeout waiting for PADO packets
 /devices/pci0000:00/0000:00:14.0/usb1
   name: /dev/bus/usb/001/001
 /devices/pci0000:00/0000:00:14.0/usb1/1-0:1.0
-/devices/pci0000:00/0000:00:14.0/usb1/1-3
-  name: /dev/bus/usb/001/002
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/media0
-  name: /dev/media0
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video0
-  name: /dev/video0
-  links: /dev/v4l/by-id/usb-Apple_Inc._iBridge-video-index0, /dev/v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index0
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/video4linux/video1
-  name: /dev/video1
-  links: /dev/v4l/by-id/usb-Apple_Inc._iBridge-video-index1, /dev/v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index1
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.1
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/hidraw/hidraw0
-  name: /dev/hidraw0
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2/0003:05AC:8600.0001/input/input10/event9
-  name: /dev/input/event9
-  links: /dev/input/by-id/usb-Apple_Inc._iBridge-event-if02, /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.2-event
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/0003:05AC:8600.0002/hidraw/hidraw1
-  name: /dev/hidraw1
-/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.3/usbmisc/hiddev0
-  name: /dev/usb/hiddev0
 /devices/pci0000:00/0000:00:14.0/usb2
   name: /dev/bus/usb/002/001
 /devices/pci0000:00/0000:00:14.0/usb2/2-0:1.0
@@ -10162,8 +9601,6 @@ Timeout waiting for PADO packets
   old prop read: 7eqy.vej5fS4jsY9 (failed)
   prop read: uIhY.aMIzSWiMAJE (failed)
   old prop read: uIhY.aMIzSWiMAJE (failed)
-  prop read: yqzE.LEr_7Q65Kt3 (failed)
-  old prop read: yqzE.LEr_7Q65Kt3 (failed)
   prop read: zPk0.TiQAvTU26X7 (failed)
   old prop read: zPk0.TiQAvTU26X7 (failed)
   prop read: k4bc.2DFUsyrieMD (failed)
@@ -10201,37 +9638,6 @@ Timeout waiting for PADO packets
   prop read: ZsBS.GQNx7L4uPNA (failed)
   old prop read: ZsBS.GQNx7L4uPNA (failed)
 ----- kernel log -----
-  <4>[302379.422654] kauditd_printk_skb: 1 callbacks suppressed
-  <5>[302379.422657] audit: type=1400 audit(1541340699.024:7852): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/ods_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.422719] audit: type=1400 audit(1541340699.024:7853): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/ods_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.423918] audit: type=1400 audit(1541340699.024:7854): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odb_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.423982] audit: type=1400 audit(1541340699.024:7855): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odb_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.426054] audit: type=1400 audit(1541340699.028:7856): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odg_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.426065] audit: type=1400 audit(1541340699.028:7857): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odg_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.427346] audit: type=1400 audit(1541340699.028:7858): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odp_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.427358] audit: type=1400 audit(1541340699.028:7859): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odp_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.428494] audit: type=1400 audit(1541340699.028:7860): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odf_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <5>[302379.428505] audit: type=1400 audit(1541340699.028:7861): apparmor="ALLOWED" operation="open" profile="libreoffice-soffice" name="/tank/ranmason/.config/libreoffice/4/cache/tango/200/res/odf_32_8.png" pid=14776 comm="soffice.bin" requested_mask="r" denied_mask="r" fsuid=1001 ouid=1001
-  <2>[302476.027462] CPU2: Core temperature above threshold, cpu clock throttled (total events = 119312)
-  <2>[302476.027462] CPU6: Core temperature above threshold, cpu clock throttled (total events = 119312)
-  <2>[302476.027464] CPU5: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027465] CPU3: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027467] CPU1: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027468] CPU7: Package temperature above threshold, cpu clock throttled (total events = 146318)
-  <2>[302476.027469] CPU6: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027470] CPU4: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027471] CPU0: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <2>[302476.027476] CPU2: Package temperature above threshold, cpu clock throttled (total events = 146480)
-  <6>[302476.069437] CPU2: Core temperature/speed normal
-  <6>[302476.069438] CPU6: Core temperature/speed normal
-  <6>[302476.069439] CPU5: Package temperature/speed normal
-  <6>[302476.069441] CPU0: Package temperature/speed normal
-  <6>[302476.069442] CPU1: Package temperature/speed normal
-  <6>[302476.069443] CPU4: Package temperature/speed normal
-  <6>[302476.069443] CPU6: Package temperature/speed normal
-  <6>[302476.069448] CPU2: Package temperature/speed normal
-  <6>[302476.069467] CPU7: Package temperature/speed normal
-  <6>[302476.069468] CPU3: Package temperature/speed normal
   <6>[302753.354987] input: 00:0E:DD:04:42:CE as /devices/virtual/input/input29
   <6>[302792.225490] input: 00:0E:DD:04:42:CE as /devices/virtual/input/input30
   <6>[302820.516937] input: 00:0E:DD:04:42:CE as /devices/virtual/input/input31
@@ -10278,16 +9684,80 @@ Timeout waiting for PADO packets
   <6>[310129.074252] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
   <6>[310130.184389] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
   <3>[310131.703123] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+  <6>[310617.517094] parport 0x908 (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[310617.517102] parport 0x908 (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[310617.517103] parport 0x908: You gave this address, but there is probably no parallel port there!
+  <6>[310617.517145] parport0: PC-style at 0x908 [PCSPP,TRISTATE]
+  <6>[310617.613788] parport 0xb0a (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[310617.613800] parport 0xb0a (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[310617.613802] parport 0xb0a: You gave this address, but there is probably no parallel port there!
+  <6>[310617.613852] parport1: PC-style at 0xb0a [PCSPP,TRISTATE]
+  <6>[310617.717919] parport 0xd0c (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[310617.717934] parport 0xd0c (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[310617.717937] parport 0xd0c: You gave this address, but there is probably no parallel port there!
+  <6>[310617.717982] parport2: PC-style at 0xd0c [PCSPP,TRISTATE]
+  <6>[310618.040354] lp: driver loaded but no devices found
+  <5>[310618.067102] SCSI subsystem initialized
+  <6>[310618.087838] st: Version 20160209, fixed bufsize 32768, s/g segs 256
+  <4>[311585.577121] xhci_hcd 0000:00:14.0: Port resume took longer than 20000 msec, port status = 0x400e03
+  <4>[311595.817091] xhci_hcd 0000:00:14.0: xHCI host not responding to stop endpoint command.
+  <3>[311595.817124] xhci_hcd 0000:00:14.0: xHCI host controller not responding, assume dead
+  <3>[311595.817130] xhci_hcd 0000:00:14.0: HC died; cleaning up
+  <6>[311595.817203] usb 1-3: USB disconnect, device number 2
+  <6>[311595.857135] appletb: Disconnected from keyboard input device
+  <6>[311595.933130] appletb: Disconnected from touchpad input device
+  <3>[311595.977537] appletb: Failed to disable auto-pm on touchbar device (-16)
+  <3>[311595.977540] appletb: Failed to set touchbar mode to 3 (-19)
+  <3>[311595.977542] appletb: Failed to disable auto-pm on touchbar device (-16)
+  <3>[311595.977543] appletb: Failed to disable auto-pm on touchbar device (-16)
+  <3>[311595.977544] appletb: Failed to set touchbar display to 1 (-19)
+  <6>[311595.977546] apple-touchbar 0003:05AC:8600.0001: module remove done.
+  <6>[311595.977602] apple-touchbar 0003:05AC:8600.0002: module remove done.
+  <3>[311595.977759] usb usb1-port3: couldn't allocate usb_device
+  <6>[312150.665976] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <3>[312150.703127] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+  <6>[312151.216580] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312152.333693] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312177.653324] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312178.189431] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312179.248801] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312205.168580] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312205.212397] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312206.221977] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312232.176834] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312232.222058] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312532.206474] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312533.327388] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+  <3>[312533.421899] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+  <6>[312736.671212] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <3>[312736.740315] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+  <6>[312737.259972] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312761.709109] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+  <6>[312785.143650] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+  <3>[312785.276944] brcmfmac: brcmf_inetaddr_changed: fail to get arp ip table err:-52
+  <6>[313976.607667] parport 0x908 (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[313976.607679] parport 0x908 (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[313976.607680] parport 0x908: You gave this address, but there is probably no parallel port there!
+  <6>[313976.607722] parport0: PC-style at 0x908 [PCSPP,TRISTATE]
+  <6>[313976.694647] parport 0xb0a (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[313976.694663] parport 0xb0a (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[313976.694667] parport 0xb0a: You gave this address, but there is probably no parallel port there!
+  <6>[313976.694723] parport1: PC-style at 0xb0a [PCSPP,TRISTATE]
+  <6>[313976.794421] parport 0xd0c (WARNING): CTR: wrote 0x0c, read 0xff
+  <6>[313976.794433] parport 0xd0c (WARNING): DATA: wrote 0xaa, read 0xff
+  <6>[313976.794434] parport 0xd0c: You gave this address, but there is probably no parallel port there!
+  <6>[313976.794477] parport2: PC-style at 0xd0c [PCSPP,TRISTATE]
+  <6>[313977.077490] lp: driver loaded but no devices found
 ----- kernel log end -----
 ----- /proc/modules -----
+  lp 20480 0 - Live 0xffffffffc0795000
+  parport_pc 32768 0 - Live 0xffffffffc07ae000
   sg 36864 0 - Live 0xffffffffc1e14000
   st 65536 0 - Live 0xffffffffc1e03000
   sd_mod 53248 0 - Live 0xffffffffc1df5000
   sr_mod 28672 0 - Live 0xffffffffc1d0b000
   cdrom 69632 1 sr_mod, Live 0xffffffffc1de3000
   scsi_mod 249856 4 sg,st,sd_mod,sr_mod, Live 0xffffffffc1da5000
-  lp 20480 0 - Live 0xffffffffc0795000
-  parport_pc 32768 0 - Live 0xffffffffc07ae000
   uinput 20480 0 - Live 0xffffffffc15ee000
   rfcomm 86016 16 - Live 0xffffffffc1cdc000
   cpuid 16384 0 - Live 0xffffffffc15c4000
@@ -10397,7 +9867,7 @@ Timeout waiting for PADO packets
   iTCO_vendor_support 16384 1 iTCO_wdt, Live 0xffffffffc0a16000
   drm_kms_helper 196608 2 amdgpu,i915, Live 0xffffffffc0afa000
   joydev 24576 0 - Live 0xffffffffc0aef000
-  evdev 28672 21 - Live 0xffffffffc0ae3000
+  evdev 28672 19 - Live 0xffffffffc0ae3000
   mmc_core 172032 1 brcmfmac, Live 0xffffffffc0aaa000
   drm 483328 25 amdgpu,i915,gpu_sched,ttm,drm_kms_helper, Live 0xffffffffc096d000
   mei_me 45056 0 - Live 0xffffffffc094a000
@@ -10850,7 +10320,7 @@ Timeout waiting for PADO packets
   Features: WLAN
   Memory Range: 0x82400000-0x82407fff (rw,non-prefetchable)
   Memory Range: 0x82000000-0x823fffff (rw,non-prefetchable)
-  IRQ: 75 (7723350 events)
+  IRQ: 75 (7770128 events)
   HW Address: 00:90:4c:0d:f4:3e
   Permanent HW Address: 00:90:4c:0d:f4:3e
   Link detected: yes
@@ -10984,7 +10454,7 @@ Timeout waiting for PADO packets
   Driver Modules: "nvme"
   Memory Range: 0x82500000-0x82503fff (rw,non-prefetchable)
   I/O Ports: 0x3000-0x3fff (rw,disabled)
-  IRQ: 52 (6821771 events)
+  IRQ: 52 (6862778 events)
   Module Alias: "pci:v0000144Dd0000A804sv0000144Dsd0000A801bc01sc08i02"
   Driver Info #0:
     Driver Status: nvme is active
@@ -11070,7 +10540,7 @@ Timeout waiting for PADO packets
   I/O Ports: 0x4000-0x4fff (rw)
   Memory Range: 0x82600000-0x8263ffff (rw,non-prefetchable)
   Memory Range: 0x82640000-0x8265ffff (ro,non-prefetchable,disabled)
-  IRQ: 74 (7209757 events)
+  IRQ: 74 (7241954 events)
   Module Alias: "pci:v00001002d000067EFsv0000106Bsd00000179bc03sc00i00"
   Driver Info #0:
     Driver Status: amdgpu is active
@@ -11398,7 +10868,7 @@ Timeout waiting for PADO packets
   Driver: "intel-lpss"
   Driver Modules: "intel_lpss_pci"
   Memory Range: 0x8272e000-0x8272efff (rw,non-prefetchable)
-  IRQ: 23 (11077008 events)
+  IRQ: 23 (11100470 events)
   Module Alias: "pci:v00008086d0000A12Asv00008086sd00007270bc11sc80i00"
   Driver Info #0:
     Driver Status: intel_lpss_pci is active
@@ -11547,7 +11017,7 @@ Timeout waiting for PADO packets
   Driver: "xhci_hcd"
   Driver Modules: "xhci_pci"
   Memory Range: 0x82700000-0x8270ffff (rw,non-prefetchable)
-  IRQ: 53 (41226620 events)
+  IRQ: 53 (42003623 events)
   Module Alias: "pci:v00008086d0000A12Fsv00008086sd00007270bc0Csc03i30"
   Driver Info #0:
     Driver Status: xhci_pci is active
@@ -11764,32 +11234,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #32 (USB Controller)
 
-65: USB 00.2: 0000 Unclassified device
-  [Created at usb.122]
-  Unique ID: yqzE.LEr_7Q65Kt3
-  Parent ID: k4bc.2DFUsyrieMD
-  SysFS ID: /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.2
-  SysFS BusID: 1-3:1.2
-  Hardware Class: unknown
-  Model: "Apple iBridge"
-  Hotplug: USB
-  Vendor: usb 0x05ac "Apple, Inc."
-  Device: usb 0x8600 "iBridge"
-  Revision: "1.01"
-  Driver: "usbhid"
-  Driver Modules: "usbhid"
-  Device File: /dev/input/event9
-  Device Files: /dev/input/event9, /dev/input/by-id/usb-Apple_Inc._iBridge-event-if02, /dev/input/by-path/pci-0000:00:14.0-usb-0:3:1.2-event
-  Device Number: char 13:73
-  Speed: 480 Mbps
-  Module Alias: "usb:v05ACp8600d0101dcEFdsc02dp01ic03isc01ip01in02"
-  Driver Info #0:
-    Driver Status: usbhid is active
-    Driver Activation Cmd: "modprobe usbhid"
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-  Attached to: #68 (Hub)
-
-67: USB 00.0: 10a00 Hub
+65: USB 00.0: 10a00 Hub
   [Created at usb.122]
   Unique ID: zPk0.TiQAvTU26X7
   Parent ID: aK5u.Yfg2PMcth3A
@@ -11811,7 +11256,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #32 (USB Controller)
 
-68: USB 00.0: 10a00 Hub
+66: USB 00.0: 10a00 Hub
   [Created at usb.122]
   Unique ID: k4bc.2DFUsyrieMD
   Parent ID: MZfG.ADptcpNz_J3
@@ -11834,7 +11279,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #52 (USB Controller)
 
-69: USB 00.0: 10a00 Hub
+67: USB 00.0: 10a00 Hub
   [Created at usb.122]
   Unique ID: 2XnU.0JbuCVI1xK0
   Parent ID: 7qe8.Yfg2PMcth3A
@@ -11857,7 +11302,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #46 (USB Controller)
 
-72: USB 00.0: 10a00 Hub
+68: USB 00.0: 10a00 Hub
   [Created at usb.122]
   Unique ID: pBe4.xYNhIwdOaa6
   Parent ID: MZfG.ADptcpNz_J3
@@ -11879,7 +11324,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #52 (USB Controller)
 
-73: PS/2 00.0: 10800 Keyboard
+69: PS/2 00.0: 10800 Keyboard
   [Created at input.226]
   Unique ID: nLyy.Svno16mO_84
   Hardware Class: keyboard
@@ -11894,7 +11339,7 @@ Timeout waiting for PADO packets
     XkbModel: pc104
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-74: PS/2 00.0: 10500 PS/2 Mouse
+70: PS/2 00.0: 10500 PS/2 Mouse
   [Created at input.249]
   Unique ID: AH6Q.daKPksACfF7
   Hardware Class: mouse
@@ -11912,7 +11357,7 @@ Timeout waiting for PADO packets
     GPM Protocol: exps2
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-75: None 00.0: 10103 CPU
+71: None 00.0: 10103 CPU
   [Created at cpu.465]
   Unique ID: rdCR.j8NaKXDZtZ6
   Hardware Class: cpu
@@ -11920,99 +11365,15 @@ Timeout waiting for PADO packets
   Vendor: "GenuineIntel"
   Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
   Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 1863 MHz
+  Clock: 1725 MHz
   BogoMips: 6192.00
   Cache: 8192 kb
   Units/Processor: 16
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-76: None 01.0: 10103 CPU
+72: None 01.0: 10103 CPU
   [Created at cpu.465]
   Unique ID: wkFv.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 2642 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-77: None 02.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: +rIN.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 1933 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-78: None 03.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: 4zLr.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 2329 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-79: None 04.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: 94PJ.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 2053 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-80: None 05.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: EBSn.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 1705 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-81: None 06.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: JIVF.j8NaKXDZtZ6
-  Hardware Class: cpu
-  Arch: X86-64
-  Vendor: "GenuineIntel"
-  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
-  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
-  Clock: 2042 MHz
-  BogoMips: 6192.00
-  Cache: 8192 kb
-  Units/Processor: 16
-  Config Status: cfg=new, avail=yes, need=no, active=unknown
-
-82: None 07.0: 10103 CPU
-  [Created at cpu.465]
-  Unique ID: OPYj.j8NaKXDZtZ6
   Hardware Class: cpu
   Arch: X86-64
   Vendor: "GenuineIntel"
@@ -12024,7 +11385,91 @@ Timeout waiting for PADO packets
   Units/Processor: 16
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-83: None 05.0: 10701 Ethernet
+73: None 02.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: +rIN.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1257 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+74: None 03.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: 4zLr.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1569 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+75: None 04.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: 94PJ.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1600 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+76: None 05.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: EBSn.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1320 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+77: None 06.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: JIVF.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1439 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+78: None 07.0: 10103 CPU
+  [Created at cpu.465]
+  Unique ID: OPYj.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: X86-64
+  Vendor: "GenuineIntel"
+  Model: 6.158.9 "Intel(R) Core(TM) i7-7920HQ CPU @ 3.10GHz"
+  Features: fpu,vme,de,pse,tsc,msr,pae,mce,cx8,apic,sep,mtrr,pge,mca,cmov,pat,pse36,clflush,dts,acpi,mmx,fxsr,sse,sse2,ss,ht,tm,pbe,syscall,nx,pdpe1gb,rdtscp,lm,constant_tsc,art,arch_perfmon,pebs,bts,rep_good,nopl,xtopology,nonstop_tsc,cpuid,aperfmperf,tsc_known_freq,pni,pclmulqdq,dtes64,monitor,ds_cpl,vmx,smx,est,tm2,ssse3,sdbg,fma,cx16,xtpr,pdcm,pcid,sse4_1,sse4_2,x2apic,movbe,popcnt,tsc_deadline_timer,aes,xsave,avx,f16c,rdrand,lahf_lm,abm,3dnowprefetch,cpuid_fault,epb,invpcid_single,pti,ssbd,ibrs,ibpb,stibp,tpr_shadow,vnmi,flexpriority,ept,vpid,ept_ad,fsgsbase,tsc_adjust,bmi1,hle,avx2,smep,bmi2,erms,invpcid,rtm,mpx,rdseed,adx,smap,clflushopt,intel_pt,xsaveopt,xsavec,xgetbv1,xsaves,dtherm,ida,arat,pln,pts,hwp,hwp_notify,hwp_act_window,hwp_epp,flush_l1d
+  Clock: 1314 MHz
+  BogoMips: 6192.00
+  Cache: 8192 kb
+  Units/Processor: 16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+79: None 05.0: 10701 Ethernet
   [Created at net.126]
   Unique ID: APkH.ndpeucax6V1
   SysFS ID: /class/net/ztzlgojtv5
@@ -12036,7 +11481,7 @@ Timeout waiting for PADO packets
   Link detected: yes
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-84: None 00.0: 1070a WLAN
+80: None 00.0: 1070a WLAN
   [Created at net.126]
   Unique ID: AYEt.QXn1l67RSa1
   Parent ID: y9sn.ER+irUPv638
@@ -12053,7 +11498,7 @@ Timeout waiting for PADO packets
   Config Status: cfg=new, avail=yes, need=no, active=unknown
   Attached to: #18 (WLAN controller)
 
-85: None 00.0: 10701 Ethernet
+81: None 00.0: 10701 Ethernet
   [Created at net.126]
   Unique ID: 7iXG.ndpeucax6V1
   SysFS ID: /class/net/docker0
@@ -12065,7 +11510,7 @@ Timeout waiting for PADO packets
   Link detected: no
   Config Status: cfg=new, avail=yes, need=no, active=unknown
 
-86: None 00.0: 10700 Loopback
+82: None 00.0: 10700 Loopback
   [Created at net.126]
   Unique ID: ZsBS.GQNx7L4uPNA
   SysFS ID: /class/net/lo

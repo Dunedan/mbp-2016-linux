@@ -34,7 +34,7 @@
 			ClockPM- Surprise- LLActRep- BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 8GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt+
+		LnkSta:	Speed 2.5GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt+
 		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
 			Slot #1, PowerLimit 75.000W; Interlock- NoCompl+
 		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
@@ -445,7 +445,7 @@
 	Region 0: Memory at 8272e000 (64-bit, non-prefetchable) [size=4K]
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] Vendor Specific Information: Len=14 <?>
 	Kernel driver in use: intel-lpss
 	Kernel modules: intel_lpss_pci
@@ -508,12 +508,12 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 256 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend+
 		LnkCap:	Port #0, Speed 8GT/s, Width x8, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 8GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta:	Speed 2.5GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR-, OBFF Not Supported
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
@@ -549,7 +549,7 @@
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM+ AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 8GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta:	Speed 2.5GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR-, OBFF Not Supported
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
