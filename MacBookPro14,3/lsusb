@@ -10,8 +10,8 @@ Device Descriptor:
   bMaxPacketSize0         9
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0003 3.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:00:14.0
   bNumConfigurations      1
@@ -88,137 +88,6 @@ Binary Object Store Descriptor:
 Device Status:     0x0001
   Self Powered
 
-Bus 001 Device 004: ID 04e8:6864 Samsung Electronics Co., Ltd GT-I9070 (network tethering, USB debugging enabled)
-Device Descriptor:
-  bLength                18
-  bDescriptorType         1
-  bcdUSB               2.00
-  bDeviceClass          224 Wireless
-  bDeviceSubClass         0 
-  bDeviceProtocol         0 
-  bMaxPacketSize0        64
-  idVendor           0x04e8 Samsung Electronics Co., Ltd
-  idProduct          0x6864 GT-I9070 (network tethering, USB debugging enabled)
-  bcdDevice           ff.ff
-  iManufacturer           1 SAMSUNG
-  iProduct                2 SAMSUNG_Android
-  iSerial                 3 41009a1ee4499115
-  bNumConfigurations      1
-  Configuration Descriptor:
-    bLength                 9
-    bDescriptorType         2
-    wTotalLength           98
-    bNumInterfaces          3
-    bConfigurationValue     1
-    iConfiguration          0 
-    bmAttributes         0xc0
-      Self Powered
-    MaxPower               48mA
-    Interface Association:
-      bLength                 8
-      bDescriptorType        11
-      bFirstInterface         0
-      bInterfaceCount         2
-      bFunctionClass        224 Wireless
-      bFunctionSubClass       1 Radio Frequency
-      bFunctionProtocol       3 RNDIS
-      iFunction               7 RNDIS
-    Interface Descriptor:
-      bLength                 9
-      bDescriptorType         4
-      bInterfaceNumber        0
-      bAlternateSetting       0
-      bNumEndpoints           1
-      bInterfaceClass       224 Wireless
-      bInterfaceSubClass      1 Radio Frequency
-      bInterfaceProtocol      3 RNDIS
-      iInterface              5 RNDIS Communications Control
-      ** UNRECOGNIZED:  05 24 00 10 01
-      ** UNRECOGNIZED:  05 24 01 00 01
-      ** UNRECOGNIZED:  04 24 02 00
-      ** UNRECOGNIZED:  05 24 06 00 01
-      Endpoint Descriptor:
-        bLength                 7
-        bDescriptorType         5
-        bEndpointAddress     0x82  EP 2 IN
-        bmAttributes            3
-          Transfer Type            Interrupt
-          Synch Type               None
-          Usage Type               Data
-        wMaxPacketSize     0x0008  1x 8 bytes
-        bInterval               9
-    Interface Descriptor:
-      bLength                 9
-      bDescriptorType         4
-      bInterfaceNumber        1
-      bAlternateSetting       0
-      bNumEndpoints           2
-      bInterfaceClass        10 CDC Data
-      bInterfaceSubClass      0 Unused
-      bInterfaceProtocol      0 
-      iInterface              6 RNDIS Ethernet Data
-      Endpoint Descriptor:
-        bLength                 7
-        bDescriptorType         5
-        bEndpointAddress     0x81  EP 1 IN
-        bmAttributes            2
-          Transfer Type            Bulk
-          Synch Type               None
-          Usage Type               Data
-        wMaxPacketSize     0x0200  1x 512 bytes
-        bInterval               0
-      Endpoint Descriptor:
-        bLength                 7
-        bDescriptorType         5
-        bEndpointAddress     0x01  EP 1 OUT
-        bmAttributes            2
-          Transfer Type            Bulk
-          Synch Type               None
-          Usage Type               Data
-        wMaxPacketSize     0x0200  1x 512 bytes
-        bInterval               0
-    Interface Descriptor:
-      bLength                 9
-      bDescriptorType         4
-      bInterfaceNumber        2
-      bAlternateSetting       0
-      bNumEndpoints           2
-      bInterfaceClass       255 Vendor Specific Class
-      bInterfaceSubClass     66 
-      bInterfaceProtocol      1 
-      iInterface              0 
-      Endpoint Descriptor:
-        bLength                 7
-        bDescriptorType         5
-        bEndpointAddress     0x83  EP 3 IN
-        bmAttributes            2
-          Transfer Type            Bulk
-          Synch Type               None
-          Usage Type               Data
-        wMaxPacketSize     0x0200  1x 512 bytes
-        bInterval               0
-      Endpoint Descriptor:
-        bLength                 7
-        bDescriptorType         5
-        bEndpointAddress     0x02  EP 2 OUT
-        bmAttributes            2
-          Transfer Type            Bulk
-          Synch Type               None
-          Usage Type               Data
-        wMaxPacketSize     0x0200  1x 512 bytes
-        bInterval               0
-Device Qualifier (for other device speed):
-  bLength                10
-  bDescriptorType         6
-  bcdUSB               2.00
-  bDeviceClass          224 Wireless
-  bDeviceSubClass         0 
-  bDeviceProtocol         0 
-  bMaxPacketSize0        64
-  bNumConfigurations      1
-Device Status:     0x0001
-  Self Powered
-
 Bus 001 Device 002: ID 05ac:8600 Apple, Inc. 
 Device Descriptor:
   bLength                18
@@ -264,7 +133,7 @@ Device Descriptor:
       bInterfaceClass        14 Video
       bInterfaceSubClass      1 Video Control
       bInterfaceProtocol      0 
-      iInterface             13 FaceTime HD Camera (Build-in, SN:DJH7296Y77KGJKD3E)
+      iInterface             13 FaceTime HD Camera (Built-in, SN:DJH7296Y77KGJKD3E)
       VideoControl Interface Descriptor:
         bLength                13
         bDescriptorType        36
@@ -542,7 +411,7 @@ Device Descriptor:
       bInterfaceClass        14 Video
       bInterfaceSubClass      1 Video Control
       bInterfaceProtocol      0 
-      iInterface             14 FaceTime HD Camera (Build-in, SN:DJH7296Y77KGJKD3E)
+      iInterface             14 FaceTime HD Camera (Built-in, SN:DJH7296Y77KGJKD3E)
       VideoControl Interface Descriptor:
         bLength                13
         bDescriptorType        36
@@ -707,14 +576,14 @@ Device Descriptor:
       bInterfaceClass         2 Communications
       bInterfaceSubClass     13 
       bInterfaceProtocol      0 
-      iInterface             10 NCM Control
+      iInterface             11 NCM Control
       CDC Header:
         bcdCDC               1.10
       CDC Union:
         bMasterInterface        4
         bSlaveInterface         5 
       CDC Ethernet:
-        iMacAddress                      9 ACDE48001122
+        iMacAddress                     10 ACDE48001122
         bmEthernetStatistics    0x00000000
         wMaxSegmentSize               1514
         wNumberMCFilters            0x0000
@@ -735,7 +604,7 @@ Device Descriptor:
       bInterfaceClass        10 CDC Data
       bInterfaceSubClass      0 Unused
       bInterfaceProtocol      1 
-      iInterface             11 NCM Data
+      iInterface             12 NCM Data
     Interface Descriptor:
       bLength                 9
       bDescriptorType         4
@@ -745,7 +614,7 @@ Device Descriptor:
       bInterfaceClass        10 CDC Data
       bInterfaceSubClass      0 Unused
       bInterfaceProtocol      1 
-      iInterface             11 NCM Data
+      iInterface             12 NCM Data
       Endpoint Descriptor:
         bLength                 7
         bDescriptorType         5
@@ -805,7 +674,7 @@ Device Descriptor:
       bInterfaceClass       255 Vendor Specific Class
       bInterfaceSubClass    249 
       bInterfaceProtocol     17 
-      iInterface             12 Apple USB SEP Interface
+      iInterface              9 Apple USB SEP Interface
       Endpoint Descriptor:
         bLength                 7
         bDescriptorType         5
@@ -855,7 +724,7 @@ Device Descriptor:
       bInterfaceClass        14 Video
       bInterfaceSubClass      1 Video Control
       bInterfaceProtocol      0 
-      iInterface             13 FaceTime HD Camera (Build-in, SN:DJH7296Y77KGJKD3E)
+      iInterface             13 FaceTime HD Camera (Built-in, SN:DJH7296Y77KGJKD3E)
       VideoControl Interface Descriptor:
         bLength                13
         bDescriptorType        36
@@ -1113,14 +982,14 @@ Device Descriptor:
       bInterfaceClass         2 Communications
       bInterfaceSubClass     13 
       bInterfaceProtocol      0 
-      iInterface             10 NCM Control
+      iInterface             11 NCM Control
       CDC Header:
         bcdCDC               1.10
       CDC Union:
         bMasterInterface        4
         bSlaveInterface         5 
       CDC Ethernet:
-        iMacAddress                      9 ACDE48001122
+        iMacAddress                     10 ACDE48001122
         bmEthernetStatistics    0x00000000
         wMaxSegmentSize               1514
         wNumberMCFilters            0x0000
@@ -1141,7 +1010,7 @@ Device Descriptor:
       bInterfaceClass        10 CDC Data
       bInterfaceSubClass      0 Unused
       bInterfaceProtocol      1 
-      iInterface             11 NCM Data
+      iInterface             12 NCM Data
     Interface Descriptor:
       bLength                 9
       bDescriptorType         4
@@ -1151,7 +1020,7 @@ Device Descriptor:
       bInterfaceClass        10 CDC Data
       bInterfaceSubClass      0 Unused
       bInterfaceProtocol      1 
-      iInterface             11 NCM Data
+      iInterface             12 NCM Data
       Endpoint Descriptor:
         bLength                 7
         bDescriptorType         5
@@ -1195,8 +1064,8 @@ Device Descriptor:
   bMaxPacketSize0        64
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0002 2.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:00:14.0
   bNumConfigurations      1
@@ -1248,7 +1117,7 @@ Hub Descriptor:
    Port 2: 0000.0100 power
    Port 3: 0000.0503 highspeed power enable connect
    Port 4: 0000.0100 power
-   Port 5: 0000.0503 highspeed power enable connect
+   Port 5: 0000.0100 power
    Port 6: 0000.0100 power
    Port 7: 0000.0100 power
    Port 8: 0000.0100 power
@@ -1274,8 +1143,8 @@ Device Descriptor:
   bMaxPacketSize0         9
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0003 3.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:7d:00.0
   bNumConfigurations      1
@@ -1372,8 +1241,8 @@ Device Descriptor:
   bMaxPacketSize0        64
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0002 2.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:7d:00.0
   bNumConfigurations      1
@@ -1437,8 +1306,8 @@ Device Descriptor:
   bMaxPacketSize0         9
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0003 3.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:07:00.0
   bNumConfigurations      1
@@ -1521,8 +1390,8 @@ Device Descriptor:
   bMaxPacketSize0        64
   idVendor           0x1d6b Linux Foundation
   idProduct          0x0002 2.0 root hub
-  bcdDevice            4.15
-  iManufacturer           3 Linux 4.15.0-rc8-amd64 xhci-hcd
+  bcdDevice            4.19
+  iManufacturer           3 Linux 4.19.0-rc4-amd64 xhci-hcd
   iProduct                2 xHCI Host Controller
   iSerial                 1 0000:07:00.0
   bNumConfigurations      1
