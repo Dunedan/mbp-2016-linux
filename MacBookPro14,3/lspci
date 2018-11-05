@@ -15,14 +15,14 @@
 	Memory behind bridge: 82600000-826fffff
 	Prefetchable memory behind bridge: 00000000b0000000-00000000c01fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
-	BridgeCtl: Parity- SERR- NoISA- VGA+ MAbort- >Reset- FastB2B-
+	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
 	Capabilities: [88] Subsystem: Apple Inc. Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16) [106b:0176]
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] MSI: Enable- Count=1/1 Maskable- 64bit-
-		Address: fee00278  Data: 0000
+		Address: 00000000  Data: 0000
 	Capabilities: [a0] Express (v2) Root Port (Slot+), MSI 00
 		DevCap:	MaxPayload 256 bytes, PhantFunc 0
 			ExtTag- RBE+
@@ -66,7 +66,6 @@
 			Addr:	00000000fed19000
 	Capabilities: [d94 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 00:01.1 PCI bridge [0604]: Intel Corporation Skylake PCIe Controller (x8) [8086:1905] (rev 05) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
@@ -85,19 +84,19 @@
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] MSI: Enable- Count=1/1 Maskable- 64bit-
-		Address: fee00278  Data: 0000
+		Address: 00000000  Data: 0000
 	Capabilities: [a0] Express (v2) Root Port (Slot+), MSI 00
 		DevCap:	MaxPayload 256 bytes, PhantFunc 0
 			ExtTag- RBE+
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 128 bytes, MaxReadReq 128 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
 		LnkCap:	Port #3, Speed 8GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <256ns, L1 <8us
 			ClockPM- Surprise- LLActRep- BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt+
+		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt-
 		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
 			Slot #2, PowerLimit 75.000W; Interlock- NoCompl+
 		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
@@ -108,7 +107,7 @@
 		RootCap: CRSVisible-
 		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Via WAKE# ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Via WAKE# ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Via WAKE# ARIFwd-
 		LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -129,7 +128,6 @@
 			Addr:	00000000fed19000
 	Capabilities: [d94 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 00:01.2 PCI bridge [0604]: Intel Corporation Skylake PCIe Controller (x4) [8086:1909] (rev 05) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
@@ -148,7 +146,7 @@
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] MSI: Enable- Count=1/1 Maskable- 64bit-
-		Address: fee00278  Data: 0000
+		Address: 00000000  Data: 0000
 	Capabilities: [a0] Express (v2) Root Port (Slot+), MSI 00
 		DevCap:	MaxPayload 256 bytes, PhantFunc 0
 			ExtTag- RBE+
@@ -160,7 +158,7 @@
 			ClockPM- Surprise- LLActRep- BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
-		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt+
+		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt+ ABWMgmt-
 		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
 			Slot #3, PowerLimit 75.000W; Interlock- NoCompl+
 		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
@@ -171,7 +169,7 @@
 		RootCap: CRSVisible-
 		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Via WAKE# ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Via WAKE# ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Via WAKE# ARIFwd-
 		LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -192,20 +190,56 @@
 			Addr:	00000000fed19000
 	Capabilities: [d94 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
+
+00:02.0 VGA compatible controller [0300]: Intel Corporation Device [8086:591b] (rev 04) (prog-if 00 [VGA controller])
+	Subsystem: Apple Inc. Device [106b:0176]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 256 bytes
+	Interrupt: pin A routed to IRQ 73
+	Region 0: Memory at 81000000 (64-bit, non-prefetchable) [size=16M]
+	Region 2: Memory at a0000000 (64-bit, prefetchable) [size=256M]
+	Region 4: I/O ports at 5000 [size=64]
+	Capabilities: [40] Vendor Specific Information: Len=0c <?>
+	Capabilities: [70] Express (v2) Root Complex Integrated Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0
+			ExtTag- RBE+
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR-, OBFF Not Supported
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+	Capabilities: [ac] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee00018  Data: 0000
+	Capabilities: [d0] Power Management version 2
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100 v1] Process Address Space ID (PASID)
+		PASIDCap: Exec- Priv-, Max PASID Width: 14
+		PASIDCtl: Enable- Exec- Priv-
+	Capabilities: [200 v1] Address Translation Service (ATS)
+		ATSCap:	Invalidate Queue Depth: 00
+		ATSCtl:	Enable-, Smallest Translation Unit: 00
+	Capabilities: [300 v1] Page Request Interface (PRI)
+		PRICtl: Enable- Reset-
+		PRISta: RF- UPRGI- Stopped+
+		Page Request Capacity: 00008000, Page Request Allocation: 00000000
+	Kernel driver in use: i915
+	Kernel modules: i915
 
 00:14.0 USB controller [0c03]: Intel Corporation Sunrise Point-H USB 3.0 xHCI Controller [8086:a12f] (rev 31) (prog-if 30 [XHCI])
 	Subsystem: Intel Corporation Sunrise Point-H USB 3.0 xHCI Controller [8086:7270]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0
-	Interrupt: pin A routed to IRQ 36
+	Interrupt: pin A routed to IRQ 53
 	Region 0: Memory at 82700000 (64-bit, non-prefetchable) [size=64K]
 	Capabilities: [70] Power Management version 2
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [80] MSI: Enable+ Count=1/8 Maskable- 64bit+
-		Address: 00000000fee003b8  Data: 0000
+		Address: 00000000fee005d8  Data: 0000
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
 
@@ -228,13 +262,13 @@
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0
-	Interrupt: pin A routed to IRQ 40
+	Interrupt: pin A routed to IRQ 72
 	Region 0: Memory at 82729000 (64-bit, non-prefetchable) [size=4K]
 	Capabilities: [50] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [8c] MSI: Enable+ Count=1/1 Maskable- 64bit+
-		Address: 00000000fee004b8  Data: 0000
+		Address: 00000000fee008b8  Data: 0000
 	Kernel driver in use: mei_me
 	Kernel modules: mei_me
 
@@ -309,7 +343,6 @@
 		L1SubCtl2: T_PwrOn=44us
 	Capabilities: [220 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 00:1c.0 PCI bridge [0604]: Intel Corporation Sunrise Point-H PCI Express Root Port #1 [8086:a110] (rev f1) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
@@ -327,7 +360,7 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
 			MaxPayload 256 bytes, MaxReadReq 128 bytes
-		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
 		LnkCap:	Port #1, Speed 2.5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <1us, L1 <16us
 			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
@@ -360,7 +393,6 @@
 		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd- EgressCtrl- DirectTrans-
 		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 00:1e.0 Signal processing controller [1180]: Intel Corporation Sunrise Point-H Serial IO UART #0 [8086:a127] (rev 31)
 	Subsystem: Intel Corporation Sunrise Point-H Serial IO UART [8086:7270]
@@ -371,7 +403,7 @@
 	Region 0: Memory at 8272b000 (64-bit, non-prefetchable) [size=4K]
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
-		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] Vendor Specific Information: Len=14 <?>
 	Kernel driver in use: intel-lpss
 	Kernel modules: intel_lpss_pci
@@ -432,18 +464,17 @@
 
 00:1f.3 Audio device [0403]: Intel Corporation Sunrise Point-H HD Audio [8086:a170] (rev 31)
 	Subsystem: Intel Corporation Sunrise Point-H HD Audio [8086:7270]
-	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 64, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 57
+	Latency: 0, Cache Line Size: 256 bytes
+	Interrupt: pin A routed to IRQ 255
 	Region 0: Memory at 82720000 (64-bit, non-prefetchable) [size=16K]
 	Region 4: Memory at 4000000000 (64-bit, non-prefetchable) [size=64K]
 	Capabilities: [50] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=55mA PME(D0-,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
-	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+
-		Address: 00000000fee006d8  Data: 0000
-	Kernel driver in use: snd_hda_intel
+	Capabilities: [60] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
 	Kernel modules: snd_hda_intel
 
 00:1f.4 SMBus [0c05]: Intel Corporation Sunrise Point-H SMBus [8086:a123] (rev 31)
@@ -457,11 +488,11 @@
 	Kernel modules: i2c_i801
 
 01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 460] [1002:67ef] (rev c0) (prog-if 00 [VGA controller])
-	Subsystem: Apple Inc. Baffin [Radeon RX 460/560D / Pro 450/455/460/560] (Radeon Pro 560) [106b:0179]
+	Subsystem: Apple Inc. Baffin [Radeon RX 460/560D / Pro 450/455/460/555/560] (Radeon Pro 560) [106b:0179]
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
-	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 59
+	Interrupt: pin A routed to IRQ 74
 	Region 0: Memory at b0000000 (64-bit, prefetchable) [size=256M]
 	Region 2: Memory at c0000000 (64-bit, prefetchable) [size=2M]
 	Region 4: I/O ports at 4000 [size=256]
@@ -477,7 +508,7 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 256 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend+
 		LnkCap:	Port #0, Speed 8GT/s, Width x8, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
@@ -491,7 +522,7 @@
 		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+, EqualizationPhase1+
 			 EqualizationPhase2+, EqualizationPhase3+, LinkEqualizationRequest-
 	Capabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+
-		Address: 00000000fee00718  Data: 0000
+		Address: 00000000fee008d8  Data: 0000
 	Capabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
 	Capabilities: [270 v1] #19
 	Kernel driver in use: amdgpu
@@ -499,11 +530,10 @@
 
 01:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Device [1002:aae0]
 	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] Device [1002:aae0]
-	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin B routed to IRQ 58
-	Region 0: Memory at 82660000 (64-bit, non-prefetchable) [size=16K]
+	Interrupt: pin B routed to IRQ 255
+	Region 0: Memory at 82660000 (64-bit, non-prefetchable) [disabled] [size=16K]
 	Capabilities: [48] Vendor Specific Information: Len=08 <?>
 	Capabilities: [50] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
@@ -514,7 +544,7 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 256 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
 		LnkCap:	Port #0, Speed 8GT/s, Width x8, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
@@ -524,10 +554,9 @@
 		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
 		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
 			 EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
-	Capabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+
-		Address: 00000000fee006f8  Data: 0000
+	Capabilities: [a0] MSI: Enable- Count=1/1 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
 	Capabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
-	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
 
 02:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM961/PM961 [144d:a804] (prog-if 02 [NVM Express])
@@ -535,7 +564,7 @@
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 37
+	Interrupt: pin A routed to IRQ 52
 	NUMA node: 0
 	Region 0: Memory at 82500000 (64-bit, non-prefetchable) [size=16K]
 	Region 2: I/O ports at 3000 [disabled] [size=256]
@@ -543,7 +572,7 @@
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [50] MSI: Enable+ Count=1/1 Maskable- 64bit+
-		Address: 00000000fee003d8  Data: 0000
+		Address: 00000000fee005b8  Data: 0000
 	Capabilities: [70] Express (v2) Endpoint, MSI 00
 		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s unlimited, L1 unlimited
 			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset+ SlotPowerLimit 25.000W
@@ -590,14 +619,14 @@
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 60
+	Interrupt: pin A routed to IRQ 75
 	Region 0: Memory at 82400000 (64-bit, non-prefetchable) [size=32K]
 	Region 2: Memory at 82000000 (64-bit, non-prefetchable) [size=4M]
 	Capabilities: [48] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=0mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=2 PME-
 	Capabilities: [58] MSI: Enable+ Count=1/16 Maskable- 64bit+
-		Address: 00000000fee00738  Data: 0000
+		Address: 00000000fee008f8  Data: 0000
 	Capabilities: [68] Vendor Specific Information: Len=44 <?>
 	Capabilities: [ac] Express (v2) Endpoint, MSI 00
 		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <4us, L1 unlimited
@@ -652,10 +681,10 @@
 04:00.0 PCI bridge [0604]: Intel Corporation DSL6540 Thunderbolt 3 Bridge [Alpine Ridge 4C 2015] [8086:1578] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 26
 	Bus: primary=04, secondary=05, subordinate=79, sec-latency=0
-	I/O behind bridge: 00006000-00008fff
+	I/O behind bridge: 00006000-00009fff
 	Memory behind bridge: 82800000-909fffff
 	Prefetchable memory behind bridge: 00000000c0200000-00000000ce1fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -666,21 +695,21 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00278  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation DSL6540 Thunderbolt 3 Bridge [Alpine Ridge 4C 2015] [8086:0000]
 	Capabilities: [c0] Express (v2) Upstream Port, MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ SlotPowerLimit 75.000W
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 8GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -691,7 +720,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES- TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
-		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CESta:	RxErr- BadTLP- BadDLLP+ Rollover- Timeout- NonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
 		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
 	Capabilities: [300 v1] Virtual Channel
@@ -706,16 +735,15 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 05:00.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 27
 	Bus: primary=05, secondary=06, subordinate=06, sec-latency=0
 	Memory behind bridge: 82900000-829fffff
@@ -727,14 +755,14 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00298  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr+ FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM- Surprise- LLActRep- BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
@@ -745,9 +773,9 @@
 		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
 			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
 		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
-			Changed: MRL- PresDet+ LinkState-
+			Changed: MRL- PresDet- LinkState-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled ARIFwd-
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -778,16 +806,15 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 05:01.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Physical Slot: 1
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 28
 	Bus: primary=05, secondary=08, subordinate=40, sec-latency=0
-	I/O behind bridge: 00006000-00006fff
+	I/O behind bridge: 00006000-00007fff
 	Memory behind bridge: 82a00000-899fffff
 	Prefetchable memory behind bridge: 00000000c0200000-00000000c71fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -795,10 +822,10 @@
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee002b8  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
@@ -845,15 +872,13 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 05:02.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 29
 	Bus: primary=05, secondary=07, subordinate=07, sec-latency=0
-	I/O behind bridge: 00007000-00007fff
 	Memory behind bridge: 82800000-828fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
 	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
@@ -863,14 +888,14 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee002d8  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr+ FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #2, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
@@ -883,7 +908,7 @@
 		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
 			Changed: MRL- PresDet- LinkState-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled ARIFwd-
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -910,16 +935,15 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 05:04.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Physical Slot: 2
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 30
 	Bus: primary=05, secondary=41, subordinate=79, sec-latency=0
-	I/O behind bridge: 00008000-00008fff
+	I/O behind bridge: 00008000-00009fff
 	Memory behind bridge: 89a00000-909fffff
 	Prefetchable memory behind bridge: 00000000c7200000-00000000ce1fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -927,10 +951,10 @@
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee002f8  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
@@ -977,13 +1001,12 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 06:00.0 System peripheral [0880]: Intel Corporation JHL6540 Thunderbolt 3 NHI (C step) [Alpine Ridge 4C 2016] [8086:15d2] (rev 02)
-	Subsystem: Device [2222:1111]
+	Subsystem: Intel Corporation JHL6540 Thunderbolt 3 NHI (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 17
 	Region 0: Memory at 82900000 (32-bit, non-prefetchable) [size=256K]
 	Region 1: Memory at 82940000 (32-bit, non-prefetchable) [size=4K]
@@ -998,14 +1021,14 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range B, TimeoutDis+, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1034,38 +1057,38 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=088 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Kernel driver in use: thunderbolt
 	Kernel modules: thunderbolt
 
 07:00.0 USB controller [0c03]: Intel Corporation JHL6540 Thunderbolt 3 USB Controller (C step) [Alpine Ridge 4C 2016] [8086:15d4] (rev 02) (prog-if 30 [XHCI])
-	Subsystem: Device [2222:1111]
+	Subsystem: Intel Corporation JHL6540 Thunderbolt 3 USB Controller (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Physical Slot: 0
-	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 38
+	Interrupt: pin A routed to IRQ 54
 	Region 0: Memory at 82800000 (32-bit, non-prefetchable) [size=64K]
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/8 Maskable- 64bit+
-		Address: 00000000fee003f8  Data: 0000
+		Address: 00000000fee005f8  Data: 0000
 	Capabilities: [c0] Express (v2) Endpoint, MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <4us, L1 <8us
 			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range B, TimeoutDis+, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1091,8 +1114,8 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Capabilities: [700 v1] #19
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
@@ -1100,10 +1123,10 @@
 7a:00.0 PCI bridge [0604]: Intel Corporation DSL6540 Thunderbolt 3 Bridge [Alpine Ridge 4C 2015] [8086:1578] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 31
 	Bus: primary=7a, secondary=7b, subordinate=ef, sec-latency=0
-	I/O behind bridge: 0000a000-0000cfff
+	I/O behind bridge: 0000a000-0000dfff
 	Memory behind bridge: 90a00000-9ebfffff
 	Prefetchable memory behind bridge: 00000000ce200000-00000000dc1fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -1114,21 +1137,21 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00318  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation DSL6540 Thunderbolt 3 Bridge [Alpine Ridge 4C 2015] [8086:0000]
 	Capabilities: [c0] Express (v2) Upstream Port, MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ SlotPowerLimit 75.000W
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 8GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1139,7 +1162,7 @@
 		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
 		UESvrt:	DLP+ SDES- TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
-		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CESta:	RxErr- BadTLP- BadDLLP+ Rollover- Timeout- NonFatalErr-
 		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
 		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
 	Capabilities: [300 v1] Virtual Channel
@@ -1154,16 +1177,15 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 7b:00.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 32
 	Bus: primary=7b, secondary=7c, subordinate=7c, sec-latency=0
 	Memory behind bridge: 90b00000-90bfffff
@@ -1175,14 +1197,14 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00338  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr+ FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM- Surprise- LLActRep- BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
@@ -1193,9 +1215,9 @@
 		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
 			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
 		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
-			Changed: MRL- PresDet+ LinkState-
+			Changed: MRL- PresDet- LinkState-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled ARIFwd-
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1226,16 +1248,15 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 7b:01.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Physical Slot: 1-1
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 33
 	Bus: primary=7b, secondary=7e, subordinate=b6, sec-latency=0
-	I/O behind bridge: 0000a000-0000afff
+	I/O behind bridge: 0000a000-0000bfff
 	Memory behind bridge: 90c00000-97bfffff
 	Prefetchable memory behind bridge: 00000000ce200000-00000000d51fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -1243,10 +1264,10 @@
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00358  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
@@ -1293,15 +1314,13 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 7b:02.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 34
 	Bus: primary=7b, secondary=7d, subordinate=7d, sec-latency=0
-	I/O behind bridge: 0000b000-0000bfff
 	Memory behind bridge: 90a00000-90afffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
 	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
@@ -1311,14 +1330,14 @@
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00378  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr- UncorrErr+ FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #2, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp+
 		LnkCtl:	ASPM Disabled; Disabled- CommClk+
@@ -1331,7 +1350,7 @@
 		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
 			Changed: MRL- PresDet- LinkState-
 		DevCap2: Completion Timeout: Not Supported, TimeoutDis-, LTR+, OBFF Not Supported ARIFwd-
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled ARIFwd-
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1358,16 +1377,15 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 7b:04.0 PCI bridge [0604]: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:15d3] (rev 02) (prog-if 00 [Normal decode])
 	Physical Slot: 2-1
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 35
 	Bus: primary=7b, secondary=b7, subordinate=ef, sec-latency=0
-	I/O behind bridge: 0000c000-0000cfff
+	I/O behind bridge: 0000c000-0000dfff
 	Memory behind bridge: 97c00000-9ebfffff
 	Prefetchable memory behind bridge: 00000000d5200000-00000000dc1fffff
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
@@ -1375,10 +1393,10 @@
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
-		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
 		Address: 00000000fee00398  Data: 0000
-	Capabilities: [ac] Subsystem: Device [2222:1111]
+	Capabilities: [ac] Subsystem: Intel Corporation JHL6540 Thunderbolt 3 Bridge (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Capabilities: [c0] Express (v2) Downstream Port (Slot+), MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0
 			ExtTag+ RBE+
@@ -1425,13 +1443,12 @@
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [700 v1] #19
 	Kernel driver in use: pcieport
-	Kernel modules: shpchp
 
 7c:00.0 System peripheral [0880]: Intel Corporation JHL6540 Thunderbolt 3 NHI (C step) [Alpine Ridge 4C 2016] [8086:15d2] (rev 02)
-	Subsystem: Device [2222:1111]
+	Subsystem: Intel Corporation JHL6540 Thunderbolt 3 NHI (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
-	Latency: 0
+	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 18
 	Region 0: Memory at 90b00000 (32-bit, non-prefetchable) [size=256K]
 	Region 1: Memory at 90b40000 (32-bit, non-prefetchable) [size=4K]
@@ -1446,14 +1463,14 @@
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp-
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range B, TimeoutDis+, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1482,38 +1499,38 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=088 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Kernel driver in use: thunderbolt
 	Kernel modules: thunderbolt
 
 7d:00.0 USB controller [0c03]: Intel Corporation JHL6540 Thunderbolt 3 USB Controller (C step) [Alpine Ridge 4C 2016] [8086:15d4] (rev 02) (prog-if 30 [XHCI])
-	Subsystem: Device [2222:1111]
+	Subsystem: Intel Corporation JHL6540 Thunderbolt 3 USB Controller (C step) [Alpine Ridge 4C 2016] [8086:0000]
 	Physical Slot: 0-1
-	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
-	Interrupt: pin A routed to IRQ 39
+	Interrupt: pin A routed to IRQ 55
 	Region 0: Memory at 90a00000 (32-bit, non-prefetchable) [size=64K]
 	Capabilities: [80] Power Management version 3
 		Flags: PMEClk- DSI- D1+ D2+ AuxCurrent=375mA PME(D0+,D1+,D2+,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [88] MSI: Enable+ Count=1/8 Maskable- 64bit+
-		Address: 00000000fee00418  Data: 0000
+		Address: 00000000fee00618  Data: 0000
 	Capabilities: [c0] Express (v2) Endpoint, MSI 00
 		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <4us, L1 <8us
 			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
 		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
 			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+
 			MaxPayload 128 bytes, MaxReadReq 512 bytes
-		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
 		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <2us, L1 <4us
 			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
 		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
 			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
 		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
 		DevCap2: Completion Timeout: Range B, TimeoutDis+, LTR+, OBFF Not Supported
-		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR+, OBFF Disabled
 		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-
 			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
 			 Compliance De-emphasis: -6dB
@@ -1539,8 +1556,8 @@
 	Capabilities: [400 v1] Power Budgeting <?>
 	Capabilities: [500 v1] Vendor Specific Information: ID=1234 Rev=1 Len=0d8 <?>
 	Capabilities: [600 v1] Latency Tolerance Reporting
-		Max snoop latency: 0ns
-		Max no snoop latency: 0ns
+		Max snoop latency: 71680ns
+		Max no snoop latency: 71680ns
 	Capabilities: [700 v1] #19
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
