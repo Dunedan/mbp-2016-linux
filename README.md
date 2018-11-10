@@ -308,6 +308,8 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
 ## Fan
 
+![all models working](https://img.shields.io/badge/all_models-working-green.svg)
+
 [mbpfan](https://github.com/dgraziotin/mbpfan) is a daemon that uses input from coretemp module
 and sets the fan speed using the applesmc module. This enhanced version assumes any number of
 processors and fans (max. 10).
