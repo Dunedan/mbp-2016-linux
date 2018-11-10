@@ -51,6 +51,7 @@ There is also a chat available via gitter for discussions:
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
 | [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
+| [Fan](#fan) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 
 
 ## Booting
@@ -303,6 +304,14 @@ According to Broadcom releasing a fixed firmware would require verification to
 ensure that it complies with regulartory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
+
+
+## Fan
+
+[mbpfan](https://github.com/dgraziotin/mbpfan) is a daemon that uses input from coretemp module
+and sets the fan speed using the applesmc module. This enhanced version assumes any number of
+processors and fans (max. 10).
+
 
 ## Misc
 
