@@ -1,4 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+if ! [ -x "$(command -v hwinfo)" ]; then
+  echo "Can't find hwinfo. Please install it." >&2
+  exit 1
+fi
+if ! [ -x "$(command -v acpidump)" ]; then
+  echo "Can't find acpidump. Please install it." >&2
+  exit 1
+fi
 
 name=$(</sys/class/dmi/id/product_name)
 
