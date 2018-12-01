@@ -14,8 +14,9 @@ of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
 15-inch models.
 
 The checks if hardware works below were done with multiple Linux distributions.
-To state the obvious: The newer the kernel the better. If in doubt which kernel
-to use, the latest significant improvements are part of Linux 4.16.
+To state the obvious: The newer the kernel the better. The information below
+assume that you run Linux 4.13 or newer. If in doubt which kernel to use, the
+latest significant improvements are part of Linux 4.16.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
 identifier is used on several occasions below), check
@@ -51,14 +52,6 @@ There is also a chat available via gitter for discussions:
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
 | [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
-
-
-## Booting
-
-To boot Linux version earlier than 4.10 properly, it's necessary to set
-`intremap=nosid` as kernel boot parameter. From 4.10 onwards that's not
-necessary anymore.
-
 
 ## Audio input & output
 
@@ -116,13 +109,7 @@ via PCIe, like in previous MacBook Pro's. It's working with the
 
 The models with Touch Bar have the FaceTime HD camera connected through the
 iBridge device via USB. They are exposed as regular USB video devices and are
-supported by the `uvcvideo` driver starting with Linux 4.13 out of the box.
-Previous Linux versions need the following quirk for `uvcvideo` to get them to
-work properly:
-
-```
-echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
-```
+supported by the `uvcvideo` driver out of the box.
 
 
 ## Graphics card
@@ -133,9 +120,9 @@ echo "options uvcvideo quirks=0x100" > /etc/modprobe.d/uvcvideo.conf
 
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
-with dedicated AMD GPU, only the AMD is enabled when booting a OS which isn't
-macOS, so you have to follow the instructions in the following link to enable
-the integrated Intel GPU, if you want to use it:
+with dedicated AMD GPU, only the AMD GPU is enabled when booting a OS which
+isn't macOS, so you have to follow the instructions in the following link to
+enable the integrated Intel GPU, if you want to use it:
 https://github.com/Dunedan/mbp-2016-linux/issues/6#issuecomment-286168538
 
 Connecting external displays via USB-C-to-DisplayPort cables works fine,
@@ -147,13 +134,7 @@ displays daisy-chained together with Full HD each.
 
 ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Working since Linux 4.9.
-
-See also:
-
-* https://gist.github.com/roadrunner2/1289542a748d9a104e7baec6a92f9cd7#gistcomment-1981040
-* https://lists.freedesktop.org/archives/amd-gfx/2016-November/003673.html
-
+Works out of the box.
 
 ## Keyboard & Touchpad
 
@@ -182,25 +163,11 @@ See also:
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Works out of the box with Linux 4.11 and above.
-
-The MacBookPro 13,1 or MacBookPro 13,2 on earlier versions of Linux need an
-out-of-tree patch
-(http://lists.infradead.org/pipermail/linux-nvme/2016-May/004618.html) or the
-following workaround:
-```
-modprobe nvme
-echo 106b 2003 > /sys/bus/pci/drivers/nvme/new_id
-```
+Works out of the box.
 
 The SSDs used in the MacBook Pros don't seem to support APST. As it's currently
 unknown how power saving works for those SSDs it's likely they consume way more
 power than they need to, therefore reducing the battery life.
-
-See also:
-* https://unix.stackexchange.com/questions/283154/accessing-the-nvme-flash-drive-of-the-april-2016-macbook-12-a1534
-* https://bugzilla.kernel.org/show_bug.cgi?id=99891
-
 
 ## Screen
 
@@ -252,11 +219,11 @@ An accelerometer isn't available at all.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Works out of the box with Linux 4.13 and above.
+Works out of the box.
 
-Tested on a MacBookPro13,3 with a HP Thunderbolt 3 Dock. DisplayPort with a 4k
-Display with 60 Hz works via the dock. The (PCI) Ethernet inside the dock and
-USB/audio from the dock work too.
+Up to now power management support for the Thunderbolt controllers isn't
+complete yet, resulting in unnecessary battery drain when no devices are
+attached to the Thunderbolt ports.
 
 
 ## Touch Bar
