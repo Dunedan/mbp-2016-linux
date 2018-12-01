@@ -180,12 +180,9 @@ additional AMD Radeon GPU (MacBookPro13,1 and MacBookPro13,2). For the
 MacBookPro13,3 with additional AMD Radeon GPU the following patch is necessary:
 https://bugzilla.kernel.org/show_bug.cgi?id=105051#c32
 
-The only oddity noticed so far, is that the EDID data for the 13" model
-describes two modes: `2560x1600` and `2880x1800`. Xorg probes and sets the
-correct resolution of `2560x1600`.
-For a detailed look into the EDID data, check out
-[macbook13,2/card0-eDP-1.edid](macbook13,2/card0-eDP-1.edid).
-
+There is one odditiy in the EDID data of the 13" models, as it contains a
+`2800x1800` mode in addition to the correct `2560x1600` mode. In the end that
+doesn't matter, as Xorg probes and sets the correct resolution of `2560x1600`.
 
 ## Suspend & Hibernation
 
