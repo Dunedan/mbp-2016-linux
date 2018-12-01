@@ -72,6 +72,7 @@ act as a workaround until internal audio is working.
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=195671
 * https://bugzilla.kernel.org/show_bug.cgi?id=110561
+* http://mailman.alsa-project.org/pipermail/alsa-devel/2018-November/141942.html
 
 
 ## Battery
