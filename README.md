@@ -45,7 +45,7 @@ There is also a chat available via gitter for discussions:
 | [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Suspend & Hibernation](#suspend--hibernation) |![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
-| [System Management Controller](#system-management-controller) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
+| [System Management Controller](#system-management-controller) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Thunderbolt](#thunderbolt) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
@@ -236,16 +236,22 @@ https://github.com/cb22/macbook12-spi-driver/pull/30#issuecomment-306316034
 
 ## System Management Controller
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-The System Management Controller is responsible for interactions with sensors,
-fans.
+The System Management Controller (SMC) is responsible for interactions with
+sensors and fans.
 
 Fans, temperature and voltage sensors work out of the box using the `applesmc`
-kernel module, while the ambient light sensors only work in the MacBookPro13,1.
+kernel module.
 
-An accelerometer doesn't seem to be available at all.
+The ambient light sensor is working out of the box for the models without Touch
+Bar, using the `applesmc` module as well. In models with Touch Bar the ambient
+light sensor isn't connected to the traditional SMC, but to the iBridge
+instead. For it to function, you need the third-party `apple-ib-als` kernel
+module you can find in the following git repository:
+https://github.com/roadrunner2/macbook12-spi-driver
 
+An accelerometer isn't available at all.
 
 ## Thunderbolt
 
@@ -263,8 +269,8 @@ USB/audio from the dock work too.
 ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
 
 Not working out of the box, but thanks to @roadrunner2 basic functionality
-is working using the driver you can find at:
-https://github.com/roadrunner2/macbook12-spi-driver/blob/touchbar-driver-hid-driver/appletb.c
+is working using the `apple-ib-tb` kernel module you can find in the following
+git repository: https://github.com/roadrunner2/macbook12-spi-driver
 
 Missing is as of now just the advanced functionality with custom graphics Apple
 offers in macOS.
