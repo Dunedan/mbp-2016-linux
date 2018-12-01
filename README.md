@@ -321,8 +321,8 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
 The models with Touch Bar feature an additional USB device, called `iBridge`
 (`Bus 001 Device 002: ID 05ac:8600 Apple, Inc.`). It's the interface to the
-embedded T1-chip running iOS and providing access to the FaceTime HD camera,
-the Touch Bar and Touch ID.
+embedded T1-chip running iOS and providing access to the ambient light sensor,
+the FaceTime HD camera, the Touch Bar and Touch ID.
 
 A prerequisite for all devices connected to the iBridge to work is a
 firmware stored by macOS on the EFI system partition (ESP). For the time being
@@ -336,15 +336,14 @@ present: `Apple Mobile Device [Recovery Mode]` (`Bus 001 Device 003: ID
 
 `usb-devices` shows that *iBridge* exposes four interfaces:
 ```
-T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  4 Spd=480 MxCh= 0
+T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  2 Spd=480 MxCh= 0
 D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
 P:  Vendor=05ac ProdID=8600 Rev=01.01
 S:  Manufacturer=Apple Inc.
 S:  Product=iBridge
-S:  SerialNumber=nomac?123456
 C:  #Ifs= 4 Cfg#= 1 Atr=e0 MxPwr=0mA
-I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=(none)
-I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=(none)
+I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
+I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=uvcvideo
 I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
 I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
 ```
@@ -360,20 +359,21 @@ D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
 P:  Vendor=05ac ProdID=8600 Rev=01.01
 S:  Manufacturer=Apple Inc.
 S:  Product=iBridge
-S:  SerialNumber=nomac?123456
 C:  #Ifs= 8 Cfg#= 2 Atr=e0 MxPwr=0mA
-I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
-I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=(none)
-I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
-I:  If#= 3 Alt= 0 #EPs= 2 Cls=10() Sub=00 Prot=00 Driver=(none)
-I:  If#= 4 Alt= 0 #EPs= 0 Cls=02(commc) Sub=0d Prot=00 Driver=(none)
-I:  If#= 5 Alt= 0 #EPs= 0 Cls=0a(data ) Sub=00 Prot=01 Driver=(none)
-I:  If#= 6 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbhid
-I:  If#= 7 Alt= 0 #EPs= 2 Cls=ff(vend.) Sub=f9 Prot=11 Driver=(none)
+I:  If#= 0 Alt= 0 #EPs= 0 Cls=0e(video) Sub=01 Prot=00 Driver=usbfs
+I:  If#= 1 Alt= 0 #EPs= 1 Cls=0e(video) Sub=02 Prot=00 Driver=usbfs
+I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbfs
+I:  If#= 3 Alt= 0 #EPs= 2 Cls=10() Sub=00 Prot=00 Driver=usbfs
+I:  If#= 4 Alt= 0 #EPs= 0 Cls=02(commc) Sub=0d Prot=00 Driver=usbfs
+I:  If#= 5 Alt= 1 #EPs= 2 Cls=0a(data ) Sub=00 Prot=01 Driver=usbfs
+I:  If#= 6 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=01 Driver=usbfs
+I:  If#= 7 Alt= 0 #EPs= 2 Cls=ff(vend.) Sub=f9 Prot=11 Driver=usbfs
 ```
 
-Seems like macOS somehow initalizes some additional capabilities of the
-*iBridge*.
+macOS somehow initializes some additional capabilities of the *iBridge*.
+Those additional interfaces are likely responsible for Touch Id and the
+advanced graphical functionality of the Touch Bar. There might also be some
+kind of interface for *iBridge*-firmware updates.
 
 ### Disable auto-boot
 
