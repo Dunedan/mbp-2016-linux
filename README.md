@@ -314,6 +314,17 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
   [linux/commit/8bfa7e1](https://github.com/torvalds/linux/commit/8bfa7e1e03aca3626b82857850a1e18ae0ed291d),
   [linux/commit/4c33162](https://github.com/torvalds/linux/commit/4c33162c1ad0d3524455d6c10de2a05847ad5617))
 
+#### 4.20
+
+* Fixes a garbled screen issue with Intel graphics when using KMS, introduced
+  with Linux 4.18.
+  ([linux/commit/d9a5158](https://github.com/torvalds/linux/commit/d9a515867bdba59ebf196a6ade10faae8e8be36a))
+* Fixes a black screen issue for models with AMD graphics, introduced with
+  Linux 4.18.
+  ([linux/commit/07e3a1c](https://github.com/torvalds/linux/commit/07e3a1cfb0568b6d8d7862077029af96af6690ea))
+* Fixes a GPE storm, which caused unnecessary battery drain.
+  ([linux/commit/ca1721c](https://github.com/torvalds/linux/commit/ca1721c5bee77105829cbd7baab8ee0eab85b06d))
+
 ### iBridge
 
 The models with Touch Bar feature an additional USB device, called `iBridge`
