@@ -1,0 +1,1734 @@
+[    0.000000] tsc: Detected 1600.000 MHz processor
+[    0.000828] tsc: Detected 1608.000 MHz TSC
+[    0.000828] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000829] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000835] last_pfn = 0x47f000 max_arch_pfn = 0x400000000
+[    0.000838] MTRR default type: write-back
+[    0.000839] MTRR fixed ranges enabled:
+[    0.000840]   00000-9FFFF write-back
+[    0.000841]   A0000-FFFFF uncachable
+[    0.000841] MTRR variable ranges enabled:
+[    0.000842]   0 base 0080000000 mask 7F80000000 uncachable
+[    0.000843]   1 base 007C000000 mask 7FFC000000 uncachable
+[    0.000844]   2 base 007A000000 mask 7FFE000000 uncachable
+[    0.000844]   3 base 0079000000 mask 7FFF000000 uncachable
+[    0.000845]   4 base 4000000000 mask 4000000000 uncachable
+[    0.000845]   5 disabled
+[    0.000846]   6 disabled
+[    0.000846]   7 disabled
+[    0.000846]   8 disabled
+[    0.000847]   9 disabled
+[    0.001804] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.002045] last_pfn = 0x79000 max_arch_pfn = 0x400000000
+[    0.022982] check: Scanning 1 areas for low memory corruption
+[    0.022985] Base memory trampoline at [(____ptrval____)] 97000 size 24576
+[    0.022988] Using GB pages for direct mapping
+[    0.022990] BRK [0x27d201000, 0x27d201fff] PGTABLE
+[    0.022991] BRK [0x27d202000, 0x27d202fff] PGTABLE
+[    0.022992] BRK [0x27d203000, 0x27d203fff] PGTABLE
+[    0.023027] BRK [0x27d204000, 0x27d204fff] PGTABLE
+[    0.023028] BRK [0x27d205000, 0x27d205fff] PGTABLE
+[    0.023181] BRK [0x27d206000, 0x27d206fff] PGTABLE
+[    0.023215] BRK [0x27d207000, 0x27d207fff] PGTABLE
+[    0.023247] BRK [0x27d208000, 0x27d208fff] PGTABLE
+[    0.023300] BRK [0x27d209000, 0x27d209fff] PGTABLE
+[    0.023338] BRK [0x27d20a000, 0x27d20afff] PGTABLE
+[    0.023425] BRK [0x27d20b000, 0x27d20bfff] PGTABLE
+[    0.023457] BRK [0x27d20c000, 0x27d20cfff] PGTABLE
+[    0.023507] Secure boot could not be determined
+[    0.023507] RAMDISK: [mem 0x37132000-0x37890fff]
+[    0.023512] ACPI: Early table checksum verification disabled
+[    0.023515] ACPI: RSDP 0x0000000078FFE014 000024 (v02 APPLE )
+[    0.023518] ACPI: XSDT 0x0000000078FFD148 0000BC (v01 APPLE  Apple00  00000000      01000013)
+[    0.023522] ACPI: FACP 0x0000000078FF8000 0000F4 (v05 APPLE  Apple00  00000000 Loki 0000005F)
+[    0.023525] ACPI: DSDT 0x0000000078FEB000 008743 (v02 APPLE  MacBook  00080001 INTL 20160930)
+[    0.023527] ACPI: FACS 0x0000000078F57000 000040
+[    0.023529] ACPI: UEFI 0x0000000078F59000 000042 (v01 INTEL  EDK2     00000002      01000013)
+[    0.023531] ACPI: ECDT 0x0000000078FFA000 000053 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.023533] ACPI: HPET 0x0000000078FF7000 000038 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.023534] ACPI: APIC 0x0000000078FF6000 0000DC (v02 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.023536] ACPI: MCFG 0x0000000078FF5000 00003C (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.023538] ACPI: SBST 0x0000000078FF4000 000030 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.023539] ACPI: SSDT 0x0000000078FEA000 000024 (v01 APPLE  SmcDppt  00001000 INTL 20160930)
+[    0.023541] ACPI: SSDT 0x0000000078FE5000 000031 (v01 APPLE  SsdtS3   00001000 INTL 20160930)
+[    0.023543] ACPI: SSDT 0x0000000078FE4000 000051 (v01 APPLE  SataAhci 00001000 INTL 20160930)
+[    0.023545] ACPI: SSDT 0x0000000078FE3000 0000B8 (v01 APPLE  Sdxc     00001000 INTL 20160930)
+[    0.023547] ACPI: SSDT 0x0000000078FDD000 005CED (v02 APPLE  TbtOnPCH 00001000 INTL 20160930)
+[    0.023548] ACPI: SSDT 0x0000000078FD9000 00079E (v02 APPLE  Xhci     00001000 INTL 20160930)
+[    0.023550] ACPI: SSDT 0x0000000078FD8000 0004E1 (v02 PmRef  Cpu0Ist  00003000 INTL 20160930)
+[    0.023552] ACPI: SSDT 0x0000000078FD7000 00065C (v02 PmRef  ApIst    00003000 INTL 20160930)
+[    0.023554] ACPI: SSDT 0x0000000078FD6000 00030F (v02 PmRef  Cpu0Cst  00003001 INTL 20160930)
+[    0.023555] ACPI: SSDT 0x0000000078FD5000 00018A (v02 PmRef  ApCst    00003000 INTL 20160930)
+[    0.023557] ACPI: SSDT 0x0000000078FD4000 000F96 (v02 CpuRef CpuSsdt  00003000 INTL 20160930)
+[    0.023559] ACPI: DMAR 0x0000000078FD3000 0000AC (v01 APPLE  KBL      00000001 INTL 00000001)
+[    0.023564] ACPI: DMI detected to setup _OSI("Darwin"): Apple hardware
+[    0.023565] ACPI: Local APIC address 0xfee00000
+[    0.023722] No NUMA configuration found
+[    0.023725] Faking a node at [mem 0x0000000000000000-0x000000047effffff]
+[    0.023729] NODE_DATA(0) allocated [mem 0x47effc000-0x47effffff]
+[    0.023748] Zone ranges:
+[    0.023749]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.023750]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.023750]   Normal   [mem 0x0000000100000000-0x000000047effffff]
+[    0.023751]   Device   empty
+[    0.023751] Movable zone start for each node
+[    0.023752] Early memory node ranges
+[    0.023752]   node   0: [mem 0x0000000000001000-0x0000000000057fff]
+[    0.023753]   node   0: [mem 0x0000000000059000-0x000000000009cfff]
+[    0.023753]   node   0: [mem 0x0000000000100000-0x000000003fffffff]
+[    0.023754]   node   0: [mem 0x0000000040400000-0x0000000071fd8fff]
+[    0.023754]   node   0: [mem 0x00000000721dd000-0x0000000072c57fff]
+[    0.023755]   node   0: [mem 0x0000000072c5a000-0x0000000072f3ffff]
+[    0.023755]   node   0: [mem 0x0000000072f4f000-0x0000000078b9efff]
+[    0.023755]   node   0: [mem 0x0000000078fff000-0x0000000078ffffff]
+[    0.023756]   node   0: [mem 0x0000000100000000-0x000000047effffff]
+[    0.024106] Zeroed struct page in unavailable ranges: 31450 pages
+[    0.024107] Initmem setup node 0 [mem 0x0000000000001000-0x000000047effffff]
+[    0.024108] On node 0 totalpages: 4158758
+[    0.024108]   DMA zone: 64 pages used for memmap
+[    0.024109]   DMA zone: 23 pages reserved
+[    0.024109]   DMA zone: 3995 pages, LIFO batch:0
+[    0.024482]   DMA32 zone: 7639 pages used for memmap
+[    0.024482]   DMA32 zone: 488843 pages, LIFO batch:63
+[    0.034629]   Normal zone: 57280 pages used for memmap
+[    0.034630]   Normal zone: 3665920 pages, LIFO batch:63
+[    0.103893] Reserving Intel graphics memory at [mem 0x7a000000-0x7fffffff]
+[    0.104311] ACPI: PM-Timer IO Port: 0x1808
+[    0.104313] ACPI: Local APIC address 0xfee00000
+[    0.104318] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.104319] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.104320] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.104320] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.104321] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.104321] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.104322] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.104322] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.104349] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.104351] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.104352] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.104353] ACPI: IRQ0 used by override.
+[    0.104354] ACPI: IRQ9 used by override.
+[    0.104356] Using ACPI (MADT) for SMP configuration information
+[    0.104357] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.104361] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.104382] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.104383] PM: Registered nosave memory: [mem 0x00058000-0x00058fff]
+[    0.104385] PM: Registered nosave memory: [mem 0x0009d000-0x000fffff]
+[    0.104386] PM: Registered nosave memory: [mem 0x40000000-0x403fffff]
+[    0.104388] PM: Registered nosave memory: [mem 0x71fd9000-0x721dcfff]
+[    0.104389] PM: Registered nosave memory: [mem 0x72c58000-0x72c58fff]
+[    0.104390] PM: Registered nosave memory: [mem 0x72c59000-0x72c59fff]
+[    0.104391] PM: Registered nosave memory: [mem 0x72f40000-0x72f4efff]
+[    0.104392] PM: Registered nosave memory: [mem 0x78b9f000-0x78f2efff]
+[    0.104393] PM: Registered nosave memory: [mem 0x78f2f000-0x78f7efff]
+[    0.104393] PM: Registered nosave memory: [mem 0x78f7f000-0x78ffefff]
+[    0.104395] PM: Registered nosave memory: [mem 0x79000000-0x7fffffff]
+[    0.104396] PM: Registered nosave memory: [mem 0x80000000-0xdfffffff]
+[    0.104396] PM: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[    0.104397] PM: Registered nosave memory: [mem 0xf0000000-0xfe00ffff]
+[    0.104397] PM: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+[    0.104398] PM: Registered nosave memory: [mem 0xfe011000-0xff938fff]
+[    0.104398] PM: Registered nosave memory: [mem 0xff939000-0xff948fff]
+[    0.104399] PM: Registered nosave memory: [mem 0xff949000-0xff95efff]
+[    0.104399] PM: Registered nosave memory: [mem 0xff95f000-0xff95ffff]
+[    0.104400] PM: Registered nosave memory: [mem 0xff960000-0xffffffff]
+[    0.104401] [mem 0x80000000-0xdfffffff] available for PCI devices
+[    0.104403] Booting paravirtualized kernel on bare hardware
+[    0.104405] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370452778343963 ns
+[    0.199481] random: get_random_bytes called from start_kernel+0x95/0x54e with crng_init=0
+[    0.199487] setup_percpu: NR_CPUS:320 nr_cpumask_bits:320 nr_cpu_ids:4 nr_node_ids:1
+[    0.199700] percpu: Embedded 45 pages/cpu @(____ptrval____) s147456 r8192 d28672 u524288
+[    0.199708] pcpu-alloc: s147456 r8192 d28672 u524288 alloc=1*2097152
+[    0.199709] pcpu-alloc: [0] 0 1 2 3 
+[    0.199727] Built 1 zonelists, mobility grouping on.  Total pages: 4093752
+[    0.199728] Policy zone: Normal
+[    0.199730] Kernel command line:
+[    0.203395] Calgary: detecting Calgary via BIOS EBDA area
+[    0.203397] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.232210] Memory: 16032136K/16635032K available (12293K kernel code, 1268K rwdata, 3728K rodata, 1532K init, 3936K bss, 602896K reserved, 0K cma-reserved)
+[    0.232321] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.232325] Kernel/User page tables isolation: enabled
+[    0.232336] ftrace: allocating 35812 entries in 140 pages
+[    0.244418] rcu: Preemptible hierarchical RCU implementation.
+[    0.244419] rcu: 	CONFIG_RCU_FANOUT set to non-default value of 32.
+[    0.244420] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.244420] rcu: 	RCU restricting CPUs from NR_CPUS=320 to nr_cpu_ids=4.
+[    0.244421] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[    0.244422] 	Tasks RCU enabled.
+[    0.244423] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[    0.244423] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.245615] NR_IRQS: 20736, nr_irqs: 456, preallocated irqs: 16
+[    0.245771] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.245887] Console: colour dummy device 80x25
+[    0.245890] printk: console [tty0] enabled
+[    0.245905] ACPI: Core revision 20181003
+[    0.246022] ACPI: EC: EC started
+[    0.246023] ACPI: EC: interrupt blocked
+[    0.246031] ACPI: \: Used as first EC
+[    0.246032] ACPI: \: GPE=0x6e, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.246033] ACPI: \: Used as boot ECDT EC to handle transactions
+[    0.246221] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[    0.246251] hpet clockevent registered
+[    0.246323] APIC: Switch to symmetric I/O mode setup
+[    0.246324] DMAR: Host address width 39
+[    0.246325] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.246330] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.246331] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.246334] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.246335] DMAR: RMRR base: 0x00000079800000 end: 0x0000007fffffff
+[    0.246336] DMAR: ANDD device: 9 name: \_SB.PCI0.UA00
+[    0.246338] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.246338] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.246339] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.247075] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.247076] x2apic enabled
+[    0.247088] Switched APIC routing to cluster x2apic.
+[    0.248017] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.262935] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x172daa3a18b, max_idle_ns: 440795212390 ns
+[    0.262949] Calibrating delay loop (skipped), value calculated using timer frequency.. 3217.00 BogoMIPS (lpj=5360000)
+[    0.262950] pid_max: default: 32768 minimum: 301
+[    0.263079] LSM: Security Framework initializing
+[    0.263080] Yama: becoming mindful.
+[    0.263085] AppArmor: AppArmor disabled by boot time parameter
+[    0.265401] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+[    0.266147] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.266183] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.266216] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.266380] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.266380] ENERGY_PERF_BIAS: View and update with x86_energy_perf_policy(8)
+[    0.266384] mce: CPU supports 8 MCE banks
+[    0.266390] CPU0: Thermal monitoring enabled (TM1)
+[    0.266401] process: using mwait in idle threads
+[    0.266403] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.266403] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.266404] Spectre V2 : Mitigation: Full generic retpoline
+[    0.266405] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.266405] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.266409] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.266409] Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
+[    0.266410] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.266594] Freeing SMP alternatives memory: 28K
+[    0.266603] CPU0: Core temperature above threshold, cpu clock throttled (total events = 1)
+[    0.267626] CPU0: Core temperature/speed normal
+[    0.272094] TSC deadline timer enabled
+[    0.272099] smpboot: CPU0: Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz (family: 0x6, model: 0x8e, stepping: 0x9)
+[    0.289640] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.289689] ... version:                4
+[    0.289689] ... bit width:              48
+[    0.289690] ... generic registers:      4
+[    0.289690] ... value mask:             0000ffffffffffff
+[    0.289690] ... max period:             00007fffffffffff
+[    0.289691] ... fixed-purpose events:   3
+[    0.289691] ... event mask:             000000070000000f
+[    0.296291] rcu: Hierarchical SRCU implementation.
+[    0.319724] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.326317] smp: Bringing up secondary CPUs ...
+[    0.366339] x86: Booting SMP configuration:
+[    0.366340] .... node  #0, CPUs:      #1 #2 #3
+[    0.447009] smp: Brought up 1 node, 4 CPUs
+[    0.447009] smpboot: Max logical packages: 1
+[    0.447009] smpboot: Total of 4 processors activated (12869.00 BogoMIPS)
+[    0.450109] devtmpfs: initialized
+[    0.450109] x86/mm: Memory block size: 128MB
+[    0.451295] PM: Registering ACPI NVS region [mem 0x72c58000-0x72c58fff] (4096 bytes)
+[    0.451295] PM: Registering ACPI NVS region [mem 0x78f2f000-0x78f7efff] (327680 bytes)
+[    0.451295] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.451295] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.451295] pinctrl core: initialized pinctrl subsystem
+[    0.451295] RTC time:  1:04:57, date: 01/08/19
+[    0.451295] NET: Registered protocol family 16
+[    0.451295] audit: initializing netlink subsys (disabled)
+[    0.451295] audit: type=2000 audit(1546909497.206:1): state=initialized audit_enabled=0 res=1
+[    0.452959] cpuidle: using governor ladder
+[    0.452959] cpuidle: using governor menu
+[    0.452971] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.452983] ACPI: bus type PCI registered
+[    0.452993] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.453082] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+[    0.453090] PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+[    0.453090] PCI: Using configuration type 1 for base access
+[    0.454539] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.454539] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.454539] fbcon: Taking over console
+[    0.454539] ACPI: Disabled all _OSI OS vendors
+[    0.454539] ACPI: Added _OSI(Module Device)
+[    0.454539] ACPI: Added _OSI(Processor Device)
+[    0.454539] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.454539] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.454539] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.454539] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.454539] ACPI: Added _OSI(Darwin)
+[    0.474599] ACPI: 12 ACPI AML tables successfully acquired and loaded
+[    0.477364] ACPI: BIOS _OSI(Darwin) query honored via DMI
+[    0.478529] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.479177] ACPI: Dynamic OEM Table Load:
+[    0.479190] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9211AE417800 Table is already loaded (20181003/tbdata-528)
+[    0.479200] ACPI Error: Method parse/execution failed \_PR.CPU0.GCAP, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.479212] ACPI Error: Method parse/execution failed \_PR.CPU0._OSC, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.479479] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.479486] ACPI Error: Method parse/execution failed \_PR.CPU1.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.479493] ACPI Error: Method parse/execution failed \_PR.CPU1._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.479687] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.479694] ACPI Error: Method parse/execution failed \_PR.CPU2.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.479701] ACPI Error: Method parse/execution failed \_PR.CPU2._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.479960] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.479967] ACPI Error: Method parse/execution failed \_PR.CPU3.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.479973] ACPI Error: Method parse/execution failed \_PR.CPU3._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480235] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.480242] ACPI Error: Method parse/execution failed \_PR.CPU4.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480249] ACPI Error: Method parse/execution failed \_PR.CPU4._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480505] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.480512] ACPI Error: Method parse/execution failed \_PR.CPU5.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480519] ACPI Error: Method parse/execution failed \_PR.CPU5._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480779] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.480785] ACPI Error: Method parse/execution failed \_PR.CPU6.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.480792] ACPI Error: Method parse/execution failed \_PR.CPU6._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.481049] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.481056] ACPI Error: Method parse/execution failed \_PR.CPU7.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.481062] ACPI Error: Method parse/execution failed \_PR.CPU7._OSC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.481723] ACPI: Dynamic OEM Table Load:
+[    0.481730] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9211AC099C00 Table is already loaded (20181003/tbdata-528)
+[    0.481738] ACPI Error: Method parse/execution failed \_PR.CPU0.GCAP, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.481753] ACPI Error: Method parse/execution failed \_PR.CPU0._PDC, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.482150] ACPI: Dynamic OEM Table Load:
+[    0.482156] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9211AE417800 Table is already loaded (20181003/tbdata-528)
+[    0.482164] ACPI Error: Method parse/execution failed \_PR.CPU1.APPT, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.482176] ACPI Error: Method parse/execution failed \_PR.CPU1.GCAP, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.482183] ACPI Error: Method parse/execution failed \_PR.CPU1._PDC, AE_ALREADY_EXISTS (20181003/psparse-516)
+[    0.482411] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.482419] ACPI Error: Method parse/execution failed \_PR.CPU2.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.482425] ACPI Error: Method parse/execution failed \_PR.CPU2._PDC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.482652] ACPI BIOS Error (bug): Could not resolve [\_SB.OSCP], AE_NOT_FOUND (20181003/psargs-330)
+[    0.482659] ACPI Error: Method parse/execution failed \_PR.CPU3.GCAP, AE_NOT_FOUND (20181003/psparse-516)
+[    0.482665] ACPI Error: Method parse/execution failed \_PR.CPU3._PDC, AE_NOT_FOUND (20181003/psparse-516)
+[    0.482962] ACPI: Interpreter enabled
+[    0.482987] ACPI: (supports S0 S3 S4 S5)
+[    0.482988] ACPI: Using IOAPIC for interrupt routing
+[    0.483029] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.483359] ACPI: Enabled 6 GPEs in block 00 to 7F
+[    0.491017] ACPI: \_SB_.PCI0.RP09.ARPT: [Firmware Info]: skipped 1 properties: wrong type
+[    0.495537] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.495541] acpi PNP0A08:00: _OSC: OS assumes control of [PCIeHotplug SHPCHotplug AER PCIeCapability LTR]
+[    0.495867] PCI host bridge to bus 0000:00
+[    0.495869] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.495870] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.495871] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.495872] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+[    0.495873] pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+[    0.495874] pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+[    0.495875] pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff window]
+[    0.495876] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+[    0.495877] pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+[    0.495878] pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+[    0.495879] pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+[    0.495880] pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff window]
+[    0.495881] pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff window]
+[    0.495882] pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000ebfff window]
+[    0.495883] pci_bus 0000:00: root bus resource [mem 0x000ec000-0x000effff window]
+[    0.495884] pci_bus 0000:00: root bus resource [mem 0x000f0000-0x000fffff window]
+[    0.495885] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfeafffff window]
+[    0.495886] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[    0.495888] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.495895] pci 0000:00:00.0: [8086:590c] type 00 class 0x060000
+[    0.495995] pci 0000:00:02.0: [8086:87c0] type 00 class 0x030000
+[    0.496006] pci 0000:00:02.0: reg 0x10: [mem 0x81000000-0x81ffffff 64bit]
+[    0.496012] pci 0000:00:02.0: reg 0x18: [mem 0xa0000000-0xafffffff 64bit pref]
+[    0.496016] pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+[    0.496029] pci 0000:00:02.0: BAR 2: assigned to efifb
+[    0.496164] pci 0000:00:14.0: [8086:9d2f] type 00 class 0x0c0330
+[    0.496185] pci 0000:00:14.0: reg 0x10: [mem 0x82500000-0x8250ffff 64bit]
+[    0.496249] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.496331] pci 0000:00:16.0: [8086:9d3a] type 00 class 0x078000
+[    0.496352] pci 0000:00:16.0: reg 0x10: [mem 0x82529000-0x82529fff 64bit]
+[    0.496433] pci 0000:00:16.0: PME# supported from D3hot
+[    0.496527] pci 0000:00:1c.0: [8086:9d10] type 01 class 0x060400
+[    0.496604] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.496696] pci 0000:00:1c.4: [8086:9d14] type 01 class 0x060400
+[    0.496760] pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+[    0.496845] pci 0000:00:1d.0: [8086:9d18] type 01 class 0x060400
+[    0.496913] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.497076] pci 0000:00:1e.0: [8086:9d27] type 00 class 0x118000
+[    0.497153] pci 0000:00:1e.0: reg 0x10: [mem 0x8252a000-0x8252afff 64bit]
+[    0.497677] pci 0000:00:1f.0: [8086:9d4b] type 00 class 0x060100
+[    0.497793] pci 0000:00:1f.2: [8086:9d21] type 00 class 0x058000
+[    0.497805] pci 0000:00:1f.2: reg 0x10: [mem 0x82524000-0x82527fff]
+[    0.497893] pci 0000:00:1f.3: [8086:9d71] type 00 class 0x040300
+[    0.497917] pci 0000:00:1f.3: reg 0x10: [mem 0x82520000-0x82523fff 64bit]
+[    0.497941] pci 0000:00:1f.3: reg 0x20: [mem 0x00000000-0x0000ffff 64bit]
+[    0.497982] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.498060] pci 0000:00:1f.4: [8086:9d23] type 00 class 0x0c0500
+[    0.498122] pci 0000:00:1f.4: reg 0x10: [mem 0x8252b000-0x8252b0ff 64bit]
+[    0.498192] pci 0000:00:1f.4: reg 0x20: [io  0x3040-0x305f]
+[    0.498473] pci 0000:01:00.0: [106b:2005] type 00 class 0x018002
+[    0.498499] pci 0000:01:00.0: reg 0x10: [mem 0xb0000000-0xb03fffff 64bit pref]
+[    0.498511] pci 0000:01:00.0: reg 0x18: [mem 0xb1000000-0xb107ffff 64bit pref]
+[    0.498523] pci 0000:01:00.0: reg 0x20: [mem 0xb1200000-0xb120ffff 64bit pref]
+[    0.498588] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    0.498779] pci 0000:01:00.1: [106b:1801] type 00 class 0x000000
+[    0.498804] pci 0000:01:00.1: reg 0x10: [mem 0xb0400000-0xb07fffff 64bit pref]
+[    0.498816] pci 0000:01:00.1: reg 0x18: [mem 0xb1080000-0xb10fffff 64bit pref]
+[    0.498828] pci 0000:01:00.1: reg 0x20: [mem 0xb1210000-0xb121ffff 64bit pref]
+[    0.498888] pci 0000:01:00.1: PME# supported from D0 D3hot D3cold
+[    0.499001] pci 0000:01:00.2: [106b:1802] type 00 class 0x000000
+[    0.499026] pci 0000:01:00.2: reg 0x10: [mem 0xb0800000-0xb0bfffff 64bit pref]
+[    0.499038] pci 0000:01:00.2: reg 0x18: [mem 0xb1100000-0xb117ffff 64bit pref]
+[    0.499050] pci 0000:01:00.2: reg 0x20: [mem 0xb1220000-0xb122ffff 64bit pref]
+[    0.499109] pci 0000:01:00.2: PME# supported from D0 D3hot D3cold
+[    0.499224] pci 0000:01:00.3: [106b:1803] type 00 class 0x040100
+[    0.499249] pci 0000:01:00.3: reg 0x10: [mem 0xb0c00000-0xb0ffffff 64bit pref]
+[    0.499260] pci 0000:01:00.3: reg 0x18: [mem 0xb1180000-0xb11fffff 64bit pref]
+[    0.499272] pci 0000:01:00.3: reg 0x20: [mem 0xb1230000-0xb123ffff 64bit pref]
+[    0.499331] pci 0000:01:00.3: PME# supported from D0 D3hot D3cold
+[    0.499430] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.499436] pci 0000:00:1c.0:   bridge window [mem 0xb0000000-0xb12fffff 64bit pref]
+[    0.499494] pci 0000:03:00.0: [8086:1578] type 01 class 0x060400
+[    0.499545] pci 0000:03:00.0: enabling Extended Tags
+[    0.499626] pci 0000:03:00.0: supports D1 D2
+[    0.499627] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.509637] pci 0000:00:1c.4: PCI bridge to [bus 03-78]
+[    0.509642] pci 0000:00:1c.4:   bridge window [io  0x4000-0x7fff]
+[    0.509646] pci 0000:00:1c.4:   bridge window [mem 0x82600000-0x907fffff]
+[    0.509652] pci 0000:00:1c.4:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.509886] pci 0000:04:00.0: [8086:15ea] type 01 class 0x060400
+[    0.509955] pci 0000:04:00.0: enabling Extended Tags
+[    0.510059] pci 0000:04:00.0: supports D1 D2
+[    0.510061] pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.510246] pci 0000:04:01.0: [8086:15ea] type 01 class 0x060400
+[    0.510315] pci 0000:04:01.0: enabling Extended Tags
+[    0.510417] pci 0000:04:01.0: supports D1 D2
+[    0.510419] pci 0000:04:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.510554] pci 0000:04:02.0: [8086:15ea] type 01 class 0x060400
+[    0.510622] pci 0000:04:02.0: enabling Extended Tags
+[    0.510722] pci 0000:04:02.0: supports D1 D2
+[    0.510724] pci 0000:04:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.510905] pci 0000:04:04.0: [8086:15ea] type 01 class 0x060400
+[    0.510973] pci 0000:04:04.0: enabling Extended Tags
+[    0.511075] pci 0000:04:04.0: supports D1 D2
+[    0.511077] pci 0000:04:04.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.511231] pci 0000:03:00.0: PCI bridge to [bus 04-78]
+[    0.511239] pci 0000:03:00.0:   bridge window [io  0x4000-0x7fff]
+[    0.511244] pci 0000:03:00.0:   bridge window [mem 0x82600000-0x907fffff]
+[    0.511252] pci 0000:03:00.0:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.511353] pci 0000:05:00.0: [8086:15eb] type 00 class 0x088000
+[    0.511391] pci 0000:05:00.0: reg 0x10: [mem 0x82700000-0x8273ffff]
+[    0.511405] pci 0000:05:00.0: reg 0x14: [mem 0x82740000-0x82740fff]
+[    0.511476] pci 0000:05:00.0: enabling Extended Tags
+[    0.511589] pci 0000:05:00.0: supports D1 D2
+[    0.511591] pci 0000:05:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.511873] pci 0000:04:00.0: PCI bridge to [bus 05]
+[    0.511884] pci 0000:04:00.0:   bridge window [mem 0x82700000-0x827fffff]
+[    0.512003] pci 0000:04:01.0: PCI bridge to [bus 07-3f]
+[    0.512011] pci 0000:04:01.0:   bridge window [io  0x4000-0x5fff]
+[    0.512016] pci 0000:04:01.0:   bridge window [mem 0x82800000-0x897fffff]
+[    0.512024] pci 0000:04:01.0:   bridge window [mem 0xb1300000-0xb82fffff 64bit pref]
+[    0.512117] pci 0000:06:00.0: [8086:15ec] type 00 class 0x0c0330
+[    0.512155] pci 0000:06:00.0: reg 0x10: [mem 0x00000000-0x0000ffff]
+[    0.512222] pci 0000:06:00.0: enabling Extended Tags
+[    0.512340] pci 0000:06:00.0: supports D1 D2
+[    0.512342] pci 0000:06:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.512416] pci 0000:06:00.0: 8.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s x4 link at 0000:04:02.0 (capable of 31.504 Gb/s with 8 GT/s x4 link)
+[    0.512646] pci 0000:04:02.0: PCI bridge to [bus 06]
+[    0.512657] pci 0000:04:02.0:   bridge window [mem 0x82600000-0x826fffff]
+[    0.512776] pci 0000:04:04.0: PCI bridge to [bus 40-78]
+[    0.512784] pci 0000:04:04.0:   bridge window [io  0x6000-0x7fff]
+[    0.512788] pci 0000:04:04.0:   bridge window [mem 0x89800000-0x907fffff]
+[    0.512796] pci 0000:04:04.0:   bridge window [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    0.513022] pci 0000:02:00.0: [14e4:43dc] type 00 class 0x028000
+[    0.513063] pci 0000:02:00.0: reg 0x10: [mem 0x82400000-0x82407fff 64bit]
+[    0.513080] pci 0000:02:00.0: reg 0x18: [mem 0x82000000-0x823fffff 64bit]
+[    0.513272] pci 0000:02:00.0: supports D1 D2
+[    0.513274] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.513744] pci 0000:00:1d.0: PCI bridge to [bus 02]
+[    0.513750] pci 0000:00:1d.0:   bridge window [mem 0x82000000-0x824fffff]
+[    0.515230] ACPI: PCI Interrupt Link [LNKA] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    0.515300] ACPI: PCI Interrupt Link [LNKB] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    0.515368] ACPI: PCI Interrupt Link [LNKC] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    0.515435] ACPI: PCI Interrupt Link [LNKD] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    0.515502] ACPI: PCI Interrupt Link [LNKE] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    0.515572] ACPI: PCI Interrupt Link [LNKF] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    0.515640] ACPI: PCI Interrupt Link [LNKG] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    0.515706] ACPI: PCI Interrupt Link [LNKH] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    0.515945] ACPI: EC: interrupt unblocked
+[    0.516306] ACPI: EC: event unblocked
+[    0.516386] ACPI: \_SB_.PCI0.LPCB.EC__: GPE=0x6e, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.516388] ACPI: \_SB_.PCI0.LPCB.EC__: Used as boot DSDT EC to handle transactions and events
+[    0.516869] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.516869] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.516869] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.516869] vgaarb: loaded
+[    0.516869] ACPI: bus type USB registered
+[    0.516869] usbcore: registered new interface driver usbfs
+[    0.516869] usbcore: registered new interface driver hub
+[    0.516869] usbcore: registered new device driver usb
+[    0.516869] pps_core: LinuxPPS API ver. 1 registered
+[    0.516869] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.516869] PTP clock support registered
+[    0.516869] EDAC MC: Ver: 3.0.0
+[    0.516869] Registered efivars operations
+[    0.516869] PCI: Using ACPI for IRQ routing
+[    0.538276] PCI: pci_cache_line_size set to 64 bytes
+[    0.538756] e820: reserve RAM buffer [mem 0x00058000-0x0005ffff]
+[    0.538757] e820: reserve RAM buffer [mem 0x0009d000-0x0009ffff]
+[    0.538758] e820: reserve RAM buffer [mem 0x71fd9000-0x73ffffff]
+[    0.538759] e820: reserve RAM buffer [mem 0x72c58000-0x73ffffff]
+[    0.538760] e820: reserve RAM buffer [mem 0x72f40000-0x73ffffff]
+[    0.538761] e820: reserve RAM buffer [mem 0x78b9f000-0x7bffffff]
+[    0.538762] e820: reserve RAM buffer [mem 0x79000000-0x7bffffff]
+[    0.538763] e820: reserve RAM buffer [mem 0x47f000000-0x47fffffff]
+[    0.538841] NetLabel: Initializing
+[    0.538841] NetLabel:  domain hash size = 128
+[    0.538842] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.538853] NetLabel:  unlabeled traffic allowed by default
+[    0.538857] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.538857] hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+[    0.540634] clocksource: Switched to clocksource tsc-early
+[    0.548854] VFS: Disk quotas dquot_6.6.0
+[    0.548867] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.548923] pnp: PnP ACPI init
+[    0.549603] system 00:00: [io  0xffff] has been reserved
+[    0.549604] system 00:00: [io  0x1800-0x18fe] has been reserved
+[    0.549610] system 00:00: [io  0x0800-0x087f] has been reserved
+[    0.549614] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.549815] system 00:01: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.549817] system 00:01: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.549818] system 00:01: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.549819] system 00:01: [mem 0xe0000000-0xefffffff] has been reserved
+[    0.549821] system 00:01: [mem 0xfd000000-0xfe7fffff] could not be reserved
+[    0.549822] system 00:01: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.549823] system 00:01: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.549825] system 00:01: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.549826] system 00:01: [mem 0xff000000-0xffffffff] could not be reserved
+[    0.549827] system 00:01: [mem 0xfee00000-0xfeefffff] has been reserved
+[    0.549828] system 00:01: [mem 0x40000000-0x403fffff] has been reserved
+[    0.549831] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.549866] system 00:02: [mem 0x20000000-0x201fffff] could not be reserved
+[    0.549868] system 00:02: [mem 0x40000000-0x401fffff] has been reserved
+[    0.549870] system 00:02: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.549992] pnp: PnP ACPI: found 3 devices
+[    0.555494] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.555560] pci 0000:00:1f.3: BAR 4: assigned [mem 0x4000000000-0x400000ffff 64bit]
+[    0.555572] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.555579] pci 0000:00:1c.0:   bridge window [mem 0xb0000000-0xb12fffff 64bit pref]
+[    0.555584] pci 0000:04:00.0: PCI bridge to [bus 05]
+[    0.555589] pci 0000:04:00.0:   bridge window [mem 0x82700000-0x827fffff]
+[    0.555597] pci 0000:04:01.0: PCI bridge to [bus 07-3f]
+[    0.555599] pci 0000:04:01.0:   bridge window [io  0x4000-0x5fff]
+[    0.555604] pci 0000:04:01.0:   bridge window [mem 0x82800000-0x897fffff]
+[    0.555607] pci 0000:04:01.0:   bridge window [mem 0xb1300000-0xb82fffff 64bit pref]
+[    0.555613] pci 0000:06:00.0: BAR 0: assigned [mem 0x82600000-0x8260ffff]
+[    0.555618] pci 0000:04:02.0: PCI bridge to [bus 06]
+[    0.555622] pci 0000:04:02.0:   bridge window [mem 0x82600000-0x826fffff]
+[    0.555631] pci 0000:04:04.0: PCI bridge to [bus 40-78]
+[    0.555633] pci 0000:04:04.0:   bridge window [io  0x6000-0x7fff]
+[    0.555637] pci 0000:04:04.0:   bridge window [mem 0x89800000-0x907fffff]
+[    0.555641] pci 0000:04:04.0:   bridge window [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    0.555646] pci 0000:03:00.0: PCI bridge to [bus 04-78]
+[    0.555648] pci 0000:03:00.0:   bridge window [io  0x4000-0x7fff]
+[    0.555653] pci 0000:03:00.0:   bridge window [mem 0x82600000-0x907fffff]
+[    0.555656] pci 0000:03:00.0:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.555661] pci 0000:00:1c.4: PCI bridge to [bus 03-78]
+[    0.555663] pci 0000:00:1c.4:   bridge window [io  0x4000-0x7fff]
+[    0.555666] pci 0000:00:1c.4:   bridge window [mem 0x82600000-0x907fffff]
+[    0.555669] pci 0000:00:1c.4:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.555672] pci 0000:00:1d.0: PCI bridge to [bus 02]
+[    0.555677] pci 0000:00:1d.0:   bridge window [mem 0x82000000-0x824fffff]
+[    0.555684] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.555685] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.555686] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.555687] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+[    0.555688] pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+[    0.555689] pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+[    0.555690] pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff window]
+[    0.555691] pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff window]
+[    0.555692] pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff window]
+[    0.555693] pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff window]
+[    0.555694] pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff window]
+[    0.555696] pci_bus 0000:00: resource 15 [mem 0x000e0000-0x000e3fff window]
+[    0.555697] pci_bus 0000:00: resource 16 [mem 0x000e4000-0x000e7fff window]
+[    0.555698] pci_bus 0000:00: resource 17 [mem 0x000e8000-0x000ebfff window]
+[    0.555699] pci_bus 0000:00: resource 18 [mem 0x000ec000-0x000effff window]
+[    0.555700] pci_bus 0000:00: resource 19 [mem 0x000f0000-0x000fffff window]
+[    0.555701] pci_bus 0000:00: resource 20 [mem 0x80000000-0xfeafffff window]
+[    0.555702] pci_bus 0000:00: resource 21 [mem 0x4000000000-0x7fffffffff window]
+[    0.555703] pci_bus 0000:01: resource 2 [mem 0xb0000000-0xb12fffff 64bit pref]
+[    0.555704] pci_bus 0000:03: resource 0 [io  0x4000-0x7fff]
+[    0.555705] pci_bus 0000:03: resource 1 [mem 0x82600000-0x907fffff]
+[    0.555706] pci_bus 0000:03: resource 2 [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.555708] pci_bus 0000:04: resource 0 [io  0x4000-0x7fff]
+[    0.555709] pci_bus 0000:04: resource 1 [mem 0x82600000-0x907fffff]
+[    0.555710] pci_bus 0000:04: resource 2 [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    0.555711] pci_bus 0000:05: resource 1 [mem 0x82700000-0x827fffff]
+[    0.555712] pci_bus 0000:07: resource 0 [io  0x4000-0x5fff]
+[    0.555713] pci_bus 0000:07: resource 1 [mem 0x82800000-0x897fffff]
+[    0.555714] pci_bus 0000:07: resource 2 [mem 0xb1300000-0xb82fffff 64bit pref]
+[    0.555715] pci_bus 0000:06: resource 1 [mem 0x82600000-0x826fffff]
+[    0.555716] pci_bus 0000:40: resource 0 [io  0x6000-0x7fff]
+[    0.555717] pci_bus 0000:40: resource 1 [mem 0x89800000-0x907fffff]
+[    0.555718] pci_bus 0000:40: resource 2 [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    0.555719] pci_bus 0000:02: resource 1 [mem 0x82000000-0x824fffff]
+[    0.555874] NET: Registered protocol family 2
+[    0.555984] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes)
+[    0.556027] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.556213] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.556358] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.556384] UDP hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.556458] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.556523] NET: Registered protocol family 1
+[    0.556526] NET: Registered protocol family 44
+[    0.556534] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.557041] pci 0000:06:00.0: enabling device (0000 -> 0002)
+[    0.557227] PCI: CLS 256 bytes, default 64
+[    0.557257] Unpacking initramfs...
+[    0.649138] Freeing initrd memory: 7548K
+[    0.649182] DMAR: Failed to find handle for ACPI object \_SB.PCI0.UA00
+[    0.669684] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.669687] software IO TLB: mapped [mem 0x64ee2000-0x68ee2000] (64MB)
+[    0.669724] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x172daa3a18b, max_idle_ns: 440795212390 ns
+[    0.669740] clocksource: Switched to clocksource tsc
+[    0.669787] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.669982] check: Scanning for low memory corruption every 60 seconds
+[    0.670733] Initialise system trusted keyrings
+[    0.670744] Key type blacklist registered
+[    0.670808] workingset: timestamp_bits=41 max_order=22 bucket_order=0
+[    0.672529] zbud: loaded
+[    0.704298] Key type asymmetric registered
+[    0.704299] Asymmetric key parser 'x509' registered
+[    0.704311] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    0.704341] io scheduler noop registered
+[    0.704341] io scheduler deadline registered
+[    0.704373] io scheduler cfq registered (default)
+[    0.704374] io scheduler mq-deadline registered
+[    0.704375] io scheduler kyber registered
+[    0.704404] io scheduler bfq registered
+[    0.705333] pciehp 0000:04:01.0:pcie204: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ LLActRep+
+[    0.705655] pciehp 0000:04:04.0:pcie204: Slot #4 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ LLActRep+
+[    0.705771] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.705829] efifb: probing for efifb
+[    0.705844] efifb: No BGRT, not showing boot graphics
+[    0.705845] efifb: framebuffer at 0xa0000000, using 20288k, total 20288k
+[    0.705846] efifb: mode is 2880x1800x32, linelength=11520, pages=1
+[    0.705846] efifb: scrolling: redraw
+[    0.705847] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.705922] Console: switching to colour frame buffer device 360x112
+[    0.714573] fb0: EFI VGA frame buffer device
+[    0.714586] intel_idle: MWAIT substates: 0x11142120
+[    0.714587] intel_idle: v0.4.1 model 0x8E
+[    0.714773] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    0.714851] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[    0.714859] ACPI: Lid Switch [LID0]
+[    0.714881] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.714898] ACPI: Power Button [PWRB]
+[    0.714923] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2
+[    0.714926] ACPI: Sleep Button [SLPB]
+[    0.714944] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+[    0.714948] ACPI: Power Button [PWRF]
+[    0.715529] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.716592] usbcore: registered new interface driver usbserial_generic
+[    0.716595] usbserial: USB Serial support registered for generic
+[    0.716616] rtc_cmos rtc_cmos: RTC can wake from S4
+[    0.717056] rtc_cmos rtc_cmos: registered as rtc0
+[    0.717066] rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.717101] intel_pstate: Intel P-state driver initializing
+[    0.717242] intel_pstate: HWP enabled
+[    0.717268] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.717285] intel_pmc_core:  initialized
+[    0.717471] NET: Registered protocol family 10
+[    0.721247] Segment Routing with IPv6
+[    0.721263] NET: Registered protocol family 17
+[    0.721420] RAS: Correctable Errors collector initialized.
+[    0.721449] microcode: sig=0x806e9, pf=0x10, revision=0x9a
+[    0.721486] microcode: Microcode Update Driver: v2.2.
+[    0.721493] sched_clock: Marking stable (724410619, -2927545)->(730139884, -8656810)
+[    0.721624] registered taskstats version 1
+[    0.721632] Loading compiled-in X.509 certificates
+[    0.723654] Loaded X.509 cert 'Build time autogenerated kernel key: 607bf7b41813a10b7fecf0eb8d5fb1179fd6fddf'
+[    0.723669] zswap: loaded using pool lzo/zbud
+[    0.727405] Key type big_key registered
+[    0.728038]   Magic number: 3:185:53
+[    0.728098] memory memory85: hash matches
+[    0.728254] rtc_cmos rtc_cmos: setting system clock to 2019-01-08 01:04:58 UTC (1546909498)
+[    0.729101] Freeing unused decrypted memory: 2040K
+[    0.729396] Freeing unused kernel image memory: 1532K
+[    0.749712] Write protecting the kernel read-only data: 18432k
+[    0.750336] Freeing unused kernel image memory: 2016K
+[    0.750525] Freeing unused kernel image memory: 368K
+[    0.757943] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.757944] x86/mm: Checking user space page tables
+[    0.765130] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.765132] Run /init as init process
+[    0.838368] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.838374] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.839447] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000001109810
+[    0.839452] xhci_hcd 0000:00:14.0: cache line size of 256 is not supported
+[    0.839664] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.20
+[    0.839666] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.839668] usb usb1: Product: xHCI Host Controller
+[    0.839669] usb usb1: Manufacturer: Linux 4.20.0-arch1-1-ARCH xhci-hcd
+[    0.839671] usb usb1: SerialNumber: 0000:00:14.0
+[    0.839844] hub 1-0:1.0: USB hub found
+[    0.839864] hub 1-0:1.0: 12 ports detected
+[    0.840296] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.840300] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.840303] xhci_hcd 0000:00:14.0: Host supports USB 3.0  SuperSpeed
+[    0.840339] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.20
+[    0.840341] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.840342] usb usb2: Product: xHCI Host Controller
+[    0.840344] usb usb2: Manufacturer: Linux 4.20.0-arch1-1-ARCH xhci-hcd
+[    0.840345] usb usb2: SerialNumber: 0000:00:14.0
+[    0.840520] hub 2-0:1.0: USB hub found
+[    0.840533] hub 2-0:1.0: 6 ports detected
+[    0.840589] usb: port power management may be unreliable
+[    0.840983] xhci_hcd 0000:06:00.0: xHCI Host Controller
+[    0.840988] xhci_hcd 0000:06:00.0: new USB bus registered, assigned bus number 3
+[    0.842109] xhci_hcd 0000:06:00.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000200009810
+[    0.842339] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.20
+[    0.842341] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.842342] usb usb3: Product: xHCI Host Controller
+[    0.842344] usb usb3: Manufacturer: Linux 4.20.0-arch1-1-ARCH xhci-hcd
+[    0.842345] usb usb3: SerialNumber: 0000:06:00.0
+[    0.842440] hub 3-0:1.0: USB hub found
+[    0.842448] hub 3-0:1.0: 2 ports detected
+[    0.842625] xhci_hcd 0000:06:00.0: xHCI Host Controller
+[    0.842627] xhci_hcd 0000:06:00.0: new USB bus registered, assigned bus number 4
+[    0.842630] xhci_hcd 0000:06:00.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    0.842659] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.20
+[    0.842660] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.842661] usb usb4: Product: xHCI Host Controller
+[    0.842662] usb usb4: Manufacturer: Linux 4.20.0-arch1-1-ARCH xhci-hcd
+[    0.842663] usb usb4: SerialNumber: 0000:06:00.0
+[    0.842844] hub 4-0:1.0: USB hub found
+[    0.842854] hub 4-0:1.0: 2 ports detected
+[    1.169678] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+[    1.228047] usb 4-1: new SuperSpeed Gen 1 USB device number 2 using xhci_hcd
+[    1.316445] usb 1-1: New USB device found, idVendor=2109, idProduct=2813, bcdDevice=90.11
+[    1.316451] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.316455] usb 1-1: Product: USB2.0 Hub
+[    1.316459] usb 1-1: Manufacturer: VIA Labs, Inc.
+[    1.317579] hub 1-1:1.0: USB hub found
+[    1.318395] hub 1-1:1.0: 4 ports detected
+[    1.329024] usb 4-1: New USB device found, idVendor=2109, idProduct=0813, bcdDevice=90.11
+[    1.329030] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.329034] usb 4-1: Product: USB3.0 Hub
+[    1.329037] usb 4-1: Manufacturer: VIA Labs, Inc.
+[    1.331520] hub 4-1:1.0: USB hub found
+[    1.331705] hub 4-1:1.0: 4 ports detected
+[    1.713146] usb 4-1.2: new SuperSpeed Gen 1 USB device number 3 using xhci_hcd
+[    1.730625] usb 4-1.2: New USB device found, idVendor=0781, idProduct=558a, bcdDevice= 1.00
+[    1.730631] usb 4-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.730635] usb 4-1.2: Product: Ultra
+[    1.730638] usb 4-1.2: Manufacturer: SanDisk
+[    1.730642] usb 4-1.2: SerialNumber: 4C530001110528108250
+[    1.743453] SCSI subsystem initialized
+[    1.746075] usb-storage 4-1.2:1.0: USB Mass Storage device detected
+[    1.746215] scsi host0: usb-storage 4-1.2:1.0
+[    1.746352] usbcore: registered new interface driver usb-storage
+[    1.747529] usbcore: registered new interface driver uas
+[    2.750562] scsi 0:0:0:0: Direct-Access     SanDisk  Ultra            1.00 PQ: 0 ANSI: 6
+[    2.758003] sd 0:0:0:0: [sda] 60063744 512-byte logical blocks: (30.8 GB/28.6 GiB)
+[    2.758432] sd 0:0:0:0: [sda] Write Protect is off
+[    2.758434] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[    2.758672] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    2.775534]  sda: sda1
+[    2.777598] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    2.795308] random: fast init done
+[   33.866400] usb 1-1.1: new low-speed USB device number 3 using xhci_hcd
+[   34.019512] usb 1-1.1: New USB device found, idVendor=046d, idProduct=c31c, bcdDevice=64.00
+[   34.019519] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   34.019524] usb 1-1.1: Product: USB Keyboard
+[   34.019529] usb 1-1.1: Manufacturer: Logitech
+[   34.036929] hidraw: raw HID events driver (C) Jiri Kosina
+[   34.047382] usbcore: registered new interface driver usbhid
+[   34.047385] usbhid: USB HID core driver
+[   34.050135] input: Logitech USB Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:046D:C31C.0001/input/input4
+[   34.106646] hid-generic 0003:046D:C31C.0001: input,hidraw0: USB HID v1.10 Keyboard [Logitech USB Keyboard] on usb-0000:00:14.0-1.1/input0
+[   34.107099] input: Logitech USB Keyboard Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C31C.0002/input/input5
+[   34.163169] input: Logitech USB Keyboard System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C31C.0002/input/input6
+[   34.163373] hid-generic 0003:046D:C31C.0002: input,hidraw1: USB HID v1.10 Device [Logitech USB Keyboard] on usb-0000:00:14.0-1.1/input1
+[   50.470449] random: crng init done
+[   67.224093] EXT4-fs (sda1): mounting ext2 file system using the ext4 subsystem
+[   67.227977] EXT4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended
+[   67.238997] EXT4-fs (sda1): mounted filesystem without journal. Opts: (null)
+[   70.991669] systemd[1]: systemd 239 running in system mode. (+PAM +AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   71.006566] systemd[1]: Detected architecture x86-64.
+[   71.014735] systemd[1]: Set hostname to <air>.
+[   71.016097] systemd[1]: /proc/cmdline:5: invalid UTF-8 value for key !"#$%&'()*+,-./0123456789:;<: '>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd', ignoring.
+[   71.016366] systemd[1]: Failed to read /proc/cmdline: Invalid argument
+[   71.403675] systemd[1]: Listening on LVM2 metadata daemon socket.
+[   71.404377] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   71.404619] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   71.404919] systemd[1]: Listening on udev Control Socket.
+[   71.405225] systemd[1]: Listening on Journal Socket.
+[   71.496557] audit: type=1130 audit(1546909569.266:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.499284] audit: type=1130 audit(1546909569.266:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.510652] audit: type=1130 audit(1546909569.279:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=lvm2-lvmetad comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.511738] audit: type=1130 audit(1546909569.279:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.521141] audit: type=1130 audit(1546909569.289:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.521537] audit: type=1130 audit(1546909569.289:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.547379] systemd-journald[287]: Received request to flush runtime journal from PID 1
+[   71.576952] audit: type=1130 audit(1546909569.346:8): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysusers comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   71.601507] systemd-journald[287]: File /var/log/journal/cabd70470d914f0a9fb53cf3448cb35c/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   71.658058] audit: type=1130 audit(1546909569.426:9): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   72.214022] audit: type=1130 audit(1546909569.983:10): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   72.274439] audit: type=1130 audit(1546909570.043:11): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   72.407622] ACPI: AC Adapter [ADP1] (off-line)
+[   72.458653] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+[   72.473254] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[   72.478973] acpi-tad ACPI000E:00: Missing _PRW
+[   72.492950] intel-lpss 0000:00:1e.0: enabling device (0000 -> 0002)
+[   72.507519] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[   72.551909] smbus_hc ACPI0001:00: SBS HC: offset = 0x20, query_bit = 0x10
+[   72.557373] Linux agpgart interface v0.103
+[   72.571864] input: PC Speaker as /devices/platform/pcspkr/input/input7
+[   72.576655] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[   72.576657] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[   72.576658] RAPL PMU: hw unit of domain package 2^-14 Joules
+[   72.576658] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[   72.576659] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[   72.576660] RAPL PMU: hw unit of domain psys 2^-14 Joules
+[   72.635387] thunderbolt 0000:05:00.0: starting ICM firmware
+[   72.635964] cryptd: max_cpu_qlen set to 1000
+[   72.702864] AVX2 version of gcm_enc/dec engaged.
+[   72.702866] AES CTR mode by8 optimization enabled
+[   72.767110] Bluetooth: Core ver 2.22
+[   72.767155] NET: Registered protocol family 31
+[   72.767155] Bluetooth: HCI device and connection manager initialized
+[   72.767159] Bluetooth: HCI socket layer initialized
+[   72.767161] Bluetooth: L2CAP socket layer initialized
+[   72.767164] Bluetooth: SCO socket layer initialized
+[   72.769962] snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+[   72.773802] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   72.782073] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   72.802393] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   72.802398] cfg80211: failed to load regulatory.db
+[   72.804927] ACPI: Smart Battery System [SBS0]: Battery Slot [BAT0] (battery present)
+[   72.845352] Bluetooth: HCI UART driver ver 2.3
+[   72.845354] Bluetooth: HCI UART protocol H4 registered
+[   72.845355] Bluetooth: HCI UART protocol BCSP registered
+[   72.845380] Bluetooth: HCI UART protocol LL registered
+[   72.845380] Bluetooth: HCI UART protocol ATH3K registered
+[   72.845392] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[   72.845423] Bluetooth: HCI UART protocol Intel registered
+[   72.845456] Bluetooth: HCI UART protocol Broadcom registered
+[   72.845466] Bluetooth: HCI UART protocol QCA registered
+[   72.845467] Bluetooth: HCI UART protocol AG6XX registered
+[   72.845467] Bluetooth: HCI UART protocol Marvell registered
+[   72.870682] VFIO - User Level meta-driver version: 0.3
+[   72.916883] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.916884] applesmc: #KEY: read arg fail
+[   72.993424] wl: loading out-of-tree module taints kernel.
+[   72.995520] wl: module verification failed: signature and/or required key missing - tainting kernel
+[   73.016304] wl 0000:02:00.0: enabling device (0000 -> 0002)
+[   73.129095] iTCO_vendor_support: vendor-support=0
+[   73.131799] iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+[   73.131854] iTCO_wdt: unable to reset NO_REBOOT flag, device disabled by hardware/BIOS
+[   73.132256] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.132257] applesmc: #KEY: read arg fail
+[   73.144090] wl driver 6.30.223.271 (r587334) failed with code 1
+[   73.144092] ERROR @wl_cfg80211_detach : 
+[   73.144093] NULL ndev->ieee80211ptr, unable to deref wl
+[   73.147390] intel_rapl: Found RAPL domain package
+[   73.147392] intel_rapl: Found RAPL domain core
+[   73.147393] intel_rapl: Found RAPL domain uncore
+[   73.147395] intel_rapl: Found RAPL domain dram
+[   73.163216] dw-apb-uart.0: ttyS0 at MMIO 0x8252a000 (irq = 20, base_baud = 3000000) is a 16550A
+[   73.163308] serial serial0: tty port ttyS0 registered
+[   73.163402] hci_uart_bcm serial0-0: Unexpected ACPI gpio_int_idx: -1
+[   73.163404] hci_uart_bcm serial0-0: Unexpected number of ACPI GPIOs: 0
+[   73.163408] hci_uart_bcm serial0-0: No reset resource, using default baud rate
+[   73.318550] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.318551] applesmc: #KEY: read arg fail
+[   73.324957] checking generic (a0000000 13d0000) vs hw (a0000000 10000000)
+[   73.324958] fb0: switching to inteldrmfb from EFI VGA
+[   73.326521] Console: switching to colour dummy device 80x25
+[   73.326607] [drm] Replacing VGA console driver
+[   73.327717] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[   73.327718] [drm] Driver supports precise vblank timestamp query.
+[   73.327792] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[   73.352935] [drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[   73.434906] 8021q: 802.1Q VLAN Support v1.8
+[   73.504985] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.504986] applesmc: #KEY: read arg fail
+[   73.514766] Bluetooth: hci0: BCM: failed to write update baudrate (-16)
+[   73.514771] Bluetooth: hci0: Failed to set baudrate
+[   73.623408] Bluetooth: hci0: BCM: chip id 133
+[   73.623959] Bluetooth: hci0: BCM: features 0x0e
+[   73.625045] Bluetooth: hci0: BCM4355C1 Hawaii Olympic (MFG)
+[   73.625048] Bluetooth: hci0: BCM (000.016.040) build 0561
+[   73.629550] bluetooth hci0: Direct firmware load for brcm/BCM.hcd failed with error -2
+[   73.629553] Bluetooth: hci0: BCM: Patch brcm/BCM.hcd not found
+[   73.691745] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.691747] applesmc: #KEY: read arg fail
+[   73.878459] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.878461] applesmc: #KEY: read arg fail
+[   73.905155] [drm] Initialized i915 1.6.0 20180921 for 0000:00:02.0 on minor 0
+[   73.906110] ACPI: Video Device [IGPU] (multi-head: yes  rom: no  post: no)
+[   73.906734] acpi device:02: registered as cooling_device5
+[   73.906832] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input8
+[   73.907010] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[   73.915500] fbcon: inteldrmfb (fb0) is primary device
+[   74.065273] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.065274] applesmc: #KEY: read arg fail
+[   74.251910] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.251911] applesmc: #KEY: read arg fail
+[   74.438426] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.438428] applesmc: #KEY: read arg fail
+[   74.625080] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.625081] applesmc: #KEY: read arg fail
+[   74.811805] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.811806] applesmc: #KEY: read arg fail
+[   74.998338] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.998340] applesmc: #KEY: read arg fail
+[   75.025415] Console: switching to colour frame buffer device 360x112
+[   75.050474] i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+[   75.121369] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input9
+[   75.121407] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input10
+[   75.121442] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input11
+[   75.121476] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input12
+[   75.121509] input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+[   75.175953] vboxvideo: module is from the staging directory, the quality is unknown, you have been warned.
+[   75.185932] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.185934] applesmc: #KEY: read arg fail
+[   75.371635] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.371636] applesmc: #KEY: read arg fail
+[   75.558319] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.558319] applesmc: #KEY: read arg fail
+[   75.745050] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.745051] applesmc: #KEY: read arg fail
+[   75.842945] thunderbolt 0000:05:00.0: could not start ICM firmware
+[   75.843277] thunderbolt: probe of 0000:05:00.0 failed with error -110
+[   75.931693] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.931695] applesmc: #KEY: read arg fail
+[   76.118372] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   76.118373] applesmc: #KEY: read arg fail
+[   76.304996] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   76.304997] applesmc: #KEY: read arg fail
+[   76.491563] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   76.491564] applesmc: #KEY: read arg fail
+[   76.678446] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   76.678447] applesmc: #KEY: read arg fail
+[   76.865001] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   76.865002] applesmc: #KEY: read arg fail
+[   77.051566] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.051568] applesmc: #KEY: read arg fail
+[   77.238330] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.238332] applesmc: #KEY: read arg fail
+[   77.425060] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.425062] applesmc: #KEY: read arg fail
+[   77.614999] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.615001] applesmc: #KEY: read arg fail
+[   77.801622] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.801624] applesmc: #KEY: read arg fail
+[   77.988336] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   77.988337] applesmc: #KEY: read arg fail
+[   78.175080] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   78.175081] applesmc: #KEY: read arg fail
+[   78.290523] kauditd_printk_skb: 19 callbacks suppressed
+[   78.290525] audit: type=1131 audit(1546909576.059:31): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   78.361848] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   78.361850] applesmc: #KEY: read arg fail
+[   78.548404] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   78.548406] applesmc: #KEY: read arg fail
+[   78.734954] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   78.734956] applesmc: #KEY: read arg fail
+[   78.921508] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   78.921509] applesmc: #KEY: read arg fail
+[   79.108408] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   79.108410] applesmc: #KEY: read arg fail
+[   79.294919] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   79.294921] applesmc: #KEY: read arg fail
+[   79.481722] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   79.481725] applesmc: #KEY: read arg fail
+[   79.668437] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   79.668438] applesmc: #KEY: read arg fail
+[   79.854987] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   79.854988] applesmc: #KEY: read arg fail
+[   80.041697] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.041698] applesmc: #KEY: read arg fail
+[   80.231771] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.231773] applesmc: #KEY: read arg fail
+[   80.421668] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.421670] applesmc: #KEY: read arg fail
+[   80.608498] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.608500] applesmc: #KEY: read arg fail
+[   80.795027] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.795029] applesmc: #KEY: read arg fail
+[   80.981659] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   80.981661] applesmc: #KEY: read arg fail
+[   81.168333] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   81.168335] applesmc: #KEY: read arg fail
+[   81.354979] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   81.354981] applesmc: #KEY: read arg fail
+[   81.541799] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   81.541801] applesmc: #KEY: read arg fail
+[   81.728554] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   81.728555] applesmc: #KEY: read arg fail
+[   81.915082] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   81.915084] applesmc: #KEY: read arg fail
+[   82.101527] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   82.101528] applesmc: #KEY: read arg fail
+[   82.288468] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   82.288470] applesmc: #KEY: read arg fail
+[   82.478449] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   82.478451] applesmc: #KEY: read arg fail
+[   82.541888] audit: type=1130 audit(1546909580.309:32): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=man-db comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   82.541891] audit: type=1131 audit(1546909580.309:33): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=man-db comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   82.664990] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   82.664990] applesmc: #KEY: read arg fail
+[   82.851722] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   82.851723] applesmc: #KEY: read arg fail
+[   83.038467] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.038469] applesmc: #KEY: read arg fail
+[   83.225265] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.225266] applesmc: #KEY: read arg fail
+[   83.411889] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.411891] applesmc: #KEY: read arg fail
+[   83.598493] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.598494] applesmc: #KEY: read arg fail
+[   83.785028] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.785029] applesmc: #KEY: read arg fail
+[   83.971919] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   83.971920] applesmc: #KEY: read arg fail
+[   84.158557] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   84.158558] applesmc: #KEY: read arg fail
+[   84.345215] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   84.345216] applesmc: #KEY: read arg fail
+[   84.531780] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   84.531781] applesmc: #KEY: read arg fail
+[   84.718526] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   84.718527] applesmc: #KEY: read arg fail
+[   84.904963] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   84.904964] applesmc: #KEY: read arg fail
+[   85.091840] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   85.091842] applesmc: #KEY: read arg fail
+[   85.278282] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   85.278283] applesmc: #KEY: read arg fail
+[   85.464969] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   85.464970] applesmc: #KEY: read arg fail
+[   85.651818] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   85.651819] applesmc: #KEY: read arg fail
+[   85.838559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   85.838560] applesmc: #KEY: read arg fail
+[   86.025038] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.025039] applesmc: #KEY: read arg fail
+[   86.211877] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.211878] applesmc: #KEY: read arg fail
+[   86.398305] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.398306] applesmc: #KEY: read arg fail
+[   86.585004] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.585005] applesmc: #KEY: read arg fail
+[   86.771807] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.771808] applesmc: #KEY: read arg fail
+[   86.958692] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   86.958693] applesmc: #KEY: read arg fail
+[   87.144967] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   87.144968] applesmc: #KEY: read arg fail
+[   87.331913] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   87.331914] applesmc: #KEY: read arg fail
+[   87.518363] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   87.518364] applesmc: #KEY: read arg fail
+[   87.705098] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   87.705099] applesmc: #KEY: read arg fail
+[   87.891739] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   87.891740] applesmc: #KEY: read arg fail
+[   88.078418] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   88.078419] applesmc: #KEY: read arg fail
+[   88.265104] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   88.265105] applesmc: #KEY: read arg fail
+[   88.451955] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   88.451956] applesmc: #KEY: read arg fail
+[   88.638458] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   88.638459] applesmc: #KEY: read arg fail
+[   88.825134] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   88.825135] applesmc: #KEY: read arg fail
+[   89.011776] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.011777] applesmc: #KEY: read arg fail
+[   89.198453] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.198454] applesmc: #KEY: read arg fail
+[   89.296675] audit: type=1006 audit(1546909587.066:34): pid=414 uid=0 old-auid=4294967295 auid=1000 tty=tty1 old-ses=4294967295 ses=1 res=1
+[   89.314828] audit: type=1130 audit(1546909587.083:35): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   89.320289] audit: type=1006 audit(1546909587.089:36): pid=2202 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=2 res=1
+[   89.380055] audit: type=1130 audit(1546909587.149:37): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   89.384874] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.384875] applesmc: #KEY: read arg fail
+[   89.571948] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.571949] applesmc: #KEY: read arg fail
+[   89.758375] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.758377] applesmc: #KEY: read arg fail
+[   89.945108] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   89.945109] applesmc: #KEY: read arg fail
+[   90.131703] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   90.131704] applesmc: #KEY: read arg fail
+[   90.318488] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   90.318489] applesmc: #KEY: read arg fail
+[   90.505126] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   90.505127] applesmc: #KEY: read arg fail
+[   90.691676] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   90.691677] applesmc: #KEY: read arg fail
+[   90.878409] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   90.878410] applesmc: #KEY: read arg fail
+[   91.065244] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.065245] applesmc: #KEY: read arg fail
+[   91.251690] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.251691] applesmc: #KEY: read arg fail
+[   91.438285] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.438286] applesmc: #KEY: read arg fail
+[   91.492978] applesmc: probe of applesmc.768 failed with error -5
+[   91.625033] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.625034] applesmc: #KEY: read arg fail
+[   91.811809] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.811810] applesmc: #KEY: read arg fail
+[   91.998590] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   91.998591] applesmc: #KEY: read arg fail
+[   92.185002] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   92.185003] applesmc: #KEY: read arg fail
+[   92.371877] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   92.371879] applesmc: #KEY: read arg fail
+[   92.558357] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   92.558358] applesmc: #KEY: read arg fail
+[   92.745068] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   92.745069] applesmc: #KEY: read arg fail
+[   92.931627] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   92.931628] applesmc: #KEY: read arg fail
+[   93.118174] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   93.118175] applesmc: #KEY: read arg fail
+[   93.305126] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   93.305127] applesmc: #KEY: read arg fail
+[   93.491695] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   93.491696] applesmc: #KEY: read arg fail
+[   93.678391] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   93.678392] applesmc: #KEY: read arg fail
+[   93.865103] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   93.865104] applesmc: #KEY: read arg fail
+[   94.051662] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.051663] applesmc: #KEY: read arg fail
+[   94.238224] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.238225] applesmc: #KEY: read arg fail
+[   94.425064] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.425065] applesmc: #KEY: read arg fail
+[   94.611779] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.611780] applesmc: #KEY: read arg fail
+[   94.798427] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.798428] applesmc: #KEY: read arg fail
+[   94.985140] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   94.985140] applesmc: #KEY: read arg fail
+[   95.171799] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   95.171800] applesmc: #KEY: read arg fail
+[   95.358344] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   95.358345] applesmc: #KEY: read arg fail
+[   95.544937] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   95.544938] applesmc: #KEY: read arg fail
+[   95.731815] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   95.731816] applesmc: #KEY: read arg fail
+[   95.918461] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   95.918462] applesmc: #KEY: read arg fail
+[   96.105191] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   96.105192] applesmc: #KEY: read arg fail
+[   96.291828] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   96.291829] applesmc: #KEY: read arg fail
+[   96.478529] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   96.478530] applesmc: #KEY: read arg fail
+[   96.664975] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   96.664977] applesmc: #KEY: read arg fail
+[   96.851513] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   96.851514] applesmc: #KEY: read arg fail
+[   97.038233] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.038234] applesmc: #KEY: read arg fail
+[   97.225040] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.225041] applesmc: #KEY: read arg fail
+[   97.411575] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.411576] applesmc: #KEY: read arg fail
+[   97.598421] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.598422] applesmc: #KEY: read arg fail
+[   97.785165] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.785166] applesmc: #KEY: read arg fail
+[   97.971844] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   97.971845] applesmc: #KEY: read arg fail
+[   98.158493] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   98.158494] applesmc: #KEY: read arg fail
+[   98.345036] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   98.345037] applesmc: #KEY: read arg fail
+[   98.531899] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   98.531900] applesmc: #KEY: read arg fail
+[   98.718325] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   98.718326] applesmc: #KEY: read arg fail
+[   98.905011] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   98.905013] applesmc: #KEY: read arg fail
+[   99.091640] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   99.091641] applesmc: #KEY: read arg fail
+[   99.278402] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   99.278403] applesmc: #KEY: read arg fail
+[   99.465111] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   99.465112] applesmc: #KEY: read arg fail
+[   99.651644] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   99.651645] applesmc: #KEY: read arg fail
+[   99.838250] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   99.838252] applesmc: #KEY: read arg fail
+[  100.025142] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.025143] applesmc: #KEY: read arg fail
+[  100.211715] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.211716] applesmc: #KEY: read arg fail
+[  100.398118] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.398119] applesmc: #KEY: read arg fail
+[  100.585202] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.585203] applesmc: #KEY: read arg fail
+[  100.771574] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.771575] applesmc: #KEY: read arg fail
+[  100.958562] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  100.958563] applesmc: #KEY: read arg fail
+[  101.145214] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  101.145215] applesmc: #KEY: read arg fail
+[  101.331748] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  101.331749] applesmc: #KEY: read arg fail
+[  101.518582] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  101.518583] applesmc: #KEY: read arg fail
+[  101.705182] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  101.705183] applesmc: #KEY: read arg fail
+[  101.891778] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  101.891779] applesmc: #KEY: read arg fail
+[  102.078418] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  102.078419] applesmc: #KEY: read arg fail
+[  102.265214] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  102.265215] applesmc: #KEY: read arg fail
+[  102.451785] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  102.451785] applesmc: #KEY: read arg fail
+[  102.638537] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  102.638538] applesmc: #KEY: read arg fail
+[  102.824863] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  102.824864] applesmc: #KEY: read arg fail
+[  103.012095] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.012096] applesmc: #KEY: read arg fail
+[  103.198459] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.198460] applesmc: #KEY: read arg fail
+[  103.385039] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.385041] applesmc: #KEY: read arg fail
+[  103.571678] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.571678] applesmc: #KEY: read arg fail
+[  103.758365] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.758367] applesmc: #KEY: read arg fail
+[  103.945319] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  103.945320] applesmc: #KEY: read arg fail
+[  104.131791] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  104.131792] applesmc: #KEY: read arg fail
+[  104.318294] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  104.318295] applesmc: #KEY: read arg fail
+[  104.504869] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  104.504870] applesmc: #KEY: read arg fail
+[  104.691753] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  104.691754] applesmc: #KEY: read arg fail
+[  104.878362] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  104.878363] applesmc: #KEY: read arg fail
+[  105.065343] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.065344] applesmc: #KEY: read arg fail
+[  105.251768] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.251769] applesmc: #KEY: read arg fail
+[  105.438330] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.438331] applesmc: #KEY: read arg fail
+[  105.625161] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.625163] applesmc: #KEY: read arg fail
+[  105.811843] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.811845] applesmc: #KEY: read arg fail
+[  105.998401] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  105.998403] applesmc: #KEY: read arg fail
+[  106.185130] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  106.185131] applesmc: #KEY: read arg fail
+[  106.371688] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  106.371689] applesmc: #KEY: read arg fail
+[  106.558326] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  106.558327] applesmc: #KEY: read arg fail
+[  106.745040] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  106.745041] applesmc: #KEY: read arg fail
+[  106.931755] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  106.931756] applesmc: #KEY: read arg fail
+[  107.118322] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  107.118323] applesmc: #KEY: read arg fail
+[  107.305010] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  107.305011] applesmc: #KEY: read arg fail
+[  107.491708] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  107.491709] applesmc: #KEY: read arg fail
+[  107.678389] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  107.678390] applesmc: #KEY: read arg fail
+[  107.865231] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  107.865232] applesmc: #KEY: read arg fail
+[  108.051800] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.051801] applesmc: #KEY: read arg fail
+[  108.238219] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.238220] applesmc: #KEY: read arg fail
+[  108.425144] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.425145] applesmc: #KEY: read arg fail
+[  108.611552] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.611553] applesmc: #KEY: read arg fail
+[  108.798426] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.798427] applesmc: #KEY: read arg fail
+[  108.984960] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  108.984961] applesmc: #KEY: read arg fail
+[  109.171828] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  109.171829] applesmc: #KEY: read arg fail
+[  109.358154] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  109.358155] applesmc: #KEY: read arg fail
+[  109.545181] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  109.545182] applesmc: #KEY: read arg fail
+[  109.731625] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  109.731626] applesmc: #KEY: read arg fail
+[  109.918021] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  109.918022] applesmc: #KEY: read arg fail
+[  110.105014] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  110.105015] applesmc: #KEY: read arg fail
+[  110.159676] applesmc: driver init failed (ret=-5)!
+[  110.327649] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  110.327650] applesmc: #KEY: read arg fail
+[  110.515126] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  110.515127] applesmc: #KEY: read arg fail
+[  110.701623] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  110.701625] applesmc: #KEY: read arg fail
+[  110.888364] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  110.888365] applesmc: #KEY: read arg fail
+[  111.074960] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  111.074961] applesmc: #KEY: read arg fail
+[  111.261730] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  111.261731] applesmc: #KEY: read arg fail
+[  111.448272] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  111.448273] applesmc: #KEY: read arg fail
+[  111.634986] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  111.634987] applesmc: #KEY: read arg fail
+[  111.821554] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  111.821555] applesmc: #KEY: read arg fail
+[  112.008407] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.008407] applesmc: #KEY: read arg fail
+[  112.195057] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.195058] applesmc: #KEY: read arg fail
+[  112.381623] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.381623] applesmc: #KEY: read arg fail
+[  112.568307] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.568308] applesmc: #KEY: read arg fail
+[  112.755025] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.755027] applesmc: #KEY: read arg fail
+[  112.941744] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  112.941745] applesmc: #KEY: read arg fail
+[  113.128378] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  113.128380] applesmc: #KEY: read arg fail
+[  113.315161] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  113.315163] applesmc: #KEY: read arg fail
+[  113.501660] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  113.501661] applesmc: #KEY: read arg fail
+[  113.688347] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  113.688348] applesmc: #KEY: read arg fail
+[  113.875061] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  113.875062] applesmc: #KEY: read arg fail
+[  114.061726] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.061727] applesmc: #KEY: read arg fail
+[  114.248275] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.248276] applesmc: #KEY: read arg fail
+[  114.435129] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.435130] applesmc: #KEY: read arg fail
+[  114.621697] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.621698] applesmc: #KEY: read arg fail
+[  114.808546] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.808547] applesmc: #KEY: read arg fail
+[  114.995185] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  114.995186] applesmc: #KEY: read arg fail
+[  115.181764] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  115.181765] applesmc: #KEY: read arg fail
+[  115.368453] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  115.368454] applesmc: #KEY: read arg fail
+[  115.555175] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  115.555176] applesmc: #KEY: read arg fail
+[  115.741735] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  115.741736] applesmc: #KEY: read arg fail
+[  115.928384] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  115.928385] applesmc: #KEY: read arg fail
+[  116.114928] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  116.114929] applesmc: #KEY: read arg fail
+[  116.301656] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  116.301657] applesmc: #KEY: read arg fail
+[  116.488348] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  116.488349] applesmc: #KEY: read arg fail
+[  116.674895] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  116.674896] applesmc: #KEY: read arg fail
+[  116.861568] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  116.861569] applesmc: #KEY: read arg fail
+[  117.048558] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.048559] applesmc: #KEY: read arg fail
+[  117.235001] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.235002] applesmc: #KEY: read arg fail
+[  117.421839] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.421840] applesmc: #KEY: read arg fail
+[  117.608392] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.608393] applesmc: #KEY: read arg fail
+[  117.795230] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.795231] applesmc: #KEY: read arg fail
+[  117.981763] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  117.981764] applesmc: #KEY: read arg fail
+[  118.168449] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  118.168450] applesmc: #KEY: read arg fail
+[  118.355039] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  118.355040] applesmc: #KEY: read arg fail
+[  118.541737] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  118.541738] applesmc: #KEY: read arg fail
+[  118.728525] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  118.728526] applesmc: #KEY: read arg fail
+[  118.915073] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  118.915074] applesmc: #KEY: read arg fail
+[  119.101543] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  119.101544] applesmc: #KEY: read arg fail
+[  119.288492] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  119.288493] applesmc: #KEY: read arg fail
+[  119.475041] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  119.475042] applesmc: #KEY: read arg fail
+[  119.661918] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  119.661919] applesmc: #KEY: read arg fail
+[  119.848311] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  119.848312] applesmc: #KEY: read arg fail
+[  120.034991] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.034993] applesmc: #KEY: read arg fail
+[  120.221528] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.221529] applesmc: #KEY: read arg fail
+[  120.408531] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.408532] applesmc: #KEY: read arg fail
+[  120.594964] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.594965] applesmc: #KEY: read arg fail
+[  120.781747] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.781748] applesmc: #KEY: read arg fail
+[  120.968595] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  120.968596] applesmc: #KEY: read arg fail
+[  121.155030] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  121.155031] applesmc: #KEY: read arg fail
+[  121.341585] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  121.341586] applesmc: #KEY: read arg fail
+[  121.528419] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  121.528420] applesmc: #KEY: read arg fail
+[  121.715097] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  121.715098] applesmc: #KEY: read arg fail
+[  121.901786] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  121.901787] applesmc: #KEY: read arg fail
+[  122.088633] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  122.088634] applesmc: #KEY: read arg fail
+[  122.275217] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  122.275219] applesmc: #KEY: read arg fail
+[  122.461707] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  122.461708] applesmc: #KEY: read arg fail
+[  122.648701] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  122.648702] applesmc: #KEY: read arg fail
+[  122.835135] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  122.835136] applesmc: #KEY: read arg fail
+[  123.021822] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.021823] applesmc: #KEY: read arg fail
+[  123.208231] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.208232] applesmc: #KEY: read arg fail
+[  123.395172] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.395173] applesmc: #KEY: read arg fail
+[  123.581892] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.581893] applesmc: #KEY: read arg fail
+[  123.768334] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.768335] applesmc: #KEY: read arg fail
+[  123.955171] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  123.955173] applesmc: #KEY: read arg fail
+[  124.141585] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  124.141586] applesmc: #KEY: read arg fail
+[  124.328268] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  124.328269] applesmc: #KEY: read arg fail
+[  124.515241] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  124.515242] applesmc: #KEY: read arg fail
+[  124.701784] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  124.701786] applesmc: #KEY: read arg fail
+[  124.888220] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  124.888221] applesmc: #KEY: read arg fail
+[  125.075210] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  125.075211] applesmc: #KEY: read arg fail
+[  125.261760] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  125.261761] applesmc: #KEY: read arg fail
+[  125.448406] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  125.448407] applesmc: #KEY: read arg fail
+[  125.635134] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  125.635135] applesmc: #KEY: read arg fail
+[  125.821691] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  125.821692] applesmc: #KEY: read arg fail
+[  126.008258] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.008259] applesmc: #KEY: read arg fail
+[  126.195318] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.195319] applesmc: #KEY: read arg fail
+[  126.381450] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.381451] applesmc: #KEY: read arg fail
+[  126.568326] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.568327] applesmc: #KEY: read arg fail
+[  126.755173] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.755175] applesmc: #KEY: read arg fail
+[  126.941737] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  126.941738] applesmc: #KEY: read arg fail
+[  127.128446] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  127.128447] applesmc: #KEY: read arg fail
+[  127.315385] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  127.315385] applesmc: #KEY: read arg fail
+[  127.501797] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  127.501798] applesmc: #KEY: read arg fail
+[  127.688365] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  127.688366] applesmc: #KEY: read arg fail
+[  127.875053] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  127.875054] applesmc: #KEY: read arg fail
+[  128.061803] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.061804] applesmc: #KEY: read arg fail
+[  128.248447] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.248449] applesmc: #KEY: read arg fail
+[  128.435120] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.435121] applesmc: #KEY: read arg fail
+[  128.621835] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.621836] applesmc: #KEY: read arg fail
+[  128.808403] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.808405] applesmc: #KEY: read arg fail
+[  128.862970] applesmc: probe of applesmc.768 failed with error -5
+[  128.995162] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  128.995163] applesmc: #KEY: read arg fail
+[  129.181904] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  129.181905] applesmc: #KEY: read arg fail
+[  129.368326] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  129.368328] applesmc: #KEY: read arg fail
+[  129.555158] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  129.555159] applesmc: #KEY: read arg fail
+[  129.741566] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  129.741567] applesmc: #KEY: read arg fail
+[  129.928396] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  129.928397] applesmc: #KEY: read arg fail
+[  130.115084] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  130.115085] applesmc: #KEY: read arg fail
+[  130.301669] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  130.301670] applesmc: #KEY: read arg fail
+[  130.488364] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  130.488365] applesmc: #KEY: read arg fail
+[  130.675196] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  130.675197] applesmc: #KEY: read arg fail
+[  130.861999] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  130.862000] applesmc: #KEY: read arg fail
+[  131.048578] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.048580] applesmc: #KEY: read arg fail
+[  131.234990] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.234991] applesmc: #KEY: read arg fail
+[  131.421670] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.421671] applesmc: #KEY: read arg fail
+[  131.608405] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.608406] applesmc: #KEY: read arg fail
+[  131.795298] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.795299] applesmc: #KEY: read arg fail
+[  131.981740] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  131.981741] applesmc: #KEY: read arg fail
+[  132.168467] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  132.168468] applesmc: #KEY: read arg fail
+[  132.355302] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  132.355302] applesmc: #KEY: read arg fail
+[  132.541750] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  132.541750] applesmc: #KEY: read arg fail
+[  132.728655] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  132.728656] applesmc: #KEY: read arg fail
+[  132.915096] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  132.915096] applesmc: #KEY: read arg fail
+[  133.101663] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  133.101664] applesmc: #KEY: read arg fail
+[  133.288514] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  133.288515] applesmc: #KEY: read arg fail
+[  133.475342] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  133.475343] applesmc: #KEY: read arg fail
+[  133.661835] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  133.661836] applesmc: #KEY: read arg fail
+[  133.848577] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  133.848579] applesmc: #KEY: read arg fail
+[  134.035136] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.035137] applesmc: #KEY: read arg fail
+[  134.221702] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.221703] applesmc: #KEY: read arg fail
+[  134.408549] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.408550] applesmc: #KEY: read arg fail
+[  134.594990] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.594991] applesmc: #KEY: read arg fail
+[  134.781771] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.781771] applesmc: #KEY: read arg fail
+[  134.968613] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  134.968614] applesmc: #KEY: read arg fail
+[  135.152927] usb 1-1.4: new high-speed USB device number 4 using xhci_hcd
+[  135.155220] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  135.155221] applesmc: #KEY: read arg fail
+[  135.257606] usb 1-1.4: New USB device found, idVendor=0b05, idProduct=17ba, bcdDevice= 2.00
+[  135.257609] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  135.257610] usb 1-1.4: Product: 802.11n WLAN Adapter
+[  135.257611] usb 1-1.4: Manufacturer: Realtek
+[  135.257612] usb 1-1.4: SerialNumber: 00e04c000001
+[  135.341741] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  135.341742] applesmc: #KEY: read arg fail
+[  135.435471] audit: type=1130 audit(1546909633.203:38): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  135.528195] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  135.528196] applesmc: #KEY: read arg fail
+[  135.714933] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  135.714935] applesmc: #KEY: read arg fail
+[  135.901505] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  135.901506] applesmc: #KEY: read arg fail
+[  136.088654] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  136.088656] applesmc: #KEY: read arg fail
+[  136.274941] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  136.274942] applesmc: #KEY: read arg fail
+[  136.461543] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  136.461544] applesmc: #KEY: read arg fail
+[  136.648352] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  136.648353] applesmc: #KEY: read arg fail
+[  136.835009] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  136.835010] applesmc: #KEY: read arg fail
+[  137.021701] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.021702] applesmc: #KEY: read arg fail
+[  137.208389] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.208390] applesmc: #KEY: read arg fail
+[  137.395031] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.395031] applesmc: #KEY: read arg fail
+[  137.581770] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.581771] applesmc: #KEY: read arg fail
+[  137.768338] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.768339] applesmc: #KEY: read arg fail
+[  137.955048] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  137.955049] applesmc: #KEY: read arg fail
+[  138.141885] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  138.141886] applesmc: #KEY: read arg fail
+[  138.328308] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  138.328309] applesmc: #KEY: read arg fail
+[  138.515079] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  138.515080] applesmc: #KEY: read arg fail
+[  138.522955] CPU2: Core temperature above threshold, cpu clock throttled (total events = 1)
+[  138.522958] CPU2: Package temperature above threshold, cpu clock throttled (total events = 1)
+[  138.522987] CPU1: Package temperature above threshold, cpu clock throttled (total events = 1)
+[  138.522988] CPU3: Package temperature above threshold, cpu clock throttled (total events = 1)
+[  138.523975] CPU1: Package temperature/speed normal
+[  138.523976] CPU3: Package temperature/speed normal
+[  138.525209] CPU2: Core temperature/speed normal
+[  138.529693] CPU2: Package temperature/speed normal
+[  138.705076] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  138.705077] applesmc: #KEY: read arg fail
+[  138.891641] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  138.891642] applesmc: #KEY: read arg fail
+[  139.078473] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  139.078473] applesmc: #KEY: read arg fail
+[  139.265056] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  139.265057] applesmc: #KEY: read arg fail
+[  139.451559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  139.451560] applesmc: #KEY: read arg fail
+[  139.638526] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  139.638527] applesmc: #KEY: read arg fail
+[  139.825144] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  139.825145] applesmc: #KEY: read arg fail
+[  140.011534] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.011535] applesmc: #KEY: read arg fail
+[  140.198287] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.198288] applesmc: #KEY: read arg fail
+[  140.384917] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.384918] applesmc: #KEY: read arg fail
+[  140.441009] audit: type=1131 audit(1546909638.209:39): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  140.571748] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.571749] applesmc: #KEY: read arg fail
+[  140.758463] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.758464] applesmc: #KEY: read arg fail
+[  140.945147] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  140.945148] applesmc: #KEY: read arg fail
+[  141.131783] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  141.131784] applesmc: #KEY: read arg fail
+[  141.318174] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  141.318175] applesmc: #KEY: read arg fail
+[  141.505253] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  141.505254] applesmc: #KEY: read arg fail
+[  141.691648] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  141.691649] applesmc: #KEY: read arg fail
+[  141.878620] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  141.878621] applesmc: #KEY: read arg fail
+[  142.065272] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.065273] applesmc: #KEY: read arg fail
+[  142.251581] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.251582] applesmc: #KEY: read arg fail
+[  142.438273] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.438275] applesmc: #KEY: read arg fail
+[  142.624997] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.624998] applesmc: #KEY: read arg fail
+[  142.811828] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.811829] applesmc: #KEY: read arg fail
+[  142.998278] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  142.998279] applesmc: #KEY: read arg fail
+[  143.185361] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  143.185362] applesmc: #KEY: read arg fail
+[  143.371857] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  143.371858] applesmc: #KEY: read arg fail
+[  143.558512] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  143.558513] applesmc: #KEY: read arg fail
+[  143.744876] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  143.744877] applesmc: #KEY: read arg fail
+[  143.931480] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  143.931481] applesmc: #KEY: read arg fail
+[  144.118270] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  144.118271] applesmc: #KEY: read arg fail
+[  144.305355] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  144.305356] applesmc: #KEY: read arg fail
+[  144.491661] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  144.491662] applesmc: #KEY: read arg fail
+[  144.678367] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  144.678369] applesmc: #KEY: read arg fail
+[  144.865076] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  144.865077] applesmc: #KEY: read arg fail
+[  145.051730] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.051731] applesmc: #KEY: read arg fail
+[  145.238361] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.238362] applesmc: #KEY: read arg fail
+[  145.424946] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.424947] applesmc: #KEY: read arg fail
+[  145.611710] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.611711] applesmc: #KEY: read arg fail
+[  145.798249] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.798250] applesmc: #KEY: read arg fail
+[  145.985056] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  145.985057] applesmc: #KEY: read arg fail
+[  146.171772] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  146.171773] applesmc: #KEY: read arg fail
+[  146.358323] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  146.358324] applesmc: #KEY: read arg fail
+[  146.544880] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  146.544881] applesmc: #KEY: read arg fail
+[  146.731642] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  146.731643] applesmc: #KEY: read arg fail
+[  146.918274] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  146.918275] applesmc: #KEY: read arg fail
+[  147.105096] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  147.105097] applesmc: #KEY: read arg fail
+[  147.291852] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  147.291852] applesmc: #KEY: read arg fail
+[  147.478372] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[  147.478373] applesmc: #KEY: read arg fail
+[  147.533003] applesmc: driver init failed (ret=-5)!
+[  423.702808] usb 1-1.4: USB disconnect, device number 4
+[  423.784621] audit: type=1130 audit(1546909921.553:40): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  428.792735] audit: type=1131 audit(1546909926.559:41): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  432.259752] usb 4-1.4: new SuperSpeed Gen 1 USB device number 4 using xhci_hcd
+[  432.277762] usb 4-1.4: New USB device found, idVendor=152d, idProduct=0576, bcdDevice=15.07
+[  432.277771] usb 4-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  432.277777] usb 4-1.4: Product: USB to ATA/ATAPI Bridge
+[  432.277783] usb 4-1.4: Manufacturer: JMicron
+[  432.277788] usb 4-1.4: SerialNumber: 0123456789ABCDEF
+[  432.289005] scsi host1: uas
+[  432.290182] scsi 1:0:0:0: Direct-Access     JMicron  Generic          1507 PQ: 0 ANSI: 6
+[  433.006384] sd 1:0:0:0: [sdb] 1000215216 512-byte logical blocks: (512 GB/477 GiB)
+[  433.006395] sd 1:0:0:0: [sdb] 4096-byte physical blocks
+[  433.006603] sd 1:0:0:0: [sdb] Write Protect is off
+[  433.006611] sd 1:0:0:0: [sdb] Mode Sense: 53 00 00 08
+[  433.007095] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[  433.011843]  sdb: sdb1 sdb2
+[  433.014366] sd 1:0:0:0: [sdb] Attached SCSI disk
+[  673.627402] device-mapper: uevent: version 1.0.3
+[  673.627499] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[  673.642719] device-mapper: table: 254:0: adding target device sdb1 caused an alignment inconsistency: physical_block_size=4096, logical_block_size=512, alignment_offset=0, start=0
+[  673.642721] device-mapper: table: 254:0: adding target device sdb1 caused an alignment inconsistency: physical_block_size=4096, logical_block_size=512, alignment_offset=0, start=0
+[  673.642795] device-mapper: table: 254:0: adding target device sdb1 caused an alignment inconsistency: physical_block_size=4096, logical_block_size=512, alignment_offset=0, start=0
+[  673.642797] device-mapper: table: 254:0: adding target device sdb1 caused an alignment inconsistency: physical_block_size=4096, logical_block_size=512, alignment_offset=0, start=0
+[  682.585697] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[  750.164285] usb 4-1.4: USB disconnect, device number 4
+[  750.166096] sd 1:0:0:0: [sdb] Synchronizing SCSI cache
+[  750.366297] sd 1:0:0:0: [sdb] Synchronize Cache(10) failed: Result: hostbyte=DID_ERROR driverbyte=DRIVER_OK
+[  798.202882] usb 1-1.4: new high-speed USB device number 5 using xhci_hcd
+[  798.311833] usb 1-1.4: New USB device found, idVendor=0b05, idProduct=17ba, bcdDevice= 2.00
+[  798.311843] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  798.311849] usb 1-1.4: Product: 802.11n WLAN Adapter
+[  798.311855] usb 1-1.4: Manufacturer: Realtek
+[  798.311860] usb 1-1.4: SerialNumber: 00e04c000001
+[  798.357227] audit: type=1130 audit(1546910296.126:42): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  803.362482] audit: type=1131 audit(1546910301.129:43): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-rfkill comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  868.874119] audit: type=1130 audit(1546910366.643:44): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  919.430226] audit: type=1130 audit(1546910417.199:45): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  919.430262] audit: type=1131 audit(1546910417.199:46): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  938.548185] audit: type=1131 audit(1546910436.316:47): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
