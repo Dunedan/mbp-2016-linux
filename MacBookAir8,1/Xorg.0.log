@@ -1,0 +1,284 @@
+[  2388.345] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[  2388.349] 
+X.Org X Server 1.20.3
+X Protocol Version 11, Revision 0
+[  2388.353] Build Operating System: Linux Arch Linux
+[  2388.354] Current Operating System: Linux air 4.19.10-mba81 #6 SMP PREEMPT Fri Dec 21 09:46:53 UTC 2018 x86_64
+[  2388.354] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.19.10 root=/dev/sda1 rw nomodeset
+[  2388.357] Build Date: 25 October 2018  04:42:32PM
+[  2388.359]  
+[  2388.360] Current version of pixman: 0.36.0
+[  2388.362] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  2388.362] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  2388.367] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Dec 21 11:45:22 2018
+[  2388.371] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  2388.373] (==) No Layout section.  Using the first Screen section.
+[  2388.373] (==) No screen section available. Using defaults.
+[  2388.373] (**) |-->Screen "Default Screen Section" (0)
+[  2388.373] (**) |   |-->Monitor "<default monitor>"
+[  2388.374] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  2388.374] (==) Automatically adding devices
+[  2388.374] (==) Automatically enabling devices
+[  2388.374] (==) Automatically adding GPU devices
+[  2388.374] (==) Automatically binding GPU devices
+[  2388.376] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  2388.376] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[  2388.376] 	Entry deleted from font path.
+[  2388.376] (==) FontPath set to:
+	
+[  2388.376] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  2388.376] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  2388.376] (II) Module ABI versions:
+[  2388.376] 	X.Org ANSI C Emulation: 0.4
+[  2388.376] 	X.Org Video Driver: 24.0
+[  2388.376] 	X.Org XInput driver : 24.1
+[  2388.376] 	X.Org Server Extension : 10.0
+[  2388.376] (--) using VT number 2
+
+[  2388.376] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[  2388.378] (--) PCI:*(0@0:2:0) 8086:87c0:106b:0150 rev 2, Mem @ 0x81000000/16777216, 0xa0000000/268435456, I/O @ 0x00003000/64, BIOS @ 0x????????/131072
+[  2388.378] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  2388.379] (II) LoadModule: "glx"
+[  2388.385] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  2388.408] (II) Module glx: vendor="X.Org Foundation"
+[  2388.408] 	compiled for 1.20.3, module version = 1.0.0
+[  2388.408] 	ABI class: X.Org Server Extension, version 10.0
+[  2388.408] (==) Matched intel as autoconfigured driver 0
+[  2388.408] (==) Matched modesetting as autoconfigured driver 1
+[  2388.408] (==) Matched fbdev as autoconfigured driver 2
+[  2388.408] (==) Matched vesa as autoconfigured driver 3
+[  2388.408] (==) Assigned the driver to the xf86ConfigLayout
+[  2388.408] (II) LoadModule: "intel"
+[  2388.408] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[  2388.421] (II) Module intel: vendor="X.Org Foundation"
+[  2388.421] 	compiled for 1.20.3, module version = 2.99.917
+[  2388.421] 	Module class: X.Org Video Driver
+[  2388.421] 	ABI class: X.Org Video Driver, version 24.0
+[  2388.421] (II) LoadModule: "modesetting"
+[  2388.421] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  2388.425] (II) Module modesetting: vendor="X.Org Foundation"
+[  2388.425] 	compiled for 1.20.3, module version = 1.20.3
+[  2388.425] 	Module class: X.Org Video Driver
+[  2388.425] 	ABI class: X.Org Video Driver, version 24.0
+[  2388.425] (II) LoadModule: "fbdev"
+[  2388.425] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  2388.427] (II) Module fbdev: vendor="X.Org Foundation"
+[  2388.427] 	compiled for 1.20.0, module version = 0.5.0
+[  2388.427] 	Module class: X.Org Video Driver
+[  2388.427] 	ABI class: X.Org Video Driver, version 24.0
+[  2388.427] (II) LoadModule: "vesa"
+[  2388.428] (WW) Warning, couldn't open module vesa
+[  2388.428] (EE) Failed to load module "vesa" (module does not exist, 0)
+[  2388.428] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[  2388.429] (II) intel: Driver for Intel(R) HD Graphics
+[  2388.429] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[  2388.429] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[  2388.429] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  2388.429] (II) FBDEV: driver for framebuffer: fbdev
+[  2390.461] intel: waited 2020 ms for i915.ko driver to load
+[  2390.467] (EE) open /dev/dri/card0: No such file or directory
+[  2390.467] (WW) Falling back to old probe method for modesetting
+[  2390.467] (EE) open /dev/dri/card0: No such file or directory
+[  2390.467] (II) Loading sub module "fbdevhw"
+[  2390.467] (II) LoadModule: "fbdevhw"
+[  2390.468] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  2390.470] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  2390.470] 	compiled for 1.20.3, module version = 0.0.2
+[  2390.470] 	ABI class: X.Org Video Driver, version 24.0
+[  2390.470] (EE) Unable to find a valid framebuffer device
+[  2390.470] (WW) Falling back to old probe method for fbdev
+[  2390.470] (II) Loading sub module "fbdevhw"
+[  2390.470] (II) LoadModule: "fbdevhw"
+[  2390.470] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  2390.470] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  2390.470] 	compiled for 1.20.3, module version = 0.0.2
+[  2390.470] 	ABI class: X.Org Video Driver, version 24.0
+[  2390.470] (II) FBDEV(2): using default device
+[  2390.470] (EE) Screen 0 deleted because of no matching config section.
+[  2390.470] (II) UnloadModule: "modesetting"
+[  2390.470] (EE) Screen 0 deleted because of no matching config section.
+[  2390.470] (II) UnloadModule: "fbdev"
+[  2390.470] (II) UnloadSubModule: "fbdevhw"
+[  2390.471] (II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  2390.471] (==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+[  2390.471] (==) FBDEV(0): RGB weight 888
+[  2390.471] (==) FBDEV(0): Default visual is TrueColor
+[  2390.471] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[  2390.471] (II) FBDEV(0): hardware: simple (video memory: 20252kB)
+[  2390.471] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[  2390.471] (II) FBDEV(0): checking modes against framebuffer device...
+[  2390.471] (II) FBDEV(0): checking modes against monitor...
+[  2390.471] (II) FBDEV(0): Virtual size is 2880x1800 (pitch 2880)
+[  2390.471] (**) FBDEV(0):  Built-in mode "current"
+[  2390.471] (==) FBDEV(0): DPI set to (96, 96)
+[  2390.471] (II) Loading sub module "fb"
+[  2390.471] (II) LoadModule: "fb"
+[  2390.471] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  2390.477] (II) Module fb: vendor="X.Org Foundation"
+[  2390.477] 	compiled for 1.20.3, module version = 1.0.0
+[  2390.477] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  2390.477] (**) FBDEV(0): using shadow framebuffer
+[  2390.477] (II) Loading sub module "shadow"
+[  2390.477] (II) LoadModule: "shadow"
+[  2390.477] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[  2390.479] (II) Module shadow: vendor="X.Org Foundation"
+[  2390.479] 	compiled for 1.20.3, module version = 1.1.0
+[  2390.479] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  2390.479] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[  2390.483] (==) FBDEV(0): Backing store enabled
+[  2390.484] (==) FBDEV(0): DPMS enabled
+[  2390.485] (II) Initializing extension Generic Event Extension
+[  2390.485] (II) Initializing extension SHAPE
+[  2390.485] (II) Initializing extension MIT-SHM
+[  2390.485] (II) Initializing extension XInputExtension
+[  2390.487] (II) Initializing extension XTEST
+[  2390.487] (II) Initializing extension BIG-REQUESTS
+[  2390.487] (II) Initializing extension SYNC
+[  2390.487] (II) Initializing extension XKEYBOARD
+[  2390.487] (II) Initializing extension XC-MISC
+[  2390.487] (II) Initializing extension SECURITY
+[  2390.488] (II) Initializing extension XFIXES
+[  2390.488] (II) Initializing extension RENDER
+[  2390.488] (II) Initializing extension RANDR
+[  2390.488] (II) Initializing extension COMPOSITE
+[  2390.488] (II) Initializing extension DAMAGE
+[  2390.488] (II) Initializing extension MIT-SCREEN-SAVER
+[  2390.488] (II) Initializing extension DOUBLE-BUFFER
+[  2390.488] (II) Initializing extension RECORD
+[  2390.488] (II) Initializing extension DPMS
+[  2390.488] (II) Initializing extension Present
+[  2390.488] (II) Initializing extension DRI3
+[  2390.488] (II) Initializing extension X-Resource
+[  2390.488] (II) Initializing extension XVideo
+[  2390.488] (II) Initializing extension XVideo-MotionCompensation
+[  2390.488] (II) Initializing extension GLX
+[  2390.488] (II) AIGLX: Screen 0 is not DRI2 capable
+[  2390.993] (II) IGLX: Loaded and initialized swrast
+[  2390.993] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  2390.993] (II) Initializing extension XFree86-VidModeExtension
+[  2390.993] (II) Initializing extension XFree86-DGA
+[  2390.993] (II) Initializing extension XFree86-DRI
+[  2390.993] (II) Initializing extension DRI2
+[  2391.081] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[  2391.081] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  2391.081] (II) LoadModule: "libinput"
+[  2391.081] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  2391.085] (II) Module libinput: vendor="X.Org Foundation"
+[  2391.085] 	compiled for 1.20.1, module version = 0.28.1
+[  2391.085] 	Module class: X.Org XInput Driver
+[  2391.085] 	ABI class: X.Org XInput driver, version 24.1
+[  2391.085] (II) Using input driver 'libinput' for 'Power Button'
+[  2391.085] (**) Power Button: always reports core events
+[  2391.085] (**) Option "Device" "/dev/input/event3"
+[  2391.085] (**) Option "_source" "server/udev"
+[  2391.096] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  2391.096] (II) event3  - Power Button: device is a keyboard
+[  2391.097] (II) event3  - Power Button: device removed
+[  2391.115] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[  2391.115] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  2391.115] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  2391.115] (II) event3  - Power Button: device is a keyboard
+[  2391.116] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  2391.116] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  2391.116] (II) Using input driver 'libinput' for 'Power Button'
+[  2391.116] (**) Power Button: always reports core events
+[  2391.116] (**) Option "Device" "/dev/input/event1"
+[  2391.116] (**) Option "_source" "server/udev"
+[  2391.116] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  2391.116] (II) event1  - Power Button: device is a keyboard
+[  2391.116] (II) event1  - Power Button: device removed
+[  2391.142] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[  2391.142] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[  2391.143] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  2391.143] (II) event1  - Power Button: device is a keyboard
+[  2391.144] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[  2391.144] (II) No input driver specified, ignoring this device.
+[  2391.144] (II) This device may have been added with another device file.
+[  2391.144] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[  2391.144] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  2391.144] (II) Using input driver 'libinput' for 'Sleep Button'
+[  2391.144] (**) Sleep Button: always reports core events
+[  2391.144] (**) Option "Device" "/dev/input/event2"
+[  2391.144] (**) Option "_source" "server/udev"
+[  2391.145] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  2391.145] (II) event2  - Sleep Button: device is a keyboard
+[  2391.145] (II) event2  - Sleep Button: device removed
+[  2391.165] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[  2391.165] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[  2391.165] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  2391.165] (II) event2  - Sleep Button: device is a keyboard
+[  2391.166] (II) config/udev: Adding input device Logitech USB Keyboard (/dev/input/event4)
+[  2391.166] (**) Logitech USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[  2391.166] (II) Using input driver 'libinput' for 'Logitech USB Keyboard'
+[  2391.166] (**) Logitech USB Keyboard: always reports core events
+[  2391.166] (**) Option "Device" "/dev/input/event4"
+[  2391.166] (**) Option "_source" "server/udev"
+[  2391.167] (II) event4  - Logitech USB Keyboard: is tagged by udev as: Keyboard
+[  2391.167] (II) event4  - Logitech USB Keyboard: device is a keyboard
+[  2391.167] (II) event4  - Logitech USB Keyboard: device removed
+[  2391.195] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:046D:C31C.0001/input/input4/event4"
+[  2391.195] (II) XINPUT: Adding extended input device "Logitech USB Keyboard" (type: KEYBOARD, id 9)
+[  2391.197] (II) event4  - Logitech USB Keyboard: is tagged by udev as: Keyboard
+[  2391.197] (II) event4  - Logitech USB Keyboard: device is a keyboard
+[  2391.198] (II) config/udev: Adding input device Logitech USB Keyboard Consumer Control (/dev/input/event5)
+[  2391.198] (**) Logitech USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  2391.198] (II) Using input driver 'libinput' for 'Logitech USB Keyboard Consumer Control'
+[  2391.198] (**) Logitech USB Keyboard Consumer Control: always reports core events
+[  2391.198] (**) Option "Device" "/dev/input/event5"
+[  2391.198] (**) Option "_source" "server/udev"
+[  2391.200] (II) event5  - Logitech USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  2391.200] (II) event5  - Logitech USB Keyboard Consumer Control: device is a keyboard
+[  2391.200] (II) event5  - Logitech USB Keyboard Consumer Control: device removed
+[  2391.256] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C31C.0002/input/input5/event5"
+[  2391.256] (II) XINPUT: Adding extended input device "Logitech USB Keyboard Consumer Control" (type: KEYBOARD, id 10)
+[  2391.257] (II) event5  - Logitech USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  2391.257] (II) event5  - Logitech USB Keyboard Consumer Control: device is a keyboard
+[  2391.258] (II) config/udev: Adding input device Logitech USB Keyboard System Control (/dev/input/event6)
+[  2391.258] (**) Logitech USB Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[  2391.258] (II) Using input driver 'libinput' for 'Logitech USB Keyboard System Control'
+[  2391.258] (**) Logitech USB Keyboard System Control: always reports core events
+[  2391.258] (**) Option "Device" "/dev/input/event6"
+[  2391.258] (**) Option "_source" "server/udev"
+[  2391.259] (II) event6  - Logitech USB Keyboard System Control: is tagged by udev as: Keyboard
+[  2391.259] (II) event6  - Logitech USB Keyboard System Control: device is a keyboard
+[  2391.259] (II) event6  - Logitech USB Keyboard System Control: device removed
+[  2391.288] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C31C.0002/input/input6/event6"
+[  2391.288] (II) XINPUT: Adding extended input device "Logitech USB Keyboard System Control" (type: KEYBOARD, id 11)
+[  2391.290] (II) event6  - Logitech USB Keyboard System Control: is tagged by udev as: Keyboard
+[  2391.290] (II) event6  - Logitech USB Keyboard System Control: device is a keyboard
+[  2391.291] (II) config/udev: Adding input device PC Speaker (/dev/input/event7)
+[  2391.291] (II) No input driver specified, ignoring this device.
+[  2391.291] (II) This device may have been added with another device file.
+[  2401.134] (II) event3  - Power Button: device removed
+[  2401.170] (II) event1  - Power Button: device removed
+[  2401.185] (II) event2  - Sleep Button: device removed
+[  2401.222] (II) event4  - Logitech USB Keyboard: device removed
+[  2401.248] (II) event5  - Logitech USB Keyboard Consumer Control: device removed
+[  2401.286] (II) event6  - Logitech USB Keyboard System Control: device removed
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.766] (II) UnloadModule: "libinput"
+[  2402.775] (II) Server terminated successfully (0). Closing log file.
