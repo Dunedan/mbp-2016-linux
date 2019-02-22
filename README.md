@@ -59,8 +59,10 @@ There is also a chat available via gitter for discussions:
 
 Not working, neither the internal speakers/microphone nor the headphone jack.
 
-What's working is audio via HDMI or any USB-connected audio device, so that can
-act as a workaround until internal audio is working.
+Alternatively, you can use:
+* audio via HDMI
+* bluetooth audio (see below)
+* an USB-connected audio device like the [Apple USB-C to 3.5 mm Headphone Jack Adapter](https://www.apple.com/shop/product/MU7E2AM/A/usb-c-to-35-mm-headphone-jack-adapter)
 
 See also:
 * https://bugzilla.kernel.org/show_bug.cgi?id=195671
