@@ -203,6 +203,12 @@ sensors and fans.
 Fans, temperature and voltage sensors work out of the box using the `applesmc`
 kernel module.
 
+Even though the MacBook Pro manages fan speed automatically,
+manually setting the fan speed through `applesmc` works as well. That's useful
+if you want to use a different fan speed profile than the hardware uses by
+default. In that case, you might want to use a tool like
+[`mbpfan`](https://github.com/dgraziotin/mbpfan).
+
 The ambient light sensor is working out of the box for the models without Touch
 Bar, using the `applesmc` module as well. In models with Touch Bar the ambient
 light sensor isn't connected to the traditional SMC, but to the iBridge
