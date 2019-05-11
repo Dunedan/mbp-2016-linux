@@ -15,7 +15,7 @@ of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
 
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. The information below
-assume that you run Linux 4.13 or newer. If in doubt which kernel to use, the
+assumes that you run Linux 4.13 or newer. If in doubt which kernel to use, the
 latest significant improvements are part of Linux 4.16.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
@@ -26,7 +26,7 @@ https://support.apple.com/en-us/HT201300
 ## Contribution
 
 If you want to contribute to get Linux running smoothly on the MacBook Pro
-2016, report all findings how to get devices working as pull requests! All help
+2016, report all findings on how to get devices working as pull requests! All help
 is appreciated.
 
 There is also a chat available via gitter for discussions:
@@ -77,7 +77,7 @@ etc.
 
 Battery life is still suboptimal, because power saving modes for several
 devices, like display (panel self refresh), SSD or the Thunderbolt
-controllers, aren't working yet. You can expected a battery life of less
+controllers, aren't working yet. You can expect a battery life of less
 than 4 hours.
 
 ## Bluetooth
@@ -85,7 +85,7 @@ than 4 hours.
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
 Works out of the box with Linux 4.16 and above, except for the models without
-Touch Bar, which still suffer from a bug and need an additional patch as noted
+Touch Bar, which still suffers from a bug and needs an additional patch as noted
 in https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
 
 Transmitting audio using A2DP is still choppy for unknown reasons, maybe
@@ -120,7 +120,7 @@ supported by the `uvcvideo` driver out of the box.
 
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
-with dedicated AMD GPU, only the AMD GPU is enabled when booting a OS which
+with dedicated AMD GPU, only the AMD GPU is enabled when booting an OS which
 isn't macOS, so you have to follow the instructions in the following link to
 enable the integrated Intel GPU, if you want to use it:
 https://github.com/Dunedan/mbp-2016-linux/issues/6#issuecomment-286168538
@@ -147,7 +147,7 @@ driver developed for the Retina Macbook
 The Esc and function keys are part of the Touch Bar in all Touch Bar-models, so
 follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 
-Beside the actual keyboard the power button and the lid close event work out of
+Beside the actual keyboard, the power button and the lid close event work out of
 the box.
 
 Palm rejection based on touch-sizes and disable-touchpad-while-typing are working 
@@ -180,7 +180,7 @@ additional AMD Radeon GPU (MacBookPro13,1 and MacBookPro13,2). For the
 MacBookPro13,3 with additional AMD Radeon GPU the following patch is necessary:
 https://bugzilla.kernel.org/show_bug.cgi?id=105051#c32
 
-There is one odditiy in the EDID data of the 13" models, as it contains a
+There is one oddity in the EDID data of the 13" models, as it contains a
 `2800x1800` mode in addition to the correct `2560x1600` mode. In the end that
 doesn't matter, as Xorg probes and sets the correct resolution of `2560x1600`.
 
@@ -210,7 +210,7 @@ default. In that case, you might want to use a tool like
 [`mbpfan`](https://github.com/dgraziotin/mbpfan).
 
 The ambient light sensor is working out of the box for the models without Touch
-Bar, using the `applesmc` module as well. In models with Touch Bar the ambient
+Bar, using the `applesmc` module as well. In models with Touch Bar, the ambient
 light sensor isn't connected to the traditional SMC, but to the iBridge
 instead. For it to function, you need the third-party `apple-ib-als` kernel
 module you can find in the following git repository:
@@ -271,7 +271,7 @@ The issues are caused by failing country detection and are:
 * Connecting to an AP barely works or fails directly
 
 According to Broadcom releasing a fixed firmware would require verification to
-ensure that it complies with regulartory limits, which is very unlikely to
+ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
