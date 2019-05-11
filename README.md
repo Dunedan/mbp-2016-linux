@@ -331,6 +331,12 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 * Fixes a GPE storm, which caused unnecessary battery drain.
   ([linux/commit/ca1721c](https://github.com/torvalds/linux/commit/ca1721c5bee77105829cbd7baab8ee0eab85b06d))
 
+#### 5.1
+
+* Fixes a regression introduced with Linux 4.17 with prevented the MacBook
+  Pro's without Touch Bar to boot.
+  ([linux/commit/6f913de](https://github.com/torvalds/linux/commit/6f913de3231e1d70a871135b38219da7810df218))
+
 ### iBridge
 
 The models with Touch Bar feature an additional USB device, called `iBridge`
