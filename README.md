@@ -337,6 +337,11 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
   Pro's without Touch Bar to boot.
   ([linux/commit/6f913de](https://github.com/torvalds/linux/commit/6f913de3231e1d70a871135b38219da7810df218))
 
+#### 5.3
+
+* Keyboard and trackpad for MBP13,* and MBP14,* now work out of the box.
+  ([linux/commit/038b1a0](https://github.com/torvalds/linux/commit/038b1a05eae6666b731920e46f47d8e2332e07ff))
+
 ### iBridge
 
 The models with Touch Bar feature an additional USB device, called `iBridge`
