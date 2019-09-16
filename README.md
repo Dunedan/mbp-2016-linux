@@ -140,9 +140,10 @@ Works out of the box.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
-Basic keyboard and touchpad functionality is working with the out-of-tree
-driver developed for the Retina Macbook
-(https://github.com/cb22/macbook12-spi-driver).
+Works out of the box with Linux 5.13 and above.
+
+For earlier Linux versions you can get the driver from
+https://github.com/roadrunner2/macbook12-spi-driver.
 
 The Esc and function keys are part of the Touch Bar in all Touch Bar-models, so
 follow the instructions for the [Touch Bar](#touch-bar) to get it working.
@@ -339,7 +340,9 @@ https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
 #### 5.3
 
-* Keyboard and trackpad for MBP13,* and MBP14,* now work out of the box.
+* The `applespi` driver for the internal keyboard and trackpad of the
+  MacBookPro13,* and MacBookPro14,* is now included upstream and works out of
+  the box.
   ([linux/commit/038b1a0](https://github.com/torvalds/linux/commit/038b1a05eae6666b731920e46f47d8e2332e07ff))
 
 ### iBridge
