@@ -1,32 +1,27 @@
-# State of Linux on the MacBook Pro 2016 & 2017
+# State of Linux on Post-2015 Macs
 
-The following document provides an overview about Linux support for Apple's
-MacBook Pro 2016 and MacBook Pro 2017 models.
+The following document provides an overview about Linux support for Apple's newer Mac devices. This includes:
 
-The MacBook Pro 2016 shares surprisingly many components with the Retina
-MacBook (e.g. keyboard and touchpad controller, Wi-Fi and bluetooth chipsets,
-...), so figuring out how things work on one device should benefit both device
-families.
+- **2016 "Thunderbolt" MacBook Pro** (MacBookPro13,1 and up)
+- 2015 "Retina" MacBook Pro (MacBook8,1 - MacBook10,1)
+- 2018 "Retina" MacBook Air (MacBookAir8,1 and up)
+- 2017 iMac Pro (iMacPro1,1)
+- 2018 Mac mini (Macmini8,1)
 
-The Apple MacBook Pro 2017 models are nearly identical to their 2016
-counterparts, except for the use of newer Intels Kaby Lake processors instead
-of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
-15-inch models.
+Many of these devices share a number of components; in particular, the keyboard and touchpad controller, Wi-Fi and Bluetooth chipsets, and T2 security chip.
 
-The checks if hardware works below were done with multiple Linux distributions.
-To state the obvious: The newer the kernel the better. The information below
+The following hardware checks were done with multiple Linux distributions. To state the obvious: The newer the kernel the better. The information below
 assumes that you run Linux 4.13 or newer. If in doubt which kernel to use, the
 latest significant improvements are part of Linux 4.16.
 
-If you don't know what the model identifier for your MacBook Pro is (as that
+If you don't know what the model identifier for your Mac is (as that
 identifier is used on several occasions below), check
-https://support.apple.com/en-us/HT201300
+https://support.apple.com/en-us/HT201300, or use the [EveryMac serial number lookup](https://everymac.com/ultimate-mac-lookup/).
 
 
 ## Contribution
 
-If you want to contribute to get Linux running smoothly on the MacBook Pro
-2016, report all findings on how to get devices working as pull requests! All help
+If you want to contribute to get Linux running smoothly on these devices, please report any findings on how to get devices working as pull requests! All help
 is appreciated.
 
 There is also a chat available via gitter for discussions:
