@@ -51,6 +51,7 @@ There is also a chat available via gitter for discussions:
 ## Audio input & output
 
 ![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+![iMacPro1,1 not working](https://img.shields.io/badge/iMacPro1%2C1-not_working-red.svg) ![Macmini8,1 not working](https://img.shields.io/badge/Macmini8%2C1-not_working-red.svg) ![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg) ![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg)
 
 Not working, neither the internal speakers/microphone nor the headphone jack.
 
