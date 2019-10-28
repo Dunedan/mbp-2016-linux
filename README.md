@@ -46,7 +46,7 @@ There is also a chat available via gitter for discussions:
 | [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
 | [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) |
+| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg) ![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg) |
 
 ## Audio input & output
 
@@ -255,14 +255,16 @@ Works out of the box.
 ## Wi-Fi
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg)
+![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg)
 
 The MacBook Pro models without Touch Bar come with a `Broadcom Limited BCM4350
 802.11ac Wireless Network Adapter` which works fine out of the box using the
 `brcmfmac` driver (ensure you got the matching firmware package installed).
 
 The MacBook Pro models with Touch Bar come with a `Broadcom Limited BCM43602
-802.11ac Wireless LAN SoC (rev 02)` which is also supported by `brcmfmac`, but
-has several issues rendering it unusable, caused by the available firmware.
+802.11ac Wireless LAN SoC (rev 02)` and Retina MacBook Air models come with a ` Broadcom Limited BCM4355`, which are also supported by `brcmfmac`, but
+have several issues rendering it unusable, caused by the available firmware.
 The issues are caused by failing country detection and are:
 * Only 2.4Ghz APs are shown
 * Connecting to an AP barely works or fails directly
@@ -271,6 +273,8 @@ According to Broadcom releasing a fixed firmware would require verification to
 ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
+
+Re
 
 ## Misc
 
