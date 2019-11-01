@@ -129,7 +129,7 @@ displays daisy-chained together with Full HD each.
 
 ### AMD
 
-![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
+![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg)
 
 Works out of the box.
 
