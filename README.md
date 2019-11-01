@@ -22,14 +22,14 @@ https://support.apple.com/en-us/HT201300, or use the [EveryMac serial number loo
 ## Contribution
 
 If you want to contribute to get Linux running smoothly on these devices, please report any findings on how to get devices working as pull requests! All help
-is appreciated.
+is appreciated. Feel free to check below for badges with the "unknown" status.
 
 There is also a chat available via gitter for discussions:
 [![Gitter chat](https://badges.gitter.im/Dunedan/mbp-2016-linux.png)](https://gitter.im/mbp-2016-linux/Lobby)
 
 ## Current status
 
-If a section applies only to a certain subset of models, "all models" refers to that subset.
+If a section applies only to a certain subset of models, "all models" refers to that subset. If a device's status is unknown, it is not listed.
 
 | Device  | Status |
 | ------- | ------ |
@@ -52,8 +52,7 @@ If a section applies only to a certain subset of models, "all models" refers to 
 
 ## Audio input & output
 
-![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
-![iMacPro1,1 not working](https://img.shields.io/badge/iMacPro1%2C1-not_working-red.svg) ![Macmini8,1 not working](https://img.shields.io/badge/Macmini8%2C1-not_working-red.svg) ![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg) ![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg)
+![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg) ![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 not working](https://img.shields.io/badge/iMacPro1%2C1-not_working-red.svg) ![Macmini8,1 not working](https://img.shields.io/badge/Macmini8%2C1-not_working-red.svg)
 
 Not working, neither the internal speakers/microphone nor the headphone jack.
 
@@ -68,7 +67,7 @@ See also:
 
 ## Battery
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg)
 
 Working fine, including the interface to get current capacity, temperature,
 etc.
@@ -80,7 +79,7 @@ than 4 hours.
 
 ## Bluetooth
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) !![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box with Linux 4.16 and above, except for the models without
 Touch Bar, which still suffers from a bug and needs an additional patch as noted
@@ -99,7 +98,7 @@ See also:
 
 ## FaceTime HD camera
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 In the MacBookPro13,1 (without Touch Bar) the FaceTime HD camera is connected
 via PCIe, like in previous MacBook Pro's. It's working with the
@@ -114,7 +113,7 @@ supported by the `uvcvideo` driver out of the box.
 
 ### Intel
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
@@ -130,13 +129,13 @@ displays daisy-chained together with Full HD each.
 
 ### AMD
 
-![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box.
 
 ## Keyboard & Touchpad
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box with Linux 5.3 and above.
 
@@ -160,7 +159,7 @@ See also:
 
 ## NVMe
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box.
 
@@ -170,7 +169,7 @@ power than they need to, therefore reducing the battery life.
 
 ## Screen
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box.
 
@@ -185,7 +184,7 @@ doesn't matter, as Xorg probes and sets the correct resolution of `2560x1600`.
 
 ## Suspend & Hibernation
 
-![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
 @roadrunner2 did some work in this area. You'll find some details about it in
@@ -194,7 +193,7 @@ https://github.com/cb22/macbook12-spi-driver/pull/30#issuecomment-306316034
 
 ## System Management Controller
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 The System Management Controller (SMC) is responsible for interactions with
 sensors and fans.
@@ -219,7 +218,7 @@ An accelerometer isn't available at all.
 
 ## Thunderbolt
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box.
 
@@ -249,7 +248,7 @@ Not working.
 
 ## USB
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookAir8,1 unknown](https://img.shields.io/badge/MacBookAir8%2C1-unknown-blue.svg) ![MacBookAir8,2 unknown](https://img.shields.io/badge/MacBookAir8%2C2-unknown-blue.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 Works out of the box.
 
@@ -258,7 +257,7 @@ Works out of the box.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 ![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg)
-![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg)
+![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 The MacBook Pro models without Touch Bar come with a `Broadcom Limited BCM4350
 802.11ac Wireless Network Adapter` which works fine out of the box using the
@@ -275,8 +274,6 @@ According to Broadcom releasing a fixed firmware would require verification to
 ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
-
-Re
 
 ## Misc
 
