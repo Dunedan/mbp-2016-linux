@@ -256,8 +256,7 @@ Works out of the box.
 ## Wi-Fi
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
-![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg)
-![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
+![MacBookAir8,1 not working](https://img.shields.io/badge/MacBookAir8%2C1-not_working-red.svg) ![MacBookAir8,2 not working](https://img.shields.io/badge/MacBookAir8%2C2-not_working-red.svg) ![MacBook8,1 unknown](https://img.shields.io/badge/MacBook8%2C1-unknown-blue.svg) ![MacBook9,1 unknown](https://img.shields.io/badge/MacBook9%2C1-unknown-blue.svg) ![MacBook10,1 unknown](https://img.shields.io/badge/MacBook10%2C1-unknown-blue.svg) ![iMacPro1,1 unknown](https://img.shields.io/badge/iMacPro1%2C1-unknown-blue.svg) ![Macmini8,1 unknown](https://img.shields.io/badge/Macmini8%2C1-unknown-blue.svg)
 
 The MacBook Pro models without Touch Bar come with a `Broadcom Limited BCM4350
 802.11ac Wireless Network Adapter` which works fine out of the box using the
