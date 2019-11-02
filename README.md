@@ -22,7 +22,6 @@ If you don't know what the model identifier for your MacBook Pro is (as that
 identifier is used on several occasions below), check
 https://support.apple.com/en-us/HT201300
 
-
 ## Contribution
 
 If you want to contribute to get Linux running smoothly on the MacBook Pro
@@ -63,10 +62,10 @@ What's working is audio via HDMI or any USB-connected audio device, so that can
 act as a workaround until internal audio is working.
 
 See also:
+
 * https://bugzilla.kernel.org/show_bug.cgi?id=195671
 * https://bugzilla.kernel.org/show_bug.cgi?id=110561
 * http://mailman.alsa-project.org/pipermail/alsa-devel/2018-November/141942.html
-
 
 ## Battery
 
@@ -97,6 +96,7 @@ additional patch set. For details check
 https://github.com/Dunedan/mbp-2016-linux/issues/29
 
 See also:
+
 * https://bugzilla.kernel.org/show_bug.cgi?id=110901
 
 ## FaceTime HD camera
@@ -110,7 +110,6 @@ via PCIe, like in previous MacBook Pro's. It's working with the
 The models with Touch Bar have the FaceTime HD camera connected through the
 iBridge device via USB. They are exposed as regular USB video devices and are
 supported by the `uvcvideo` driver out of the box.
-
 
 ## Graphics card
 
@@ -151,14 +150,14 @@ follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 Beside the actual keyboard, the power button and the lid close event work out of
 the box.
 
-Palm rejection based on touch-sizes and disable-touchpad-while-typing are working 
+Palm rejection based on touch-sizes and disable-touchpad-while-typing are working
 with [this patch](https://gist.github.com/peterychuang/5cf9bf527bc26adef47d714c758a5509)
 to [libinput](https://cgit.freedesktop.org/wayland/libinput) (master branch).
 
 See also:
+
 * https://bugzilla.kernel.org/show_bug.cgi?id=99891
 * https://bugzilla.kernel.org/show_bug.cgi?id=108331
-
 
 ## NVMe
 
@@ -195,9 +194,11 @@ resume requires additional prerequisites as explained below.
 Models with Apple's NVMe controller (MacBookPro13,1, MacBookPro13,2,
 MacBookPro14,1 and MacBookPro14,2) require disabling the `d3cold` PCIe power
 state for the NVMe controller to successfully wake up again:
+
 ```
 echo 0 > /sys/bus/pci/devices/0000\:01\:00.0/d3cold_allowed
 ```
+
 Even then resume is incredible slow and takes up to a minute, probably due to
 additional bugs.
 
@@ -239,7 +240,6 @@ Up to now power management support for the Thunderbolt controllers isn't
 complete yet, resulting in unnecessary battery drain when no devices are
 attached to the Thunderbolt ports.
 
-
 ## Touch Bar
 
 ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
@@ -251,20 +251,17 @@ git repository: https://github.com/roadrunner2/macbook12-spi-driver
 Missing is as of now just the advanced functionality with custom graphics Apple
 offers in macOS.
 
-
 ## Touch ID
 
 ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
 
 Not working.
 
-
 ## USB
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
 
 Works out of the box.
-
 
 ## Wi-Fi
 
@@ -278,6 +275,7 @@ The MacBook Pro models with Touch Bar come with a `Broadcom Limited BCM43602
 802.11ac Wireless LAN SoC (rev 02)` which is also supported by `brcmfmac`, but
 has several issues rendering it unusable, caused by the available firmware.
 The issues are caused by failing country detection and are:
+
 * Only 2.4Ghz APs are shown
 * Connecting to an AP barely works or fails directly
 
@@ -373,6 +371,7 @@ present: `Apple Mobile Device [Recovery Mode]` (`Bus 001 Device 003: ID
 05ac:1281 Apple, Inc.`)
 
 `usb-devices` shows that *iBridge* exposes four interfaces:
+
 ```
 T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  2 Spd=480 MxCh= 0
 D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
@@ -391,6 +390,7 @@ while the two `HID` interfaces could be the Touch Bar and the Touch ID button.
 
 Booting macOS as a VM interestingly leads to the following changed output of
 `usb-devices`:
+
 ```
 T:  Bus=01 Lev=01 Prnt=01 Port=02 Cnt=01 Dev#=  2 Spd=480 MxCh= 0
 D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  3
@@ -425,6 +425,7 @@ http://www.idownloadblog.com/2016/10/31/how-to-stop-the-new-macbook-pro-from-aut
 
 To disable auto boot from within Linux, ensure that `efivarfs` is mounted and
 run:
+
 ```
 printf "\x07\x00\x00\x00\x00" > /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82
 ```
@@ -432,6 +433,7 @@ printf "\x07\x00\x00\x00\x00" > /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a
 If you get "No space left on device" errors, it's probably because of
 `dump-type0-*`-variables written by the Linux kernel taking up all space.
 Removing them solves the problem:
+
 ```
 for i in $(find /sys/firmware/efi/efivars/ -name 'dump-type0*'); do chattr -i $i; rm $i; done
 ```
@@ -440,7 +442,8 @@ With disabled auto boot the MacBook Pro will show the battery percentage for a
 brief second as an image on the screen whenever you open the lid or plug in the
 power cord while the lid is open.
 
-To reenable auto boot again run:
+To re-enable auto boot again run:
+
 ```
 chattr -i /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82
 rm /sys/firmware/efi/efivars/AutoBoot-7c436110-ab2a-4bbb-a880-fe41995c9f82

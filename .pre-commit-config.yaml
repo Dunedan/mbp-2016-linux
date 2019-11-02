@@ -1,0 +1,30 @@
+---
+repos:
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-byte-order-marker
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-aws-credentials
+        args:
+          - --allow-missing-credentials
+      - id: detect-private-key
+
+  - repo: git://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.7
+    hooks:
+      - id: forbid-crlf
+
+  - repo: git://github.com/igorshubovych/markdownlint-cli
+    rev: v0.19.0
+    hooks:
+      - id: markdownlint
+
+  - repo: git://github.com/codespell-project/codespell
+    rev: v1.16.0
+    hooks:
+      - id: codespell
+        files: "README.md"

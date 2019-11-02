@@ -1,0 +1,4 @@
+default: true
+no-bare-urls: false
+line-length: false
+fenced-code-language: false
