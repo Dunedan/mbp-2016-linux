@@ -16,7 +16,7 @@ of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. The information below
 assumes that you run Linux 4.13 or newer. If in doubt which kernel to use, the
-latest significant improvements are part of Linux 4.16.
+latest significant improvements are part of Linux 5.3.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
 identifier is used on several occasions below), check
