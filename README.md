@@ -45,7 +45,7 @@ There is also a chat available via gitter for discussions:
 | [Keyboard & Touchpad](#keyboard--touchpad) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Suspend & Hibernation](#suspend--hibernation) |![all models not working](https://img.shields.io/badge/all_models-not_working-red.svg) |
+| [Suspend & Hibernation](#suspend--hibernation) |![all models partially working](https://img.shields.io/badge/all_models-partially_working-yellow.svg) |
 | [System Management Controller](#system-management-controller) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Thunderbolt](#thunderbolt) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) |
@@ -187,12 +187,22 @@ doesn't matter, as Xorg probes and sets the correct resolution of `2560x1600`.
 
 ## Suspend & Hibernation
 
-![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 not working](https://img.shields.io/badge/MacBookPro14%2C1-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg)
+![MacBookPro13,1 partially working](https://img.shields.io/badge/MacBookPro13%2C1-partially_working-yellow.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
 
-Putting the MacBook Pro into suspend mode works, but it doesn't wake up again.
-@roadrunner2 did some work in this area. You'll find some details about it in
-https://github.com/cb22/macbook12-spi-driver/pull/30#issuecomment-306316034
+Putting the MacBook Pro into suspend mode works on all models, but successful
+resume requires additional prerequisites as explained below.
 
+Models with Apple's NVMe controller (MacBookPro13,1, MacBookPro13,2,
+MacBookPro14,1 and MacBookPro14,2) require disabling the `d3cold` PCIe power
+state for the NVMe controller to successfully wake up again:
+```
+echo 0 > /sys/bus/pci/devices/0000\:01\:00.0/d3cold_allowed
+```
+Even then resume is incredible slow and takes up to a minute, probably due to
+additional bugs.
+
+For the 15" models with additional AMD GPU resume only works when using the
+internal Intel GPU.
 
 ## System Management Controller
 
