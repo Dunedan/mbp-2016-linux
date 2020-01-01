@@ -200,9 +200,8 @@ echo 0 > /sys/bus/pci/devices/0000\:01\:00.0/d3cold_allowed
 ```
 
 This command must be executed from root, and ideally on startup, since the file 
-is rewritten to '1' on startup.
-
-Even then resume is incredible slow and takes up to a minute, probably due to
+is rewritten to '1' on startup. Even then resume is incredible slow and takes 
+up to a minute, probably due to
 additional bugs.
 
 For the 15" models with additional AMD GPU resume only works when using the
