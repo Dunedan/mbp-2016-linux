@@ -1,0 +1,2462 @@
+[    0.000000] Linux version 5.5.0-0.rc6.git3.1.fc32.x86_64 (mockbuild@bkernel03.phx2.fedoraproject.org) (gcc version 9.2.1 20190827 (Red Hat 9.2.1-1) (GCC)) #1 SMP Fri Jan 17 18:29:51 UTC 2020
+[    0.000000] Command line: BOOT_IMAGE=/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-32-x86_64 rd.live.image quiet
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009cfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009d000-0x000000000009dfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000040000000-0x00000000403fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000040400000-0x0000000075325fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000075326000-0x00000000756a7fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000756a8000-0x00000000761a9fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000761aa000-0x00000000761aafff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000761ab000-0x00000000761abfff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000761ac000-0x000000007650dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007650e000-0x000000007650efff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007650f000-0x0000000088c0efff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000088c0f000-0x0000000088edefff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000088edf000-0x0000000088f9efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000088f9f000-0x0000000088ffefff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x0000000088fff000-0x0000000088ffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000089000000-0x000000008fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff95b000-0x00000000ff989fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000046dffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] e820: update [mem 0x7650a698-0x7650aca7] usable ==> usable
+[    0.000000] e820: update [mem 0x7650a698-0x7650aca7] usable ==> usable
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x000000000009cfff] usable
+[    0.000000] reserve setup_data: [mem 0x000000000009d000-0x000000000009dfff] reserved
+[    0.000000] reserve setup_data: [mem 0x000000000009e000-0x000000000009ffff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000000100000-0x000000003fffffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000040000000-0x00000000403fffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000040400000-0x0000000075325fff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000075326000-0x00000000756a7fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000756a8000-0x00000000761a9fff] usable
+[    0.000000] reserve setup_data: [mem 0x00000000761aa000-0x00000000761aafff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x00000000761ab000-0x00000000761abfff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000761ac000-0x000000007650a697] usable
+[    0.000000] reserve setup_data: [mem 0x000000007650a698-0x000000007650aca7] usable
+[    0.000000] reserve setup_data: [mem 0x000000007650aca8-0x000000007650dfff] usable
+[    0.000000] reserve setup_data: [mem 0x000000007650e000-0x000000007650efff] reserved
+[    0.000000] reserve setup_data: [mem 0x000000007650f000-0x0000000088c0efff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000088c0f000-0x0000000088edefff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000088edf000-0x0000000088f9efff] ACPI NVS
+[    0.000000] reserve setup_data: [mem 0x0000000088f9f000-0x0000000088ffefff] ACPI data
+[    0.000000] reserve setup_data: [mem 0x0000000088fff000-0x0000000088ffffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000089000000-0x000000008fffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[    0.000000] reserve setup_data: [mem 0x00000000ff95b000-0x00000000ff989fff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000100000000-0x000000046dffffff] usable
+[    0.000000] efi: EFI v2.40 by Apple
+[    0.000000] efi:  ACPI=0x88ffe000  ACPI 2.0=0x88ffe014  SMBIOS=0x88ed1000  SMBIOS 3.0=0x88ecf000 
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: Apple Inc. MacBookPro15,4/Mac-53FDB3D8DB8CA971, BIOS 1037.60.58.0.0 (iBridge: 17.16.12551.0.0,0) 11/14/2019
+[    0.000000] tsc: Detected 1400.000 MHz processor
+[    0.001170] tsc: Detected 1399.946 MHz TSC
+[    0.001170] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.001172] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.001178] last_pfn = 0x46e000 max_arch_pfn = 0x400000000
+[    0.001181] MTRR default type: write-back
+[    0.001182] MTRR fixed ranges enabled:
+[    0.001184]   00000-9FFFF write-back
+[    0.001185]   A0000-FFFFF uncachable
+[    0.001186] MTRR variable ranges enabled:
+[    0.001188]   0 base 00C0000000 mask 7FC0000000 uncachable
+[    0.001189]   1 base 00A0000000 mask 7FE0000000 uncachable
+[    0.001190]   2 base 0090000000 mask 7FF0000000 uncachable
+[    0.001191]   3 base 008C000000 mask 7FFC000000 uncachable
+[    0.001192]   4 base 008A000000 mask 7FFE000000 uncachable
+[    0.001194]   5 base 0089000000 mask 7FFF000000 uncachable
+[    0.001195]   6 base 4000000000 mask 4000000000 uncachable
+[    0.001196]   7 disabled
+[    0.001197]   8 disabled
+[    0.001198]   9 disabled
+[    0.002017] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.003630] last_pfn = 0x89000 max_arch_pfn = 0x400000000
+[    0.028709] check: Scanning 1 areas for low memory corruption
+[    0.028713] Using GB pages for direct mapping
+[    0.028715] BRK [0x266c01000, 0x266c01fff] PGTABLE
+[    0.028717] BRK [0x266c02000, 0x266c02fff] PGTABLE
+[    0.028718] BRK [0x266c03000, 0x266c03fff] PGTABLE
+[    0.028749] BRK [0x266c04000, 0x266c04fff] PGTABLE
+[    0.028750] BRK [0x266c05000, 0x266c05fff] PGTABLE
+[    0.028957] BRK [0x266c06000, 0x266c06fff] PGTABLE
+[    0.029023] BRK [0x266c07000, 0x266c07fff] PGTABLE
+[    0.029054] BRK [0x266c08000, 0x266c08fff] PGTABLE
+[    0.029086] BRK [0x266c09000, 0x266c09fff] PGTABLE
+[    0.029136] BRK [0x266c0a000, 0x266c0afff] PGTABLE
+[    0.029185] BRK [0x266c0b000, 0x266c0bfff] PGTABLE
+[    0.029228] BRK [0x266c0c000, 0x266c0cfff] PGTABLE
+[    0.029346] secureboot: Secure boot disabled
+[    0.029348] RAMDISK: [mem 0x71f5d000-0x74cb7fff]
+[    0.029357] ACPI: Early table checksum verification disabled
+[    0.029360] ACPI: RSDP 0x0000000088FFE014 000024 (v02 APPLE )
+[    0.029363] ACPI: XSDT 0x0000000088FFD148 0000C4 (v01 APPLE  Apple00  00000000      01000013)
+[    0.029368] ACPI: FACP 0x0000000088FF0000 0000F4 (v05 APPLE  Apple00  00000000 Loki 0000005F)
+[    0.029372] ACPI: DSDT 0x0000000088FE5000 006DE6 (v02 APPLE  MacBook  00080001 INTL 20160930)
+[    0.029374] ACPI: FACS 0x0000000088F53000 000040
+[    0.029377] ACPI: SSDT 0x0000000088FFC000 0003F5 (v02 PmRef  Cpu0Ist  00003000 INTL 20160930)
+[    0.029380] ACPI: SSDT 0x0000000088FFB000 0005FC (v02 PmRef  ApIst    00003000 INTL 20160930)
+[    0.029382] ACPI: SSDT 0x0000000088FFA000 000370 (v02 PmRef  Cpu0Cst  00003001 INTL 20160930)
+[    0.029385] ACPI: SSDT 0x0000000088FF9000 00024A (v02 PmRef  ApCst    00003000 INTL 20160930)
+[    0.029387] ACPI: SSDT 0x0000000088FF7000 001BCD (v02 CpuRef CpuSsdt  00003000 INTL 20160930)
+[    0.029390] ACPI: SSDT 0x0000000088FF3000 0031C6 (v02 SaSsdt SaSsdt   00003000 INTL 20160930)
+[    0.029392] ACPI: UEFI 0x0000000088F55000 000042 (v01 INTEL  EDK2     00000002      01000013)
+[    0.029395] ACPI: ECDT 0x0000000088FF2000 000053 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.029398] ACPI: HPET 0x0000000088FEF000 000038 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.029400] ACPI: APIC 0x0000000088FEE000 00012C (v02 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.029403] ACPI: SBST 0x0000000088FEC000 000030 (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.029405] ACPI: SSDT 0x0000000088FE4000 000024 (v01 APPLE  SmcDppt  00001000 INTL 20160930)
+[    0.029408] ACPI: SSDT 0x0000000088FDF000 000031 (v01 APPLE  SsdtS3   00001000 INTL 20160930)
+[    0.029410] ACPI: SSDT 0x0000000088FDE000 000051 (v01 APPLE  SataAhci 00001000 INTL 20160930)
+[    0.029413] ACPI: SSDT 0x0000000088FDD000 0000B8 (v01 APPLE  Sdxc     00001000 INTL 20160930)
+[    0.029416] ACPI: SSDT 0x0000000088FD7000 005E45 (v02 APPLE  TbtOnPCH 00001000 INTL 20160930)
+[    0.029418] ACPI: SSDT 0x0000000088FD3000 00041F (v02 APPLE  Xhci     00001000 INTL 20160930)
+[    0.029421] ACPI: DMAR 0x0000000088FD2000 000088 (v01 APPLE  EDK2     00000002      01000013)
+[    0.029423] ACPI: MCFG 0x0000000088FED000 00003C (v01 APPLE  Apple00  00000001 Loki 0000005F)
+[    0.029428] ACPI: DMI detected to setup _OSI("Darwin"): Apple hardware
+[    0.029430] ACPI: Local APIC address 0xfee00000
+[    0.029755] No NUMA configuration found
+[    0.029757] Faking a node at [mem 0x0000000000000000-0x000000046dffffff]
+[    0.029766] NODE_DATA(0) allocated [mem 0x46dfd4000-0x46dffefff]
+[    0.051639] Zone ranges:
+[    0.051643]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.051646]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.051647]   Normal   [mem 0x0000000100000000-0x000000046dffffff]
+[    0.051649]   Device   empty
+[    0.051650] Movable zone start for each node
+[    0.051653] Early memory node ranges
+[    0.051654]   node   0: [mem 0x0000000000001000-0x000000000009cfff]
+[    0.051655]   node   0: [mem 0x0000000000100000-0x000000003fffffff]
+[    0.051656]   node   0: [mem 0x0000000040400000-0x0000000075325fff]
+[    0.051658]   node   0: [mem 0x00000000756a8000-0x00000000761a9fff]
+[    0.051659]   node   0: [mem 0x00000000761ac000-0x000000007650dfff]
+[    0.051660]   node   0: [mem 0x000000007650f000-0x0000000088c0efff]
+[    0.051661]   node   0: [mem 0x0000000088fff000-0x0000000088ffffff]
+[    0.051662]   node   0: [mem 0x0000000100000000-0x000000046dffffff]
+[    0.051837] Zeroed struct page in unavailable ranges: 31705 pages
+[    0.051838] Initmem setup node 0 [mem 0x0000000000001000-0x000000046dffffff]
+[    0.051840] On node 0 totalpages: 4154407
+[    0.051842]   DMA zone: 64 pages used for memmap
+[    0.051843]   DMA zone: 21 pages reserved
+[    0.051844]   DMA zone: 3996 pages, LIFO batch:0
+[    0.051883]   DMA32 zone: 8659 pages used for memmap
+[    0.051885]   DMA32 zone: 554123 pages, LIFO batch:63
+[    0.059614]   Normal zone: 56192 pages used for memmap
+[    0.059615]   Normal zone: 3596288 pages, LIFO batch:63
+[    0.093663] Reserving Intel graphics memory at [mem 0x8a000000-0x8fffffff]
+[    0.094091] ACPI: PM-Timer IO Port: 0x1808
+[    0.094093] ACPI: Local APIC address 0xfee00000
+[    0.094099] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.094100] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.094101] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.094102] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.094103] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.094104] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.094105] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.094106] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.094107] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.094108] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.094109] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.094110] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.094111] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.094112] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.094113] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.094114] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[    0.094155] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.094158] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.094160] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.094161] ACPI: IRQ0 used by override.
+[    0.094162] ACPI: IRQ9 used by override.
+[    0.094164] Using ACPI (MADT) for SMP configuration information
+[    0.094166] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.094170] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.094206] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.094209] PM: Registered nosave memory: [mem 0x0009d000-0x0009dfff]
+[    0.094210] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+[    0.094211] PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    0.094213] PM: Registered nosave memory: [mem 0x40000000-0x403fffff]
+[    0.094215] PM: Registered nosave memory: [mem 0x75326000-0x756a7fff]
+[    0.094217] PM: Registered nosave memory: [mem 0x761aa000-0x761aafff]
+[    0.094218] PM: Registered nosave memory: [mem 0x761ab000-0x761abfff]
+[    0.094220] PM: Registered nosave memory: [mem 0x7650a000-0x7650afff]
+[    0.094223] PM: Registered nosave memory: [mem 0x7650a000-0x7650afff]
+[    0.094225] PM: Registered nosave memory: [mem 0x7650e000-0x7650efff]
+[    0.094227] PM: Registered nosave memory: [mem 0x88c0f000-0x88edefff]
+[    0.094228] PM: Registered nosave memory: [mem 0x88edf000-0x88f9efff]
+[    0.094229] PM: Registered nosave memory: [mem 0x88f9f000-0x88ffefff]
+[    0.094232] PM: Registered nosave memory: [mem 0x89000000-0x8fffffff]
+[    0.094233] PM: Registered nosave memory: [mem 0x90000000-0xdfffffff]
+[    0.094234] PM: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[    0.094235] PM: Registered nosave memory: [mem 0xf0000000-0xfe00ffff]
+[    0.094236] PM: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+[    0.094237] PM: Registered nosave memory: [mem 0xfe011000-0xff95afff]
+[    0.094238] PM: Registered nosave memory: [mem 0xff95b000-0xff989fff]
+[    0.094238] PM: Registered nosave memory: [mem 0xff98a000-0xffffffff]
+[    0.094241] [mem 0x90000000-0xdfffffff] available for PCI devices
+[    0.094243] Booting paravirtualized kernel on bare hardware
+[    0.094246] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.171090] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.172941] percpu: Embedded 507 pages/cpu s2039808 r8192 d28672 u2097152
+[    0.172956] pcpu-alloc: s2039808 r8192 d28672 u2097152 alloc=1*2097152
+[    0.172958] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.173009] Built 1 zonelists, mobility grouping on.  Total pages: 4089471
+[    0.173010] Policy zone: Normal
+[    0.173015] Kernel command line: BOOT_IMAGE=/images/pxeboot/vmlinuz root=live:CDLABEL=Fedora-32-x86_64 rd.live.image quiet
+[    0.173625] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[    0.173916] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.173981] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.756331] Memory: 15911584K/16617628K available (14339K kernel code, 3308K rwdata, 5236K rodata, 4364K init, 24704K bss, 706044K reserved, 0K cma-reserved)
+[    0.756874] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.756876] kmemleak: Kernel memory leak detector disabled
+[    0.756994] Kernel/User page tables isolation: enabled
+[    0.757037] ftrace: allocating 41961 entries in 164 pages
+[    0.768367] ftrace: allocated 164 pages with 3 groups
+[    0.768545] Running RCU self tests
+[    0.768547] rcu: Hierarchical RCU implementation.
+[    0.768548] rcu: 	RCU lockdep checking is enabled.
+[    0.768549] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.768550] rcu: 	RCU callback double-/use-after-free debug enabled.
+[    0.768551] 	Tasks RCU enabled.
+[    0.768553] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.768554] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.770740] Using NULL legacy PIC
+[    0.770744] NR_IRQS: 524544, nr_irqs: 488, preallocated irqs: 0
+[    0.770937] Persistent clock returned invalid value
+[    0.770996] random: crng done (trusting CPU's manufacturer)
+[    0.771050] Console: colour dummy device 80x25
+[    0.771057] printk: console [tty0] enabled
+[    0.771065] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    0.771066] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    0.771067] ... MAX_LOCK_DEPTH:          48
+[    0.771068] ... MAX_LOCKDEP_KEYS:        8192
+[    0.771069] ... CLASSHASH_SIZE:          4096
+[    0.771070] ... MAX_LOCKDEP_ENTRIES:     32768
+[    0.771071] ... MAX_LOCKDEP_CHAINS:      65536
+[    0.771072] ... CHAINHASH_SIZE:          32768
+[    0.771073]  memory used by lock dependency info: 6749 kB
+[    0.771074]  memory used for stack traces: 4224 kB
+[    0.771075]  per task-struct memory footprint: 2688 bytes
+[    0.771098] ACPI: Core revision 20191018
+[    0.771436] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[    0.771479] Failed to register legacy timer interrupt
+[    0.771481] APIC: Switch to symmetric I/O mode setup
+[    0.771483] DMAR: Host address width 39
+[    0.771485] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.771498] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.771499] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.771503] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.771505] DMAR: RMRR base: 0x00000089800000 end: 0x0000008fffffff
+[    0.771507] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.771508] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.771509] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.772080] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.772081] x2apic enabled
+[    0.772094] Switched APIC routing to cluster x2apic.
+[    0.772234] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x142ded56ffd, max_idle_ns: 440795252761 ns
+[    0.772249] Calibrating delay loop (skipped), value calculated using timer frequency.. 2799.89 BogoMIPS (lpj=1399946)
+[    0.772251] pid_max: default: 32768 minimum: 301
+[    0.773243] ---[ User Space ]---
+[    0.773243] 0x0000000000000000-0x0000000000001000           4K     RW                     x  pte
+[    0.773243] 0x0000000000001000-0x0000000000200000        2044K                               pte
+[    0.773243] 0x0000000000200000-0x0000000056400000        1378M                               pmd
+[    0.773243] 0x0000000056400000-0x0000000056510000        1088K                               pte
+[    0.773243] 0x0000000056510000-0x0000000056530000         128K                               pte
+[    0.773243] 0x0000000056530000-0x0000000056600000         832K                               pte
+[    0.773243] 0x0000000056600000-0x0000000075200000         492M                               pmd
+[    0.773243] 0x0000000075200000-0x000000007528f000         572K                               pte
+[    0.773243] 0x000000007528f000-0x0000000075326000         604K                               pte
+[    0.773243] 0x0000000075326000-0x0000000075400000         872K                               pte
+[    0.773243] 0x0000000075400000-0x0000000075600000           2M                               pmd
+[    0.773243] 0x0000000075600000-0x00000000756a8000         672K                               pte
+[    0.773243] 0x00000000756a8000-0x0000000075800000        1376K                               pte
+[    0.773243] 0x0000000075800000-0x0000000076000000           8M                               pmd
+[    0.773243] 0x0000000076000000-0x00000000761aa000        1704K                               pte
+[    0.773243] 0x00000000761aa000-0x00000000761ab000           4K                               pte
+[    0.773243] 0x00000000761ab000-0x00000000761ac000           4K     RW                     x  pte
+[    0.773243] 0x00000000761ac000-0x0000000076200000         336K                               pte
+[    0.773243] 0x0000000076200000-0x0000000076400000           2M                               pmd
+[    0.773243] 0x0000000076400000-0x0000000076500000           1M                               pte
+[    0.773243] 0x0000000076500000-0x0000000076600000           1M                               pte
+[    0.773243] 0x0000000076600000-0x000000007b000000          74M                               pmd
+[    0.773243] 0x000000007b000000-0x000000007b067000         412K                               pte
+[    0.773243] 0x000000007b067000-0x000000007b0b9000         328K                               pte
+[    0.773243] 0x000000007b0b9000-0x000000007b0eb000         200K                               pte
+[    0.773243] 0x000000007b0eb000-0x000000007b0f0000          20K                               pte
+[    0.773243] 0x000000007b0f0000-0x000000007b0f7000          28K                               pte
+[    0.773243] 0x000000007b0f7000-0x000000007b0fc000          20K                               pte
+[    0.773243] 0x000000007b0fc000-0x000000007b103000          28K                               pte
+[    0.773243] 0x000000007b103000-0x000000007b108000          20K                               pte
+[    0.773243] 0x000000007b108000-0x000000007b11f000          92K                               pte
+[    0.773243] 0x000000007b11f000-0x000000007b121000           8K                               pte
+[    0.773243] 0x000000007b121000-0x000000007b125000          16K                               pte
+[    0.773243] 0x000000007b125000-0x000000007b134000          60K                               pte
+[    0.773243] 0x000000007b134000-0x000000007b13b000          28K                               pte
+[    0.773243] 0x000000007b13b000-0x000000007b17c000         260K                               pte
+[    0.773243] 0x000000007b17c000-0x000000007b1b2000         216K                               pte
+[    0.773243] 0x000000007b1b2000-0x000000007b1b8000          24K                               pte
+[    0.773243] 0x000000007b1b8000-0x000000007b1c1000          36K                               pte
+[    0.773243] 0x000000007b1c1000-0x000000007b1c2000           4K                               pte
+[    0.773243] 0x000000007b1c2000-0x000000007b1cd000          44K                               pte
+[    0.773243] 0x000000007b1cd000-0x000000007b1d6000          36K                               pte
+[    0.773243] 0x000000007b1d6000-0x000000007b1d7000           4K                               pte
+[    0.773243] 0x000000007b1d7000-0x000000007b1d8000           4K                               pte
+[    0.773243] 0x000000007b1d8000-0x000000007b22c000         336K                               pte
+[    0.773243] 0x000000007b22c000-0x000000007b230000          16K                               pte
+[    0.773243] 0x000000007b230000-0x000000007b232000           8K                               pte
+[    0.773243] 0x000000007b232000-0x000000007b234000           8K                               pte
+[    0.773243] 0x000000007b234000-0x000000007b235000           4K                               pte
+[    0.773243] 0x000000007b235000-0x000000007b238000          12K                               pte
+[    0.773243] 0x000000007b238000-0x000000007b23c000          16K                               pte
+[    0.773243] 0x000000007b23c000-0x000000007b258000         112K                               pte
+[    0.773243] 0x000000007b258000-0x000000007b25a000           8K                               pte
+[    0.773243] 0x000000007b25a000-0x000000007b25c000           8K                               pte
+[    0.773243] 0x000000007b25c000-0x000000007b25e000           8K                               pte
+[    0.773243] 0x000000007b25e000-0x000000007b260000           8K                               pte
+[    0.773243] 0x000000007b260000-0x000000007b262000           8K                               pte
+[    0.773243] 0x000000007b262000-0x000000007b264000           8K                               pte
+[    0.773243] 0x000000007b264000-0x000000007b266000           8K                               pte
+[    0.773243] 0x000000007b266000-0x000000007b268000           8K                               pte
+[    0.773243] 0x000000007b268000-0x000000007b26a000           8K                               pte
+[    0.773243] 0x000000007b26a000-0x000000007b26c000           8K                               pte
+[    0.773243] 0x000000007b26c000-0x000000007b26e000           8K                               pte
+[    0.773243] 0x000000007b26e000-0x000000007b270000           8K                               pte
+[    0.773243] 0x000000007b270000-0x000000007b272000           8K                               pte
+[    0.773243] 0x000000007b272000-0x000000007b274000           8K                               pte
+[    0.773243] 0x000000007b274000-0x000000007b276000           8K                               pte
+[    0.773243] 0x000000007b276000-0x000000007b278000           8K                               pte
+[    0.773243] 0x000000007b278000-0x000000007b27a000           8K                               pte
+[    0.773243] 0x000000007b27a000-0x000000007b27c000           8K                               pte
+[    0.773243] 0x000000007b27c000-0x000000007b27e000           8K                               pte
+[    0.773243] 0x000000007b27e000-0x000000007b280000           8K                               pte
+[    0.773243] 0x000000007b280000-0x000000007b282000           8K                               pte
+[    0.773243] 0x000000007b282000-0x000000007b284000           8K                               pte
+[    0.773243] 0x000000007b284000-0x000000007b287000          12K                               pte
+[    0.773243] 0x000000007b287000-0x000000007b288000           4K                               pte
+[    0.773243] 0x000000007b288000-0x000000007b294000          48K                               pte
+[    0.773243] 0x000000007b294000-0x000000007b299000          20K                               pte
+[    0.773243] 0x000000007b299000-0x000000007b29d000          16K                               pte
+[    0.773243] 0x000000007b29d000-0x000000007b29e000           4K                               pte
+[    0.773243] 0x000000007b29e000-0x000000007b2a0000           8K                               pte
+[    0.773243] 0x000000007b2a0000-0x000000007b2a6000          24K                               pte
+[    0.773243] 0x000000007b2a6000-0x000000007b2ac000          24K                               pte
+[    0.773243] 0x000000007b2ac000-0x000000007b2b1000          20K                               pte
+[    0.773243] 0x000000007b2b1000-0x000000007b2b2000           4K                               pte
+[    0.773243] 0x000000007b2b2000-0x000000007b2b4000           8K                               pte
+[    0.773243] 0x000000007b2b4000-0x000000007b2b6000           8K                               pte
+[    0.773243] 0x000000007b2b6000-0x000000007b2b7000           4K                               pte
+[    0.773243] 0x000000007b2b7000-0x000000007b2b9000           8K                               pte
+[    0.773243] 0x000000007b2b9000-0x000000007b2c2000          36K                               pte
+[    0.773243] 0x000000007b2c2000-0x000000007b2c4000           8K                               pte
+[    0.773243] 0x000000007b2c4000-0x000000007b2c5000           4K                               pte
+[    0.773243] 0x000000007b2c5000-0x000000007b2c6000           4K                               pte
+[    0.773243] 0x000000007b2c6000-0x000000007b2d3000          52K                               pte
+[    0.773243] 0x000000007b2d3000-0x000000007b324000         324K                               pte
+[    0.773243] 0x000000007b324000-0x000000007b329000          20K                               pte
+[    0.773243] 0x000000007b329000-0x000000007b32c000          12K                               pte
+[    0.773243] 0x000000007b32c000-0x000000007b32f000          12K                               pte
+[    0.773243] 0x000000007b32f000-0x000000007b332000          12K                               pte
+[    0.773243] 0x000000007b332000-0x000000007b335000          12K                               pte
+[    0.773243] 0x000000007b335000-0x000000007b338000          12K                               pte
+[    0.773243] 0x000000007b338000-0x000000007b33e000          24K                               pte
+[    0.773243] 0x000000007b33e000-0x000000007b349000          44K                               pte
+[    0.773243] 0x000000007b349000-0x000000007b34c000          12K                               pte
+[    0.773243] 0x000000007b34c000-0x000000007b34d000           4K                               pte
+[    0.773243] 0x000000007b34d000-0x000000007b35f000          72K                               pte
+[    0.773243] 0x000000007b35f000-0x000000007b360000           4K                               pte
+[    0.773243] 0x000000007b360000-0x000000007b364000          16K                               pte
+[    0.773243] 0x000000007b364000-0x000000007b365000           4K                               pte
+[    0.773243] 0x000000007b365000-0x000000007b367000           8K                               pte
+[    0.773243] 0x000000007b367000-0x000000007b368000           4K                               pte
+[    0.773243] 0x000000007b368000-0x000000007b369000           4K                               pte
+[    0.773243] 0x000000007b369000-0x000000007b36a000           4K                               pte
+[    0.773243] 0x000000007b36a000-0x000000007b374000          40K                               pte
+[    0.773243] 0x000000007b374000-0x000000007b379000          20K                               pte
+[    0.773243] 0x000000007b379000-0x000000007b380000          28K                               pte
+[    0.773243] 0x000000007b380000-0x000000007b391000          68K                               pte
+[    0.773243] 0x000000007b391000-0x000000007b394000          12K                               pte
+[    0.773243] 0x000000007b394000-0x000000007b400000         432K                               pte
+[    0.773243] 0x000000007b400000-0x000000007bc00000           8M                               pmd
+[    0.773243] 0x000000007bc00000-0x000000007bcf9000         996K                               pte
+[    0.773243] 0x000000007bcf9000-0x000000007be00000        1052K                               pte
+[    0.773243] 0x000000007be00000-0x0000000088400000         198M                               pmd
+[    0.773243] 0x0000000088400000-0x000000008850f000        1084K                               pte
+[    0.773243] 0x000000008850f000-0x0000000088515000          24K                               pte
+[    0.773243] 0x0000000088515000-0x0000000088600000         940K                               pte
+[    0.773243] 0x0000000088600000-0x0000000088c00000           6M                               pmd
+[    0.773243] 0x0000000088c00000-0x0000000088c0f000          60K                               pte
+[    0.773243] 0x0000000088c0f000-0x0000000088d7f000        1472K     RW                     x  pte
+[    0.773243] 0x0000000088d7f000-0x0000000088fff000        2560K                               pte
+[    0.773243] 0x0000000088fff000-0x0000000089000000           4K                               pte
+[    0.773243] 0x0000000089000000-0x00000000e0000000        1392M                               pmd
+[    0.773243] 0x00000000e0000000-0x00000000f0000000         256M     RW     PCD PSE         x  pmd
+[    0.773243] 0x00000000f0000000-0x00000000fe000000         224M                               pmd
+[    0.773243] 0x00000000fe000000-0x00000000fe010000          64K                               pte
+[    0.773243] 0x00000000fe010000-0x00000000fe011000           4K     RW     PCD             x  pte
+[    0.773243] 0x00000000fe011000-0x00000000fe200000        1980K                               pte
+[    0.773243] 0x00000000fe200000-0x00000000ff800000          22M                               pmd
+[    0.773243] 0x00000000ff800000-0x00000000ff95b000        1388K                               pte
+[    0.773243] 0x00000000ff95b000-0x00000000ff98a000         188K     RW     PCD             x  pte
+[    0.773243] 0x00000000ff98a000-0x00000000ffa00000         472K                               pte
+[    0.773243] 0x00000000ffa00000-0x0000000100000000           6M                               pmd
+[    0.773243] 0x0000000100000000-0x0000000440000000          13G                               pud
+[    0.773243] 0x0000000440000000-0x000000045b000000         432M                               pmd
+[    0.773243] 0x000000045b000000-0x000000045b1ba000        1768K                               pte
+[    0.773243] 0x000000045b1ba000-0x000000045b1bc000           8K     RW                     NX pte
+[    0.773243] 0x000000045b1bc000-0x000000045b200000         272K                               pte
+[    0.773243] 0x000000045b200000-0x0000000480000000         590M                               pmd
+[    0.773243] 0x0000000480000000-0x0000008000000000         494G                               pud
+[    0.773243] 0x0000008000000000-0xffff800000000000   17179737600G                               pgd
+[    0.773243] ---[ Kernel Space ]---
+[    0.773243] 0xffff800000000000-0xffff808000000000         512G                               pgd
+[    0.773243] ---[ LDT remap ]---
+[    0.773243] 0xffff808000000000-0xffff810000000000         512G                               pgd
+[    0.773243] ---[ Low Kernel Mapping ]---
+[    0.773243] 0xffff810000000000-0xffff818000000000         512G                               pgd
+[    0.773243] ---[ vmalloc() Area ]---
+[    0.773243] 0xffff818000000000-0xffff820000000000         512G                               pgd
+[    0.773243] ---[ Vmemmap ]---
+[    0.773243] 0xffff820000000000-0xffff900000000000          14T                               pgd
+[    0.773243] 0xffff900000000000-0xffff904580000000         278G                               pud
+[    0.773243] 0xffff904580000000-0xffff904580200000           2M     RW                     NX pte
+[    0.773243] 0xffff904580200000-0xffff9045c0000000        1022M     RW         PSE         NX pmd
+[    0.773243] 0xffff9045c0000000-0xffff9045c0400000           4M                               pmd
+[    0.773243] 0xffff9045c0400000-0xffff9045f5200000         846M     RW         PSE         NX pmd
+[    0.773243] 0xffff9045f5200000-0xffff9045f5326000        1176K     RW                     NX pte
+[    0.773243] 0xffff9045f5326000-0xffff9045f5400000         872K                               pte
+[    0.773243] 0xffff9045f5400000-0xffff9045f5600000           2M                               pmd
+[    0.773243] 0xffff9045f5600000-0xffff9045f56a8000         672K                               pte
+[    0.773243] 0xffff9045f56a8000-0xffff9045f5800000        1376K     RW                     NX pte
+[    0.773243] 0xffff9045f5800000-0xffff9045f6000000           8M     RW         PSE         NX pmd
+[    0.773243] 0xffff9045f6000000-0xffff9045f61aa000        1704K     RW                     NX pte
+[    0.773243] 0xffff9045f61aa000-0xffff9045f61ac000           8K                               pte
+[    0.773243] 0xffff9045f61ac000-0xffff9045f6200000         336K     RW                     NX pte
+[    0.773243] 0xffff9045f6200000-0xffff9045f6400000           2M     RW         PSE         NX pmd
+[    0.773243] 0xffff9045f6400000-0xffff9045f650e000        1080K     RW                     NX pte
+[    0.773243] 0xffff9045f650e000-0xffff9045f650f000           4K                               pte
+[    0.773243] 0xffff9045f650f000-0xffff9045f6600000         964K     RW                     NX pte
+[    0.773243] 0xffff9045f6600000-0xffff904608c00000         294M     RW         PSE         NX pmd
+[    0.773243] 0xffff904608c00000-0xffff904608c0f000          60K     RW                     NX pte
+[    0.773243] 0xffff904608c0f000-0xffff904608fff000        4032K                               pte
+[    0.773243] 0xffff904608fff000-0xffff904609000000           4K     RW                     NX pte
+[    0.773243] 0xffff904609000000-0xffff904640000000         880M                               pmd
+[    0.773243] 0xffff904640000000-0xffff904680000000           1G                               pud
+[    0.773243] 0xffff904680000000-0xffff9049c0000000          13G     RW         PSE         NX pud
+[    0.773243] 0xffff9049c0000000-0xffff9049ee000000         736M     RW         PSE         NX pmd
+[    0.773243] 0xffff9049ee000000-0xffff904a00000000         288M                               pmd
+[    0.773243] 0xffff904a00000000-0xffff908000000000         216G                               pud
+[    0.773243] 0xffff908000000000-0xffffa10000000000       16896G                               pgd
+[    0.773243] 0xffffa10000000000-0xffffa128c0000000         163G                               pud
+[    0.773243] 0xffffa128c0000000-0xffffa128c0005000          20K     RW                     NX pte
+[    0.773243] 0xffffa128c0005000-0xffffa128c0006000           4K                               pte
+[    0.773243] 0xffffa128c0006000-0xffffa128c0007000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0007000-0xffffa128c0008000           4K                               pte
+[    0.773243] 0xffffa128c0008000-0xffffa128c000f000          28K     RW                     NX pte
+[    0.773243] 0xffffa128c000f000-0xffffa128c0010000           4K                               pte
+[    0.773243] 0xffffa128c0010000-0xffffa128c0011000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0011000-0xffffa128c0012000           4K                               pte
+[    0.773243] 0xffffa128c0012000-0xffffa128c0013000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0013000-0xffffa128c0014000           4K                               pte
+[    0.773243] 0xffffa128c0014000-0xffffa128c0015000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0015000-0xffffa128c0016000           4K                               pte
+[    0.773243] 0xffffa128c0016000-0xffffa128c0017000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0017000-0xffffa128c0018000           4K                               pte
+[    0.773243] 0xffffa128c0018000-0xffffa128c001a000           8K     RW                     NX pte
+[    0.773243] 0xffffa128c001a000-0xffffa128c001c000           8K                               pte
+[    0.773243] 0xffffa128c001c000-0xffffa128c0020000          16K     RW                     NX pte
+[    0.773243] 0xffffa128c0020000-0xffffa128c0021000           4K                               pte
+[    0.773243] 0xffffa128c0021000-0xffffa128c0022000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0022000-0xffffa128c0023000           4K                               pte
+[    0.773243] 0xffffa128c0023000-0xffffa128c0024000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0024000-0xffffa128c0025000           4K                               pte
+[    0.773243] 0xffffa128c0025000-0xffffa128c0026000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0026000-0xffffa128c0027000           4K                               pte
+[    0.773243] 0xffffa128c0027000-0xffffa128c0028000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0028000-0xffffa128c0029000           4K                               pte
+[    0.773243] 0xffffa128c0029000-0xffffa128c002a000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c002a000-0xffffa128c002b000           4K                               pte
+[    0.773243] 0xffffa128c002b000-0xffffa128c002c000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c002c000-0xffffa128c002d000           4K                               pte
+[    0.773243] 0xffffa128c002d000-0xffffa128c002e000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c002e000-0xffffa128c002f000           4K                               pte
+[    0.773243] 0xffffa128c002f000-0xffffa128c0030000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0030000-0xffffa128c0031000           4K                               pte
+[    0.773243] 0xffffa128c0031000-0xffffa128c0032000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0032000-0xffffa128c0033000           4K                               pte
+[    0.773243] 0xffffa128c0033000-0xffffa128c0034000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0034000-0xffffa128c0035000           4K                               pte
+[    0.773243] 0xffffa128c0035000-0xffffa128c0036000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0036000-0xffffa128c0038000           8K                               pte
+[    0.773243] 0xffffa128c0038000-0xffffa128c003e000          24K     RW                     NX pte
+[    0.773243] 0xffffa128c003e000-0xffffa128c003f000           4K                               pte
+[    0.773243] 0xffffa128c003f000-0xffffa128c0040000           4K     RW                     NX pte
+[    0.773243] 0xffffa128c0040000-0xffffa128c0041000           4K                               pte
+[    0.773243] 0xffffa128c0041000-0xffffa128c0042000           4K     RW     PCD             NX pte
+[    0.773243] 0xffffa128c0042000-0xffffa128c0043000           4K                               pte
+[    0.773243] 0xffffa128c0043000-0xffffa128c0044000           4K     RW     PCD             NX pte
+[    0.773243] 0xffffa128c0044000-0xffffa128c0045000           4K                               pte
+[    0.773243] 0xffffa128c0045000-0xffffa128c0046000           4K     RW     PCD             NX pte
+[    0.773243] 0xffffa128c0046000-0xffffa128c0200000        1768K                               pte
+[    0.773243] 0xffffa128c0200000-0xffffa12900000000        1022M                               pmd
+[    0.773243] 0xffffa12900000000-0xffffa18000000000         348G                               pud
+[    0.773243] 0xffffa18000000000-0xffffe18000000000          64T                               pgd
+[    0.773243] 0xffffe18000000000-0xffffe1e400000000         400G                               pud
+[    0.773243] 0xffffe1e400000000-0xffffe1e402400000          36M     RW         PSE         NX pmd
+[    0.773243] 0xffffe1e402400000-0xffffe1e404000000          28M                               pmd
+[    0.773243] 0xffffe1e404000000-0xffffe1e411c00000         220M     RW         PSE         NX pmd
+[    0.773243] 0xffffe1e411c00000-0xffffe1e440000000         740M                               pmd
+[    0.773243] 0xffffe1e440000000-0xffffe20000000000         111G                               pud
+[    0.773243] 0xffffe20000000000-0xfffffe0000000000          28T                               pgd
+[    0.773243] ---[ CPU entry Area ]---
+[    0.773243] 0xfffffe0000000000-0xfffffe0000002000           8K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000002000-0xfffffe0000003000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000003000-0xfffffe0000008000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000008000-0xfffffe0000009000           4K                               pte
+[    0.773243] 0xfffffe0000009000-0xfffffe000000a000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000000a000-0xfffffe000000b000           4K                               pte
+[    0.773243] 0xfffffe000000b000-0xfffffe000000c000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000000c000-0xfffffe000000f000          12K                               pte
+[    0.773243] 0xfffffe000000f000-0xfffffe0000010000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000010000-0xfffffe0000011000           4K                               pte
+[    0.773243] 0xfffffe0000011000-0xfffffe0000012000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000012000-0xfffffe0000013000           4K                               pte
+[    0.773243] 0xfffffe0000013000-0xfffffe0000014000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000014000-0xfffffe0000015000           4K                               pte
+[    0.773243] 0xfffffe0000015000-0xfffffe0000016000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000016000-0xfffffe0000036000         128K                               pte
+[    0.773243] 0xfffffe0000036000-0xfffffe0000037000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000037000-0xfffffe0000038000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000038000-0xfffffe000003d000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe000003d000-0xfffffe000003e000           4K                               pte
+[    0.773243] 0xfffffe000003e000-0xfffffe000003f000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000003f000-0xfffffe0000040000           4K                               pte
+[    0.773243] 0xfffffe0000040000-0xfffffe0000041000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000041000-0xfffffe0000044000          12K                               pte
+[    0.773243] 0xfffffe0000044000-0xfffffe0000045000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000045000-0xfffffe0000046000           4K                               pte
+[    0.773243] 0xfffffe0000046000-0xfffffe0000047000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000047000-0xfffffe0000048000           4K                               pte
+[    0.773243] 0xfffffe0000048000-0xfffffe0000049000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000049000-0xfffffe000004a000           4K                               pte
+[    0.773243] 0xfffffe000004a000-0xfffffe000004b000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000004b000-0xfffffe000006b000         128K                               pte
+[    0.773243] 0xfffffe000006b000-0xfffffe000006c000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe000006c000-0xfffffe000006d000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000006d000-0xfffffe0000072000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000072000-0xfffffe0000073000           4K                               pte
+[    0.773243] 0xfffffe0000073000-0xfffffe0000074000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000074000-0xfffffe0000075000           4K                               pte
+[    0.773243] 0xfffffe0000075000-0xfffffe0000076000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000076000-0xfffffe0000079000          12K                               pte
+[    0.773243] 0xfffffe0000079000-0xfffffe000007a000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000007a000-0xfffffe000007b000           4K                               pte
+[    0.773243] 0xfffffe000007b000-0xfffffe000007c000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000007c000-0xfffffe000007d000           4K                               pte
+[    0.773243] 0xfffffe000007d000-0xfffffe000007e000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000007e000-0xfffffe000007f000           4K                               pte
+[    0.773243] 0xfffffe000007f000-0xfffffe0000080000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000080000-0xfffffe00000a0000         128K                               pte
+[    0.773243] 0xfffffe00000a0000-0xfffffe00000a1000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe00000a1000-0xfffffe00000a2000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000a2000-0xfffffe00000a7000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe00000a7000-0xfffffe00000a8000           4K                               pte
+[    0.773243] 0xfffffe00000a8000-0xfffffe00000a9000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000a9000-0xfffffe00000aa000           4K                               pte
+[    0.773243] 0xfffffe00000aa000-0xfffffe00000ab000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000ab000-0xfffffe00000ae000          12K                               pte
+[    0.773243] 0xfffffe00000ae000-0xfffffe00000af000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000af000-0xfffffe00000b0000           4K                               pte
+[    0.773243] 0xfffffe00000b0000-0xfffffe00000b1000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000b1000-0xfffffe00000b2000           4K                               pte
+[    0.773243] 0xfffffe00000b2000-0xfffffe00000b3000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000b3000-0xfffffe00000b4000           4K                               pte
+[    0.773243] 0xfffffe00000b4000-0xfffffe00000b5000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000b5000-0xfffffe00000d5000         128K                               pte
+[    0.773243] 0xfffffe00000d5000-0xfffffe00000d6000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe00000d6000-0xfffffe00000d7000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000d7000-0xfffffe00000dc000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe00000dc000-0xfffffe00000dd000           4K                               pte
+[    0.773243] 0xfffffe00000dd000-0xfffffe00000de000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000de000-0xfffffe00000df000           4K                               pte
+[    0.773243] 0xfffffe00000df000-0xfffffe00000e0000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000e0000-0xfffffe00000e3000          12K                               pte
+[    0.773243] 0xfffffe00000e3000-0xfffffe00000e4000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000e4000-0xfffffe00000e5000           4K                               pte
+[    0.773243] 0xfffffe00000e5000-0xfffffe00000e6000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000e6000-0xfffffe00000e7000           4K                               pte
+[    0.773243] 0xfffffe00000e7000-0xfffffe00000e8000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000e8000-0xfffffe00000e9000           4K                               pte
+[    0.773243] 0xfffffe00000e9000-0xfffffe00000ea000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe00000ea000-0xfffffe000010a000         128K                               pte
+[    0.773243] 0xfffffe000010a000-0xfffffe000010b000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe000010b000-0xfffffe000010c000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000010c000-0xfffffe0000111000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000111000-0xfffffe0000112000           4K                               pte
+[    0.773243] 0xfffffe0000112000-0xfffffe0000113000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000113000-0xfffffe0000114000           4K                               pte
+[    0.773243] 0xfffffe0000114000-0xfffffe0000115000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000115000-0xfffffe0000118000          12K                               pte
+[    0.773243] 0xfffffe0000118000-0xfffffe0000119000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000119000-0xfffffe000011a000           4K                               pte
+[    0.773243] 0xfffffe000011a000-0xfffffe000011b000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000011b000-0xfffffe000011c000           4K                               pte
+[    0.773243] 0xfffffe000011c000-0xfffffe000011d000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000011d000-0xfffffe000011e000           4K                               pte
+[    0.773243] 0xfffffe000011e000-0xfffffe000011f000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000011f000-0xfffffe000013f000         128K                               pte
+[    0.773243] 0xfffffe000013f000-0xfffffe0000140000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000140000-0xfffffe0000141000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000141000-0xfffffe0000146000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000146000-0xfffffe0000147000           4K                               pte
+[    0.773243] 0xfffffe0000147000-0xfffffe0000148000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000148000-0xfffffe0000149000           4K                               pte
+[    0.773243] 0xfffffe0000149000-0xfffffe000014a000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000014a000-0xfffffe000014d000          12K                               pte
+[    0.773243] 0xfffffe000014d000-0xfffffe000014e000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000014e000-0xfffffe000014f000           4K                               pte
+[    0.773243] 0xfffffe000014f000-0xfffffe0000150000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000150000-0xfffffe0000151000           4K                               pte
+[    0.773243] 0xfffffe0000151000-0xfffffe0000152000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000152000-0xfffffe0000153000           4K                               pte
+[    0.773243] 0xfffffe0000153000-0xfffffe0000154000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000154000-0xfffffe0000174000         128K                               pte
+[    0.773243] 0xfffffe0000174000-0xfffffe0000175000           4K     ro                 GLB NX pte
+[    0.773243] 0xfffffe0000175000-0xfffffe0000176000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000176000-0xfffffe000017b000          20K     ro                 GLB NX pte
+[    0.773243] 0xfffffe000017b000-0xfffffe000017c000           4K                               pte
+[    0.773243] 0xfffffe000017c000-0xfffffe000017d000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000017d000-0xfffffe000017e000           4K                               pte
+[    0.773243] 0xfffffe000017e000-0xfffffe000017f000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe000017f000-0xfffffe0000182000          12K                               pte
+[    0.773243] 0xfffffe0000182000-0xfffffe0000183000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000183000-0xfffffe0000184000           4K                               pte
+[    0.773243] 0xfffffe0000184000-0xfffffe0000185000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000185000-0xfffffe0000186000           4K                               pte
+[    0.773243] 0xfffffe0000186000-0xfffffe0000187000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000187000-0xfffffe0000188000           4K                               pte
+[    0.773243] 0xfffffe0000188000-0xfffffe0000189000           4K     RW                 GLB NX pte
+[    0.773243] 0xfffffe0000189000-0xfffffe00001a9000         128K                               pte
+[    0.773243] 0xfffffe00001a9000-0xfffffe0000200000         348K                               pte
+[    0.773243] 0xfffffe0000200000-0xfffffe0040000000        1022M                               pmd
+[    0.773243] 0xfffffe0040000000-0xfffffe8000000000         511G                               pud
+[    0.773243] 0xfffffe8000000000-0xffffff0000000000         512G                               pgd
+[    0.773243] ---[ ESPfix Area ]---
+[    0.773243] 0xffffff0000000000-0xffffff6000000000         384G                               pud
+[    0.773243] 0xffffff6000000000-0xffffff600000f000          60K                               pte
+[    0.773243] 0xffffff600000f000-0xffffff6000010000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000010000-0xffffff600001f000          60K                               pte
+[    0.773243] 0xffffff600001f000-0xffffff6000020000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000020000-0xffffff600002f000          60K                               pte
+[    0.773243] 0xffffff600002f000-0xffffff6000030000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000030000-0xffffff600003f000          60K                               pte
+[    0.773243] 0xffffff600003f000-0xffffff6000040000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000040000-0xffffff600004f000          60K                               pte
+[    0.773243] 0xffffff600004f000-0xffffff6000050000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000050000-0xffffff600005f000          60K                               pte
+[    0.773243] 0xffffff600005f000-0xffffff6000060000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000060000-0xffffff600006f000          60K                               pte
+[    0.773243] 0xffffff600006f000-0xffffff6000070000           4K     ro                 GLB NX pte
+[    0.773243] 0xffffff6000070000-0xffffff600007f000          60K                               pte
+[    0.773243] ... 131058 entries skipped ... 
+[    0.773243] ---[ EFI Runtime Services ]---
+[    0.773243] 0xffffffef00000000-0xfffffffec0000000          63G                               pud
+[    0.773243] 0xfffffffec0000000-0xfffffffee1400000         532M                               pmd
+[    0.773243] 0xfffffffee1400000-0xfffffffee1510000        1088K                               pte
+[    0.773243] 0xfffffffee1510000-0xfffffffee1530000         128K                               pte
+[    0.773243] 0xfffffffee1530000-0xfffffffee168f000        1404K                               pte
+[    0.773243] 0xfffffffee168f000-0xfffffffee1726000         604K                               pte
+[    0.773243] 0xfffffffee1726000-0xfffffffee18a8000        1544K                               pte
+[    0.773243] 0xfffffffee18a8000-0xfffffffee1a00000        1376K                               pte
+[    0.773243] 0xfffffffee1a00000-0xfffffffee2200000           8M                               pmd
+[    0.773243] 0xfffffffee2200000-0xfffffffee23aa000        1704K                               pte
+[    0.773243] 0xfffffffee23aa000-0xfffffffee23ab000           4K                               pte
+[    0.773243] 0xfffffffee23ab000-0xfffffffee23ac000           4K     RW                     x  pte
+[    0.773243] 0xfffffffee23ac000-0xfffffffee2400000         336K                               pte
+[    0.773243] 0xfffffffee2400000-0xfffffffee2600000           2M                               pmd
+[    0.773243] 0xfffffffee2600000-0xfffffffee2700000           1M                               pte
+[    0.773243] 0xfffffffee2700000-0xfffffffee2867000        1436K                               pte
+[    0.773243] 0xfffffffee2867000-0xfffffffee28b9000         328K                               pte
+[    0.773243] 0xfffffffee28b9000-0xfffffffee28eb000         200K                               pte
+[    0.773243] 0xfffffffee28eb000-0xfffffffee28f0000          20K                               pte
+[    0.773243] 0xfffffffee28f0000-0xfffffffee28f7000          28K                               pte
+[    0.773243] 0xfffffffee28f7000-0xfffffffee28fc000          20K                               pte
+[    0.773243] 0xfffffffee28fc000-0xfffffffee2903000          28K                               pte
+[    0.773243] 0xfffffffee2903000-0xfffffffee2908000          20K                               pte
+[    0.773243] 0xfffffffee2908000-0xfffffffee291f000          92K                               pte
+[    0.773243] 0xfffffffee291f000-0xfffffffee2921000           8K                               pte
+[    0.773243] 0xfffffffee2921000-0xfffffffee2925000          16K                               pte
+[    0.773243] 0xfffffffee2925000-0xfffffffee2934000          60K                               pte
+[    0.773243] 0xfffffffee2934000-0xfffffffee293b000          28K                               pte
+[    0.773243] 0xfffffffee293b000-0xfffffffee297c000         260K                               pte
+[    0.773243] 0xfffffffee297c000-0xfffffffee29b2000         216K                               pte
+[    0.773243] 0xfffffffee29b2000-0xfffffffee29b8000          24K                               pte
+[    0.773243] 0xfffffffee29b8000-0xfffffffee29c1000          36K                               pte
+[    0.773243] 0xfffffffee29c1000-0xfffffffee29c2000           4K                               pte
+[    0.773243] 0xfffffffee29c2000-0xfffffffee29cd000          44K                               pte
+[    0.773243] 0xfffffffee29cd000-0xfffffffee29d6000          36K                               pte
+[    0.773243] 0xfffffffee29d6000-0xfffffffee29d7000           4K                               pte
+[    0.773243] 0xfffffffee29d7000-0xfffffffee29d8000           4K                               pte
+[    0.773243] 0xfffffffee29d8000-0xfffffffee2a2c000         336K                               pte
+[    0.773243] 0xfffffffee2a2c000-0xfffffffee2a30000          16K                               pte
+[    0.773243] 0xfffffffee2a30000-0xfffffffee2a32000           8K                               pte
+[    0.773243] 0xfffffffee2a32000-0xfffffffee2a34000           8K                               pte
+[    0.773243] 0xfffffffee2a34000-0xfffffffee2a35000           4K                               pte
+[    0.773243] 0xfffffffee2a35000-0xfffffffee2a38000          12K                               pte
+[    0.773243] 0xfffffffee2a38000-0xfffffffee2a3c000          16K                               pte
+[    0.773243] 0xfffffffee2a3c000-0xfffffffee2a58000         112K                               pte
+[    0.773243] 0xfffffffee2a58000-0xfffffffee2a5a000           8K                               pte
+[    0.773243] 0xfffffffee2a5a000-0xfffffffee2a5c000           8K                               pte
+[    0.773243] 0xfffffffee2a5c000-0xfffffffee2a5e000           8K                               pte
+[    0.773243] 0xfffffffee2a5e000-0xfffffffee2a60000           8K                               pte
+[    0.773243] 0xfffffffee2a60000-0xfffffffee2a62000           8K                               pte
+[    0.773243] 0xfffffffee2a62000-0xfffffffee2a64000           8K                               pte
+[    0.773243] 0xfffffffee2a64000-0xfffffffee2a66000           8K                               pte
+[    0.773243] 0xfffffffee2a66000-0xfffffffee2a68000           8K                               pte
+[    0.773243] 0xfffffffee2a68000-0xfffffffee2a6a000           8K                               pte
+[    0.773243] 0xfffffffee2a6a000-0xfffffffee2a6c000           8K                               pte
+[    0.773243] 0xfffffffee2a6c000-0xfffffffee2a6e000           8K                               pte
+[    0.773243] 0xfffffffee2a6e000-0xfffffffee2a70000           8K                               pte
+[    0.773243] 0xfffffffee2a70000-0xfffffffee2a72000           8K                               pte
+[    0.773243] 0xfffffffee2a72000-0xfffffffee2a74000           8K                               pte
+[    0.773243] 0xfffffffee2a74000-0xfffffffee2a76000           8K                               pte
+[    0.773243] 0xfffffffee2a76000-0xfffffffee2a78000           8K                               pte
+[    0.773243] 0xfffffffee2a78000-0xfffffffee2a7a000           8K                               pte
+[    0.773243] 0xfffffffee2a7a000-0xfffffffee2a7c000           8K                               pte
+[    0.773243] 0xfffffffee2a7c000-0xfffffffee2a7e000           8K                               pte
+[    0.773243] 0xfffffffee2a7e000-0xfffffffee2a80000           8K                               pte
+[    0.773243] 0xfffffffee2a80000-0xfffffffee2a82000           8K                               pte
+[    0.773243] 0xfffffffee2a82000-0xfffffffee2a84000           8K                               pte
+[    0.773243] 0xfffffffee2a84000-0xfffffffee2a87000          12K                               pte
+[    0.773243] 0xfffffffee2a87000-0xfffffffee2a88000           4K                               pte
+[    0.773243] 0xfffffffee2a88000-0xfffffffee2a94000          48K                               pte
+[    0.773243] 0xfffffffee2a94000-0xfffffffee2a99000          20K                               pte
+[    0.773243] 0xfffffffee2a99000-0xfffffffee2a9d000          16K                               pte
+[    0.773243] 0xfffffffee2a9d000-0xfffffffee2a9e000           4K                               pte
+[    0.773243] 0xfffffffee2a9e000-0xfffffffee2aa0000           8K                               pte
+[    0.773243] 0xfffffffee2aa0000-0xfffffffee2aa6000          24K                               pte
+[    0.773243] 0xfffffffee2aa6000-0xfffffffee2aac000          24K                               pte
+[    0.773243] 0xfffffffee2aac000-0xfffffffee2ab1000          20K                               pte
+[    0.773243] 0xfffffffee2ab1000-0xfffffffee2ab2000           4K                               pte
+[    0.773243] 0xfffffffee2ab2000-0xfffffffee2ab4000           8K                               pte
+[    0.773243] 0xfffffffee2ab4000-0xfffffffee2ab6000           8K                               pte
+[    0.773243] 0xfffffffee2ab6000-0xfffffffee2ab7000           4K                               pte
+[    0.773243] 0xfffffffee2ab7000-0xfffffffee2ab9000           8K                               pte
+[    0.773243] 0xfffffffee2ab9000-0xfffffffee2ac2000          36K                               pte
+[    0.773243] 0xfffffffee2ac2000-0xfffffffee2ac4000           8K                               pte
+[    0.773243] 0xfffffffee2ac4000-0xfffffffee2ac5000           4K                               pte
+[    0.773243] 0xfffffffee2ac5000-0xfffffffee2ac6000           4K                               pte
+[    0.773243] 0xfffffffee2ac6000-0xfffffffee2ad3000          52K                               pte
+[    0.773243] 0xfffffffee2ad3000-0xfffffffee2b24000         324K                               pte
+[    0.773243] 0xfffffffee2b24000-0xfffffffee2b29000          20K                               pte
+[    0.773243] 0xfffffffee2b29000-0xfffffffee2b2c000          12K                               pte
+[    0.773243] 0xfffffffee2b2c000-0xfffffffee2b2f000          12K                               pte
+[    0.773243] 0xfffffffee2b2f000-0xfffffffee2b32000          12K                               pte
+[    0.773243] 0xfffffffee2b32000-0xfffffffee2b35000          12K                               pte
+[    0.773243] 0xfffffffee2b35000-0xfffffffee2b38000          12K                               pte
+[    0.773243] 0xfffffffee2b38000-0xfffffffee2b3e000          24K                               pte
+[    0.773243] 0xfffffffee2b3e000-0xfffffffee2b49000          44K                               pte
+[    0.773243] 0xfffffffee2b49000-0xfffffffee2b4c000          12K                               pte
+[    0.773243] 0xfffffffee2b4c000-0xfffffffee2b4d000           4K                               pte
+[    0.773243] 0xfffffffee2b4d000-0xfffffffee2b5f000          72K                               pte
+[    0.773243] 0xfffffffee2b5f000-0xfffffffee2b60000           4K                               pte
+[    0.773243] 0xfffffffee2b60000-0xfffffffee2b64000          16K                               pte
+[    0.773243] 0xfffffffee2b64000-0xfffffffee2b65000           4K                               pte
+[    0.773243] 0xfffffffee2b65000-0xfffffffee2b67000           8K                               pte
+[    0.773243] 0xfffffffee2b67000-0xfffffffee2b68000           4K                               pte
+[    0.773243] 0xfffffffee2b68000-0xfffffffee2b69000           4K                               pte
+[    0.773243] 0xfffffffee2b69000-0xfffffffee2b6a000           4K                               pte
+[    0.773243] 0xfffffffee2b6a000-0xfffffffee2b74000          40K                               pte
+[    0.773243] 0xfffffffee2b74000-0xfffffffee2b79000          20K                               pte
+[    0.773243] 0xfffffffee2b79000-0xfffffffee2b80000          28K                               pte
+[    0.773243] 0xfffffffee2b80000-0xfffffffee2b91000          68K                               pte
+[    0.773243] 0xfffffffee2b91000-0xfffffffee2b94000          12K                               pte
+[    0.773243] 0xfffffffee2b94000-0xfffffffee2cf9000        1428K                               pte
+[    0.773243] 0xfffffffee2cf9000-0xfffffffee2e00000        1052K                               pte
+[    0.773243] 0xfffffffee2e00000-0xfffffffeef400000         198M                               pmd
+[    0.773243] 0xfffffffeef400000-0xfffffffeef50f000        1084K                               pte
+[    0.773243] 0xfffffffeef50f000-0xfffffffeef515000          24K                               pte
+[    0.773243] 0xfffffffeef515000-0xfffffffeef600000         940K                               pte
+[    0.773243] 0xfffffffeef600000-0xfffffffeefc00000           6M                               pmd
+[    0.773243] 0xfffffffeefc00000-0xfffffffeefc0f000          60K                               pte
+[    0.773243] 0xfffffffeefc0f000-0xfffffffeefd7f000        1472K     RW                     x  pte
+[    0.773243] 0xfffffffeefd7f000-0xfffffffeefdff000         512K                               pte
+[    0.773243] 0xfffffffeefdff000-0xfffffffeefe00000           4K                               pte
+[    0.773243] 0xfffffffeefe00000-0xfffffffeffe00000         256M     RW     PCD PSE         x  pmd
+[    0.773243] 0xfffffffeffe00000-0xfffffffeffe10000          64K                               pte
+[    0.773243] 0xfffffffeffe10000-0xfffffffeffe11000           4K     RW     PCD             x  pte
+[    0.773243] 0xfffffffeffe11000-0xfffffffefff5b000        1320K                               pte
+[    0.773243] 0xfffffffefff5b000-0xfffffffefff8a000         188K     RW     PCD             x  pte
+[    0.773243] 0xfffffffefff8a000-0xffffffff00000000         472K                               pte
+[    0.773243] 0xffffffff00000000-0xffffffff80000000           2G                               pud
+[    0.773243] ---[ High Kernel Mapping ]---
+[    0.773243] 0xffffffff80000000-0xffffffffba000000         928M                               pmd
+[    0.773243] 0xffffffffba000000-0xffffffffbac00000          12M     RW         PSE         x  pmd
+[    0.773243] 0xffffffffbac00000-0xffffffffbae00000           2M     RW         PSE     GLB x  pmd
+[    0.773243] 0xffffffffbae00000-0xffffffffbde00000          48M     RW         PSE         x  pmd
+[    0.773243] 0xffffffffbde00000-0xffffffffc0000000          34M                               pmd
+[    0.773243] ---[ Modules ]---
+[    0.773243] 0xffffffffc0000000-0xffffffffff000000        1008M                               pmd
+[    0.773243] ---[ End Modules ]---
+[    0.773243] 0xffffffffff000000-0xffffffffff200000           2M                               pmd
+[    0.773243] 0xffffffffff200000-0xffffffffff578000        3552K                               pte
+[    0.773243] ---[ Fixmap Area ]---
+[    0.773243] 0xffffffffff578000-0xffffffffff5fb000         524K                               pte
+[    0.773243] 0xffffffffff5fb000-0xffffffffff5fd000           8K     RW PWT PCD             NX pte
+[    0.773243] 0xffffffffff5fd000-0xffffffffff600000          12K                               pte
+[    0.773243] 0xffffffffff600000-0xffffffffff601000           4K USR ro                     NX pte
+[    0.773243] 0xffffffffff601000-0xffffffffff800000        2044K                               pte
+[    0.773243] 0xffffffffff800000-0x0000000000000000           8M                               pmd
+[    0.773243] LSM: Security Framework initializing
+[    0.773243] Yama: becoming mindful.
+[    0.773243] SELinux:  Initializing.
+[    0.773243] *** VALIDATE SELinux ***
+[    0.773243] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.773243] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.773243] *** VALIDATE tmpfs ***
+[    0.773243] *** VALIDATE proc ***
+[    0.773243] *** VALIDATE cgroup1 ***
+[    0.773243] *** VALIDATE cgroup2 ***
+[    0.773243] mce: CPU0: Thermal monitoring enabled (TM1)
+[    0.773243] process: using mwait in idle threads
+[    0.773243] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.773243] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.773243] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.773243] Spectre V2 : Mitigation: Full generic retpoline
+[    0.773243] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.773243] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.773243] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.773243] Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
+[    0.773243] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.773243] MDS: Mitigation: Clear CPU buffers
+[    0.773243] Freeing SMP alternatives memory: 36K
+[    0.773243] TSC deadline timer enabled
+[    0.773243] smpboot: CPU0: Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz (family: 0x6, model: 0x8e, stepping: 0xa)
+[    0.773243] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.773243] ... version:                4
+[    0.773243] ... bit width:              48
+[    0.773243] ... generic registers:      4
+[    0.773243] ... value mask:             0000ffffffffffff
+[    0.773243] ... max period:             00007fffffffffff
+[    0.773243] ... fixed-purpose events:   3
+[    0.773243] ... event mask:             000000070000000f
+[    0.773243] rcu: Hierarchical SRCU implementation.
+[    0.773712] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.773928] smp: Bringing up secondary CPUs ...
+[    0.774214] x86: Booting SMP configuration:
+[    0.774218] .... node  #0, CPUs:      #1 #2 #3 #4
+[    0.776894] MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    0.776894]  #5 #6 #7
+[    0.778894] smp: Brought up 1 node, 8 CPUs
+[    0.778894] smpboot: Max logical packages: 1
+[    0.778894] smpboot: Total of 8 processors activated (22399.13 BogoMIPS)
+[    0.779922] devtmpfs: initialized
+[    0.779922] x86/mm: Memory block size: 128MB
+[    0.786176] PM: Registering ACPI NVS region [mem 0x0009e000-0x0009ffff] (8192 bytes)
+[    0.786176] PM: Registering ACPI NVS region [mem 0x761aa000-0x761aafff] (4096 bytes)
+[    0.786176] PM: Registering ACPI NVS region [mem 0x88edf000-0x88f9efff] (786432 bytes)
+[    0.788704] DMA-API: preallocated 65536 debug entries
+[    0.788706] DMA-API: debugging enabled by kernel config
+[    0.788709] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.788716] futex hash table entries: 2048 (order: 6, 262144 bytes, linear)
+[    0.789026] pinctrl core: initialized pinctrl subsystem
+
+[    0.789352] *************************************************************
+[    0.789353] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE    **
+[    0.789354] **                                                         **
+[    0.789355] **  IOMMU DebugFS SUPPORT HAS BEEN ENABLED IN THIS KERNEL  **
+[    0.789356] **                                                         **
+[    0.789357] ** This means that this kernel is built to expose internal **
+[    0.789358] ** IOMMU data structures, which may compromise security on **
+[    0.789359] ** your system.                                            **
+[    0.789360] **                                                         **
+[    0.789361] ** If you see this message and you are not debugging the   **
+[    0.789362] ** kernel, report this immediately to your vendor!         **
+[    0.789363] **                                                         **
+[    0.789364] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE    **
+[    0.789365] *************************************************************
+[    0.789537] PM: RTC time: 19:51:39, date: 10020-01-28
+[    0.789549] thermal_sys: Registered thermal governor 'fair_share'
+[    0.789550] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.789552] thermal_sys: Registered thermal governor 'step_wise'
+[    0.789553] thermal_sys: Registered thermal governor 'user_space'
+[    0.789804] NET: Registered protocol family 16
+[    0.790072] audit: initializing netlink subsys (disabled)
+[    0.790136] audit: type=2000 audit(0.017:1): state=initialized audit_enabled=0 res=1
+[    0.790459] cpuidle: using governor menu
+[    0.790530] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.790530] ACPI: bus type PCI registered
+[    0.790530] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.790530] PCI: MMCONFIG for domain 0000 [bus 00-78] at [mem 0xe0000000-0xe78fffff] (base 0xe0000000)
+[    0.790530] PCI: MMCONFIG at [mem 0xe0000000-0xe78fffff] reserved in E820
+[    0.790530] PCI: Using configuration type 1 for base access
+[    0.793681] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.799317] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.799317] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.882246] cryptomgr_test (59) used greatest stack depth: 13976 bytes left
+[    0.883447] kworker/u16:0 (62) used greatest stack depth: 13192 bytes left
+[    0.933757] cryptd: max_cpu_qlen set to 1000
+[    0.945418] alg: No test for 842 (842-generic)
+[    0.945443] alg: No test for 842 (842-scomp)
+[    0.957605] ACPI: Disabled all _OSI OS vendors
+[    0.957605] ACPI: Added _OSI(Module Device)
+[    0.957605] ACPI: Added _OSI(Processor Device)
+[    0.957605] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.957605] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.957605] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.957605] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.957605] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.957605] ACPI: Added _OSI(Darwin)
+[    1.019799] ACPI: 13 ACPI AML tables successfully acquired and loaded
+[    1.027010] ACPI: EC: EC started
+[    1.027017] ACPI: EC: interrupt blocked
+[    1.040891] ACPI: \: Used as first EC
+[    1.040897] ACPI: \: GPE=0x6e, IRQ=-1, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.040900] ACPI: EC: Boot ECDT EC used to handle transactions
+[    1.041965] ACPI: BIOS _OSI(Darwin) query honored via DMI
+[    1.047409] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    1.049059] ACPI: Dynamic OEM Table Load:
+[    1.049125] ACPI: SSDT 0xFFFF9049D996E300 0000F4 (v02 PmRef  Cpu0Psd  00003000 INTL 20160930)
+[    1.055520] ACPI: \_PR_.CPU0: _OSC native thermal LVT Acked
+[    1.057079] ACPI BIOS Error (bug): AE_AML_BUFFER_LIMIT, Field [CDW3] at bit offset/length 64/32 exceeds size of target Buffer (64 bits) (20191018/dsopcode-198)
+[    1.057094] ACPI Error: Aborting method \_SB._OSC due to previous error (AE_AML_BUFFER_LIMIT) (20191018/psparse-529)
+[    1.058653] ACPI: Dynamic OEM Table Load:
+[    1.058668] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9049D95D9800 Table is already loaded (20191018/tbdata-520)
+[    1.058688] ACPI Error: Aborting method \_PR.CPU0.GCAP due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.058747] ACPI Error: Aborting method \_PR.CPU0._PDC due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.058758] ACPI: Marking method _PDC as Serialized because of AE_ALREADY_EXISTS error
+[    1.060173] ACPI: Dynamic OEM Table Load:
+[    1.060188] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9049DA5D6800 Table is already loaded (20191018/tbdata-520)
+[    1.060208] ACPI Error: Aborting method \_PR.CPU1.APPT due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.060262] ACPI Error: Aborting method \_PR.CPU1.GCAP due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.060285] ACPI Error: Aborting method \_PR.CPU1._PDC due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.060297] ACPI: Marking method _PDC as Serialized because of AE_ALREADY_EXISTS error
+[    1.062030] ACPI: Dynamic OEM Table Load:
+[    1.062063] ACPI: SSDT 0xFFFF9049DA5EA000 000AB0 (v02 PmRef  ApPsd    00003000 INTL 20160930)
+[    1.072182] ACPI: Dynamic OEM Table Load:
+[    1.072197] ACPI Error: AE_ALREADY_EXISTS, SSDT 0xFFFF9049D95D9800 Table is already loaded (20191018/tbdata-520)
+[    1.072217] ACPI Error: Aborting method \_PR.CPU1.APCT due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.072286] ACPI Error: Aborting method \_PR.CPU2.GCAP due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.072310] ACPI Error: Aborting method \_PR.CPU2._PDC due to previous error (AE_ALREADY_EXISTS) (20191018/psparse-529)
+[    1.072322] ACPI: Marking method _PDC as Serialized because of AE_ALREADY_EXISTS error
+[    1.080849] ACPI: Interpreter enabled
+[    1.080940] ACPI: (supports S0 S3 S4 S5)
+[    1.080945] ACPI: Using IOAPIC for interrupt routing
+[    1.081046] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    1.082799] ACPI: Enabled 6 GPEs in block 00 to 7F
+[    1.099231] ACPI: \_SB_.PCI0.RP01.ARPT: [Firmware Info]: skipped 1 properties: wrong type
+[    1.171263] ACPI: \_SB_.AMFM: [Firmware Info]: skipped 1 properties: wrong type
+[    1.172024] ACPI: \_SB_.WLAN: [Firmware Info]: skipped 1 properties: wrong type
+[    1.176534] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.176546] acpi PNP0A08:00: _OSC: OS assumes control of [PCIeHotplug SHPCHotplug AER PCIeCapability LTR]
+[    1.176630] acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-78] only partially covers this bridge
+[    1.178666] PCI host bridge to bus 0000:00
+[    1.178672] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    1.178677] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.178681] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    1.178684] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+[    1.178688] pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+[    1.178692] pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+[    1.178695] pci_bus 0000:00: root bus resource [mem 0x000cc000-0x000cffff window]
+[    1.178699] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+[    1.178703] pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+[    1.178706] pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+[    1.178710] pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+[    1.178714] pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff window]
+[    1.178717] pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff window]
+[    1.178721] pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000ebfff window]
+[    1.178725] pci_bus 0000:00: root bus resource [mem 0x000ec000-0x000effff window]
+[    1.178728] pci_bus 0000:00: root bus resource [mem 0x000f0000-0x000fffff window]
+[    1.178732] pci_bus 0000:00: root bus resource [mem 0x90000000-0xfeafffff window]
+[    1.178736] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[    1.178741] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.178797] pci 0000:00:00.0: [8086:3ed0] type 00 class 0x060000
+[    1.179592] pci 0000:00:02.0: [8086:3ea6] type 00 class 0x030000
+[    1.179618] pci 0000:00:02.0: reg 0x10: [mem 0x90000000-0x90ffffff 64bit]
+[    1.179632] pci 0000:00:02.0: reg 0x18: [mem 0xa0000000-0xafffffff 64bit pref]
+[    1.179642] pci 0000:00:02.0: reg 0x20: [io  0x3000-0x303f]
+[    1.179680] pci 0000:00:02.0: BAR 2: assigned to efifb
+[    1.180499] pci 0000:00:12.0: [8086:9df9] type 00 class 0x118000
+[    1.180540] pci 0000:00:12.0: reg 0x10: [mem 0x91a16000-0x91a16fff 64bit]
+[    1.181044] pci 0000:00:14.0: [8086:9ded] type 00 class 0x0c0330
+[    1.181078] pci 0000:00:14.0: reg 0x10: [mem 0x91a00000-0x91a0ffff 64bit]
+[    1.181187] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    1.181695] pci 0000:00:14.2: [8086:9def] type 00 class 0x050000
+[    1.181728] pci 0000:00:14.2: reg 0x10: [mem 0x91a14000-0x91a15fff 64bit]
+[    1.181745] pci 0000:00:14.2: reg 0x18: [mem 0x91a17000-0x91a17fff 64bit]
+[    1.182192] pci 0000:00:16.0: [8086:9de0] type 00 class 0x078000
+[    1.182235] pci 0000:00:16.0: reg 0x10: [mem 0x91a18000-0x91a18fff 64bit]
+[    1.182375] pci 0000:00:16.0: PME# supported from D3hot
+[    1.182952] pci 0000:00:1c.0: [8086:9dba] type 01 class 0x060400
+[    1.183115] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    1.183159] pci 0000:00:1c.0: PTM enabled (root), 4ns granularity
+[    1.183847] pci 0000:00:1c.4: [8086:9dbc] type 01 class 0x060400
+[    1.183999] pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+[    1.184033] pci 0000:00:1c.4: PTM enabled (root), 4ns granularity
+[    1.184664] pci 0000:00:1d.0: [8086:9db4] type 01 class 0x060400
+[    1.184831] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    1.184873] pci 0000:00:1d.0: PTM enabled (root), 4ns granularity
+[    1.185732] pci 0000:00:1e.0: [8086:9da8] type 00 class 0x078000
+[    1.186153] pci 0000:00:1e.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    1.187787] pci 0000:00:1f.0: [8086:9d84] type 00 class 0x060100
+[    1.188359] pci 0000:00:1f.3: [8086:9dc8] type 00 class 0x040300
+[    1.188435] pci 0000:00:1f.3: reg 0x10: [mem 0x91a10000-0x91a13fff 64bit]
+[    1.188501] pci 0000:00:1f.3: reg 0x20: [mem 0x00000000-0x000fffff 64bit]
+[    1.188647] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    1.189208] pci 0000:00:1f.4: [8086:9da3] type 00 class 0x0c0500
+[    1.189304] pci 0000:00:1f.4: reg 0x10: [mem 0x91a1a000-0x91a1a0ff 64bit]
+[    1.189376] pci 0000:00:1f.4: reg 0x20: [io  0x3040-0x305f]
+[    1.189867] pci 0000:00:1f.5: [8086:9da4] type 00 class 0x0c8000
+[    1.189893] pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+[    1.190792] pci 0000:01:00.0: [14e4:4488] type 00 class 0x028000
+[    1.190839] pci 0000:01:00.0: reg 0x10: [mem 0x91800000-0x9180ffff 64bit]
+[    1.190858] pci 0000:01:00.0: reg 0x18: [mem 0x91000000-0x913fffff 64bit]
+[    1.191136] pci 0000:01:00.0: supports D1 D2
+[    1.191139] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.191874] pci 0000:01:00.1: [14e4:5fa0] type 00 class 0x028000
+[    1.191917] pci 0000:01:00.1: reg 0x10: [mem 0x91810000-0x91817fff 64bit]
+[    1.191936] pci 0000:01:00.1: reg 0x18: [mem 0x91400000-0x917fffff 64bit]
+[    1.192211] pci 0000:01:00.1: supports D1 D2
+[    1.192215] pci 0000:01:00.1: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.192909] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    1.192922] pci 0000:00:1c.0:   bridge window [mem 0x91000000-0x918fffff]
+[    1.193164] pci 0000:03:00.0: [8086:15ea] type 01 class 0x060400
+[    1.193259] pci 0000:03:00.0: enabling Extended Tags
+[    1.193417] pci 0000:03:00.0: supports D1 D2
+[    1.193420] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.193521] pci 0000:03:00.0: PTM enabled, 4ns granularity
+[    1.197306] pci 0000:00:1c.4: PCI bridge to [bus 03-78]
+[    1.197313] pci 0000:00:1c.4:   bridge window [io  0x4000-0x7fff]
+[    1.197320] pci 0000:00:1c.4:   bridge window [mem 0x91b00000-0x9fcfffff]
+[    1.197328] pci 0000:00:1c.4:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.198120] pci 0000:04:00.0: [8086:15ea] type 01 class 0x060400
+[    1.198217] pci 0000:04:00.0: enabling Extended Tags
+[    1.198394] pci 0000:04:00.0: supports D1 D2
+[    1.198398] pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.199010] pci 0000:04:01.0: [8086:15ea] type 01 class 0x060400
+[    1.199107] pci 0000:04:01.0: enabling Extended Tags
+[    1.199277] pci 0000:04:01.0: supports D1 D2
+[    1.199280] pci 0000:04:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.199741] pci 0000:04:02.0: [8086:15ea] type 01 class 0x060400
+[    1.199836] pci 0000:04:02.0: enabling Extended Tags
+[    1.200000] pci 0000:04:02.0: supports D1 D2
+[    1.200003] pci 0000:04:02.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.200611] pci 0000:04:04.0: [8086:15ea] type 01 class 0x060400
+[    1.200708] pci 0000:04:04.0: enabling Extended Tags
+[    1.200877] pci 0000:04:04.0: supports D1 D2
+[    1.200880] pci 0000:04:04.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.201383] pci 0000:03:00.0: PCI bridge to [bus 04-78]
+[    1.201394] pci 0000:03:00.0:   bridge window [io  0x4000-0x7fff]
+[    1.201401] pci 0000:03:00.0:   bridge window [mem 0x91b00000-0x9fcfffff]
+[    1.201411] pci 0000:03:00.0:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.201658] pci 0000:05:00.0: [8086:15eb] type 00 class 0x088000
+[    1.201704] pci 0000:05:00.0: reg 0x10: [mem 0x91c00000-0x91c3ffff]
+[    1.201721] pci 0000:05:00.0: reg 0x14: [mem 0x91c40000-0x91c40fff]
+[    1.201805] pci 0000:05:00.0: enabling Extended Tags
+[    1.201983] pci 0000:05:00.0: supports D1 D2
+[    1.201986] pci 0000:05:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.202779] pci 0000:04:00.0: PCI bridge to [bus 05]
+[    1.202794] pci 0000:04:00.0:   bridge window [mem 0x91c00000-0x91cfffff]
+[    1.203095] pci 0000:04:01.0: PCI bridge to [bus 07-3f]
+[    1.203105] pci 0000:04:01.0:   bridge window [io  0x4000-0x5fff]
+[    1.203112] pci 0000:04:01.0:   bridge window [mem 0x91d00000-0x98cfffff]
+[    1.203122] pci 0000:04:01.0:   bridge window [mem 0xb1300000-0xb82fffff 64bit pref]
+[    1.203341] pci 0000:06:00.0: [8086:15ec] type 00 class 0x0c0330
+[    1.203386] pci 0000:06:00.0: reg 0x10: [mem 0x00000000-0x0000ffff]
+[    1.203465] pci 0000:06:00.0: enabling Extended Tags
+[    1.203655] pci 0000:06:00.0: supports D1 D2
+[    1.203658] pci 0000:06:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.203777] pci 0000:06:00.0: 8.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s x4 link at 0000:04:02.0 (capable of 31.504 Gb/s with 8 GT/s x4 link)
+[    1.204453] pci 0000:04:02.0: PCI bridge to [bus 06]
+[    1.204468] pci 0000:04:02.0:   bridge window [mem 0x91b00000-0x91bfffff]
+[    1.204796] pci 0000:04:04.0: PCI bridge to [bus 40-78]
+[    1.204806] pci 0000:04:04.0:   bridge window [io  0x6000-0x7fff]
+[    1.204813] pci 0000:04:04.0:   bridge window [mem 0x98d00000-0x9fcfffff]
+[    1.204823] pci 0000:04:04.0:   bridge window [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    1.205207] pci 0000:02:00.0: [106b:2005] type 00 class 0x018002
+[    1.205255] pci 0000:02:00.0: reg 0x10: [mem 0xb0000000-0xb03fffff 64bit pref]
+[    1.205276] pci 0000:02:00.0: reg 0x18: [mem 0xb1000000-0xb107ffff 64bit pref]
+[    1.205296] pci 0000:02:00.0: reg 0x20: [mem 0xb1200000-0xb120ffff 64bit pref]
+[    1.205424] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    1.205955] pci 0000:02:00.1: [106b:1801] type 00 class 0x000000
+[    1.205995] pci 0000:02:00.1: reg 0x10: [mem 0xb0400000-0xb07fffff 64bit pref]
+[    1.206016] pci 0000:02:00.1: reg 0x18: [mem 0xb1080000-0xb10fffff 64bit pref]
+[    1.206037] pci 0000:02:00.1: reg 0x20: [mem 0xb1210000-0xb121ffff 64bit pref]
+[    1.206156] pci 0000:02:00.1: PME# supported from D0 D3hot D3cold
+[    1.206671] pci 0000:02:00.2: [106b:1802] type 00 class 0x000000
+[    1.206711] pci 0000:02:00.2: reg 0x10: [mem 0xb0800000-0xb0bfffff 64bit pref]
+[    1.206732] pci 0000:02:00.2: reg 0x18: [mem 0xb1100000-0xb117ffff 64bit pref]
+[    1.206752] pci 0000:02:00.2: reg 0x20: [mem 0xb1220000-0xb122ffff 64bit pref]
+[    1.206872] pci 0000:02:00.2: PME# supported from D0 D3hot D3cold
+[    1.207365] pci 0000:02:00.3: [106b:1803] type 00 class 0x040100
+[    1.207401] pci 0000:02:00.3: reg 0x10: [mem 0xb0c00000-0xb0ffffff 64bit pref]
+[    1.207419] pci 0000:02:00.3: reg 0x18: [mem 0xb1180000-0xb11fffff 64bit pref]
+[    1.207436] pci 0000:02:00.3: reg 0x20: [mem 0xb1230000-0xb123ffff 64bit pref]
+[    1.207553] pci 0000:02:00.3: PME# supported from D0 D3hot D3cold
+[    1.208050] pci 0000:00:1d.0: PCI bridge to [bus 02]
+[    1.208064] pci 0000:00:1d.0:   bridge window [mem 0xb0000000-0xb12fffff 64bit pref]
+[    1.214270] ERROR: Unable to locate IOAPIC for GSI 34
+[    1.214768] ACPI: PCI Interrupt Link [LNKA] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    1.215063] ACPI: PCI Interrupt Link [LNKB] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    1.215357] ACPI: PCI Interrupt Link [LNKC] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    1.215645] ACPI: PCI Interrupt Link [LNKD] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    1.215935] ACPI: PCI Interrupt Link [LNKE] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    1.216218] ACPI: PCI Interrupt Link [LNKF] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    1.216512] ACPI: PCI Interrupt Link [LNKG] (IRQs 1 3 4 5 6 7 10 12 14 15) *0
+[    1.216796] ACPI: PCI Interrupt Link [LNKH] (IRQs 1 3 4 5 6 7 11 12 14 15) *0
+[    1.218548] ACPI: EC: interrupt unblocked
+[    1.218548] ACPI: EC: event unblocked
+[    1.218777] ACPI: \_SB_.PCI0.LPCB.EC__: GPE=0x6e, IRQ=-1, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.218784] ACPI: \_SB_.PCI0.LPCB.EC__: Boot DSDT EC used to handle transactions and events
+[    1.220066] iommu: Default domain type: Translated 
+[    1.220418] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    1.220418] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    1.220418] pci 0000:00:02.0: vgaarb: bridge control possible
+[    1.220418] vgaarb: loaded
+[    1.220677] SCSI subsystem initialized
+[    1.221306] libata version 3.00 loaded.
+[    1.221437] ACPI: bus type USB registered
+[    1.221536] usbcore: registered new interface driver usbfs
+[    1.221589] usbcore: registered new interface driver hub
+[    1.221711] usbcore: registered new device driver usb
+[    1.221887] pps_core: LinuxPPS API ver. 1 registered
+[    1.221890] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.221902] PTP clock support registered
+[    1.221914] EDAC MC: Ver: 3.0.0
+[    1.222701] Registered efivars operations
+[    1.222701] PCI: Using ACPI for IRQ routing
+[    1.228282] PCI: pci_cache_line_size set to 64 bytes
+[    1.228775] e820: reserve RAM buffer [mem 0x0009d000-0x0009ffff]
+[    1.228790] e820: reserve RAM buffer [mem 0x75326000-0x77ffffff]
+[    1.228795] e820: reserve RAM buffer [mem 0x761aa000-0x77ffffff]
+[    1.228800] e820: reserve RAM buffer [mem 0x7650a698-0x77ffffff]
+[    1.228804] e820: reserve RAM buffer [mem 0x7650e000-0x77ffffff]
+[    1.228808] e820: reserve RAM buffer [mem 0x88c0f000-0x8bffffff]
+[    1.228812] e820: reserve RAM buffer [mem 0x89000000-0x8bffffff]
+[    1.228816] e820: reserve RAM buffer [mem 0x46e000000-0x46fffffff]
+[    1.229572] NetLabel: Initializing
+[    1.229576] NetLabel:  domain hash size = 128
+[    1.229578] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.229642] NetLabel:  unlabeled traffic allowed by default
+[    1.230412] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    1.230420] hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+[    1.233603] clocksource: Switched to clocksource tsc-early
+[    1.351782] *** VALIDATE bpf ***
+[    1.352454] VFS: Disk quotas dquot_6.6.0
+[    1.352504] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.352617] *** VALIDATE ramfs ***
+[    1.352629] *** VALIDATE hugetlbfs ***
+[    1.352854] pnp: PnP ACPI init
+[    1.356921] system 00:00: [io  0xffff] has been reserved
+[    1.356927] system 00:00: [io  0x1800-0x18fe] has been reserved
+[    1.356933] system 00:00: [io  0x0800-0x087f] has been reserved
+[    1.356971] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    1.357836] system 00:01: [mem 0xfed10000-0xfed17fff] has been reserved
+[    1.357841] system 00:01: [mem 0xfed18000-0xfed18fff] has been reserved
+[    1.357846] system 00:01: [mem 0xfed19000-0xfed19fff] has been reserved
+[    1.357854] system 00:01: [mem 0xe0000000-0xefffffff] has been reserved
+[    1.357859] system 00:01: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    1.357870] system 00:01: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    1.357875] system 00:01: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    1.357881] system 00:01: [mem 0xff000000-0xffffffff] could not be reserved
+[    1.357886] system 00:01: [mem 0xfee00000-0xfeefffff] has been reserved
+[    1.357891] system 00:01: [mem 0x40000000-0x403fffff] has been reserved
+[    1.357896] system 00:01: [mem 0xfd000000-0xfdffffff] has been reserved
+[    1.357902] system 00:01: [mem 0xfe010000-0xfe010fff] has been reserved
+[    1.357908] system 00:01: [mem 0xfe036000-0xfe0affff] could not be reserved
+[    1.357913] system 00:01: [mem 0xfc800000-0xfcffffff] has been reserved
+[    1.357918] system 00:01: [mem 0xfe100000-0xfe1fffff] has been reserved
+[    1.357923] system 00:01: [mem 0xfe200000-0xfe3fffff] has been reserved
+[    1.357939] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    1.358874] pnp: PnP ACPI: found 2 devices
+[    1.366907] pci 0000:00:02.0: assigning 11 device properties
+[    1.366982] pci 0000:05:00.0: assigning 8 device properties
+[    1.371548] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.371775] pci 0000:00:1f.3: BAR 4: assigned [mem 0x4000000000-0x40000fffff 64bit]
+[    1.371814] pci 0000:00:1e.0: BAR 0: assigned [mem 0x4000100000-0x4000100fff 64bit]
+[    1.371881] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    1.371890] pci 0000:00:1c.0:   bridge window [mem 0x91000000-0x918fffff]
+[    1.371902] pci 0000:04:00.0: PCI bridge to [bus 05]
+[    1.371910] pci 0000:04:00.0:   bridge window [mem 0x91c00000-0x91cfffff]
+[    1.371923] pci 0000:04:01.0: PCI bridge to [bus 07-3f]
+[    1.371928] pci 0000:04:01.0:   bridge window [io  0x4000-0x5fff]
+[    1.371937] pci 0000:04:01.0:   bridge window [mem 0x91d00000-0x98cfffff]
+[    1.371943] pci 0000:04:01.0:   bridge window [mem 0xb1300000-0xb82fffff 64bit pref]
+[    1.371955] pci 0000:06:00.0: BAR 0: assigned [mem 0x91b00000-0x91b0ffff]
+[    1.371963] pci 0000:04:02.0: PCI bridge to [bus 06]
+[    1.371972] pci 0000:04:02.0:   bridge window [mem 0x91b00000-0x91bfffff]
+[    1.371985] pci 0000:04:04.0: PCI bridge to [bus 40-78]
+[    1.371989] pci 0000:04:04.0:   bridge window [io  0x6000-0x7fff]
+[    1.371997] pci 0000:04:04.0:   bridge window [mem 0x98d00000-0x9fcfffff]
+[    1.372004] pci 0000:04:04.0:   bridge window [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    1.372013] pci 0000:03:00.0: PCI bridge to [bus 04-78]
+[    1.372018] pci 0000:03:00.0:   bridge window [io  0x4000-0x7fff]
+[    1.372026] pci 0000:03:00.0:   bridge window [mem 0x91b00000-0x9fcfffff]
+[    1.372033] pci 0000:03:00.0:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.372042] pci 0000:00:1c.4: PCI bridge to [bus 03-78]
+[    1.372046] pci 0000:00:1c.4:   bridge window [io  0x4000-0x7fff]
+[    1.372053] pci 0000:00:1c.4:   bridge window [mem 0x91b00000-0x9fcfffff]
+[    1.372058] pci 0000:00:1c.4:   bridge window [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.372067] pci 0000:00:1d.0: PCI bridge to [bus 02]
+[    1.372078] pci 0000:00:1d.0:   bridge window [mem 0xb0000000-0xb12fffff 64bit pref]
+[    1.372087] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    1.372090] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    1.372094] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    1.372097] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+[    1.372100] pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+[    1.372103] pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+[    1.372106] pci_bus 0000:00: resource 10 [mem 0x000cc000-0x000cffff window]
+[    1.372109] pci_bus 0000:00: resource 11 [mem 0x000d0000-0x000d3fff window]
+[    1.372112] pci_bus 0000:00: resource 12 [mem 0x000d4000-0x000d7fff window]
+[    1.372116] pci_bus 0000:00: resource 13 [mem 0x000d8000-0x000dbfff window]
+[    1.372119] pci_bus 0000:00: resource 14 [mem 0x000dc000-0x000dffff window]
+[    1.372122] pci_bus 0000:00: resource 15 [mem 0x000e0000-0x000e3fff window]
+[    1.372125] pci_bus 0000:00: resource 16 [mem 0x000e4000-0x000e7fff window]
+[    1.372128] pci_bus 0000:00: resource 17 [mem 0x000e8000-0x000ebfff window]
+[    1.372131] pci_bus 0000:00: resource 18 [mem 0x000ec000-0x000effff window]
+[    1.372134] pci_bus 0000:00: resource 19 [mem 0x000f0000-0x000fffff window]
+[    1.372137] pci_bus 0000:00: resource 20 [mem 0x90000000-0xfeafffff window]
+[    1.372141] pci_bus 0000:00: resource 21 [mem 0x4000000000-0x7fffffffff window]
+[    1.372144] pci_bus 0000:01: resource 1 [mem 0x91000000-0x918fffff]
+[    1.372148] pci_bus 0000:03: resource 0 [io  0x4000-0x7fff]
+[    1.372151] pci_bus 0000:03: resource 1 [mem 0x91b00000-0x9fcfffff]
+[    1.372154] pci_bus 0000:03: resource 2 [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.372157] pci_bus 0000:04: resource 0 [io  0x4000-0x7fff]
+[    1.372160] pci_bus 0000:04: resource 1 [mem 0x91b00000-0x9fcfffff]
+[    1.372163] pci_bus 0000:04: resource 2 [mem 0xb1300000-0xbf2fffff 64bit pref]
+[    1.372167] pci_bus 0000:05: resource 1 [mem 0x91c00000-0x91cfffff]
+[    1.372170] pci_bus 0000:07: resource 0 [io  0x4000-0x5fff]
+[    1.372173] pci_bus 0000:07: resource 1 [mem 0x91d00000-0x98cfffff]
+[    1.372176] pci_bus 0000:07: resource 2 [mem 0xb1300000-0xb82fffff 64bit pref]
+[    1.372180] pci_bus 0000:06: resource 1 [mem 0x91b00000-0x91bfffff]
+[    1.372184] pci_bus 0000:40: resource 0 [io  0x6000-0x7fff]
+[    1.372187] pci_bus 0000:40: resource 1 [mem 0x98d00000-0x9fcfffff]
+[    1.372190] pci_bus 0000:40: resource 2 [mem 0xb8300000-0xbf2fffff 64bit pref]
+[    1.372194] pci_bus 0000:02: resource 2 [mem 0xb0000000-0xb12fffff 64bit pref]
+[    1.373020] NET: Registered protocol family 2
+[    1.373775] tcp_listen_portaddr_hash hash table entries: 8192 (order: 7, 720896 bytes, linear)
+[    1.374141] TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    1.375521] TCP bind hash table entries: 65536 (order: 10, 5242880 bytes, vmalloc)
+[    1.378315] TCP: Hash tables configured (established 131072 bind 65536)
+[    1.378550] UDP hash table entries: 8192 (order: 8, 1572864 bytes, linear)
+[    1.379370] UDP-Lite hash table entries: 8192 (order: 8, 1572864 bytes, linear)
+[    1.380243] NET: Registered protocol family 1
+[    1.380273] NET: Registered protocol family 44
+[    1.380292] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    1.383171] pci 0000:06:00.0: enabling device (0000 -> 0002)
+[    1.383597] PCI: CLS 256 bytes, default 64
+[    1.383896] Trying to unpack rootfs image as initramfs...
+[    4.341491] Freeing initrd memory: 46444K
+[    4.347306] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    4.347308] software IO TLB: mapped [mem 0x77067000-0x7b067000] (64MB)
+[    4.347433] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    4.349093] check: Scanning for low memory corruption every 60 seconds
+[    4.350263] Initialise system trusted keyrings
+[    4.350332] Key type blacklist registered
+[    4.350430] workingset: timestamp_bits=36 max_order=22 bucket_order=0
+[    4.355993] zbud: loaded
+[    4.357721] Platform Keyring initialized
+[    4.362033] NET: Registered protocol family 38
+[    4.362046] Key type asymmetric registered
+[    4.362054] Asymmetric key parser 'x509' registered
+[    4.362069] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    4.362179] io scheduler mq-deadline registered
+[    4.362181] io scheduler kyber registered
+[    4.362271] io scheduler bfq registered
+[    4.362815] atomic64_test: passed for x86-64 platform with CX8 and with SSE
+[    4.364920] pcieport 0000:04:01.0: pciehp: Slot #1 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ LLActRep+
+[    4.365765] pcieport 0000:04:04.0: pciehp: Slot #4 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ LLActRep+
+[    4.366083] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    4.366139] efifb: probing for efifb
+[    4.366157] efifb: No BGRT, not showing boot graphics
+[    4.366159] efifb: framebuffer at 0xa0000000, using 20252k, total 20250k
+[    4.366160] efifb: mode is 2880x1800x32, linelength=11520, pages=1
+[    4.366161] efifb: scrolling: redraw
+[    4.366163] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    4.366367] fbcon: Deferring console take-over
+[    4.366374] fb0: EFI VGA frame buffer device
+[    4.366390] intel_idle: MWAIT substates: 0x11142120
+[    4.366392] intel_idle: v0.4.1 model 0x8E
+[    4.368002] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    4.368482] ACPI: AC Adapter [ADP1] (off-line)
+[    4.368649] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[    4.368928] ACPI: Lid Switch [LID0]
+[    4.369002] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    4.369059] ACPI: Power Button [PWRB]
+[    4.369136] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2
+[    4.369180] ACPI: Sleep Button [SLPB]
+[    4.369294] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+[    4.369368] ACPI: Power Button [PWRF]
+[    4.371472] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    4.377614] Non-volatile memory driver v1.3
+[    4.377715] Linux agpgart interface v0.103
+[    4.391269] intel-lpss 0000:00:1e.0: enabling device (0000 -> 0002)
+[    4.392521] dw-apb-uart.0: ttyS4 at MMIO 0x4000100000 (irq = 20, base_baud = 7500000) is a 16550A
+[    4.394066] libphy: Fixed MDIO Bus: probed
+[    4.394325] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.394333] ehci-pci: EHCI PCI platform driver
+[    4.394361] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.394367] ohci-pci: OHCI PCI platform driver
+[    4.394389] uhci_hcd: USB Universal Host Controller Interface driver
+[    4.394807] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    4.395099] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    4.396334] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000000009810
+[    4.396339] xhci_hcd 0000:00:14.0: cache line size of 256 is not supported
+[    4.396969] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.05
+[    4.396974] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.396976] usb usb1: Product: xHCI Host Controller
+[    4.396978] usb usb1: Manufacturer: Linux 5.5.0-0.rc6.git3.1.fc32.x86_64 xhci-hcd
+[    4.396979] usb usb1: SerialNumber: 0000:00:14.0
+[    4.397465] hub 1-0:1.0: USB hub found
+[    4.397507] hub 1-0:1.0: 12 ports detected
+[    4.398929] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    4.399075] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    4.399080] xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    4.399187] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.05
+[    4.399190] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.399191] usb usb2: Product: xHCI Host Controller
+[    4.399193] usb usb2: Manufacturer: Linux 5.5.0-0.rc6.git3.1.fc32.x86_64 xhci-hcd
+[    4.399194] usb usb2: SerialNumber: 0000:00:14.0
+[    4.399545] hub 2-0:1.0: USB hub found
+[    4.399589] hub 2-0:1.0: 6 ports detected
+[    4.400500] xhci_hcd 0000:06:00.0: xHCI Host Controller
+[    4.400632] xhci_hcd 0000:06:00.0: new USB bus registered, assigned bus number 3
+[    4.401850] xhci_hcd 0000:06:00.0: hcc params 0x200077c1 hci version 0x110 quirks 0x0000000200009810
+[    4.402288] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.05
+[    4.402291] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.402293] usb usb3: Product: xHCI Host Controller
+[    4.402294] usb usb3: Manufacturer: Linux 5.5.0-0.rc6.git3.1.fc32.x86_64 xhci-hcd
+[    4.402296] usb usb3: SerialNumber: 0000:06:00.0
+[    4.402599] hub 3-0:1.0: USB hub found
+[    4.402618] hub 3-0:1.0: 2 ports detected
+[    4.403022] xhci_hcd 0000:06:00.0: xHCI Host Controller
+[    4.403143] xhci_hcd 0000:06:00.0: new USB bus registered, assigned bus number 4
+[    4.403148] xhci_hcd 0000:06:00.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    4.403261] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.05
+[    4.403263] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.403265] usb usb4: Product: xHCI Host Controller
+[    4.403266] usb usb4: Manufacturer: Linux 5.5.0-0.rc6.git3.1.fc32.x86_64 xhci-hcd
+[    4.403268] usb usb4: SerialNumber: 0000:06:00.0
+[    4.403590] hub 4-0:1.0: USB hub found
+[    4.403611] hub 4-0:1.0: 2 ports detected
+[    4.403975] usbcore: registered new interface driver usbserial_generic
+[    4.404015] usbserial: USB Serial support registered for generic
+[    4.404055] i8042: PNP: No PS/2 controller found.
+[    4.404193] mousedev: PS/2 mouse device common for all mice
+[    4.404832] rtc_cmos rtc_cmos: RTC can wake from S4
+[    4.405938] rtc_cmos rtc_cmos: registered as rtc0
+[    4.405940] rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    4.406077] device-mapper: uevent: version 1.0.3
+[    4.406299] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    4.406466] intel_pstate: Intel P-state driver initializing
+[    4.407782] intel_pstate: HWP enabled
+[    4.408311] hid: raw HID events driver (C) Jiri Kosina
+[    4.408397] usbcore: registered new interface driver usbhid
+[    4.408399] usbhid: USB HID core driver
+[    4.408679] intel_pmc_core intel_pmc_core.0:  initialized
+[    4.408778] drop_monitor: Initializing network drop monitor service
+[    4.408877] Initializing XFRM netlink socket
+[    4.409179] NET: Registered protocol family 10
+[    4.417434] Segment Routing with IPv6
+[    4.417458] mip6: Mobile IPv6
+[    4.417462] NET: Registered protocol family 17
+[    4.418931] RAS: Correctable Errors collector initialized.
+[    4.419057] microcode: sig=0x806ea, pf=0x40, revision=0xc6
+[    4.419217] microcode: Microcode Update Driver: v2.2.
+[    4.419221] IPI shorthand broadcast: enabled
+[    4.419259] AVX2 version of gcm_enc/dec engaged.
+[    4.419260] AES CTR mode by8 optimization enabled
+[    4.487892] sched_clock: Marking stable (3715638955, 772243122)->(4530743613, -42861536)
+[    4.488195] registered taskstats version 1
+[    4.488217] Loading compiled-in X.509 certificates
+[    4.513165] Loaded X.509 cert 'Fedora kernel signing key: 8544dcf924893c6cc69522e9b3dceb553b6315c1'
+[    4.513290] zswap: loaded using pool lzo/zbud
+[    4.513676] Key type ._fscrypt registered
+[    4.513678] Key type .fscrypt registered
+[    4.525707] Key type big_key registered
+[    4.531677] Key type encrypted registered
+[    4.535917] ------------[ cut here ]------------
+[    4.535922] [Firmware Bug]: Page fault caused by firmware at PA: 0xffffa128c0050000
+[    4.535928] WARNING: CPU: 7 PID: 8 at arch/x86/platform/efi/quirks.c:739 efi_recover_from_page_fault+0x2a/0xde
+[    4.535929] Modules linked in:
+[    4.535932] CPU: 7 PID: 8 Comm: kworker/u16:0 Not tainted 5.5.0-0.rc6.git3.1.fc32.x86_64 #1
+[    4.535934] Hardware name: Apple Inc. MacBookPro15,4/Mac-53FDB3D8DB8CA971, BIOS 1037.60.58.0.0 (iBridge: 17.16.12551.0.0,0) 11/14/2019
+[    4.535937] Workqueue: efi_rts_wq efi_call_rts
+[    4.535940] RIP: 0010:efi_recover_from_page_fault+0x2a/0xde
+[    4.535942] Code: 0f 1f 44 00 00 8b 15 25 f0 8d 03 85 d2 74 09 48 81 ff ff 0f 00 00 77 01 c3 53 48 89 fe 48 c7 c7 18 04 39 bb 50 e8 06 07 01 00 <0f> 0b 83 3d fd ef 8d 03 0a 0f 84 a5 00 00 00 48 8b 05 80 ae 85 01
+[    4.535943] RSP: 0000:ffffa128c0086a68 EFLAGS: 00010086
+[    4.535945] RAX: 0000000000000000 RBX: ffff9049da9db400 RCX: 0000000000000000
+[    4.535946] RDX: ffff9049da9db400 RSI: 0000000000000000 RDI: ffffffffba176d30
+[    4.535948] RBP: ffffa128c0086b18 R08: 0000000000000001 R09: 0000000000000000
+[    4.535949] R10: 0000000000000001 R11: ffff9049da9dc108 R12: ffffa128c0050000
+[    4.535950] R13: 0000000000000000 R14: 000000000000000b R15: 0000000000000001
+[    4.535952] FS:  0000000000000000(0000) GS:ffff9049ddc00000(0000) knlGS:0000000000000000
+[    4.535953] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[    4.535955] CR2: ffffa128c0050000 CR3: 000000045b1b8002 CR4: 00000000003606e0
+[    4.535956] Call Trace:
+[    4.535961]  no_context+0x135/0x3a0
+[    4.535968]  do_page_fault+0x31/0x210
+[    4.535973]  page_fault+0x43/0x50
+[    4.535975] RIP: 0010:0xfffffffeefc450c5
+[    4.535977] Code: 31 c9 48 29 f9 48 83 e1 0f 74 0c 4c 39 c1 49 0f 47 c8 49 29 c8 f3 a4 4c 89 c1 49 83 e0 0f 48 c1 e9 04 74 2c f3 0f 7f 44 24 18 <f3> 0f 6f 06 66 0f e7 07 48 83 c6 10 48 83 c7 10 e2 ee 0f ae f0 66
+[    4.535978] RSP: 0000:ffffa128c0086bc8 EFLAGS: 00010286
+[    4.535980] RAX: fffffffeefcf0da2 RBX: ffffffffbb3e19f6 RCX: 0000000000000035
+[    4.535981] RDX: ffffa128c004fd48 RSI: ffffa128c004fff6 RDI: fffffffeefcf1050
+[    4.535983] RBP: ffffa128c0086c50 R08: 0000000000000009 R09: ffffa128c005034e
+[    4.535984] R10: 0000000000000000 R11: 0000000000000002 R12: 0000000000000000
+[    4.535985] R13: ffffa128c004fde0 R14: 8000000000000001 R15: 0000000000000607
+[    4.536241]  ? efi_call+0x58/0x90
+[    4.536254]  ? efi_call_rts+0x186/0x980
+[    4.536259]  ? process_one_work+0x272/0x5a0
+[    4.536267]  ? worker_thread+0x50/0x3b0
+[    4.536273]  ? kthread+0x106/0x140
+[    4.536275]  ? process_one_work+0x5a0/0x5a0
+[    4.536277]  ? kthread_park+0x90/0x90
+[    4.536280]  ? ret_from_fork+0x3a/0x50
+[    4.536291] irq event stamp: 11004
+[    4.536294] hardirqs last  enabled at (11003): [<ffffffffba00396b>] trace_hardirqs_on_thunk+0x1a/0x1c
+[    4.536296] hardirqs last disabled at (11004): [<ffffffffba003987>] trace_hardirqs_off_thunk+0x1a/0x1c
+[    4.536298] softirqs last  enabled at (11002): [<ffffffffbae0035d>] __do_softirq+0x35d/0x45d
+[    4.536300] softirqs last disabled at (10991): [<ffffffffba0f4237>] irq_exit+0xf7/0x100
+[    4.536301] ---[ end trace 94439e8eb168680a ]---
+[    4.536306] efi: Froze efi_rts_wq and disabled EFI Runtime Services
+[    4.536336] Couldn't get size: Aborted (0x8000000000000015)
+[    4.536337] MODSIGN: Couldn't get UEFI db list
+[    4.536339] efi: EFI Runtime Services are disabled!
+[    4.536340] Couldn't get size: Aborted (0x8000000000000015)
+[    4.536341] Couldn't get UEFI MokListRT
+[    4.536343] Couldn't get size: Aborted (0x8000000000000015)
+[    4.536343] Couldn't get UEFI dbx list
+[    4.536365] ima: No TPM chip found, activating TPM-bypass!
+[    4.536375] ima: Allocated hash algorithm: sha256
+[    4.536392] ima: No architecture policies found
+[    4.538310] PM:   Magic number: 4:929:901
+[    4.538321] usb usb2-port2: hash matches
+[    4.538339] clocksource clocksource0: hash matches
+[    4.538593] rtc_cmos rtc_cmos: setting system clock to 10020-01-28T19:51:43 UTC (254035857103)
+[    4.541872] Freeing unused decrypted memory: 2040K
+[    4.543111] Freeing unused kernel image (initmem) memory: 4364K
+[    4.550307] Write protecting the kernel read-only data: 22528k
+[    4.551519] Freeing unused kernel image (text/rodata gap) memory: 2044K
+[    4.552050] Freeing unused kernel image (rodata/data gap) memory: 908K
+[    4.559771] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    4.559776] rodata_test: all tests were successful
+[    4.559777] x86/mm: Checking user space page tables
+[    4.567279] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    4.567283] Run /init as init process
+[    4.573946] systemd[1]: System time before build time, advancing clock.
+[    4.587743] efi: EFI Runtime Services are disabled!
+[    4.587747] efivars: get_next_variable: status=8000000000000015
+[    4.588963] systemd[1]: systemd v244.1-2.fc32 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)
+[    4.601409] systemd[1]: Detected architecture x86-64.
+[    4.601415] systemd[1]: Running in initial RAM disk.
+[    4.601446] systemd[1]: No hostname configured.
+[    4.601481] systemd[1]: Set hostname to <localhost>.
+[    4.601534] systemd[1]: Initializing machine ID from random generator.
+[    4.603836] systemd[1]: Couldn't move remaining userspace processes, ignoring: Input/output error
+[    4.674059] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    4.674112] systemd[1]: Reached target Local Encrypted Volumes.
+[    4.674133] systemd[1]: Reached target Initrd Root Device.
+[    4.674142] systemd[1]: Reached target Paths.
+[    4.674150] systemd[1]: Reached target Slices.
+[    4.674158] systemd[1]: Reached target Swap.
+[    4.674165] systemd[1]: Reached target Timers.
+[    4.674404] systemd[1]: Listening on Journal Audit Socket.
+[    4.674576] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.674761] systemd[1]: Listening on Journal Socket.
+[    4.674954] systemd[1]: Listening on udev Control Socket.
+[    4.675057] systemd[1]: Listening on udev Kernel Socket.
+[    4.675068] systemd[1]: Reached target Sockets.
+[    4.679521] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[    4.682672] systemd[1]: Starting Journal Service...
+[    4.682925] systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+[    4.685239] systemd[1]: Starting Apply Kernel Variables...
+[    4.687339] systemd[1]: Starting Setup Virtual Console...
+[    4.688970] systemd[1]: Started Create list of static device nodes for the current kernel.
+[    4.691426] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    4.695145] systemd[1]: Started Apply Kernel Variables.
+[    4.696403] systemd[1]: systemd-vconsole-setup.service: Succeeded.
+[    4.697047] systemd[1]: Started Setup Virtual Console.
+[    4.697705] systemd[1]: Condition check resulted in dracut ask for additional cmdline parameters being skipped.
+[    4.699534] systemd[1]: Starting dracut cmdline hook...
+[    4.705509] systemd[1]: Started Create Static Device Nodes in /dev.
+[    4.723270] usb 1-6: new high-speed USB device number 2 using xhci_hcd
+[    4.727434] usb 4-1: new SuperSpeed Gen 1 USB device number 2 using xhci_hcd
+[    4.742407] usb 4-1: New USB device found, idVendor=05ac, idProduct=1010, bcdDevice=45.29
+[    4.742413] usb 4-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.742415] usb 4-1: Product: USB3.0 Hub
+[    4.742417] usb 4-1: Manufacturer: Apple Inc.
+[    4.742984] usb 1-6: New USB device found, idVendor=05ac, idProduct=1011, bcdDevice=45.29
+[    4.742986] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.742988] usb 1-6: Product: USB2.0 Hub
+[    4.742989] usb 1-6: Manufacturer: Apple Inc.
+[    4.744436] hub 1-6:1.0: USB hub found
+[    4.745135] hub 1-6:1.0: 2 ports detected
+[    4.745398] hub 4-1:1.0: USB hub found
+[    4.745748] hub 4-1:1.0: 1 port detected
+[    4.810227] loop: module loaded
+[    4.853980] systemd[1]: Started dracut cmdline hook.
+[    4.856133] systemd[1]: Starting dracut pre-udev hook...
+[    4.910656] systemd[1]: Started dracut pre-udev hook.
+[    4.910839] audit: type=1130 audit(1576406828.336:2): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-pre-udev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.913324] systemd[1]: Starting udev Kernel Device Manager...
+[    4.995360] systemd[1]: Started Journal Service.
+[    4.995594] audit: type=1130 audit(1576406828.421:3): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.029264] usb 1-6.1: new high-speed USB device number 3 using xhci_hcd
+[    5.042943] usb 1-6.1: New USB device found, idVendor=05e3, idProduct=0608, bcdDevice= 9.01
+[    5.042946] usb 1-6.1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    5.042948] usb 1-6.1: Product: USB2.0 Hub
+[    5.044104] hub 1-6.1:1.0: USB hub found
+[    5.044410] hub 1-6.1:1.0: 4 ports detected
+[    5.111263] usb 1-6.2: new low-speed USB device number 4 using xhci_hcd
+[    5.131388] audit: type=1130 audit(1576406828.557:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.191882] usb 1-6.2: No LPM exit latency info found, disabling LPM.
+[    5.193353] usb 1-6.2: config 1 has no interfaces?
+[    5.202414] usb 1-6.2: New USB device found, idVendor=05ac, idProduct=1461, bcdDevice= 2.35
+[    5.202418] usb 1-6.2: New USB device strings: Mfr=2, Product=4, SerialNumber=1
+[    5.202421] usb 1-6.2: Product: USB-C VGA Multiport Adapter
+[    5.202423] usb 1-6.2: Manufacturer: Apple Inc.
+[    5.202426] usb 1-6.2: SerialNumber: DLC93040099G2WFA0
+[    5.317272] usb 1-6.1.1: new high-speed USB device number 5 using xhci_hcd
+[    5.348415] tsc: Refined TSC clocksource calibration: 1391.999 MHz
+[    5.348425] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x14109a24aaa, max_idle_ns: 440795250993 ns
+[    5.348594] clocksource: Switched to clocksource tsc
+[    5.371730] usb 1-6.1.1: New USB device found, idVendor=058f, idProduct=6387, bcdDevice= 1.03
+[    5.371735] usb 1-6.1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    5.371738] usb 1-6.1.1: Product: Mass Storage
+[    5.371741] usb 1-6.1.1: Manufacturer: Generic
+[    5.371744] usb 1-6.1.1: SerialNumber: 8C41A0E5
+[    5.392002] audit: type=1130 audit(1576406828.816:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.437267] usb 1-6.1.3: new low-speed USB device number 6 using xhci_hcd
+[    5.445948] nvme nvme0: pci function 0000:02:00.0
+[    5.529204] usb 1-6.1.3: New USB device found, idVendor=046a, idProduct=0011, bcdDevice= 1.00
+[    5.529208] usb 1-6.1.3: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    5.544399] input: HID 046a:0011 as /devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6.1/1-6.1.3/1-6.1.3:1.0/0003:046A:0011.0001/input/input4
+[    5.550762] nvme nvme0: 1/0/0 default/read/poll queues
+[    5.562043]  nvme0n1: p1 p2
+[    5.598825] hid-generic 0003:046A:0011.0001: input,hidraw0: USB HID v1.11 Keyboard [HID 046a:0011] on usb-0000:00:14.0-6.1.3/input0
+[    5.663335] usb 1-6.1.4: new high-speed USB device number 7 using xhci_hcd
+[    5.679107] usb 1-6.1.4: New USB device found, idVendor=3538, idProduct=0054, bcdDevice= 1.00
+[    5.679113] usb 1-6.1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    5.679117] usb 1-6.1.4: Product: Intelligent
+[    5.679121] usb 1-6.1.4: Manufacturer: I-Stick mini
+[    5.679125] usb 1-6.1.4: SerialNumber: 00000000000656
+[    5.699227] usb-storage 1-6.1.1:1.0: USB Mass Storage device detected
+[    5.700285] scsi host0: usb-storage 1-6.1.1:1.0
+[    5.701773] usb-storage 1-6.1.4:1.0: USB Mass Storage device detected
+[    5.702189] scsi host1: usb-storage 1-6.1.4:1.0
+[    5.702628] usbcore: registered new interface driver usb-storage
+[    5.707632] usbcore: registered new interface driver uas
+[    5.794072] NetworkManager (540) used greatest stack depth: 12840 bytes left
+[    6.759716] scsi 1:0:0:0: Direct-Access     pqi      IntelligentStick 0.00 PQ: 0 ANSI: 2
+[    6.760084] scsi 0:0:0:0: Direct-Access     Generic  Flash Disk       8.07 PQ: 0 ANSI: 2
+[    6.763934] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    6.764816] sd 0:0:0:0: [sda] 16179200 512-byte logical blocks: (8.28 GB/7.71 GiB)
+[    6.765167] sd 0:0:0:0: [sda] Write Protect is off
+[    6.765177] sd 0:0:0:0: [sda] Mode Sense: 03 00 00 00
+[    6.765475] sd 0:0:0:0: [sda] No Caching mode page found
+[    6.765484] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[    6.766576] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[    6.768575] sd 1:0:0:0: [sdb] 1972223 512-byte logical blocks: (1.01 GB/963 MiB)
+[    6.769310] sd 1:0:0:0: [sdb] Write Protect is off
+[    6.769321] sd 1:0:0:0: [sdb] Mode Sense: 00 00 00 00
+[    6.770066] sd 1:0:0:0: [sdb] Asking for cache data failed
+[    6.770070] sd 1:0:0:0: [sdb] Assuming drive cache: write through
+[    6.798235]  sda: sda1 sda2
+[    6.801632] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    6.899894]  sdb: sdb1
+[    6.904215] sd 1:0:0:0: [sdb] Attached SCSI removable disk
+[    7.456755] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    7.555733] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    7.560445] ISO 9660 Extensions: RRIP_1991A
+[    7.834157] dmsquash-live-r (611) used greatest stack depth: 12728 bytes left
+[    7.841818] audit: type=1130 audit(1576406831.266:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-initqueue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    7.873874] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[    7.944688] systemd-fstab-g (700) used greatest stack depth: 12352 bytes left
+[    8.041836] audit: type=1130 audit(1576406831.466:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.066264] audit: type=1130 audit(1576406831.490:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=initrd-parse-etc comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.066275] audit: type=1131 audit(1576406831.490:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=initrd-parse-etc comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.131993] audit: type=1130 audit(1576406831.556:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-pre-pivot comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.145199] audit: type=1131 audit(1576406831.569:11): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-pre-pivot comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.150359] audit: type=1131 audit(1576406831.575:12): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=dracut-initqueue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.151461] audit: type=1131 audit(1576406831.576:13): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.151617] audit: type=1131 audit(1576406831.576:14): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.152733] audit: type=1131 audit(1576406831.577:15): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=kernel msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    8.232836] systemd-journald[333]: Received SIGTERM from PID 1 (systemd).
+[   10.101489] SELinux:  Permission watch in class filesystem not defined in policy.
+[   10.101499] SELinux:  Permission watch in class file not defined in policy.
+[   10.101501] SELinux:  Permission watch_mount in class file not defined in policy.
+[   10.101502] SELinux:  Permission watch_sb in class file not defined in policy.
+[   10.101503] SELinux:  Permission watch_with_perm in class file not defined in policy.
+[   10.101504] SELinux:  Permission watch_reads in class file not defined in policy.
+[   10.101508] SELinux:  Permission watch in class dir not defined in policy.
+[   10.101509] SELinux:  Permission watch_mount in class dir not defined in policy.
+[   10.101510] SELinux:  Permission watch_sb in class dir not defined in policy.
+[   10.101511] SELinux:  Permission watch_with_perm in class dir not defined in policy.
+[   10.101513] SELinux:  Permission watch_reads in class dir not defined in policy.
+[   10.101517] SELinux:  Permission watch in class lnk_file not defined in policy.
+[   10.101518] SELinux:  Permission watch_mount in class lnk_file not defined in policy.
+[   10.101519] SELinux:  Permission watch_sb in class lnk_file not defined in policy.
+[   10.101520] SELinux:  Permission watch_with_perm in class lnk_file not defined in policy.
+[   10.101521] SELinux:  Permission watch_reads in class lnk_file not defined in policy.
+[   10.101524] SELinux:  Permission watch in class chr_file not defined in policy.
+[   10.101525] SELinux:  Permission watch_mount in class chr_file not defined in policy.
+[   10.101526] SELinux:  Permission watch_sb in class chr_file not defined in policy.
+[   10.101527] SELinux:  Permission watch_with_perm in class chr_file not defined in policy.
+[   10.101528] SELinux:  Permission watch_reads in class chr_file not defined in policy.
+[   10.101531] SELinux:  Permission watch in class blk_file not defined in policy.
+[   10.101532] SELinux:  Permission watch_mount in class blk_file not defined in policy.
+[   10.101533] SELinux:  Permission watch_sb in class blk_file not defined in policy.
+[   10.101534] SELinux:  Permission watch_with_perm in class blk_file not defined in policy.
+[   10.101535] SELinux:  Permission watch_reads in class blk_file not defined in policy.
+[   10.101538] SELinux:  Permission watch in class sock_file not defined in policy.
+[   10.101539] SELinux:  Permission watch_mount in class sock_file not defined in policy.
+[   10.101541] SELinux:  Permission watch_sb in class sock_file not defined in policy.
+[   10.101542] SELinux:  Permission watch_with_perm in class sock_file not defined in policy.
+[   10.101543] SELinux:  Permission watch_reads in class sock_file not defined in policy.
+[   10.101546] SELinux:  Permission watch in class fifo_file not defined in policy.
+[   10.101547] SELinux:  Permission watch_mount in class fifo_file not defined in policy.
+[   10.101548] SELinux:  Permission watch_sb in class fifo_file not defined in policy.
+[   10.101549] SELinux:  Permission watch_with_perm in class fifo_file not defined in policy.
+[   10.101550] SELinux:  Permission watch_reads in class fifo_file not defined in policy.
+[   10.101660] SELinux:  Class perf_event not defined in policy.
+[   10.101661] SELinux: the above unknown classes and permissions will be allowed
+[   10.101664] SELinux:  policy capability network_peer_controls=1
+[   10.101665] SELinux:  policy capability open_perms=1
+[   10.101666] SELinux:  policy capability extended_socket_class=1
+[   10.101668] SELinux:  policy capability always_check_network=0
+[   10.101669] SELinux:  policy capability cgroup_seclabel=1
+[   10.101670] SELinux:  policy capability nnp_nosuid_transition=1
+[   10.181509] systemd[1]: Successfully loaded SELinux policy in 865.793ms.
+[   10.226300] systemd[1]: RTC configured in localtime, applying delta of 0 minutes to system time.
+[   10.371055] systemd[1]: Relabelled /dev, /dev/shm, /run, /sys/fs/cgroup in 35.430ms.
+[   10.382374] systemd[1]: systemd v244.1-2.fc32 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)
+[   10.394395] systemd[1]: Detected architecture x86-64.
+[   10.409340] systemd[1]: Couldn't move remaining userspace processes, ignoring: Input/output error
+[   10.704974] systemd[1]: /usr/lib/systemd/system/sssd.service:12: PIDFile= references a path below legacy directory /var/run/, updating /var/run/sssd.pid → /run/sssd.pid; please update the unit file accordingly.
+[   10.744427] systemd[1]: /usr/lib/systemd/system/sssd-kcm.socket:7: ListenStream= references a path below legacy directory /var/run/, updating /var/run/.heim_org.h5l.kcm-socket → /run/.heim_org.h5l.kcm-socket; please update the unit file accordingly.
+[   10.789105] systemd[1]: initrd-switch-root.service: Succeeded.
+[   10.789763] systemd[1]: Stopped Switch Root.
+[   10.790474] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[   10.791023] systemd[1]: Created slice system-getty.slice.
+[   10.791888] systemd[1]: Created slice User and Session Slice.
+[   10.792123] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   10.793013] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   10.793038] systemd[1]: Stopped target Switch Root.
+[   10.793048] systemd[1]: Stopped target Initrd File Systems.
+[   10.793054] systemd[1]: Stopped target Initrd Root File System.
+[   10.793072] systemd[1]: Reached target Remote File Systems.
+[   10.793079] systemd[1]: Reached target Slices.
+[   10.793089] systemd[1]: Reached target Swap.
+[   10.794946] systemd[1]: Listening on Process Core Dump Socket.
+[   10.795170] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.795851] systemd[1]: Listening on udev Control Socket.
+[   10.796214] systemd[1]: Listening on udev Kernel Socket.
+[   10.798198] systemd[1]: Mounting Huge Pages File System...
+[   10.803019] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.805914] systemd[1]: Mounting Kernel Debug File System...
+[   10.808550] systemd[1]: tmp.mount: Directory /tmp to mount over is not empty, mounting anyway.
+[   10.811091] systemd[1]: Mounting Temporary Directory (/tmp)...
+[   10.814182] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   10.814797] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   10.815021] systemd[1]: Stopped Journal Service.
+[   10.818829] systemd[1]: Starting Journal Service...
+[   10.823967] systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+[   10.824206] systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+[   10.826547] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   10.828995] systemd[1]: Starting Apply Kernel Variables...
+[   10.831500] systemd[1]: Starting udev Coldplug all Devices...
+[   10.834548] systemd[1]: Starting Setup Virtual Console...
+[   10.837752] systemd[1]: sysroot.mount: Succeeded.
+[   10.839345] systemd[1]: Mounted Huge Pages File System.
+[   10.839762] systemd[1]: Mounted POSIX Message Queue File System.
+[   10.840168] systemd[1]: Mounted Kernel Debug File System.
+[   10.840550] systemd[1]: Mounted Temporary Directory (/tmp).
+[   10.841774] systemd[1]: Started Create list of static device nodes for the current kernel.
+[   10.843579] systemd[1]: Started Remount Root and Kernel File Systems.
+[   10.844226] systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+[   10.859871] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   10.862697] systemd[1]: Starting Load/Save Random Seed...
+[   10.862882] systemd[1]: Condition check resulted in Create System Users being skipped.
+[   10.866041] systemd[1]: Starting Create Static Device Nodes in /dev...
+[   10.902501] systemd[1]: Started Apply Kernel Variables.
+[   10.908801] systemd[1]: Started Load/Save Random Seed.
+[   10.953888] systemd[1]: Started Create Static Device Nodes in /dev.
+[   10.954418] systemd[1]: Reached target Local File Systems (Pre).
+[   10.956695] systemd[1]: Mounting /var/tmp...
+[   10.960149] systemd[1]: Starting udev Kernel Device Manager...
+[   10.965580] systemd[1]: Mounted /var/tmp.
+[   10.966154] systemd[1]: Reached target Local File Systems.
+[   10.968908] systemd[1]: Starting Restore /run/initramfs on shutdown...
+[   10.972101] systemd[1]: Starting Import network configuration from initramfs...
+[   10.972292] systemd[1]: Condition check resulted in Rebuild Dynamic Linker Cache being skipped.
+[   10.976636] systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+[   10.976824] systemd[1]: Condition check resulted in Mark the need to relabel after reboot being skipped.
+[   10.977115] systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+[   10.977286] systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+[   10.990403] systemd[1]: Started Restore /run/initramfs on shutdown.
+[   11.025082] systemd[1]: plymouth-read-write.service: Succeeded.
+[   11.026112] systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+[   11.074182] systemd[1]: Started Import network configuration from initramfs.
+[   11.077025] systemd[1]: systemd-vconsole-setup.service: Succeeded.
+[   11.077726] systemd[1]: Started Setup Virtual Console.
+[   11.090116] systemd[1]: Started Journal Service.
+[   11.122222] systemd-journald[794]: Received client request to flush runtime journal.
+[   11.159297] journal-offline (824) used greatest stack depth: 12096 bytes left
+[   11.497957] fbcon: Taking over console
+[   11.498623] Console: switching to colour frame buffer device 360x112
+[   11.682712] input: PC Speaker as /devices/platform/pcspkr/input/input5
+[   11.746543] intel_pch_thermal 0000:00:12.0: can't derive routing for PCI INT A
+[   11.746547] intel_pch_thermal 0000:00:12.0: PCI INT A: not connected
+[   11.746617] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+[   11.746781] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[   11.785936] acpi-tad ACPI000E:00: Missing _PRW
+[   11.830133] smbus_hc ACPI0001:00: SBS HC: offset = 0x20, query_bit = 0x10
+[   11.938568] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[   11.999529] RAPL PMU: API unit is 2^-32 Joules, 4 fixed counters, 655360 ms ovfl timer
+[   11.999532] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[   11.999546] RAPL PMU: hw unit of domain package 2^-14 Joules
+[   11.999548] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[   11.999550] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[   12.051631] ACPI: Smart Battery System [SBS0]: Battery Slot [BAT0] (battery present)
+[   12.180881] iTCO_vendor_support: vendor-support=0
+[   12.188015] iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+[   12.188126] iTCO_wdt: unable to reset NO_REBOOT flag, device disabled by hardware/BIOS
+[   12.302347] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   12.302350] applesmc: #KEY: read arg fail
+[   12.487463] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   12.487466] applesmc: #KEY: read arg fail
+[   12.528098] snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+[   12.532838] i915 0000:00:02.0: Found 128MB of eDRAM
+[   12.532908] checking generic (a0000000 13c7000) vs hw (90000000 1000000)
+[   12.532911] checking generic (a0000000 13c7000) vs hw (a0000000 10000000)
+[   12.532913] fb0: switching to inteldrmfb from EFI VGA
+[   12.534325] Console: switching to colour dummy device 80x25
+[   12.534981] i915 0000:00:02.0: vgaarb: deactivate vga console
+[   12.537821] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[   12.537824] [drm] Driver supports precise vblank timestamp query.
+[   12.538834] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[   12.672427] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   12.672430] applesmc: #KEY: read arg fail
+[   12.677465] [drm] Initialized i915 1.6.0 20191101 for 0000:00:02.0 on minor 0
+[   12.684240] ACPI: Video Device [IGPU] (multi-head: yes  rom: no  post: no)
+[   12.687673] acpi device:11: registered as cooling_device9
+[   12.688018] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input6
+[   12.688998] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[   12.826137] [drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[   12.857669] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   12.857671] applesmc: #KEY: read arg fail
+[   12.890576] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input7
+[   12.890990] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input8
+[   12.891227] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input9
+[   12.891395] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input10
+[   12.891519] input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input11
+[   12.946733] fbcon: i915drmfb (fb0) is primary device
+[   13.041591] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.041595] applesmc: #KEY: read arg fail
+[   13.048966] intel_rapl_common: Found RAPL domain package
+[   13.048979] intel_rapl_common: Found RAPL domain core
+[   13.048980] intel_rapl_common: Found RAPL domain uncore
+[   13.048982] intel_rapl_common: Found RAPL domain dram
+[   13.225491] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.225493] applesmc: #KEY: read arg fail
+[   13.409479] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.409481] applesmc: #KEY: read arg fail
+[   13.593463] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.593465] applesmc: #KEY: read arg fail
+[   13.777460] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.777462] applesmc: #KEY: read arg fail
+[   13.961526] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   13.961528] applesmc: #KEY: read arg fail
+[   14.089790] Console: switching to colour frame buffer device 360x112
+[   14.113952] i915 0000:00:02.0: fb0: i915drmfb frame buffer device
+[   14.145474] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   14.145480] applesmc: #KEY: read arg fail
+[   14.329856] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   14.329859] applesmc: #KEY: read arg fail
+[   14.514464] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   14.514467] applesmc: #KEY: read arg fail
+[   14.698663] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   14.698666] applesmc: #KEY: read arg fail
+[   14.882611] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   14.882613] applesmc: #KEY: read arg fail
+[   15.066483] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.066487] applesmc: #KEY: read arg fail
+[   15.250486] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.250490] applesmc: #KEY: read arg fail
+[   15.435435] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.435439] applesmc: #KEY: read arg fail
+[   15.619444] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.619446] applesmc: #KEY: read arg fail
+[   15.804620] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.804623] applesmc: #KEY: read arg fail
+[   15.988664] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   15.988666] applesmc: #KEY: read arg fail
+[   16.172478] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   16.172480] applesmc: #KEY: read arg fail
+[   16.356459] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   16.356461] applesmc: #KEY: read arg fail
+[   16.540671] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   16.540674] applesmc: #KEY: read arg fail
+[   16.724586] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   16.724588] applesmc: #KEY: read arg fail
+[   16.908597] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   16.908599] applesmc: #KEY: read arg fail
+[   17.092475] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   17.092478] applesmc: #KEY: read arg fail
+[   17.276460] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   17.276463] applesmc: #KEY: read arg fail
+[   17.460633] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   17.460635] applesmc: #KEY: read arg fail
+[   17.644699] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   17.644701] applesmc: #KEY: read arg fail
+[   17.828594] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   17.828596] applesmc: #KEY: read arg fail
+[   18.012476] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.012478] applesmc: #KEY: read arg fail
+[   18.196463] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.196465] applesmc: #KEY: read arg fail
+[   18.380635] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.380637] applesmc: #KEY: read arg fail
+[   18.564678] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.564680] applesmc: #KEY: read arg fail
+[   18.748583] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.748585] applesmc: #KEY: read arg fail
+[   18.932485] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   18.932488] applesmc: #KEY: read arg fail
+[   19.116470] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   19.116472] applesmc: #KEY: read arg fail
+[   19.300461] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   19.300464] applesmc: #KEY: read arg fail
+[   19.484624] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   19.484626] applesmc: #KEY: read arg fail
+[   19.668586] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   19.668589] applesmc: #KEY: read arg fail
+[   19.852490] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   19.852492] applesmc: #KEY: read arg fail
+[   20.036471] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.036473] applesmc: #KEY: read arg fail
+[   20.220619] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.220621] applesmc: #KEY: read arg fail
+[   20.404684] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.404687] applesmc: #KEY: read arg fail
+[   20.588545] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.588547] applesmc: #KEY: read arg fail
+[   20.772494] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.772498] applesmc: #KEY: read arg fail
+[   20.956473] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   20.956476] applesmc: #KEY: read arg fail
+[   21.141465] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   21.141467] applesmc: #KEY: read arg fail
+[   21.325719] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   21.325721] applesmc: #KEY: read arg fail
+[   21.509548] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   21.509550] applesmc: #KEY: read arg fail
+[   21.693498] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   21.693500] applesmc: #KEY: read arg fail
+[   21.877478] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   21.877480] applesmc: #KEY: read arg fail
+[   22.061738] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.061741] applesmc: #KEY: read arg fail
+[   22.245577] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.245579] applesmc: #KEY: read arg fail
+[   22.429786] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.429788] applesmc: #KEY: read arg fail
+[   22.613666] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.613668] applesmc: #KEY: read arg fail
+[   22.797483] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.797485] applesmc: #KEY: read arg fail
+[   22.981475] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   22.981478] applesmc: #KEY: read arg fail
+[   23.165726] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   23.165728] applesmc: #KEY: read arg fail
+[   23.349535] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   23.349537] applesmc: #KEY: read arg fail
+[   23.533503] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   23.533506] applesmc: #KEY: read arg fail
+[   23.717484] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   23.717486] applesmc: #KEY: read arg fail
+[   23.901479] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   23.901481] applesmc: #KEY: read arg fail
+[   24.085616] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   24.085618] applesmc: #KEY: read arg fail
+[   24.269614] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   24.269617] applesmc: #KEY: read arg fail
+[   24.453565] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   24.453567] applesmc: #KEY: read arg fail
+[   24.637488] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   24.637491] applesmc: #KEY: read arg fail
+[   24.821481] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   24.821483] applesmc: #KEY: read arg fail
+[   25.005618] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.005620] applesmc: #KEY: read arg fail
+[   25.189662] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.189665] applesmc: #KEY: read arg fail
+[   25.373676] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.373678] applesmc: #KEY: read arg fail
+[   25.557495] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.557498] applesmc: #KEY: read arg fail
+[   25.741478] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.741480] applesmc: #KEY: read arg fail
+[   25.925440] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   25.925442] applesmc: #KEY: read arg fail
+[   26.109802] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   26.109804] applesmc: #KEY: read arg fail
+[   26.293599] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   26.293602] applesmc: #KEY: read arg fail
+[   26.477496] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   26.477498] applesmc: #KEY: read arg fail
+[   26.661475] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   26.661478] applesmc: #KEY: read arg fail
+[   26.845647] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   26.845650] applesmc: #KEY: read arg fail
+[   27.029805] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.029807] applesmc: #KEY: read arg fail
+[   27.213604] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.213607] applesmc: #KEY: read arg fail
+[   27.397499] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.397501] applesmc: #KEY: read arg fail
+[   27.581480] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.581482] applesmc: #KEY: read arg fail
+[   27.765456] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.765458] applesmc: #KEY: read arg fail
+[   27.949772] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   27.949775] applesmc: #KEY: read arg fail
+[   28.133608] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   28.133610] applesmc: #KEY: read arg fail
+[   28.317497] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   28.317500] applesmc: #KEY: read arg fail
+[   28.501481] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   28.501484] applesmc: #KEY: read arg fail
+[   28.685448] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   28.685451] applesmc: #KEY: read arg fail
+[   28.869460] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   28.869462] applesmc: #KEY: read arg fail
+[   29.053571] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.053573] applesmc: #KEY: read arg fail
+[   29.237617] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.237619] applesmc: #KEY: read arg fail
+[   29.421489] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.421491] applesmc: #KEY: read arg fail
+[   29.605460] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.605462] applesmc: #KEY: read arg fail
+[   29.789725] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.789727] applesmc: #KEY: read arg fail
+[   29.973574] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   29.973577] applesmc: #KEY: read arg fail
+[   30.157510] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   30.157513] applesmc: #KEY: read arg fail
+[   30.341491] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   30.341493] applesmc: #KEY: read arg fail
+[   30.525640] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   30.525642] applesmc: #KEY: read arg fail
+[   30.577326] applesmc: probe of applesmc.768 failed with error -5
+[   30.709731] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   30.709733] applesmc: #KEY: read arg fail
+[   30.893551] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   30.893554] applesmc: #KEY: read arg fail
+[   31.077515] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.077517] applesmc: #KEY: read arg fail
+[   31.261508] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.261510] applesmc: #KEY: read arg fail
+[   31.445463] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.445466] applesmc: #KEY: read arg fail
+[   31.629768] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.629771] applesmc: #KEY: read arg fail
+[   31.813618] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.813620] applesmc: #KEY: read arg fail
+[   31.997516] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   31.997518] applesmc: #KEY: read arg fail
+[   32.181503] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   32.181505] applesmc: #KEY: read arg fail
+[   32.365465] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   32.365467] applesmc: #KEY: read arg fail
+[   32.549766] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   32.549769] applesmc: #KEY: read arg fail
+[   32.733573] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   32.733575] applesmc: #KEY: read arg fail
+[   32.917701] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   32.917703] applesmc: #KEY: read arg fail
+[   33.101513] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   33.101515] applesmc: #KEY: read arg fail
+[   33.285493] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   33.285495] applesmc: #KEY: read arg fail
+[   33.469736] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   33.469739] applesmc: #KEY: read arg fail
+[   33.653633] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   33.653636] applesmc: #KEY: read arg fail
+[   33.837512] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   33.837514] applesmc: #KEY: read arg fail
+[   34.021506] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.021509] applesmc: #KEY: read arg fail
+[   34.205470] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.205472] applesmc: #KEY: read arg fail
+[   34.389723] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.389726] applesmc: #KEY: read arg fail
+[   34.573545] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.573546] applesmc: #KEY: read arg fail
+[   34.757644] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.757646] applesmc: #KEY: read arg fail
+[   34.941524] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   34.941527] applesmc: #KEY: read arg fail
+[   35.125602] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   35.125604] applesmc: #KEY: read arg fail
+[   35.309473] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   35.309475] applesmc: #KEY: read arg fail
+[   35.493640] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   35.493642] applesmc: #KEY: read arg fail
+[   35.677527] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   35.677529] applesmc: #KEY: read arg fail
+[   35.861516] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   35.861518] applesmc: #KEY: read arg fail
+[   36.045480] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.045482] applesmc: #KEY: read arg fail
+[   36.229668] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.229671] applesmc: #KEY: read arg fail
+[   36.413576] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.413578] applesmc: #KEY: read arg fail
+[   36.597522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.597524] applesmc: #KEY: read arg fail
+[   36.781517] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.781519] applesmc: #KEY: read arg fail
+[   36.965500] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   36.965503] applesmc: #KEY: read arg fail
+[   37.149479] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   37.149481] applesmc: #KEY: read arg fail
+[   37.333550] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   37.333552] applesmc: #KEY: read arg fail
+[   37.517543] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   37.517545] applesmc: #KEY: read arg fail
+[   37.701522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   37.701524] applesmc: #KEY: read arg fail
+[   37.885489] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   37.885492] applesmc: #KEY: read arg fail
+[   38.069485] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.069488] applesmc: #KEY: read arg fail
+[   38.253485] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.253488] applesmc: #KEY: read arg fail
+[   38.437607] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.437609] applesmc: #KEY: read arg fail
+[   38.621522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.621525] applesmc: #KEY: read arg fail
+[   38.805678] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.805680] applesmc: #KEY: read arg fail
+[   38.989507] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   38.989509] applesmc: #KEY: read arg fail
+[   39.173632] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   39.173634] applesmc: #KEY: read arg fail
+[   39.357697] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   39.357700] applesmc: #KEY: read arg fail
+[   39.541696] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   39.541699] applesmc: #KEY: read arg fail
+[   39.725505] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   39.725508] applesmc: #KEY: read arg fail
+[   39.909663] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   39.909665] applesmc: #KEY: read arg fail
+[   40.093551] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   40.093553] applesmc: #KEY: read arg fail
+[   40.277647] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   40.277650] applesmc: #KEY: read arg fail
+[   40.461531] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   40.461533] applesmc: #KEY: read arg fail
+[   40.645509] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   40.645511] applesmc: #KEY: read arg fail
+[   40.832511] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   40.832513] applesmc: #KEY: read arg fail
+[   41.016762] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.016764] applesmc: #KEY: read arg fail
+[   41.200591] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.200593] applesmc: #KEY: read arg fail
+[   41.384538] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.384541] applesmc: #KEY: read arg fail
+[   41.568522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.568524] applesmc: #KEY: read arg fail
+[   41.752782] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.752784] applesmc: #KEY: read arg fail
+[   41.936678] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   41.936680] applesmc: #KEY: read arg fail
+[   42.120724] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   42.120726] applesmc: #KEY: read arg fail
+[   42.304543] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   42.304545] applesmc: #KEY: read arg fail
+[   42.488526] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   42.488528] applesmc: #KEY: read arg fail
+[   42.672518] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   42.672520] applesmc: #KEY: read arg fail
+[   42.856621] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   42.856623] applesmc: #KEY: read arg fail
+[   43.040646] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.040648] applesmc: #KEY: read arg fail
+[   43.224563] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.224565] applesmc: #KEY: read arg fail
+[   43.408527] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.408529] applesmc: #KEY: read arg fail
+[   43.592521] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.592523] applesmc: #KEY: read arg fail
+[   43.776668] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.776670] applesmc: #KEY: read arg fail
+[   43.960585] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   43.960587] applesmc: #KEY: read arg fail
+[   44.144538] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   44.144540] applesmc: #KEY: read arg fail
+[   44.328529] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   44.328531] applesmc: #KEY: read arg fail
+[   44.512519] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   44.512521] applesmc: #KEY: read arg fail
+[   44.696498] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   44.696500] applesmc: #KEY: read arg fail
+[   44.880765] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   44.880767] applesmc: #KEY: read arg fail
+[   45.064546] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.064548] applesmc: #KEY: read arg fail
+[   45.248712] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.248714] applesmc: #KEY: read arg fail
+[   45.432523] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.432525] applesmc: #KEY: read arg fail
+[   45.616669] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.616670] applesmc: #KEY: read arg fail
+[   45.800654] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.800656] applesmc: #KEY: read arg fail
+[   45.984548] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   45.984550] applesmc: #KEY: read arg fail
+[   46.168539] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   46.168541] applesmc: #KEY: read arg fail
+[   46.352527] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   46.352529] applesmc: #KEY: read arg fail
+[   46.536506] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   46.536509] applesmc: #KEY: read arg fail
+[   46.720692] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   46.720695] applesmc: #KEY: read arg fail
+[   46.904653] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   46.904655] applesmc: #KEY: read arg fail
+[   47.088549] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   47.088551] applesmc: #KEY: read arg fail
+[   47.272538] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   47.272541] applesmc: #KEY: read arg fail
+[   47.456510] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   47.456512] applesmc: #KEY: read arg fail
+[   47.640773] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   47.640776] applesmc: #KEY: read arg fail
+[   47.824670] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   47.824672] applesmc: #KEY: read arg fail
+[   48.008554] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.008556] applesmc: #KEY: read arg fail
+[   48.192534] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.192536] applesmc: #KEY: read arg fail
+[   48.376514] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.376516] applesmc: #KEY: read arg fail
+[   48.560615] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.560617] applesmc: #KEY: read arg fail
+[   48.744628] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.744630] applesmc: #KEY: read arg fail
+[   48.928555] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   48.928557] applesmc: #KEY: read arg fail
+[   48.980470] applesmc: driver init failed (ret=-5)!
+[   49.138537] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   49.138539] applesmc: #KEY: read arg fail
+[   49.322536] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   49.322538] applesmc: #KEY: read arg fail
+[   49.506665] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   49.506667] applesmc: #KEY: read arg fail
+[   49.690745] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   49.690748] applesmc: #KEY: read arg fail
+[   49.874573] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   49.874575] applesmc: #KEY: read arg fail
+[   50.058542] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.058544] applesmc: #KEY: read arg fail
+[   50.242633] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.242635] applesmc: #KEY: read arg fail
+[   50.426612] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.426614] applesmc: #KEY: read arg fail
+[   50.610643] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.610645] applesmc: #KEY: read arg fail
+[   50.794563] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.794566] applesmc: #KEY: read arg fail
+[   50.978547] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   50.978549] applesmc: #KEY: read arg fail
+[   51.162551] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   51.162553] applesmc: #KEY: read arg fail
+[   51.346677] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   51.346679] applesmc: #KEY: read arg fail
+[   51.530744] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   51.530746] applesmc: #KEY: read arg fail
+[   51.714567] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   51.714569] applesmc: #KEY: read arg fail
+[   51.898554] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   51.898556] applesmc: #KEY: read arg fail
+[   52.082545] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   52.082547] applesmc: #KEY: read arg fail
+[   52.266623] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   52.266625] applesmc: #KEY: read arg fail
+[   52.450730] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   52.450733] applesmc: #KEY: read arg fail
+[   52.634574] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   52.634577] applesmc: #KEY: read arg fail
+[   52.818559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   52.818561] applesmc: #KEY: read arg fail
+[   53.002552] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.002554] applesmc: #KEY: read arg fail
+[   53.186686] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.186688] applesmc: #KEY: read arg fail
+[   53.370631] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.370633] applesmc: #KEY: read arg fail
+[   53.554581] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.554583] applesmc: #KEY: read arg fail
+[   53.738563] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.738565] applesmc: #KEY: read arg fail
+[   53.922551] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   53.922554] applesmc: #KEY: read arg fail
+[   54.106779] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   54.106781] applesmc: #KEY: read arg fail
+[   54.290710] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   54.290712] applesmc: #KEY: read arg fail
+[   54.474751] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   54.474753] applesmc: #KEY: read arg fail
+[   54.658559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   54.658561] applesmc: #KEY: read arg fail
+[   54.842559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   54.842561] applesmc: #KEY: read arg fail
+[   55.026530] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.026533] applesmc: #KEY: read arg fail
+[   55.210694] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.210696] applesmc: #KEY: read arg fail
+[   55.394756] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.394758] applesmc: #KEY: read arg fail
+[   55.578571] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.578573] applesmc: #KEY: read arg fail
+[   55.762556] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.762559] applesmc: #KEY: read arg fail
+[   55.946540] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   55.946543] applesmc: #KEY: read arg fail
+[   56.130492] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   56.130495] applesmc: #KEY: read arg fail
+[   56.314576] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   56.314578] applesmc: #KEY: read arg fail
+[   56.498578] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   56.498580] applesmc: #KEY: read arg fail
+[   56.682559] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   56.682561] applesmc: #KEY: read arg fail
+[   56.866537] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   56.866539] applesmc: #KEY: read arg fail
+[   57.050695] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.050697] applesmc: #KEY: read arg fail
+[   57.234583] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.234585] applesmc: #KEY: read arg fail
+[   57.418595] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.418597] applesmc: #KEY: read arg fail
+[   57.602577] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.602579] applesmc: #KEY: read arg fail
+[   57.786563] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.786565] applesmc: #KEY: read arg fail
+[   57.970766] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   57.970769] applesmc: #KEY: read arg fail
+[   58.154769] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   58.154771] applesmc: #KEY: read arg fail
+[   58.338600] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   58.338602] applesmc: #KEY: read arg fail
+[   58.522583] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   58.522585] applesmc: #KEY: read arg fail
+[   58.706549] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   58.706551] applesmc: #KEY: read arg fail
+[   58.890640] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   58.890642] applesmc: #KEY: read arg fail
+[   59.074509] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.074512] applesmc: #KEY: read arg fail
+[   59.258582] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.258585] applesmc: #KEY: read arg fail
+[   59.442585] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.442587] applesmc: #KEY: read arg fail
+[   59.626572] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.626574] applesmc: #KEY: read arg fail
+[   59.810653] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.810656] applesmc: #KEY: read arg fail
+[   59.994554] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   59.994556] applesmc: #KEY: read arg fail
+[   60.178597] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   60.178599] applesmc: #KEY: read arg fail
+[   60.362578] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   60.362581] applesmc: #KEY: read arg fail
+[   60.546540] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   60.546543] applesmc: #KEY: read arg fail
+[   60.730700] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   60.730702] applesmc: #KEY: read arg fail
+[   60.914643] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   60.914646] applesmc: #KEY: read arg fail
+[   61.098602] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   61.098604] applesmc: #KEY: read arg fail
+[   61.282598] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   61.282600] applesmc: #KEY: read arg fail
+[   61.466578] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   61.466580] applesmc: #KEY: read arg fail
+[   61.650644] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   61.650646] applesmc: #KEY: read arg fail
+[   61.834547] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   61.834549] applesmc: #KEY: read arg fail
+[   62.018591] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.018594] applesmc: #KEY: read arg fail
+[   62.202589] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.202592] applesmc: #KEY: read arg fail
+[   62.386553] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.386555] applesmc: #KEY: read arg fail
+[   62.570522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.570525] applesmc: #KEY: read arg fail
+[   62.754663] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.754665] applesmc: #KEY: read arg fail
+[   62.938593] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   62.938595] applesmc: #KEY: read arg fail
+[   63.122584] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   63.122587] applesmc: #KEY: read arg fail
+[   63.306558] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   63.306561] applesmc: #KEY: read arg fail
+[   63.490528] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   63.490530] applesmc: #KEY: read arg fail
+[   63.674573] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   63.674576] applesmc: #KEY: read arg fail
+[   63.858618] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   63.858620] applesmc: #KEY: read arg fail
+[   64.042600] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.042603] applesmc: #KEY: read arg fail
+[   64.226612] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.226614] applesmc: #KEY: read arg fail
+[   64.410561] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.410563] applesmc: #KEY: read arg fail
+[   64.594539] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.594542] applesmc: #KEY: read arg fail
+[   64.778606] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.778608] applesmc: #KEY: read arg fail
+[   64.962617] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   64.962619] applesmc: #KEY: read arg fail
+[   65.146589] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   65.146591] applesmc: #KEY: read arg fail
+[   65.330538] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   65.330541] applesmc: #KEY: read arg fail
+[   65.514778] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   65.514781] applesmc: #KEY: read arg fail
+[   65.698795] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   65.698798] applesmc: #KEY: read arg fail
+[   65.882592] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   65.882595] applesmc: #KEY: read arg fail
+[   66.066593] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.066595] applesmc: #KEY: read arg fail
+[   66.250542] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.250544] applesmc: #KEY: read arg fail
+[   66.434516] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.434519] applesmc: #KEY: read arg fail
+[   66.618664] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.618667] applesmc: #KEY: read arg fail
+[   66.802614] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.802617] applesmc: #KEY: read arg fail
+[   66.986597] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   66.986599] applesmc: #KEY: read arg fail
+[   67.170564] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   67.170566] applesmc: #KEY: read arg fail
+[   67.354522] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   67.354524] applesmc: #KEY: read arg fail
+[   67.406312] applesmc: probe of applesmc.768 failed with error -5
+[   67.538620] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   67.538622] applesmc: #KEY: read arg fail
+[   67.722603] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   67.722605] applesmc: #KEY: read arg fail
+[   67.906613] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   67.906616] applesmc: #KEY: read arg fail
+[   68.090567] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   68.090569] applesmc: #KEY: read arg fail
+[   68.274527] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   68.274529] applesmc: #KEY: read arg fail
+[   68.458508] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   68.458511] applesmc: #KEY: read arg fail
+[   68.642610] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   68.642613] applesmc: #KEY: read arg fail
+[   68.826590] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   68.826593] applesmc: #KEY: read arg fail
+[   69.010558] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.010560] applesmc: #KEY: read arg fail
+[   69.194533] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.194535] applesmc: #KEY: read arg fail
+[   69.378546] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.378548] applesmc: #KEY: read arg fail
+[   69.562614] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.562617] applesmc: #KEY: read arg fail
+[   69.746594] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.746596] applesmc: #KEY: read arg fail
+[   69.930611] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   69.930613] applesmc: #KEY: read arg fail
+[   70.114552] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   70.114554] applesmc: #KEY: read arg fail
+[   70.298741] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   70.298743] applesmc: #KEY: read arg fail
+[   70.482620] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   70.482622] applesmc: #KEY: read arg fail
+[   70.666601] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   70.666604] applesmc: #KEY: read arg fail
+[   70.850611] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   70.850614] applesmc: #KEY: read arg fail
+[   71.034544] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.034546] applesmc: #KEY: read arg fail
+[   71.218557] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.218559] applesmc: #KEY: read arg fail
+[   71.402624] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.402626] applesmc: #KEY: read arg fail
+[   71.586606] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.586609] applesmc: #KEY: read arg fail
+[   71.770636] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.770638] applesmc: #KEY: read arg fail
+[   71.954499] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   71.954501] applesmc: #KEY: read arg fail
+[   72.138553] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.138555] applesmc: #KEY: read arg fail
+[   72.322646] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.322649] applesmc: #KEY: read arg fail
+[   72.506611] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.506614] applesmc: #KEY: read arg fail
+[   72.690591] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.690593] applesmc: #KEY: read arg fail
+[   72.874637] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   72.874639] applesmc: #KEY: read arg fail
+[   73.058574] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.058576] applesmc: #KEY: read arg fail
+[   73.242637] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.242640] applesmc: #KEY: read arg fail
+[   73.426617] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.426620] applesmc: #KEY: read arg fail
+[   73.610599] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.610601] applesmc: #KEY: read arg fail
+[   73.794640] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.794642] applesmc: #KEY: read arg fail
+[   73.978758] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   73.978760] applesmc: #KEY: read arg fail
+[   74.162717] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.162719] applesmc: #KEY: read arg fail
+[   74.346622] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.346624] applesmc: #KEY: read arg fail
+[   74.530604] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.530606] applesmc: #KEY: read arg fail
+[   74.714611] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.714614] applesmc: #KEY: read arg fail
+[   74.898580] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   74.898582] applesmc: #KEY: read arg fail
+[   75.082647] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.082649] applesmc: #KEY: read arg fail
+[   75.266628] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.266630] applesmc: #KEY: read arg fail
+[   75.450609] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.450611] applesmc: #KEY: read arg fail
+[   75.634597] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.634599] applesmc: #KEY: read arg fail
+[   75.818697] applesmc: send_byte(0x10, 0x0304) fail: 0xff
+[   75.818699] applesmc: #KEY: read arg fail
