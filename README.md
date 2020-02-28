@@ -40,7 +40,7 @@ There is also a chat available via gitter for discussions:
 | [Bluetooth](#bluetooth) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [FaceTime HD camera](#facetime-hd-camera) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Graphics card](#intel) (Intel) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) | 
+| [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) |
 | [Keyboard & Touchpad](#keyboard--touchpad) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Screen](#screen) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
@@ -133,13 +133,13 @@ displays daisy-chained together with Full HD each.
 
 ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
-Works out of the box on most models. MacBookPro 16,1 currently requires a 5.6-RC kernel and the latest amdgpu drivers. 
+Works out of the box on most models. MacBookPro 16,1 currently requires a 5.6-RC kernel and the latest amdgpu drivers.
 
 ## Keyboard & Touchpad
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
-Works out of the box with Linux 5.3 and above on earlier models, on MacBookPro 15 and above you'll require the BCE and iBridge drivers from here https://github.com/MCMrARM/mbp2018-bridge-drv along with touchpad and keyboard patches from here 
+Works out of the box with Linux 5.3 and above on earlier models, on MacBookPro 15 and above you'll require the BCE and iBridge drivers from here https://github.com/MCMrARM/mbp2018-bridge-drv along with touchpad and keyboard patches from here
 
 For earlier Linux versions you can get the driver from
 https://github.com/roadrunner2/macbook12-spi-driver.
@@ -288,7 +288,7 @@ ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
-The MacBook Pro 16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't work as no appropriate firmware is available. Catalina+ firmware doesn't seem to work here and no pre-Catalina fw is available for this card (Bali). 
+The MacBook Pro 16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't work as no appropriate firmware is available. Catalina+ firmware doesn't seem to work here and no pre-Catalina fw is available for this card (Bali).
 
 ## Misc
 
