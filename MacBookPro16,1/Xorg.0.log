@@ -1,0 +1,611 @@
+[     7.052] (--) Log file renamed from "/var/log/Xorg.pid-3012.log" to "/var/log/Xorg.0.log"
+[     7.053] 
+X.Org X Server 1.20.6
+X Protocol Version 11, Revision 0
+[     7.053] Build Operating System:  5.0.6-200.fc29.x86_64 
+[     7.053] Current Operating System: Linux localhost.localdomain 5.5.0-20200211.amdgpu.drmnext.fc31.x86_64 #1 SMP Tue Feb 11 18:25:11 UTC 2020 x86_64
+[     7.053] Kernel command line: BOOT_IMAGE=(hd0,gpt4)/boot/vmlinuz-5.5.0-20200211.amdgpu.drmnext.fc31.x86_64 root=UUID=266ee0c6-b535-483a-947f-f63227591659 ro nomodeset rhgb quiet efi=noruntime pcie_ports=compat modprobe.blacklist=thunderbolt
+[     7.053] Build Date: 25 November 2019  12:00:00AM
+[     7.053] Build ID: xorg-x11-server 1.20.6-1.fc31 
+[     7.053] Current version of pixman: 0.38.4
+[     7.053] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     7.053] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     7.053] (==) Log file: "/var/log/Xorg.0.log", Time: Wed Feb 12 12:46:26 2020
+[     7.054] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[     7.054] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     7.055] (==) No Layout section.  Using the first Screen section.
+[     7.055] (==) No screen section available. Using defaults.
+[     7.055] (**) |-->Screen "Default Screen Section" (0)
+[     7.055] (**) |   |-->Monitor "<default monitor>"
+[     7.056] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     7.056] (==) Automatically adding devices
+[     7.056] (==) Automatically enabling devices
+[     7.056] (==) Automatically adding GPU devices
+[     7.056] (==) Automatically binding GPU devices
+[     7.056] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     7.056] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[     7.056] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[     7.056] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     7.056] (II) Loader magic: 0x55d085b0be20
+[     7.056] (II) Module ABI versions:
+[     7.056] 	X.Org ANSI C Emulation: 0.4
+[     7.056] 	X.Org Video Driver: 24.0
+[     7.056] 	X.Org XInput driver : 24.1
+[     7.056] 	X.Org Server Extension : 10.0
+[     7.056] (++) using VT number 1
+
+[     7.057] (II) systemd-logind: took control of session /org/freedesktop/login1/session/c1
+[     7.060] (--) PCI:*(3@0:0:0) 1002:7340:106b:0210 rev 67, Mem @ 0xb0000000/268435456, 0xc0000000/2097152, 0x81500000/524288, I/O @ 0x00003000/256, BIOS @ 0x????????/131072
+[     7.061] (II) LoadModule: "glx"
+[     7.062] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[     7.066] (II) Module glx: vendor="X.Org Foundation"
+[     7.066] 	compiled for 1.20.6, module version = 1.0.0
+[     7.066] 	ABI class: X.Org Server Extension, version 10.0
+[     7.066] (==) Matched ati as autoconfigured driver 0
+[     7.066] (==) Matched modesetting as autoconfigured driver 1
+[     7.066] (==) Matched fbdev as autoconfigured driver 2
+[     7.066] (==) Matched vesa as autoconfigured driver 3
+[     7.066] (==) Assigned the driver to the xf86ConfigLayout
+[     7.066] (II) LoadModule: "ati"
+[     7.066] (II) Loading /usr/lib64/xorg/modules/drivers/ati_drv.so
+[     7.066] (II) Module ati: vendor="X.Org Foundation"
+[     7.066] 	compiled for 1.20.5, module version = 19.0.1
+[     7.066] 	Module class: X.Org Video Driver
+[     7.066] 	ABI class: X.Org Video Driver, version 24.0
+[     7.123] (II) LoadModule: "radeon"
+[     7.123] (II) Loading /usr/lib64/xorg/modules/drivers/radeon_drv.so
+[     7.127] (II) Module radeon: vendor="X.Org Foundation"
+[     7.127] 	compiled for 1.20.5, module version = 19.0.1
+[     7.127] 	Module class: X.Org Video Driver
+[     7.127] 	ABI class: X.Org Video Driver, version 24.0
+[     7.127] (II) LoadModule: "modesetting"
+[     7.127] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[     7.127] (II) Module modesetting: vendor="X.Org Foundation"
+[     7.127] 	compiled for 1.20.6, module version = 1.20.6
+[     7.127] 	Module class: X.Org Video Driver
+[     7.127] 	ABI class: X.Org Video Driver, version 24.0
+[     7.127] (II) LoadModule: "fbdev"
+[     7.127] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[     7.127] (II) Module fbdev: vendor="X.Org Foundation"
+[     7.127] 	compiled for 1.20.5, module version = 0.5.0
+[     7.127] 	Module class: X.Org Video Driver
+[     7.127] 	ABI class: X.Org Video Driver, version 24.0
+[     7.127] (II) LoadModule: "vesa"
+[     7.128] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[     7.128] (II) Module vesa: vendor="X.Org Foundation"
+[     7.128] 	compiled for 1.20.5, module version = 2.4.0
+[     7.128] 	Module class: X.Org Video Driver
+[     7.128] 	ABI class: X.Org Video Driver, version 24.0
+[     7.128] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[     7.130] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     7.130] (II) FBDEV: driver for framebuffer: fbdev
+[     7.130] (II) VESA: driver for VESA chipsets: vesa
+[     7.130] (EE) open /dev/dri/card0: No such file or directory
+[     7.130] (WW) Falling back to old probe method for modesetting
+[     7.130] (EE) open /dev/dri/card0: No such file or directory
+[     7.130] (II) Loading sub module "fbdevhw"
+[     7.130] (II) LoadModule: "fbdevhw"
+[     7.130] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[     7.131] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.131] 	compiled for 1.20.6, module version = 0.0.2
+[     7.131] 	ABI class: X.Org Video Driver, version 24.0
+[     7.131] (EE) Unable to find a valid framebuffer device
+[     7.131] (WW) Falling back to old probe method for fbdev
+[     7.131] (II) Loading sub module "fbdevhw"
+[     7.131] (II) LoadModule: "fbdevhw"
+[     7.131] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[     7.131] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.131] 	compiled for 1.20.6, module version = 0.0.2
+[     7.131] 	ABI class: X.Org Video Driver, version 24.0
+[     7.131] (II) FBDEV(2): using default device
+[     7.131] vesa: Refusing to run on UEFI
+[     7.131] (EE) Screen 0 deleted because of no matching config section.
+[     7.131] (II) UnloadModule: "modesetting"
+[     7.131] (EE) Screen 0 deleted because of no matching config section.
+[     7.131] (II) UnloadModule: "fbdev"
+[     7.131] (II) UnloadSubModule: "fbdevhw"
+[     7.131] (II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     7.131] (==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+[     7.131] (==) FBDEV(0): RGB weight 888
+[     7.131] (==) FBDEV(0): Default visual is TrueColor
+[     7.131] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[     7.131] (II) FBDEV(0): hardware: EFI VGA (video memory: 31360kB)
+[     7.131] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[     7.131] (II) FBDEV(0): checking modes against framebuffer device...
+[     7.131] (II) FBDEV(0): checking modes against monitor...
+[     7.131] (II) FBDEV(0): Virtual size is 3584x2240 (pitch 3584)
+[     7.131] (**) FBDEV(0):  Built-in mode "current": 803.2 MHz, 200.8 kHz, 88.7 Hz
+[     7.131] (II) FBDEV(0): Modeline "current"x0.0  803.21  3584 3616 3808 4000  2240 2244 2248 2264 -hsync -vsync -csync (200.8 kHz b)
+[     7.131] (==) FBDEV(0): DPI set to (96, 96)
+[     7.131] (II) Loading sub module "fb"
+[     7.131] (II) LoadModule: "fb"
+[     7.131] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[     7.133] (II) Module fb: vendor="X.Org Foundation"
+[     7.133] 	compiled for 1.20.6, module version = 1.0.0
+[     7.133] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     7.133] (**) FBDEV(0): using shadow framebuffer
+[     7.133] (II) Loading sub module "shadow"
+[     7.133] (II) LoadModule: "shadow"
+[     7.133] (II) Loading /usr/lib64/xorg/modules/libshadow.so
+[     7.133] (II) Module shadow: vendor="X.Org Foundation"
+[     7.133] 	compiled for 1.20.6, module version = 1.1.0
+[     7.133] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     7.133] (II) UnloadModule: "radeon"
+[     7.133] (II) Unloading radeon
+[     7.134] (II) FBDEV(0): FBIOBLANK: Invalid argument (Screen blanking not supported by kernel - disabling)
+[     7.135] (==) FBDEV(0): Backing store enabled
+[     7.135] (==) FBDEV(0): DPMS enabled
+[     7.135] (II) Initializing extension Generic Event Extension
+[     7.136] (II) Initializing extension SHAPE
+[     7.136] (II) Initializing extension MIT-SHM
+[     7.136] (II) Initializing extension XInputExtension
+[     7.136] (II) Initializing extension XTEST
+[     7.137] (II) Initializing extension BIG-REQUESTS
+[     7.137] (II) Initializing extension SYNC
+[     7.137] (II) Initializing extension XKEYBOARD
+[     7.137] (II) Initializing extension XC-MISC
+[     7.137] (II) Initializing extension XFIXES
+[     7.137] (II) Initializing extension RENDER
+[     7.137] (II) Initializing extension RANDR
+[     7.138] (II) Initializing extension COMPOSITE
+[     7.138] (II) Initializing extension DAMAGE
+[     7.138] (II) Initializing extension MIT-SCREEN-SAVER
+[     7.138] (II) Initializing extension DOUBLE-BUFFER
+[     7.139] (II) Initializing extension RECORD
+[     7.139] (II) Initializing extension DPMS
+[     7.139] (II) Initializing extension Present
+[     7.139] (II) Initializing extension DRI3
+[     7.139] (II) Initializing extension X-Resource
+[     7.139] (II) Initializing extension XVideo
+[     7.139] (II) Initializing extension XVideo-MotionCompensation
+[     7.139] (II) Initializing extension SELinux
+[     7.140] (II) SELinux: Disabled by boolean
+[     7.140] (II) Initializing extension GLX
+[     7.140] (II) AIGLX: Screen 0 is not DRI2 capable
+[     7.244] (II) IGLX: Loaded and initialized swrast
+[     7.244] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[     7.244] (II) Initializing extension XFree86-VidModeExtension
+[     7.244] (II) Initializing extension XFree86-DGA
+[     7.244] (II) Initializing extension XFree86-DRI
+[     7.244] (II) Initializing extension DRI2
+[     7.284] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[     7.284] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[     7.284] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     7.285] (**) Power Button: Applying InputClass "system-keyboard"
+[     7.285] (II) LoadModule: "libinput"
+[     7.285] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[     7.291] (II) Module libinput: vendor="X.Org Foundation"
+[     7.291] 	compiled for 1.20.5, module version = 0.29.0
+[     7.291] 	Module class: X.Org XInput Driver
+[     7.291] 	ABI class: X.Org XInput driver, version 24.1
+[     7.291] (II) Using input driver 'libinput' for 'Power Button'
+[     7.292] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 24 paused 0
+[     7.292] (**) Power Button: always reports core events
+[     7.292] (**) Option "Device" "/dev/input/event3"
+[     7.292] (**) Option "_source" "server/udev"
+[     7.298] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[     7.298] (II) event3  - Power Button: device is a keyboard
+[     7.298] (II) event3  - Power Button: device removed
+[     7.298] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[     7.298] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[     7.298] (**) Option "xkb_layout" "gb"
+[     7.312] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[     7.312] (II) event3  - Power Button: device is a keyboard
+[     7.312] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[     7.312] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[     7.312] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[     7.312] (**) Video Bus: Applying InputClass "system-keyboard"
+[     7.312] (II) Using input driver 'libinput' for 'Video Bus'
+[     7.313] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 27 paused 0
+[     7.313] (**) Video Bus: always reports core events
+[     7.313] (**) Option "Device" "/dev/input/event6"
+[     7.313] (**) Option "_source" "server/udev"
+[     7.314] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[     7.314] (II) event6  - Video Bus: device is a keyboard
+[     7.314] (II) event6  - Video Bus: device removed
+[     7.314] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:01/device:02/device:03/LNXVIDEO:00/input/input6/event6"
+[     7.314] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[     7.314] (**) Option "xkb_layout" "gb"
+[     7.316] (II) event6  - Video Bus: is tagged by udev as: Keyboard
+[     7.316] (II) event6  - Video Bus: device is a keyboard
+[     7.316] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[     7.316] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[     7.316] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     7.316] (**) Power Button: Applying InputClass "system-keyboard"
+[     7.316] (II) Using input driver 'libinput' for 'Power Button'
+[     7.317] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 28 paused 0
+[     7.317] (**) Power Button: always reports core events
+[     7.317] (**) Option "Device" "/dev/input/event1"
+[     7.317] (**) Option "_source" "server/udev"
+[     7.317] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     7.318] (II) event1  - Power Button: device is a keyboard
+[     7.318] (II) event1  - Power Button: device removed
+[     7.318] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[     7.318] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[     7.318] (**) Option "xkb_layout" "gb"
+[     7.319] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     7.319] (II) event1  - Power Button: device is a keyboard
+[     7.319] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[     7.319] (II) No input driver specified, ignoring this device.
+[     7.319] (II) This device may have been added with another device file.
+[     7.320] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[     7.320] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[     7.320] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[     7.320] (**) Sleep Button: Applying InputClass "system-keyboard"
+[     7.320] (II) Using input driver 'libinput' for 'Sleep Button'
+[     7.320] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 29 paused 0
+[     7.320] (**) Sleep Button: always reports core events
+[     7.320] (**) Option "Device" "/dev/input/event2"
+[     7.320] (**) Option "_source" "server/udev"
+[     7.321] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[     7.321] (II) event2  - Sleep Button: device is a keyboard
+[     7.321] (II) event2  - Sleep Button: device removed
+[     7.321] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[     7.321] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[     7.321] (**) Option "xkb_layout" "gb"
+[     7.322] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[     7.322] (II) event2  - Sleep Button: device is a keyboard
+[     7.323] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event14)
+[     7.323] (II) No input driver specified, ignoring this device.
+[     7.323] (II) This device may have been added with another device file.
+[     7.323] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event15)
+[     7.323] (II) No input driver specified, ignoring this device.
+[     7.323] (II) This device may have been added with another device file.
+[     7.324] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event16)
+[     7.324] (II) No input driver specified, ignoring this device.
+[     7.324] (II) This device may have been added with another device file.
+[     7.324] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event17)
+[     7.324] (II) No input driver specified, ignoring this device.
+[     7.324] (II) This device may have been added with another device file.
+[     7.324] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event18)
+[     7.324] (II) No input driver specified, ignoring this device.
+[     7.324] (II) This device may have been added with another device file.
+[     7.325] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=11 (/dev/input/event19)
+[     7.325] (II) No input driver specified, ignoring this device.
+[     7.325] (II) This device may have been added with another device file.
+[     7.325] (II) config/udev: Adding input device Yubico Yubikey 4 OTP+U2F (/dev/input/event5)
+[     7.325] (**) Yubico Yubikey 4 OTP+U2F: Applying InputClass "evdev keyboard catchall"
+[     7.325] (**) Yubico Yubikey 4 OTP+U2F: Applying InputClass "libinput keyboard catchall"
+[     7.325] (**) Yubico Yubikey 4 OTP+U2F: Applying InputClass "system-keyboard"
+[     7.325] (II) Using input driver 'libinput' for 'Yubico Yubikey 4 OTP+U2F'
+[     7.326] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 30 paused 0
+[     7.326] (**) Yubico Yubikey 4 OTP+U2F: always reports core events
+[     7.326] (**) Option "Device" "/dev/input/event5"
+[     7.326] (**) Option "_source" "server/udev"
+[     7.327] (II) event5  - Yubico Yubikey 4 OTP+U2F: is tagged by udev as: Keyboard
+[     7.327] (II) event5  - Yubico Yubikey 4 OTP+U2F: device is a keyboard
+[     7.327] (II) event5  - Yubico Yubikey 4 OTP+U2F: device removed
+[     7.327] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:1050:0403.0001/input/input5/event5"
+[     7.327] (II) XINPUT: Adding extended input device "Yubico Yubikey 4 OTP+U2F" (type: KEYBOARD, id 10)
+[     7.327] (**) Option "xkb_layout" "gb"
+[     7.328] (II) event5  - Yubico Yubikey 4 OTP+U2F: is tagged by udev as: Keyboard
+[     7.328] (II) event5  - Yubico Yubikey 4 OTP+U2F: device is a keyboard
+[     7.329] (II) config/udev: Adding input device USB Optical Mouse (/dev/input/event10)
+[     7.329] (**) USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[     7.329] (**) USB Optical Mouse: Applying InputClass "libinput pointer catchall"
+[     7.329] (II) Using input driver 'libinput' for 'USB Optical Mouse'
+[     7.382] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 31 paused 0
+[     7.382] (**) USB Optical Mouse: always reports core events
+[     7.382] (**) Option "Device" "/dev/input/event10"
+[     7.382] (**) Option "_source" "server/udev"
+[     7.383] (II) event10 - USB Optical Mouse: is tagged by udev as: Mouse
+[     7.384] (II) event10 - USB Optical Mouse: device is a pointer
+[     7.384] (II) event10 - USB Optical Mouse: device removed
+[     7.384] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.1/1-2.1.1/1-2.1.1:1.0/0003:0461:4D15.0009/input/input12/event10"
+[     7.384] (II) XINPUT: Adding extended input device "USB Optical Mouse" (type: MOUSE, id 11)
+[     7.384] (**) Option "AccelerationScheme" "none"
+[     7.384] (**) USB Optical Mouse: (accel) selected scheme none/0
+[     7.384] (**) USB Optical Mouse: (accel) acceleration factor: 2.000
+[     7.384] (**) USB Optical Mouse: (accel) acceleration threshold: 4
+[     7.385] (II) event10 - USB Optical Mouse: is tagged by udev as: Mouse
+[     7.386] (II) event10 - USB Optical Mouse: device is a pointer
+[     7.386] (II) config/udev: Adding input device USB Optical Mouse (/dev/input/mouse1)
+[     7.386] (II) No input driver specified, ignoring this device.
+[     7.386] (II) This device may have been added with another device file.
+[     7.387] (II) config/udev: Adding input device Apple, Inc Apple Keyboard (/dev/input/event12)
+[     7.387] (**) Apple, Inc Apple Keyboard: Applying InputClass "evdev keyboard catchall"
+[     7.387] (**) Apple, Inc Apple Keyboard: Applying InputClass "libinput keyboard catchall"
+[     7.387] (**) Apple, Inc Apple Keyboard: Applying InputClass "system-keyboard"
+[     7.387] (II) Using input driver 'libinput' for 'Apple, Inc Apple Keyboard'
+[     7.388] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 32 paused 0
+[     7.388] (**) Apple, Inc Apple Keyboard: always reports core events
+[     7.388] (**) Option "Device" "/dev/input/event12"
+[     7.388] (**) Option "_source" "server/udev"
+[     7.390] (II) event12 - Apple, Inc Apple Keyboard: is tagged by udev as: Keyboard
+[     7.390] (II) event12 - Apple, Inc Apple Keyboard: device is a keyboard
+[     7.390] (II) event12 - Apple, Inc Apple Keyboard: device removed
+[     7.390] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.1/1-2.1.2/1-2.1.2:1.0/0003:05AC:0221.000C/input/input14/event12"
+[     7.390] (II) XINPUT: Adding extended input device "Apple, Inc Apple Keyboard" (type: KEYBOARD, id 12)
+[     7.390] (**) Option "xkb_layout" "gb"
+[     7.392] (II) event12 - Apple, Inc Apple Keyboard: is tagged by udev as: Keyboard
+[     7.392] (II) event12 - Apple, Inc Apple Keyboard: device is a keyboard
+[     7.393] (II) config/udev: Adding input device Apple, Inc Apple Keyboard (/dev/input/event13)
+[     7.393] (**) Apple, Inc Apple Keyboard: Applying InputClass "evdev keyboard catchall"
+[     7.393] (**) Apple, Inc Apple Keyboard: Applying InputClass "libinput keyboard catchall"
+[     7.393] (**) Apple, Inc Apple Keyboard: Applying InputClass "system-keyboard"
+[     7.393] (II) Using input driver 'libinput' for 'Apple, Inc Apple Keyboard'
+[     7.393] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 33 paused 0
+[     7.393] (**) Apple, Inc Apple Keyboard: always reports core events
+[     7.393] (**) Option "Device" "/dev/input/event13"
+[     7.393] (**) Option "_source" "server/udev"
+[     7.395] (II) event13 - Apple, Inc Apple Keyboard: is tagged by udev as: Keyboard
+[     7.395] (II) event13 - Apple, Inc Apple Keyboard: device is a keyboard
+[     7.395] (II) event13 - Apple, Inc Apple Keyboard: device removed
+[     7.395] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.1/1-2.1.2/1-2.1.2:1.1/0003:05AC:0221.000D/input/input15/event13"
+[     7.395] (II) XINPUT: Adding extended input device "Apple, Inc Apple Keyboard" (type: KEYBOARD, id 13)
+[     7.395] (**) Option "xkb_layout" "gb"
+[     7.397] (II) event13 - Apple, Inc Apple Keyboard: is tagged by udev as: Keyboard
+[     7.397] (II) event13 - Apple, Inc Apple Keyboard: device is a keyboard
+[     7.398] (II) config/udev: Adding input device Apple Headset (/dev/input/event7)
+[     7.398] (**) Apple Headset: Applying InputClass "evdev keyboard catchall"
+[     7.398] (**) Apple Headset: Applying InputClass "libinput keyboard catchall"
+[     7.398] (**) Apple Headset: Applying InputClass "system-keyboard"
+[     7.398] (II) Using input driver 'libinput' for 'Apple Headset'
+[     7.399] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 34 paused 0
+[     7.399] (**) Apple Headset: always reports core events
+[     7.399] (**) Option "Device" "/dev/input/event7"
+[     7.399] (**) Option "_source" "server/udev"
+[     7.400] (II) event7  - Apple Headset: is tagged by udev as: Keyboard
+[     7.400] (II) event7  - Apple Headset: device is a keyboard
+[     7.400] (II) event7  - Apple Headset: device removed
+[     7.400] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1b.0/0000:04:00.1/bce/bce/bce-vhci/usb7/7-4/7-4:1.0/0003:05AC:8103.0004/input/input7/event7"
+[     7.400] (II) XINPUT: Adding extended input device "Apple Headset" (type: KEYBOARD, id 14)
+[     7.400] (**) Option "xkb_layout" "gb"
+[     7.402] (II) event7  - Apple Headset: is tagged by udev as: Keyboard
+[     7.402] (II) event7  - Apple Headset: device is a keyboard
+[     7.403] (II) config/udev: Adding input device Apple Inc. Apple Internal Keyboard / Trackpad (/dev/input/event8)
+[     7.403] (**) Apple Inc. Apple Internal Keyboard / Trackpad: Applying InputClass "evdev keyboard catchall"
+[     7.403] (**) Apple Inc. Apple Internal Keyboard / Trackpad: Applying InputClass "libinput keyboard catchall"
+[     7.403] (**) Apple Inc. Apple Internal Keyboard / Trackpad: Applying InputClass "system-keyboard"
+[     7.403] (II) Using input driver 'libinput' for 'Apple Inc. Apple Internal Keyboard / Trackpad'
+[     7.404] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 35 paused 0
+[     7.404] (**) Apple Inc. Apple Internal Keyboard / Trackpad: always reports core events
+[     7.404] (**) Option "Device" "/dev/input/event8"
+[     7.404] (**) Option "_source" "server/udev"
+[     7.406] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: is tagged by udev as: Keyboard
+[     7.406] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: device is a keyboard
+[     7.406] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: device removed
+[     7.406] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1b.0/0000:04:00.1/bce/bce/bce-vhci/usb7/7-5/7-5:1.1/0003:05AC:0340.0006/input/input8/event8"
+[     7.406] (II) XINPUT: Adding extended input device "Apple Inc. Apple Internal Keyboard / Trackpad" (type: KEYBOARD, id 15)
+[     7.406] (**) Option "xkb_layout" "gb"
+[     7.408] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: is tagged by udev as: Keyboard
+[     7.408] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: device is a keyboard
+[     7.410] (II) config/udev: Adding input device Apple Inc. Apple Internal Keyboard / Trackpad Mouse (/dev/input/event9)
+[     7.410] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: Applying InputClass "evdev pointer catchall"
+[     7.410] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: Applying InputClass "libinput pointer catchall"
+[     7.410] (II) Using input driver 'libinput' for 'Apple Inc. Apple Internal Keyboard / Trackpad Mouse'
+[     7.462] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 36 paused 0
+[     7.462] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: always reports core events
+[     7.462] (**) Option "Device" "/dev/input/event9"
+[     7.462] (**) Option "_source" "server/udev"
+[     7.463] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: is tagged by udev as: Mouse
+[     7.463] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: device is a pointer
+[     7.463] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: device removed
+[     7.463] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1b.0/0000:04:00.1/bce/bce/bce-vhci/usb7/7-5/7-5:1.2/0003:05AC:0340.0007/input/input9/event9"
+[     7.463] (II) XINPUT: Adding extended input device "Apple Inc. Apple Internal Keyboard / Trackpad Mouse" (type: MOUSE, id 16)
+[     7.464] (**) Option "AccelerationScheme" "none"
+[     7.464] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: (accel) selected scheme none/0
+[     7.464] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: (accel) acceleration factor: 2.000
+[     7.464] (**) Apple Inc. Apple Internal Keyboard / Trackpad Mouse: (accel) acceleration threshold: 4
+[     7.465] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: is tagged by udev as: Mouse
+[     7.465] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: device is a pointer
+[     7.466] (II) config/udev: Adding input device Apple Inc. Apple Internal Keyboard / Trackpad Mouse (/dev/input/mouse0)
+[     7.466] (II) No input driver specified, ignoring this device.
+[     7.466] (II) This device may have been added with another device file.
+[     7.467] (II) config/udev: Adding input device Apple Inc. Touch Bar Display (/dev/input/event20)
+[     7.467] (**) Apple Inc. Touch Bar Display: Applying InputClass "evdev keyboard catchall"
+[     7.467] (**) Apple Inc. Touch Bar Display: Applying InputClass "libinput keyboard catchall"
+[     7.467] (**) Apple Inc. Touch Bar Display: Applying InputClass "system-keyboard"
+[     7.467] (II) Using input driver 'libinput' for 'Apple Inc. Touch Bar Display'
+[     7.467] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 37 paused 0
+[     7.467] (**) Apple Inc. Touch Bar Display: always reports core events
+[     7.467] (**) Option "Device" "/dev/input/event20"
+[     7.467] (**) Option "_source" "server/udev"
+[     7.469] (II) event20 - Apple Inc. Touch Bar Display: is tagged by udev as: Keyboard
+[     7.469] (II) event20 - Apple Inc. Touch Bar Display: device is a keyboard
+[     7.469] (II) event20 - Apple Inc. Touch Bar Display: device removed
+[     7.469] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1b.0/0000:04:00.1/bce/bce/bce-vhci/usb7/7-6/7-6:1.0/0003:05AC:8302.000B/input/input23/event20"
+[     7.469] (II) XINPUT: Adding extended input device "Apple Inc. Touch Bar Display" (type: KEYBOARD, id 17)
+[     7.469] (**) Option "xkb_layout" "gb"
+[     7.471] (II) event20 - Apple Inc. Touch Bar Display: is tagged by udev as: Keyboard
+[     7.471] (II) event20 - Apple Inc. Touch Bar Display: device is a keyboard
+[     7.472] (II) config/udev: Adding input device Apple T2 Audio Codec Output (/dev/input/event4)
+[     7.472] (II) No input driver specified, ignoring this device.
+[     7.472] (II) This device may have been added with another device file.
+[     7.472] (II) config/udev: Adding input device PC Speaker (/dev/input/event11)
+[     7.472] (II) No input driver specified, ignoring this device.
+[     7.472] (II) This device may have been added with another device file.
+[    16.875] (**) Option "fd" "24"
+[    16.875] (II) event3  - Power Button: device removed
+[    16.875] (**) Option "fd" "27"
+[    16.875] (II) event6  - Video Bus: device removed
+[    16.875] (**) Option "fd" "28"
+[    16.875] (II) event1  - Power Button: device removed
+[    16.875] (**) Option "fd" "29"
+[    16.875] (II) event2  - Sleep Button: device removed
+[    16.876] (**) Option "fd" "30"
+[    16.876] (II) event5  - Yubico Yubikey 4 OTP+U2F: device removed
+[    16.876] (**) Option "fd" "31"
+[    16.876] (II) event10 - USB Optical Mouse: device removed
+[    16.876] (**) Option "fd" "32"
+[    16.876] (II) event12 - Apple, Inc Apple Keyboard: device removed
+[    16.876] (**) Option "fd" "33"
+[    16.876] (II) event13 - Apple, Inc Apple Keyboard: device removed
+[    16.876] (**) Option "fd" "34"
+[    16.876] (II) event7  - Apple Headset: device removed
+[    16.876] (**) Option "fd" "35"
+[    16.876] (II) event8  - Apple Inc. Apple Internal Keyboard / Trackpad: device removed
+[    16.876] (**) Option "fd" "36"
+[    16.876] (II) event9  - Apple Inc. Apple Internal Keyboard / Trackpad Mouse: device removed
+[    16.876] (**) Option "fd" "37"
+[    16.876] (II) event20 - Apple Inc. Touch Bar Display: device removed
+[    16.877] (II) systemd-logind: got pause for 13:84
+[    16.877] (II) systemd-logind: got pause for 13:67
+[    16.877] (II) systemd-logind: got pause for 13:76
+[    16.877] (II) systemd-logind: got pause for 13:71
+[    16.877] (II) systemd-logind: got pause for 13:65
+[    16.877] (II) systemd-logind: got pause for 13:69
+[    16.877] (II) systemd-logind: got pause for 13:72
+[    16.877] (II) systemd-logind: got pause for 13:70
+[    16.877] (II) systemd-logind: got pause for 13:77
+[    16.877] (II) systemd-logind: got pause for 13:73
+[    16.877] (II) systemd-logind: got pause for 13:74
+[    16.877] (II) systemd-logind: got pause for 13:66
+[    97.322] (II) UnloadModule: "libinput"
+[    97.322] (II) systemd-logind: releasing fd for 13:84
+[    97.389] (II) UnloadModule: "libinput"
+[    97.389] (II) systemd-logind: releasing fd for 13:73
+[    97.405] (II) UnloadModule: "libinput"
+[    97.405] (II) systemd-logind: releasing fd for 13:72
+[    97.417] (II) UnloadModule: "libinput"
+[    97.417] (II) systemd-logind: releasing fd for 13:71
+[    97.430] (II) UnloadModule: "libinput"
+[    97.430] (II) systemd-logind: releasing fd for 13:77
+[    97.443] (II) UnloadModule: "libinput"
+[    97.443] (II) systemd-logind: releasing fd for 13:76
+[    97.455] (II) UnloadModule: "libinput"
+[    97.455] (II) systemd-logind: releasing fd for 13:74
+[    97.462] (II) UnloadModule: "libinput"
+[    97.462] (II) systemd-logind: releasing fd for 13:69
+[    97.471] (II) UnloadModule: "libinput"
+[    97.471] (II) systemd-logind: releasing fd for 13:66
+[    97.482] (II) UnloadModule: "libinput"
+[    97.482] (II) systemd-logind: releasing fd for 13:65
+[    97.499] (II) UnloadModule: "libinput"
+[    97.499] (II) systemd-logind: releasing fd for 13:70
+[    97.520] (II) UnloadModule: "libinput"
+[    97.520] (II) systemd-logind: releasing fd for 13:67
+[    97.541] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[    97.542] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[    97.542] (WW) xf86CloseConsole: VT_ACTIVATE failed: Input/output error
+[    97.543] (II) Server terminated successfully (0). Closing log file.
