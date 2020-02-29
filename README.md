@@ -139,7 +139,8 @@ Works out of the box on most models. MacBookPro 16,1 currently requires a 5.6-RC
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
-Works out of the box with Linux 5.3 and above on earlier models, on MacBookPro 15 and above you'll require the BCE and iBridge drivers from here https://github.com/MCMrARM/mbp2018-bridge-drv along with touchpad and keyboard patches from here
+Works out of the box with Linux 5.3 and above for MacBookPro13,* and MacBookPro14,*.
+For models with T2 chip (MacBookPro15,* and MacBookPro16,*) the BCE and iBridge drivers from https://github.com/MCMrARM/mbp2018-bridge-drv along with touchpad and keyboard patches from here are required.
 
 For earlier Linux versions you can get the driver from
 https://github.com/roadrunner2/macbook12-spi-driver.
