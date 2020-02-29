@@ -135,7 +135,9 @@ displays daisy-chained together with Full HD each.
 
 ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
-Works out of the box on most models. MacBookPro 16,1 currently requires a 5.6-RC kernel and the latest amdgpu drivers.
+Works out of the box for the MacBookPro13,3 and MacBookPro14,3.
+
+The MacBookPro16,1 currently requires a 5.6-RC kernel and the latest `amdgpu` drivers.
 
 ## Keyboard & Touchpad
 
