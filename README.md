@@ -39,7 +39,7 @@ There is also a chat available via gitter for discussions:
 | [Battery](#battery) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [Bluetooth](#bluetooth) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [FaceTime HD camera](#facetime-hd-camera) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Graphics card](#intel) (Intel) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
+| [Graphics card](#intel) (Intel) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 unknown](https://img.shields.io/badge/MacBookPro16%2C1-unknown-grey.svg) |
 | [Graphics card](#amd) (AMD) | ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) |
 | [Keyboard & Touchpad](#keyboard--touchpad) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
 | [NVMe](#nvme) (internal SSD) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
@@ -115,7 +115,7 @@ supported by the `uvcvideo` driver out of the box.
 
 ### Intel
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 unknown](https://img.shields.io/badge/MacBookPro16%2C1-unknown-grey.svg)
 
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
@@ -123,6 +123,8 @@ with dedicated AMD GPU, only the AMD GPU is enabled when booting an OS which
 isn't macOS, so you have to follow the instructions in the following link to
 enable the integrated Intel GPU, if you want to use it:
 https://github.com/Dunedan/mbp-2016-linux/issues/6#issuecomment-286168538
+
+Intel GPU has not yet been tested on the MacBookPro16,1 
 
 Connecting external displays via USB-C-to-DisplayPort cables works fine,
 including connections with daisy-chaining/MST. An actual tested and working
@@ -140,7 +142,8 @@ Works out of the box on most models. MacBookPro 16,1 currently requires a 5.6-RC
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
 Works out of the box with Linux 5.3 and above for MacBookPro13,* and MacBookPro14,*.
-For models with T2 chip (MacBookPro15,* and MacBookPro16,*) the BCE and iBridge drivers from https://github.com/MCMrARM/mbp2018-bridge-drv along with touchpad and keyboard patches from here are required.
+
+For models with a T2 chip (MacBookPro15,* MacBookPro16,1) you'll need the BCE drivers from https://github.com/MCMrARM/mbp2018-bridge-drv and the touchpad and keyboard patches from https://github.com/aunali1/linux-mbp-arch
 
 For earlier Linux versions you can get the driver from
 https://github.com/roadrunner2/macbook12-spi-driver.
