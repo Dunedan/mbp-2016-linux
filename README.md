@@ -124,7 +124,7 @@ isn't macOS, so you have to follow the instructions in the following link to
 enable the integrated Intel GPU, if you want to use it:
 https://github.com/Dunedan/mbp-2016-linux/issues/6#issuecomment-286168538
 
-Intel GPU has not yet been tested on the MacBookPro16,1 
+Intel GPU has not yet been tested on the MacBookPro16,1.
 
 Connecting external displays via USB-C-to-DisplayPort cables works fine,
 including connections with daisy-chaining/MST. An actual tested and working
