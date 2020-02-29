@@ -288,7 +288,7 @@ ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
-The MacBook Pro 16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't work as no appropriate firmware is available. Catalina+ firmware doesn't seem to work here and no pre-Catalina fw is available for this card (Bali).
+The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't work as no appropriate firmware is available. Catalina firmware doesn't seem to work here and no pre-Catalina firmware is available for this card.
 
 ## Misc
 
