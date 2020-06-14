@@ -1,0 +1,7 @@
+**** List of CAPTURE Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: CS8409 Analog [CS8409 Analog]
+  Subdevices: 0/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 2: CS8409 Alt Analog [CS8409 Alt Analog]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
