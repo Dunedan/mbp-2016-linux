@@ -176,7 +176,8 @@ See also:
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg)
 
-Works out of the box.
+Works out of the box. MacBook Pro models from 2018 or newer require at least
+Linux 5.4 for proper support.
 
 The SSDs used in the MacBook Pros don't seem to support APST. As it's currently
 unknown how power saving works for those SSDs it's likely they consume way more
@@ -371,6 +372,12 @@ The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac
   MacBookPro13,* and MacBookPro14,* is now included upstream and works out of
   the box.
   ([linux/commit/038b1a0](https://github.com/torvalds/linux/commit/038b1a05eae6666b731920e46f47d8e2332e07ff))
+
+#### 5.4
+
+* Includes support for the NVMe controller found in MacBookPro's released
+  since 2018.
+  ([linux/commit/6634133](https://github.com/torvalds/linux/commit/66341331ba0d2de4ff421cdc401a1e34de50502a)
 
 ### iBridge
 
