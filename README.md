@@ -59,8 +59,8 @@ There is also a chat available via gitter for discussions:
 With the applied Cirrus 8409 kernel driver patch from https://github.com/davidjo/snd_hda_macbookpro
 (commit 86c032bcbc27d12c819841c05b5a484477869481) the internal audio input & output has been verified and is working
 for MacBook Pro models 13,3 and 14,3 with kernel version 5.5+. If you are having issues with the internal audio input,
-and you are using pulse audio for your Linux distro; then try switching between the built-in audio profiles and see if
-it's receiving the background sound with help of the pavucontrol command, it should work on 'Analog Stereo Duplex'
+and you are using PulseAudio for your Linux distro; then try switching between the built-in audio profiles and see if
+it's receiving the background sound with help of the `pavucontrol` command, it should work on 'Analog Stereo Duplex'
 built-in audio profile.
 
 For MacBook Pro model 14,1 the internal audio output is working, however the internal audio input is not working.
