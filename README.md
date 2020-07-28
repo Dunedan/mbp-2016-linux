@@ -122,7 +122,7 @@ supported by the `uvcvideo` driver out of the box.
 
 ### Intel
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 unknown](https://img.shields.io/badge/MacBookPro16%2C1-unknown-grey.svg) ![MacBookPro16,2 working](https://img.shields.io/badge/MacBookPro16%2C2-working-red.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 unknown](https://img.shields.io/badge/MacBookPro16%2C1-unknown-grey.svg) ![MacBookPro16,2 working](https://img.shields.io/badge/MacBookPro16%2C2-working-green.svg)
 
 Graphical output using the Intel GPU is working out of the box on the
 MacBookPro 13,1 and 13,2, without dedicated AMD GPU. For the MacBookPro 13,3
