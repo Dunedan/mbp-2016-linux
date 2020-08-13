@@ -378,6 +378,15 @@ The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac
 * Includes support for the NVMe controller found in MacBookPro's released
   since 2018.
   ([linux/commit/6634133](https://github.com/torvalds/linux/commit/66341331ba0d2de4ff421cdc401a1e34de50502a)
+  
+#### 5.6
+
+* The built-in display for MacBook Pro model 13,3 stopped working with the major kernel version 5.6, and with
+the minor 5.6 kernel versions.
+
+#### 5.7.8
+
+* The built-in display for MacBook Pro model 13,3 was fixed with the minor kernel version 5.7.8.
 
 ### iBridge
 
