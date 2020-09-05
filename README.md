@@ -55,17 +55,22 @@ There is also a chat available via gitter for discussions:
 
 ![MacBookPro13,1 not working](https://img.shields.io/badge/MacBookPro13%2C1-not_working-red.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)  ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
-With the applied Cirrus 8409 kernel driver patch from https://github.com/davidjo/snd_hda_macbookpro
-(commit 86c032bcbc27d12c819841c05b5a484477869481) the internal audio input & output has been verified and is working
-for MacBook Pro models 13,3 and 14,3 with kernel version 5.5+. If you are having issues with the internal audio input,
-and you are using PulseAudio for your Linux distro; then try switching between the built-in audio profiles and see if
-it's receiving the background sound with help of the `pavucontrol` command, it should work on 'Analog Stereo Duplex'
-built-in audio profile.
+With the applied Cirrus 8409 kernel driver patch from
+https://github.com/davidjo/snd_hda_macbookpro (commit
+86c032bcbc27d12c819841c05b5a484477869481) the internal audio input & output
+has been verified and is working for MacBook Pro models 13,3 and 14,3 with
+kernel version 5.5+. If you are having issues with the internal audio input,
+and you are using PulseAudio for your Linux distro; then try switching between
+the built-in audio profiles and see if it's receiving the background sound
+with help of the `pavucontrol` command, it should work on 'Analog Stereo
+Duplex' built-in audio profile.
 
-For MacBook Pro model 14,1 the internal audio output is working, however the internal audio input is not working.
+For MacBook Pro model 14,1 the internal audio output is working, however the
+internal audio input is not working.
 
-For the rest of the MacBook Pro models the audio via HDMI or any USB-connected audio device is working,
-so at least they can act as a workaround until internal audio is working.
+For the rest of the MacBook Pro models the audio via HDMI or any USB-connected
+audio device is working, so at least they can act as a workaround until
+internal audio is working.
 
 See also:
 
@@ -90,7 +95,7 @@ than 4 hours.
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
 Works out of the box, except for the models without Touch Bar, which still
-suffers from a bug and needs an additional patch as noted in
+suffer from a bug and need an additional patch as noted in
 https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
 
 Transmitting audio using A2DP is still choppy for unknown reasons, maybe
@@ -139,7 +144,8 @@ displays daisy-chained together with Full HD each.
 
 Works out of the box for the MacBookPro13,3 and MacBookPro14,3.
 
-The MacBookPro16,1 currently requires a 5.6-RC kernel and the latest `amdgpu` drivers.
+The MacBookPro16,1 currently requires a 5.6-RC kernel and the latest `amdgpu`
+drivers.
 
 ## Keyboard & Touchpad
 
@@ -147,7 +153,9 @@ The MacBookPro16,1 currently requires a 5.6-RC kernel and the latest `amdgpu` dr
 
 Works out of the box for the MacBookPro13,* and MacBookPro14,*.
 
-For models with a T2 chip (MacBookPro15,* MacBookPro16,1) you'll need the BCE drivers from https://github.com/MCMrARM/mbp2018-bridge-drv and the touchpad and keyboard patches from https://github.com/aunali1/linux-mbp-arch
+For models with a T2 chip (MacBookPro15,* MacBookPro16,1) you'll need the BCE
+drivers from https://github.com/MCMrARM/mbp2018-bridge-drv and the touchpad
+and keyboard patches from https://github.com/aunali1/linux-mbp-arch.
 
 For earlier Linux versions you can get the driver from
 https://github.com/roadrunner2/macbook12-spi-driver.
@@ -155,11 +163,12 @@ https://github.com/roadrunner2/macbook12-spi-driver.
 The Esc and function keys are part of the Touch Bar in all Touch Bar-models, so
 follow the instructions for the [Touch Bar](#touch-bar) to get it working.
 
-Beside the actual keyboard, the power button and the lid close event work out of
-the box.
+Beside the actual keyboard, the power button and the lid close event work out
+of the box.
 
-Palm rejection based on touch-sizes and disable-touchpad-while-typing are working
-with [this patch](https://gist.github.com/peterychuang/5cf9bf527bc26adef47d714c758a5509)
+Palm rejection based on touch-sizes and disable-touchpad-while-typing are
+working with
+[this patch](https://gist.github.com/peterychuang/5cf9bf527bc26adef47d714c758a5509)
 to [libinput](https://cgit.freedesktop.org/wayland/libinput) (master branch).
 
 See also:
@@ -296,7 +305,11 @@ ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
-The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't work as no appropriate firmware is available. Catalina firmware doesn't seem to work here and no pre-Catalina firmware is available for this card.
+The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364
+802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi
+patches from [here](https://github.com/aunali1/linux-mbp-arch) but doesn't
+work as no appropriate firmware is available. Catalina firmware doesn't
+seem to work here and no pre-Catalina firmware is available for this card.
 
 ## Misc
 
