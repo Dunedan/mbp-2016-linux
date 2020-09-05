@@ -15,8 +15,7 @@ of Intel Skylake processors, faster memory and updated AMD Radeon GPUs in the
 
 The checks if hardware works below were done with multiple Linux distributions.
 To state the obvious: The newer the kernel the better. The information below
-assumes that you run Linux 4.13 or newer. If in doubt which kernel to use, the
-latest significant improvements are part of Linux 5.3.
+assumes that you run Linux 5.4 or newer.
 
 If you don't know what the model identifier for your MacBook Pro is (as that
 identifier is used on several occasions below), check
@@ -90,17 +89,13 @@ than 4 hours.
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
-Works out of the box with Linux 4.16 and above, except for the models without
-Touch Bar, which still suffers from a bug and needs an additional patch as noted
-in https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
+Works out of the box, except for the models without Touch Bar, which still
+suffers from a bug and needs an additional patch as noted in
+https://github.com/Dunedan/mbp-2016-linux/issues/29#issuecomment-371370548
 
 Transmitting audio using A2DP is still choppy for unknown reasons, maybe
 because the Bluetooth support is limited to lower bandwidth applications so
 far.
-
-For older kernel versions you need to compile a custom kernel with an
-additional patch set. For details check
-https://github.com/Dunedan/mbp-2016-linux/issues/29
 
 See also:
 
@@ -150,7 +145,7 @@ The MacBookPro16,1 currently requires a 5.6-RC kernel and the latest `amdgpu` dr
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
-Works out of the box with Linux 5.3 and above for MacBookPro13,* and MacBookPro14,*.
+Works out of the box for the MacBookPro13,* and MacBookPro14,*.
 
 For models with a T2 chip (MacBookPro15,* MacBookPro16,1) you'll need the BCE drivers from https://github.com/MCMrARM/mbp2018-bridge-drv and the touchpad and keyboard patches from https://github.com/aunali1/linux-mbp-arch
 
@@ -176,8 +171,7 @@ See also:
 
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 working](https://img.shields.io/badge/MacBookPro16%2C2-working-green.svg)
 
-Works out of the box. MacBook Pro models from 2018 or newer require at least
-Linux 5.4 for proper support.
+Works out of the box.
 
 The SSDs used in the MacBook Pros don't seem to support APST. As it's currently
 unknown how power saving works for those SSDs it's likely they consume way more
