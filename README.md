@@ -390,7 +390,7 @@ seem to work here and no pre-Catalina firmware is available for this card.
 
 * Fixes the built-in display for the MacBookPro13,3, which stopped working in
   Linux 5.6.
-  ([linux/commit/639e0db](https://github.com/torvalds/linux/commit/639e0db2d70fb84833d96e782cc4a01825e03b13))
+  ([linux/commit/cbd14ae](https://github.com/torvalds/linux/commit/cbd14ae7ea934fd9d9f95103a0601a7fea243573))
   This fix also got backported to the 5.7.8 stable kernel.
 
 ### iBridge
