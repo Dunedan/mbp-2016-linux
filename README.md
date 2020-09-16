@@ -56,18 +56,17 @@ There is also a chat available via gitter for discussions:
 ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)  ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
 With the applied Cirrus 8409 kernel driver patch from
-https://github.com/davidjo/snd_hda_macbookpro (commit
-86c032bcbc27d12c819841c05b5a484477869481) the internal audio input & output
-has been verified and is working for MacBook Pro models 13,3 and 14,3 with
-kernel version 5.5+. If you are having issues with the internal audio input,
-and you are using PulseAudio for your Linux distro; then try switching between
-the built-in audio profiles and see if it's receiving the background sound
-with help of the `pavucontrol` command, it should work on 'Analog Stereo
-Duplex' built-in audio profile.
+https://github.com/davidjo/snd_hda_macbookpro the internal audio input and
+output has been verified to work for the MacBookPro13,1, MacBookPro13,3 and
+MacBookPro14,3.
 
-With the same driver (commit 5674fe2f00f0a8cf49c4add82a21c4d6e5f9b58b) the internal audio input & output has been verified and is working with MacBook Pro model 13,1 with ubuntu 20.04 on kernel 5.4.0-47-generic.
+If you are having issues with the internal audio input, and you are using
+PulseAudio for your Linux distro; then try switching between the built-in
+audio profiles and see if it's receiving the background sound with help of the
+`pavucontrol` command, it should work on 'Analog Stereo Duplex' built-in audio
+profile.
 
-For MacBook Pro model 14,1 the internal audio output is working, however the
+With the MacBookPro14,1 the internal audio output is working, however the
 internal audio input is not working.
 
 For the rest of the MacBook Pro models the audio via HDMI or any USB-connected
