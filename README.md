@@ -270,6 +270,10 @@ Not working out of the box, but thanks to @roadrunner2 basic functionality
 is working using the `apple-ib-tb` kernel module you can find in the following
 git repository: https://github.com/roadrunner2/macbook12-spi-driver
 
+### Kernel 5.8+
+Use the forked version of roadrunner's driver by PatrickVerner:
+https://github.com/PatrickVerner/macbook12-spi-driver
+
 Missing is as of now just the advanced functionality with custom graphics Apple
 offers in macOS.
 
