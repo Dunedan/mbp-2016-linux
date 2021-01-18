@@ -6,10 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-python@v1
-    - name: Install pre-commit
-      run: pip3 install pre-commit
-    - name: Run pre-commit hooks
-      run: pre-commit run -a
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - uses: pre-commit/action@v2.0.0
 
