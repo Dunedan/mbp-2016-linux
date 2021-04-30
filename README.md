@@ -205,7 +205,7 @@ doesn't matter, as Xorg probes and sets the correct resolution of `2560x1600`.
 ## Suspend & Hibernation
 
 ![MacBookPro13,1 partially working](https://img.shields.io/badge/MacBookPro13%2C1-partially_working-yellow.svg) ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg)
-![MacBookPro16,1 partially working](https://img.shields.io/badge/MacBookPro16%2C1-partially_working-yellow.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not-working-red.svg)
+![MacBookPro16,1 partially working](https://img.shields.io/badge/MacBookPro16%2C1-partially_working-yellow.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
 Putting the MacBook Pro into suspend mode works on all models, but successful
 resume requires additional prerequisites as explained below.
