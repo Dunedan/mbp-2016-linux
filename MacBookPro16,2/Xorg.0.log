@@ -1,0 +1,578 @@
+[    18.403] 
+X.Org X Server 1.20.10
+X Protocol Version 11, Revision 0
+[    18.403] Build Operating System: Linux 5.10.12mbx-g79f553e7cf1c x86_64 Gentoo
+[    18.403] Current Operating System: Linux mbp 5.11.13-gentoo-x86_64-g26143c15c819-dirty #1 SMP PREEMPT Sun Apr 18 23:54:34 CEST 2021 x86_64
+[    18.403] Kernel command line: BOOT_IMAGE=/vmlinuz-5.11.13-gentoo-x86_64-g26143c15c819-dirty root=/dev/mapper/croot--vg0-system ro dolvm crypt_root=/dev/nvme0n1p4 root_trim=yes efi=noruntime pcie_ports=compat acpi=force doload=apple-bce splash quiet
+[    18.403] Build Date: 12 April 2021  12:23:44AM
+[    18.403]  
+[    18.403] Current version of pixman: 0.40.0
+[    18.403] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    18.403] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    18.403] (==) Log file: "/var/log/Xorg.0.log", Time: Mon Apr 26 10:37:51 2021
+[    18.406] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    18.406] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    18.408] (==) No Layout section.  Using the first Screen section.
+[    18.408] (==) No screen section available. Using defaults.
+[    18.408] (**) |-->Screen "Default Screen Section" (0)
+[    18.408] (**) |   |-->Monitor "<default monitor>"
+[    18.408] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    18.408] (==) Automatically adding devices
+[    18.408] (==) Automatically enabling devices
+[    18.408] (==) Automatically adding GPU devices
+[    18.408] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    18.408] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/misc/".
+[    18.408] 	Entry deleted from font path.
+[    18.408] 	(Run 'mkfontdir' on "/usr/share/fonts/misc/").
+[    18.408] (WW) The directory "/usr/share/fonts/OTF/" does not exist.
+[    18.408] 	Entry deleted from font path.
+[    18.408] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/100dpi/".
+[    18.408] 	Entry deleted from font path.
+[    18.408] 	(Run 'mkfontdir' on "/usr/share/fonts/100dpi/").
+[    18.408] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/75dpi/".
+[    18.408] 	Entry deleted from font path.
+[    18.408] 	(Run 'mkfontdir' on "/usr/share/fonts/75dpi/").
+[    18.408] (==) FontPath set to:
+	/usr/share/fonts/TTF/,
+	/usr/share/fonts/Type1/
+[    18.408] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[    18.408] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    18.408] (II) Loader magic: 0x559676486d00
+[    18.408] (II) Module ABI versions:
+[    18.408] 	X.Org ANSI C Emulation: 0.4
+[    18.408] 	X.Org Video Driver: 24.1
+[    18.408] 	X.Org XInput driver : 24.1
+[    18.408] 	X.Org Server Extension : 10.0
+[    18.409] (++) using VT number 7
+
+[    18.409] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    18.410] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    18.410] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[    18.414] (--) PCI:*(0@0:2:0) 8086:8a53:106b:0211 rev 7, Mem @ 0x80000000/16777216, 0xa0000000/268435456, I/O @ 0x00003000/64, BIOS @ 0x????????/131072
+[    18.414] (II) LoadModule: "glx"
+[    18.416] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[    18.418] (II) Module glx: vendor="X.Org Foundation"
+[    18.418] 	compiled for 1.20.10, module version = 1.0.0
+[    18.418] 	ABI class: X.Org Server Extension, version 10.0
+[    18.418] (==) Matched intel as autoconfigured driver 0
+[    18.418] (==) Matched modesetting as autoconfigured driver 1
+[    18.418] (==) Matched fbdev as autoconfigured driver 2
+[    18.418] (==) Matched vesa as autoconfigured driver 3
+[    18.418] (==) Assigned the driver to the xf86ConfigLayout
+[    18.418] (II) LoadModule: "intel"
+[    18.418] (II) Loading /usr/lib64/xorg/modules/drivers/intel_drv.so
+[    18.421] (II) Module intel: vendor="X.Org Foundation"
+[    18.421] 	compiled for 1.20.10, module version = 2.99.917
+[    18.421] 	Module class: X.Org Video Driver
+[    18.421] 	ABI class: X.Org Video Driver, version 24.1
+[    18.421] (II) LoadModule: "modesetting"
+[    18.421] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[    18.422] (II) Module modesetting: vendor="X.Org Foundation"
+[    18.422] 	compiled for 1.20.10, module version = 1.20.10
+[    18.422] 	Module class: X.Org Video Driver
+[    18.422] 	ABI class: X.Org Video Driver, version 24.1
+[    18.422] (II) LoadModule: "fbdev"
+[    18.422] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[    18.423] (II) Module fbdev: vendor="X.Org Foundation"
+[    18.423] 	compiled for 1.20.10, module version = 0.5.0
+[    18.423] 	Module class: X.Org Video Driver
+[    18.423] 	ABI class: X.Org Video Driver, version 24.1
+[    18.423] (II) LoadModule: "vesa"
+[    18.423] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[    18.424] (II) Module vesa: vendor="X.Org Foundation"
+[    18.424] 	compiled for 1.20.10, module version = 2.5.0
+[    18.424] 	Module class: X.Org Video Driver
+[    18.424] 	ABI class: X.Org Video Driver, version 24.1
+[    18.424] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[    18.424] (II) intel: Driver for Intel(R) HD Graphics
+[    18.424] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[    18.424] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[    18.424] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    18.424] (II) FBDEV: driver for framebuffer: fbdev
+[    18.424] (II) VESA: driver for VESA chipsets: vesa
+[    18.424] (WW) xf86OpenConsole: setpgid failed: Operation not permitted
+[    18.424] (WW) xf86OpenConsole: setsid failed: Operation not permitted
+[    18.432] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20201103
+[    18.447] (WW) Falling back to old probe method for modesetting
+[    18.447] (WW) Falling back to old probe method for fbdev
+[    18.447] (II) Loading sub module "fbdevhw"
+[    18.447] (II) LoadModule: "fbdevhw"
+[    18.447] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[    18.448] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    18.448] 	compiled for 1.20.10, module version = 0.0.2
+[    18.448] 	ABI class: X.Org Video Driver, version 24.1
+[    18.448] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics
+[    18.448] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 4 threads
+[    18.448] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    18.448] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[    18.448] (==) intel(0): RGB weight 888
+[    18.448] (==) intel(0): Default visual is TrueColor
+[    18.449] (II) intel(0): Output eDP1 has no monitor section
+[    18.449] (**) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[    18.449] (II) intel(0): Enabled output eDP1
+[    18.450] (II) intel(0): Output DP1 has no monitor section
+[    18.450] (II) intel(0): Enabled output DP1
+[    18.450] (II) intel(0): Output HDMI1 has no monitor section
+[    18.450] (II) intel(0): Enabled output HDMI1
+[    18.450] (II) intel(0): Output DP2 has no monitor section
+[    18.450] (II) intel(0): Enabled output DP2
+[    18.450] (II) intel(0): Output DP3 has no monitor section
+[    18.450] (II) intel(0): Enabled output DP3
+[    18.450] (II) intel(0): Output DP4 has no monitor section
+[    18.450] (II) intel(0): Enabled output DP4
+[    18.450] (II) intel(0): Output DP5 has no monitor section
+[    18.450] (II) intel(0): Enabled output DP5
+[    18.450] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[    18.451] (II) intel(0): Output VIRTUAL1 has no monitor section
+[    18.451] (II) intel(0): Enabled output VIRTUAL1
+[    18.451] (--) intel(0): Output eDP1 using initial mode 2560x1600 on pipe 0
+[    18.451] (==) intel(0): TearFree enabled
+[    18.451] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[    18.451] (==) intel(0): DPI set to (96, 96)
+[    18.451] (II) Loading sub module "dri3"
+[    18.451] (II) LoadModule: "dri3"
+[    18.451] (II) Module "dri3" already built-in
+[    18.451] (II) Loading sub module "dri2"
+[    18.451] (II) LoadModule: "dri2"
+[    18.451] (II) Module "dri2" already built-in
+[    18.451] (II) Loading sub module "present"
+[    18.451] (II) LoadModule: "present"
+[    18.451] (II) Module "present" already built-in
+[    18.451] (II) UnloadModule: "modesetting"
+[    18.451] (II) Unloading modesetting
+[    18.451] (II) UnloadModule: "fbdev"
+[    18.451] (II) Unloading fbdev
+[    18.451] (II) UnloadSubModule: "fbdevhw"
+[    18.451] (II) Unloading fbdevhw
+[    18.451] (II) UnloadModule: "vesa"
+[    18.451] (II) Unloading vesa
+[    18.451] (II) intel(0): SNA initialized with generic backend
+[    18.451] (==) intel(0): Backing store enabled
+[    18.451] (==) intel(0): Silken mouse enabled
+[    18.451] (II) intel(0): HW Cursor enabled
+[    18.452] (==) intel(0): DPMS enabled
+[    18.452] (==) intel(0): Display hotplug detection enabled
+[    18.452] (II) intel(0): Textured video not supported on this hardware or backend
+[    18.452] (II) intel(0): [DRI2] Setup complete
+[    18.452] (II) intel(0): [DRI2]   DRI driver: i965
+[    18.452] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[    18.452] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[    18.452] (II) intel(0): hardware support for Present enabled
+[    18.452] (II) Initializing extension Generic Event Extension
+[    18.452] (II) Initializing extension SHAPE
+[    18.452] (II) Initializing extension MIT-SHM
+[    18.452] (II) Initializing extension XInputExtension
+[    18.452] (II) Initializing extension XTEST
+[    18.452] (II) Initializing extension BIG-REQUESTS
+[    18.452] (II) Initializing extension SYNC
+[    18.452] (II) Initializing extension XKEYBOARD
+[    18.452] (II) Initializing extension XC-MISC
+[    18.452] (II) Initializing extension XFIXES
+[    18.452] (II) Initializing extension RENDER
+[    18.452] (II) Initializing extension RANDR
+[    18.452] (II) Initializing extension COMPOSITE
+[    18.452] (II) Initializing extension DAMAGE
+[    18.452] (II) Initializing extension MIT-SCREEN-SAVER
+[    18.452] (II) Initializing extension DOUBLE-BUFFER
+[    18.452] (II) Initializing extension RECORD
+[    18.452] (II) Initializing extension DPMS
+[    18.452] (II) Initializing extension Present
+[    18.452] (II) Initializing extension DRI3
+[    18.452] (II) Initializing extension X-Resource
+[    18.452] (II) Initializing extension XVideo
+[    18.452] (II) Initializing extension XVideo-MotionCompensation
+[    18.452] (II) Initializing extension GLX
+[    18.490] (II) AIGLX: Loaded and initialized i965
+[    18.490] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    18.490] (II) Initializing extension XFree86-VidModeExtension
+[    18.490] (II) Initializing extension XFree86-DGA
+[    18.490] (II) Initializing extension XFree86-DRI
+[    18.490] (II) Initializing extension DRI2
+[    18.494] (II) intel(0): switch to mode 2560x1600@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    18.508] (II) intel(0): Setting screen physical size to 677 x 423
+[    18.538] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    18.538] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.538] (**) Power Button: Applying InputClass "system-keyboard"
+[    18.538] (II) LoadModule: "libinput"
+[    18.538] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[    18.541] (II) Module libinput: vendor="X.Org Foundation"
+[    18.541] 	compiled for 1.20.10, module version = 0.30.0
+[    18.541] 	Module class: X.Org XInput Driver
+[    18.541] 	ABI class: X.Org XInput driver, version 24.1
+[    18.541] (II) Using input driver 'libinput' for 'Power Button'
+[    18.541] (**) Power Button: always reports core events
+[    18.541] (**) Option "Device" "/dev/input/event3"
+[    18.541] (**) Option "_source" "server/udev"
+[    18.547] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    18.547] (II) event3  - Power Button: device is a keyboard
+[    18.547] (II) event3  - Power Button: device removed
+[    18.603] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    18.603] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    18.603] (**) Option "xkb_rules" "evdev"
+[    18.603] (**) Option "xkb_model" "pc105"
+[    18.603] (**) Option "xkb_layout" "us"
+[    18.603] (**) Option "xkb_variant" "dvp"
+[    18.626] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[    18.626] (II) event3  - Power Button: device is a keyboard
+[    18.627] (II) config/udev: Adding input device Video Bus (/dev/input/event9)
+[    18.627] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    18.627] (**) Video Bus: Applying InputClass "system-keyboard"
+[    18.627] (II) Using input driver 'libinput' for 'Video Bus'
+[    18.627] (**) Video Bus: always reports core events
+[    18.627] (**) Option "Device" "/dev/input/event9"
+[    18.627] (**) Option "_source" "server/udev"
+[    18.627] (II) event9  - Video Bus: is tagged by udev as: Keyboard
+[    18.627] (II) event9  - Video Bus: device is a keyboard
+[    18.627] (II) event9  - Video Bus: device removed
+[    18.670] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input10/event9"
+[    18.670] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    18.670] (**) Option "xkb_rules" "evdev"
+[    18.670] (**) Option "xkb_model" "pc105"
+[    18.670] (**) Option "xkb_layout" "us"
+[    18.670] (**) Option "xkb_variant" "dvp"
+[    18.671] (II) event9  - Video Bus: is tagged by udev as: Keyboard
+[    18.671] (II) event9  - Video Bus: device is a keyboard
+[    18.671] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    18.671] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    18.671] (**) Power Button: Applying InputClass "system-keyboard"
+[    18.671] (II) Using input driver 'libinput' for 'Power Button'
+[    18.671] (**) Power Button: always reports core events
+[    18.671] (**) Option "Device" "/dev/input/event1"
+[    18.671] (**) Option "_source" "server/udev"
+[    18.672] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.672] (II) event1  - Power Button: device is a keyboard
+[    18.672] (II) event1  - Power Button: device removed
+[    18.696] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    18.696] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    18.696] (**) Option "xkb_rules" "evdev"
+[    18.696] (**) Option "xkb_model" "pc105"
+[    18.696] (**) Option "xkb_layout" "us"
+[    18.696] (**) Option "xkb_variant" "dvp"
+[    18.697] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    18.697] (II) event1  - Power Button: device is a keyboard
+[    18.698] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    18.698] (II) No input driver specified, ignoring this device.
+[    18.698] (II) This device may have been added with another device file.
+[    18.698] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    18.698] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    18.698] (**) Sleep Button: Applying InputClass "system-keyboard"
+[    18.698] (II) Using input driver 'libinput' for 'Sleep Button'
+[    18.698] (**) Sleep Button: always reports core events
+[    18.698] (**) Option "Device" "/dev/input/event2"
+[    18.698] (**) Option "_source" "server/udev"
+[    18.699] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    18.699] (II) event2  - Sleep Button: device is a keyboard
+[    18.699] (II) event2  - Sleep Button: device removed
+[    18.723] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    18.723] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    18.723] (**) Option "xkb_rules" "evdev"
+[    18.723] (**) Option "xkb_model" "pc105"
+[    18.723] (**) Option "xkb_layout" "us"
+[    18.723] (**) Option "xkb_variant" "dvp"
+[    18.724] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[    18.724] (II) event2  - Sleep Button: device is a keyboard
+[    18.724] (II) config/udev: Adding drm device (/dev/dri/card0)
+[    18.724] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    18.724] (EE) /dev/dri/card0: failed to set DRM interface version 1.4: Permission denied
+[    18.725] (II) config/udev: Adding input device Apple Headset (/dev/input/event5)
+[    18.725] (**) Apple Headset: Applying InputClass "libinput keyboard catchall"
+[    18.725] (**) Apple Headset: Applying InputClass "system-keyboard"
+[    18.725] (II) Using input driver 'libinput' for 'Apple Headset'
+[    18.725] (**) Apple Headset: always reports core events
+[    18.725] (**) Option "Device" "/dev/input/event5"
+[    18.725] (**) Option "_source" "server/udev"
+[    18.726] (II) event5  - Apple Headset: is tagged by udev as: Keyboard
+[    18.726] (II) event5  - Apple Headset: device is a keyboard
+[    18.726] (II) event5  - Apple Headset: device removed
+[    18.763] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1c.4/0000:e6:00.1/apple-bce/apple-bce/bce-vhci/usb1/1-4/1-4:1.0/0003:05AC:8103.0002/input/input5/event5"
+[    18.763] (II) XINPUT: Adding extended input device "Apple Headset" (type: KEYBOARD, id 10)
+[    18.763] (**) Option "xkb_rules" "evdev"
+[    18.763] (**) Option "xkb_model" "pc105"
+[    18.763] (**) Option "xkb_layout" "us"
+[    18.763] (**) Option "xkb_variant" "dvp"
+[    18.765] (II) event5  - Apple Headset: is tagged by udev as: Keyboard
+[    18.765] (II) event5  - Apple Headset: device is a keyboard
+[    18.765] (II) config/udev: Adding input device Apple Inc. Apple Internal Keyboard / Trackpad (/dev/input/event7)
+[    18.765] (**) Apple Inc. Apple Internal Keyboard / Trackpad: Applying InputClass "libinput keyboard catchall"
+[    18.765] (**) Apple Inc. Apple Internal Keyboard / Trackpad: Applying InputClass "system-keyboard"
+[    18.765] (II) Using input driver 'libinput' for 'Apple Inc. Apple Internal Keyboard / Trackpad'
+[    18.765] (**) Apple Inc. Apple Internal Keyboard / Trackpad: always reports core events
+[    18.765] (**) Option "Device" "/dev/input/event7"
+[    18.765] (**) Option "_source" "server/udev"
+[    18.766] (II) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: is tagged by udev as: Keyboard
+[    18.767] (II) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: device is a keyboard
+[    18.767] (II) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: device removed
+[    18.803] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1c.4/0000:e6:00.1/apple-bce/apple-bce/bce-vhci/usb1/1-5/1-5:1.1/0003:05AC:027E.0004/input/input7/event7"
+[    18.803] (II) XINPUT: Adding extended input device "Apple Inc. Apple Internal Keyboard / Trackpad" (type: KEYBOARD, id 11)
+[    18.803] (**) Option "xkb_rules" "evdev"
+[    18.803] (**) Option "xkb_model" "pc105"
+[    18.803] (**) Option "xkb_layout" "us"
+[    18.803] (**) Option "xkb_variant" "dvp"
+[    18.805] (II) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: is tagged by udev as: Keyboard
+[    18.805] (II) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: device is a keyboard
+[    18.806] (II) config/udev: Adding input device bcm5974 (/dev/input/event6)
+[    18.806] (**) bcm5974: Applying InputClass "libinput touchpad catchall"
+[    18.806] (II) Using input driver 'libinput' for 'bcm5974'
+[    18.806] (**) bcm5974: always reports core events
+[    18.806] (**) Option "Device" "/dev/input/event6"
+[    18.806] (**) Option "_source" "server/udev"
+[    18.807] (II) event6  - bcm5974: is tagged by udev as: Touchpad
+[    18.809] (II) event6  - bcm5974: device is a touchpad
+[    18.809] (II) event6  - bcm5974: device removed
+[    18.870] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1c.4/0000:e6:00.1/apple-bce/apple-bce/bce-vhci/usb1/1-5/1-5:1.2/input/input6/event6"
+[    18.870] (II) XINPUT: Adding extended input device "bcm5974" (type: TOUCHPAD, id 12)
+[    18.871] (**) Option "AccelerationScheme" "none"
+[    18.871] (**) bcm5974: (accel) selected scheme none/0
+[    18.871] (**) bcm5974: (accel) acceleration factor: 2.000
+[    18.871] (**) bcm5974: (accel) acceleration threshold: 4
+[    18.873] (II) event6  - bcm5974: is tagged by udev as: Touchpad
+[    18.874] (II) event6  - bcm5974: device is a touchpad
+[    18.875] (II) config/udev: Adding input device bcm5974 (/dev/input/mouse0)
+[    18.875] (II) No input driver specified, ignoring this device.
+[    18.875] (II) This device may have been added with another device file.
+[    18.875] (II) config/udev: Adding input device Apple Inc. Touch Bar Display (/dev/input/event8)
+[    18.875] (**) Apple Inc. Touch Bar Display: Applying InputClass "libinput keyboard catchall"
+[    18.875] (**) Apple Inc. Touch Bar Display: Applying InputClass "system-keyboard"
+[    18.875] (II) Using input driver 'libinput' for 'Apple Inc. Touch Bar Display'
+[    18.875] (**) Apple Inc. Touch Bar Display: always reports core events
+[    18.875] (**) Option "Device" "/dev/input/event8"
+[    18.875] (**) Option "_source" "server/udev"
+[    18.876] (II) event8  - Apple Inc. Touch Bar Display: is tagged by udev as: Keyboard
+[    18.876] (II) event8  - Apple Inc. Touch Bar Display: device is a keyboard
+[    18.877] (II) event8  - Apple Inc. Touch Bar Display: device removed
+[    18.923] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1c.4/0000:e6:00.1/apple-bce/apple-bce/bce-vhci/usb1/1-6/1-6:1.0/0003:05AC:8302.0007/input/input9/event8"
+[    18.923] (II) XINPUT: Adding extended input device "Apple Inc. Touch Bar Display" (type: KEYBOARD, id 13)
+[    18.923] (**) Option "xkb_rules" "evdev"
+[    18.923] (**) Option "xkb_model" "pc105"
+[    18.923] (**) Option "xkb_layout" "us"
+[    18.923] (**) Option "xkb_variant" "dvp"
+[    18.925] (II) event8  - Apple Inc. Touch Bar Display: is tagged by udev as: Keyboard
+[    18.925] (II) event8  - Apple Inc. Touch Bar Display: device is a keyboard
+[    18.925] (II) config/udev: Adding input device Apple T2 Audio Codec Output (/dev/input/event4)
+[    18.925] (II) No input driver specified, ignoring this device.
+[    18.925] (II) This device may have been added with another device file.
+[    20.453] (II) intel(0): EDID vendor "APP", prod id 41021
+[    20.453] (II) intel(0): Printing DDC gathered Modelines:
+[    20.453] (II) intel(0): Modeline "2560x1600"x0.0  260.73  2560 2568 2600 2640  1600 1632 1640 1646 +hsync -vsync (98.8 kHz eP)
+[   155.821] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 31ms, your system is too slow
+[   159.078] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[   201.703] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 36ms, your system is too slow
+[   627.777] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[  1415.124] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[  1613.713] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[  2635.677] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[  3006.420] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 13ms, your system is too slow
+[  3156.293] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 20ms, your system is too slow
+[  3156.293] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[  3815.266] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[  3959.852] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 19ms, your system is too slow
+[  4376.228] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 28ms, your system is too slow
+[  4391.441] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 15ms, your system is too slow
+[  4424.136] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[  4424.136] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[  5021.383] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[  5021.383] (EE) event6  - bcm5974: WARNING: log rate limit exceeded (5 msgs per 2h). Discarding future messages.
+[ 21641.832] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[ 21659.802] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 22105.799] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 22592.464] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[ 22628.743] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 22779.801] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 20ms, your system is too slow
+[ 22844.386] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 28ms, your system is too slow
+[ 22844.386] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[ 23143.424] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 23143.424] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 23145.165] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 23145.165] (EE) event6  - bcm5974: WARNING: log rate limit exceeded (5 msgs per 2h). Discarding future messages.
+[ 29589.757] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 30106.379] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 30782.638] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 30986.515] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 32255.409] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 35ms, your system is too slow
+[ 35220.106] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[ 35418.365] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 25ms, your system is too slow
+[ 36220.504] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 27ms, your system is too slow
+[ 36412.934] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 36412.934] (EE) event6  - bcm5974: WARNING: log rate limit exceeded (5 msgs per 2h). Discarding future messages.
+[ 36475.846] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 22ms, your system is too slow
+[ 37151.008] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 21ms, your system is too slow
+[ 37357.929] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[ 43629.192] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[ 44364.995] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[ 44557.724] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 21ms, your system is too slow
+[ 45477.429] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 14ms, your system is too slow
+[ 45478.708] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[ 45478.708] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[ 46744.265] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 47265.750] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 31ms, your system is too slow
+[ 47370.966] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 47780.695] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 19ms, your system is too slow
+[ 48177.773] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 11ms, your system is too slow
+[ 48397.502] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[ 48620.489] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 34ms, your system is too slow
+[ 48620.489] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[ 50893.057] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 36ms, your system is too slow
+[ 50978.474] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 29ms, your system is too slow
+[ 51097.255] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 13ms, your system is too slow
+[ 51354.599] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 34ms, your system is too slow
+[ 51387.506] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 18ms, your system is too slow
+[ 51387.506] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[ 52105.105] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 84080.714] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 25ms, your system is too slow
+[ 84082.046] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 27ms, your system is too slow
+[ 84091.471] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[ 84187.698] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 34ms, your system is too slow
+[ 84288.971] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 84446.939] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 27ms, your system is too slow
+[ 84446.939] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[ 85847.787] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 85847.788] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 86550.165] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[ 87749.233] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 12ms, your system is too slow
+[119609.159] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[120000.048] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[120513.363] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 29ms, your system is too slow
+[120830.662] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 14ms, your system is too slow
+[122936.613] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 35ms, your system is too slow
+[123904.302] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[124299.636] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 28ms, your system is too slow
+[124469.886] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 19ms, your system is too slow
+[124479.314] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[124480.723] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 25ms, your system is too slow
+[125079.560] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 13ms, your system is too slow
+[125079.560] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[125318.210] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[125867.695] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[127406.564] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[128101.163] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[128504.791] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[129171.475] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 15ms, your system is too slow
+[129404.719] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 22ms, your system is too slow
+[129558.238] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 17ms, your system is too slow
+[129558.238] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[130532.596] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[130767.618] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[132055.349] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 32ms, your system is too slow
+[132097.381] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 31ms, your system is too slow
+[176818.424] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 31ms, your system is too slow
+[176860.634] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[177377.206] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 14ms, your system is too slow
+[177524.823] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[178448.926] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[178448.990] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[178635.236] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[178827.736] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[178827.736] (EE) event6  - bcm5974: WARNING: log rate limit exceeded (5 msgs per 2h). Discarding future messages.
+[179402.385] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 19ms, your system is too slow
+[179746.938] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[179746.938] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[180432.161] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[180642.472] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[180771.214] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 15ms, your system is too slow
+[180900.110] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 31ms, your system is too slow
+[181194.643] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 15ms, your system is too slow
+[181194.643] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[190775.580] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[190981.862] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 24ms, your system is too slow
+[191071.816] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 32ms, your system is too slow
+[191533.513] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[191728.703] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[192093.456] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 22ms, your system is too slow
+[192422.120] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[192422.122] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[262317.217] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[262317.217] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[262317.264] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[263166.523] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 30ms, your system is too slow
+[263563.983] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 26ms, your system is too slow
+[263985.188] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[264478.555] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 12ms, your system is too slow
+[264492.685] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 18ms, your system is too slow
+[264681.399] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 19ms, your system is too slow
+[264681.399] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[336457.909] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[337008.020] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[337505.422] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[372234.743] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[374977.177] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 21ms, your system is too slow
+[374983.755] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 23ms, your system is too slow
+[375034.068] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 12ms, your system is too slow
+[381775.734] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 36ms, your system is too slow
+[382550.009] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 21ms, your system is too slow
+[382741.383] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 18ms, your system is too slow
+[382958.435] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 36ms, your system is too slow
+[383548.098] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 16ms, your system is too slow
+[383548.098] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
+[384503.522] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[384569.862] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[385994.537] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 12ms, your system is too slow
+[386003.761] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 13ms, your system is too slow
+[386820.775] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[389346.194] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 35ms, your system is too slow
+[389760.931] (EE) event6  - bcm5974: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.16.4/touchpad-jumping-cursors.html for details
+[389921.386] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 12ms, your system is too slow
+[391110.964] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 28ms, your system is too slow
+[391322.984] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 25ms, your system is too slow
+[391350.509] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 35ms, your system is too slow
+[391384.094] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: client bug: event processing lagging behind by 13ms, your system is too slow
+[391384.094] (EE) event7  - Apple Inc. Apple Internal Keyboard / Trackpad: WARNING: log rate limit exceeded (5 msgs per 60min). Discarding future messages.
