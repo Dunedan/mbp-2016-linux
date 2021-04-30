@@ -1,13 +1,13 @@
-00:00.0 Host bridge: Intel Corporation Device 8a14 (rev 03)
+00:00.0 Host bridge [0600]: Intel Corporation Device [8086:8a14] (rev 03)
 	DeviceName: SATA
-	Subsystem: Intel Corporation Device 7270
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
 	Latency: 0
 	Capabilities: [e0] Vendor Specific Information: Len=10 <?>
 
-00:02.0 VGA compatible controller: Intel Corporation Device 8a53 (rev 07) (prog-if 00 [VGA controller])
-	Subsystem: Apple Inc. Device 0211
+00:02.0 VGA compatible controller [0300]: Intel Corporation Device [8086:8a53] (rev 07) (prog-if 00 [VGA controller])
+	Subsystem: Apple Inc. Device [106b:0211]
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -50,8 +50,8 @@
 	Kernel driver in use: i915
 	Kernel modules: i915
 
-00:04.0 Signal processing controller: Intel Corporation Device 8a03 (rev 03)
-	Subsystem: Intel Corporation Device 7270
+00:04.0 Signal processing controller [1180]: Intel Corporation Device [8086:8a03] (rev 03)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin A routed to IRQ 16
@@ -64,7 +64,7 @@
 	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
 	Kernel modules: processor_thermal_device
 
-00:07.0 PCI bridge: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #0 (rev 03) (prog-if 00 [Normal decode])
+00:07.0 PCI bridge [0604]: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #0 [8086:8a1d] (rev 03) (prog-if 00 [Normal decode])
 	Physical Slot: 0
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
@@ -115,7 +115,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Device 0000:0000
+	Capabilities: [90] Subsystem: Device [0000:0000]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -129,7 +129,7 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:07.1 PCI bridge: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #1 (rev 03) (prog-if 00 [Normal decode])
+00:07.1 PCI bridge [0604]: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #1 [8086:8a1f] (rev 03) (prog-if 00 [Normal decode])
 	Physical Slot: 0
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
@@ -180,7 +180,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Device 0000:0000
+	Capabilities: [90] Subsystem: Device [0000:0000]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -194,7 +194,7 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:07.2 PCI bridge: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #2 (rev 03) (prog-if 00 [Normal decode])
+00:07.2 PCI bridge [0604]: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #2 [8086:8a21] (rev 03) (prog-if 00 [Normal decode])
 	Physical Slot: 0
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
@@ -245,7 +245,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Device 0000:0000
+	Capabilities: [90] Subsystem: Device [0000:0000]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -259,7 +259,7 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:07.3 PCI bridge: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #3 (rev 03) (prog-if 00 [Normal decode])
+00:07.3 PCI bridge [0604]: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #3 [8086:8a23] (rev 03) (prog-if 00 [Normal decode])
 	Physical Slot: 0
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
@@ -310,7 +310,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Device 0000:0000
+	Capabilities: [90] Subsystem: Device [0000:0000]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -324,7 +324,7 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:0d.0 USB controller: Intel Corporation Ice Lake Thunderbolt 3 USB Controller (rev 03) (prog-if 30 [XHCI])
+00:0d.0 USB controller [0c03]: Intel Corporation Ice Lake Thunderbolt 3 USB Controller [8086:8a13] (rev 03) (prog-if 30 [XHCI])
 	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin ? routed to IRQ 131
@@ -338,7 +338,7 @@
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
 
-00:0d.2 System peripheral: Intel Corporation Ice Lake Thunderbolt 3 NHI #0 (rev 03)
+00:0d.2 System peripheral [0880]: Intel Corporation Ice Lake Thunderbolt 3 NHI #0 [8086:8a17] (rev 03)
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -354,7 +354,7 @@
 		Vector table: BAR=2 offset=00000000
 		PBA: BAR=2 offset=00000fa0
 
-00:0d.3 System peripheral: Intel Corporation Ice Lake Thunderbolt 3 NHI #1 (rev 03)
+00:0d.3 System peripheral [0880]: Intel Corporation Ice Lake Thunderbolt 3 NHI #1 [8086:8a0d] (rev 03)
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -370,8 +370,8 @@
 		Vector table: BAR=2 offset=00000000
 		PBA: BAR=2 offset=00000fa0
 
-00:14.0 USB controller: Intel Corporation Device 38ed (rev 10) (prog-if 30 [XHCI])
-	Subsystem: Intel Corporation Device 7270
+00:14.0 USB controller [0c03]: Intel Corporation Device [8086:38ed] (rev 10) (prog-if 30 [XHCI])
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0
@@ -386,7 +386,7 @@
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
 
-00:14.2 RAM memory: Intel Corporation Device 38ef (rev 10)
+00:14.2 RAM memory [0500]: Intel Corporation Device [8086:38ef] (rev 10)
 	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Region 0: Memory at 9d634000 (64-bit, non-prefetchable) [disabled] [size=8K]
@@ -395,8 +395,8 @@
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
 		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 
-00:16.0 Communication controller: Intel Corporation Device 38e0 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:16.0 Communication controller [0780]: Intel Corporation Device [8086:38e0] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0
@@ -409,15 +409,15 @@
 		Address: 0000000000000000  Data: 0000
 	Capabilities: [a4] Vendor Specific Information: Len=14 <?>
 
-00:1c.0 PCI bridge: Intel Corporation Device 38b8 (rev 10) (prog-if 00 [Normal decode])
+00:1c.0 PCI bridge [0604]: Intel Corporation Device [8086:38b8] (rev 10) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 255
 	Bus: primary=00, secondary=e5, subordinate=e5, sec-latency=0
-	I/O behind bridge: 0000f000-00000fff [disabled]
+	I/O behind bridge: [disabled]
 	Memory behind bridge: 81000000-814fffff [size=5M]
-	Prefetchable memory behind bridge: 00000000fff00000-00000000000fffff [disabled]
+	Prefetchable memory behind bridge: [disabled]
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
 	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
@@ -459,7 +459,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Intel Corporation Device 7270
+	Capabilities: [90] Subsystem: Intel Corporation Device [8086:7270]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -496,14 +496,14 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:1c.4 PCI bridge: Intel Corporation Device 38bc (rev 10) (prog-if 00 [Normal decode])
+00:1c.4 PCI bridge [0604]: Intel Corporation Device [8086:38bc] (rev 10) (prog-if 00 [Normal decode])
 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
 	Interrupt: pin A routed to IRQ 16
 	Bus: primary=00, secondary=e6, subordinate=e6, sec-latency=0
-	I/O behind bridge: 0000f000-00000fff [disabled]
-	Memory behind bridge: fff00000-000fffff [disabled]
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
 	Prefetchable memory behind bridge: 00000000b0000000-00000000b12fffff [size=19M]
 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
 	BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16- MAbort- >Reset- FastB2B-
@@ -546,7 +546,7 @@
 			 Retimer- 2Retimers- CrosslinkRes: unsupported
 	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
 		Address: 00000000  Data: 0000
-	Capabilities: [90] Subsystem: Intel Corporation Device 7270
+	Capabilities: [90] Subsystem: Intel Corporation Device [8086:7270]
 	Capabilities: [a0] Power Management version 3
 		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
 		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
@@ -584,8 +584,8 @@
 		DpcSta:	Trigger- Reason:00 INT- RPBusy- TriggerExt:00 RP PIO ErrPtr:1f
 		Source:	0000
 
-00:1e.0 Communication controller: Intel Corporation Device 38a8 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:1e.0 Communication controller [0780]: Intel Corporation Device [8086:38a8] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -596,13 +596,13 @@
 		Status: D3 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
 	Capabilities: [90] Vendor Specific Information: Len=14 <?>
 
-00:1f.0 ISA bridge: Intel Corporation Device 3882 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:1f.0 ISA bridge [0601]: Intel Corporation Device [8086:3882] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 
-00:1f.3 Audio device: Intel Corporation Device 38c8 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:1f.3 Audio device [0403]: Intel Corporation Device [8086:38c8] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin A routed to IRQ 16
@@ -617,22 +617,22 @@
 	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
 
-00:1f.4 SMBus: Intel Corporation Device 38a3 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:1f.4 SMBus [0c05]: Intel Corporation Device [8086:38a3] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin A routed to IRQ 255
 	Region 0: Memory at 9d639000 (64-bit, non-prefetchable) [size=256]
 	Region 4: I/O ports at c000 [size=32]
 
-00:1f.5 Serial bus controller [0c80]: Intel Corporation Device 38a4 (rev 10)
-	Subsystem: Intel Corporation Device 7270
+00:1f.5 Serial bus controller [0c80]: Intel Corporation Device [8086:38a4] (rev 10)
+	Subsystem: Intel Corporation Device [8086:7270]
 	Control: I/O- Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap- 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Region 0: Memory at fe010000 (32-bit, non-prefetchable) [size=4K]
 
-e5:00.0 Network controller: Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter (rev 04)
-	Subsystem: Apple Inc. BCM4364 802.11ac Wireless Network Adapter
+e5:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter [14e4:4464] (rev 04)
+	Subsystem: Apple Inc. BCM4364 802.11ac Wireless Network Adapter [106b:07bf]
 	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Interrupt: pin A routed to IRQ 255
@@ -703,8 +703,8 @@ e5:00.0 Network controller: Broadcom Inc. and subsidiaries BCM4364 802.11ac Wire
 			   T_CommonMode=0us LTR1.2_Threshold=65536ns
 		L1SubCtl2: T_PwrOn=44us
 
-e6:00.0 Mass storage controller: Apple Inc. ANS2 NVMe Controller (rev 01) (prog-if 02)
-	Subsystem: Apple Inc. ANS2 NVMe Controller
+e6:00.0 Mass storage controller [0180]: Apple Inc. ANS2 NVMe Controller [106b:2005] (rev 01) (prog-if 02)
+	Subsystem: Apple Inc. ANS2 NVMe Controller [106b:1800]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -771,8 +771,8 @@ e6:00.0 Mass storage controller: Apple Inc. ANS2 NVMe Controller (rev 01) (prog-
 		BAR 0: current size: 4MB, supported: 1MB 2MB 4MB
 	Kernel driver in use: nvme
 
-e6:00.1 Non-VGA unclassified device: Apple Inc. T2 Bridge Controller (rev 01)
-	Subsystem: Apple Inc. T2 Bridge Controller
+e6:00.1 Non-VGA unclassified device [0000]: Apple Inc. T2 Bridge Controller [106b:1801] (rev 01)
+	Subsystem: Apple Inc. T2 Bridge Controller [106b:1801]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -822,8 +822,8 @@ e6:00.1 Non-VGA unclassified device: Apple Inc. T2 Bridge Controller (rev 01)
 		BAR 0: current size: 4MB, supported: 1MB 2MB 4MB
 	Kernel driver in use: apple-bce
 
-e6:00.2 Non-VGA unclassified device: Apple Inc. T2 Secure Enclave Processor (rev 01)
-	Subsystem: Apple Inc. T2 Secure Enclave Processor
+e6:00.2 Non-VGA unclassified device [0000]: Apple Inc. T2 Secure Enclave Processor [106b:1802] (rev 01)
+	Subsystem: Apple Inc. T2 Secure Enclave Processor [106b:1802]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
@@ -871,8 +871,8 @@ e6:00.2 Non-VGA unclassified device: Apple Inc. T2 Secure Enclave Processor (rev
 	Capabilities: [280 v1] Physical Resizable BAR
 		BAR 0: current size: 4MB, supported: 1MB 2MB 4MB
 
-e6:00.3 Multimedia audio controller: Apple Inc. Apple Audio Device (rev 01)
-	Subsystem: Apple Inc. Apple Audio Device
+e6:00.3 Multimedia audio controller [0401]: Apple Inc. Apple Audio Device [106b:1803] (rev 01)
+	Subsystem: Apple Inc. Apple Audio Device [106b:1889]
 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
 	Latency: 0, Cache Line Size: 256 bytes
