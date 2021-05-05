@@ -174,7 +174,7 @@ Works out of the box for the MacBookPro13,* and MacBookPro14,*.
 For models with a T2 chip (MacBookPro15,* MacBookPro16,*) you'll need the BCE
 driver as described [here](https://wiki.t2linux.org/guides/dkms/), and the
 HID-apple patches in [linux-mbp-arch](https://github.com/aunali1/linux-mbp-arch).
-Force touch does not work and there are dead zones at the edge of the trackpads
+Force touch does not work and there are dead zones at the edge of the trackpads,
 as the exact dimensions of the trackpads are hard to measure and hard coded into
 the driver. The MacBookPro16,1 and MacBookPro16,2 both do not have working
 keyboard backlights.
@@ -250,7 +250,7 @@ as the GMUX chip is set to connect the AMD GPU to the display upon resume, which
 prevents the Intel GPU driver from resuming properly.
 
 T2 Macs also need the `apple-ib-tb` module unloaded before suspend, as described
-[here](https://wiki.t2linux.org/guides/dkms/#fixing-suspend). But resume is still
+[here](https://wiki.t2linux.org/guides/dkms/#fixing-suspend). Resume is still
 very slow (20-40 seconds).
 
 ## System Management Controller
@@ -269,7 +269,7 @@ if you want to use a different fan speed profile than the hardware uses by
 default. In that case, you might want to use a tool like
 [`mbpfan`](https://github.com/dgraziotin/mbpfan).
 
-Models with the T2 chip need patches to applesmc, as the T2 chip is the SMC
+Models with the T2 chip need patches to applesmc, as the T2 chip is the SMC.
 These patches are in [linux-mbp-arch](https://github.com/aunali1/linux-mbp-arch).
 If you want mbpfan on T2 Macs, refer to [this](https://wiki.t2linux.org/guides/fan/).
 
@@ -339,10 +339,12 @@ ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
 
-For T2 Macs, refer to [this](https://wiki.t2linux.org/guides/wifi/) to see
-which patch set your model needs for WiFi. The instructions on that page for
-the 16,1/2 models should work on the MacBookPro16,3 and MacBookAir9,1, but
-this has not been tested. The MacBookPro15,4 does not have working WiFi.
+For T2 Macs: 15,* models, excluding 15,4, can use WiFi patches from linux-mbp,
+as there is WiFi firmware from macOS Mojave for those models. For 16,* models,
+Corellium's WiFi patch for M1 Macs work, using BigSur's WiFi firmware, although
+this hasn't been tested on the 16,3. Refer to the t2linux wiki's
+[WiFi guide](https://wiki.t2linux.org/guides/wifi/) for instructions on how to
+obtain WiFi firmware and or compile a kernel with Corellium's WiFi patch.
 
 ## Misc
 
