@@ -119,6 +119,9 @@ The models with Touch Bar have the FaceTime HD camera connected through the
 iBridge device via USB. They are exposed as regular USB video devices and are
 supported by the `uvcvideo` driver out of the box.
 
+If the camera is not working, you have a T1-chip MacBook and a recent
+distribution please check the [iBridge](#ibridge) section.
+
 ## Graphics card
 
 ### Intel
@@ -275,6 +278,10 @@ available at https://github.com/PatrickVerner/macbook12-spi-driver
 
 Missing is as of now just the advanced functionality with custom graphics Apple
 offers in macOS.
+
+If after installing the kernel module the touchbar is not working, you have a
+T1-chip MacBook and a recent distribution please check the [iBridge](#ibridge)
+section.
 
 ## Touch ID
 
@@ -456,6 +463,21 @@ macOS somehow initializes some additional capabilities of the *iBridge*.
 Those additional interfaces are likely responsible for Touch Id and the
 advanced graphical functionality of the Touch Bar. There might also be some
 kind of interface for *iBridge*-firmware updates.
+
+On T1-chip running MacBook, on modern distros, may be necessary to uninstall
+usbmuxd or unbind and re-bind the iBridge device to the usb module as usbmuxd
+takes onwership of it confusing it for a T2-chip as they use the same usb
+device id ([#42](https://github.com/roadrunner2/macbook12-spi-driver/issues/42)).
+
+This issue will prevent the Touchbar, the keyboard luminosity sensor and the
+webcam from working.
+
+To unbind and re-bind the iBridge device it's possible to run the following
+commands
+```
+echo '1-3' | sudo tee /sys/bus/usb/drivers/usb/unbind
+echo '1-3' | sudo tee /sys/bus/usb/drivers/usb/bind
+```
 
 ### Disable auto-boot
 
