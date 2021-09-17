@@ -288,8 +288,8 @@ Not working.
 
 Works out of the box.
 
-Note that if you are using a MacBookPro14,1 or if you cannot boot into your usb3 and you are running an ArchLinux derivative with a 5.11+ Linux kernel on an USB 3 drive, you can use this workaround ([https://github.com/MattSays/mbp-thunderbolt](https://github.com/MattSays/mbp-thunderbolt)) to make sure the kernel can successfully detect your drive. 
-Otherwise, If you are running another Linux distro, you will have to make a script that executes this
+Note that if you are using a MacBookPro14,1 or if you cannot boot into your usb3 and you are running an ArchLinux derivative with a 5.11+ Linux kernel on an USB 3 drive, you can use this workaround ([https://github.com/MattSays/mbp-thunderbolt](https://github.com/MattSays/mbp-thunderbolt)) to make sure the kernel can successfully detect your drive.  
+Otherwise, if you are running another Linux distro, you will have to make a script that executes this
 ```
 echo 1 > /sys/bus/pci/rescan
 ```
