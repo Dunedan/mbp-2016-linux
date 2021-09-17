@@ -284,9 +284,16 @@ Not working.
 
 ## USB
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 working](https://img.shields.io/badge/MacBookPro16%2C2-working-green.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 working](https://img.shields.io/badge/MacBookPro14%2C2-working-green.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 working](https://img.shields.io/badge/MacBookPro16%2C1-working-green.svg) ![MacBookPro16,2 working](https://img.shields.io/badge/MacBookPro16%2C2-working-green.svg)
 
 Works out of the box.
+
+Note that if you are using a MacBookPro14,1 or if you cannot boot into your usb3 and you are running an ArchLinux derivative with a 5.11+ Linux kernel on an USB 3 drive, you can use this workaround ([https://github.com/MattSays/mbp-thunderbolt](https://github.com/MattSays/mbp-thunderbolt)) to make sure the kernel can successfully detect your drive. 
+Otherwise, If you are running another Linux distro, you will have to make a script that executes this
+```
+echo 1 > /sys/bus/pci/rescan
+```
+More info: [https://wiki.archlinux.org/title/Thunderbolt#Troubleshooting](https://wiki.archlinux.org/title/Thunderbolt#Troubleshooting)
 
 ## Wi-Fi
 
