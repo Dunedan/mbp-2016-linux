@@ -274,8 +274,8 @@ Starting with Linux 5.9 a forked version of the driver is necessary, which is
 available at https://github.com/PatrickVerner/macbook12-spi-driver
 
 Starting with Linux 6.0 PatrickVerner's driver fails to build. It builds when 
-one disables the saving of backlight strength to efi as in this fork
-https://github.com/marc-git/macbook12-spi-driver
+one disables the saving of backlight strength to efi as in this fork (tested on 
+14,3) https://github.com/marc-git/macbook12-spi-driver
 
 Missing is as of now just the advanced functionality with custom graphics Apple
 offers in macOS.
