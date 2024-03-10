@@ -66,8 +66,7 @@ audio profiles and see if it's receiving the background sound with help of the
 `pavucontrol` command, it should work on 'Analog Stereo Duplex' built-in audio
 profile.
 
-With the MacBookPro14,1 the internal audio output is working, however the
-internal audio input is not working.
+With the MacBookPro14,1 the internal audio output is working with [this](https://github.com/davidjo/snd_hda_macbookpro) project
 
 For the rest of the MacBook Pro models the audio via HDMI or any USB-connected
 audio device is working, so at least they can act as a workaround until
