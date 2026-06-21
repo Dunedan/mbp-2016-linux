@@ -53,11 +53,11 @@ There is also a chat available via gitter for discussions:
 
 ## Audio input & output
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)  ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 working](https://img.shields.io/badge/MacBookPro13%2C2-working-green.svg) ![MacBookPro13,3 working](https://img.shields.io/badge/MacBookPro13%2C3-working-green.svg) ![MacBookPro14,1 partially working](https://img.shields.io/badge/MacBookPro14%2C1-partially_working-yellow.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg)  ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
 With the applied Cirrus 8409 kernel driver patch from
 https://github.com/davidjo/snd_hda_macbookpro the internal audio input and
-output has been verified to work for the MacBookPro13,1, MacBookPro13,3 and
+output has been verified to work for the MacBookPro13,1, MacBookPro13,2, MacBookPro13,3 and
 MacBookPro14,3.
 
 If you are having issues with the internal audio input, and you are using
@@ -65,6 +65,8 @@ PulseAudio for your Linux distro; then try switching between the built-in
 audio profiles and see if it's receiving the background sound with help of the
 `pavucontrol` command, it should work on 'Analog Stereo Duplex' built-in audio
 profile.
+
+With the MacBookPro13,2 the internal audio input may appear non-functional after installing the driver, because the ALSA capture controls for the internal microphone (`Internal Mic Capture Switch`, `Internal Mic Capture Volume`, `Internal Mic Boost Volume`) default to muted/zero. Unmuting and raising them via `amixer` resolves this, and the settings persist across reboots via `alsa-state.service` or `alsactl store`. See https://github.com/davidjo/snd_hda_macbookpro/issues/81 for details.
 
 With the MacBookPro14,1 the internal audio output is working, however the
 internal audio input is not working.
