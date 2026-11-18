@@ -49,7 +49,7 @@ There is also a chat available via gitter for discussions:
 | [Touch Bar](#touch-bar) | ![MacBookPro13,2 partially working](https://img.shields.io/badge/MacBookPro13%2C2-partially_working-yellow.svg) ![MacBookPro13,3 partially working](https://img.shields.io/badge/MacBookPro13%2C3-partially_working-yellow.svg) ![MacBookPro14,2 partially working](https://img.shields.io/badge/MacBookPro14%2C2-partially_working-yellow.svg) ![MacBookPro14,3 partially working](https://img.shields.io/badge/MacBookPro14%2C3-partially_working-yellow.svg) ![MacBookPro16,1 partially working](https://img.shields.io/badge/MacBookPro16%2C1-partially_working-yellow.svg) ![MacBookPro16,2 partially working](https://img.shields.io/badge/MacBookPro16%2C2-partially_working-yellow.svg) |
 | [Touch ID](#touch-id) | ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg) |
 | [USB](#usb) | ![all models working](https://img.shields.io/badge/all_models-working-green.svg) |
-| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg) |
+| [Wi-Fi](#wi-fi) | ![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg) |
 
 ## Audio input & output
 
@@ -290,7 +290,7 @@ Works out of the box.
 
 ## Wi-Fi
 
-![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 not working](https://img.shields.io/badge/MacBookPro14%2C3-not_working-red.svg) ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
+![MacBookPro13,1 working](https://img.shields.io/badge/MacBookPro13%2C1-working-green.svg) ![MacBookPro13,2 not working](https://img.shields.io/badge/MacBookPro13%2C2-not_working-red.svg) ![MacBookPro13,3 not working](https://img.shields.io/badge/MacBookPro13%2C3-not_working-red.svg) ![MacBookPro14,1 working](https://img.shields.io/badge/MacBookPro14%2C1-working-green.svg) ![MacBookPro14,2 not working](https://img.shields.io/badge/MacBookPro14%2C2-not_working-red.svg) ![MacBookPro14,3 working](https://img.shields.io/badge/MacBookPro14%2C3-working-green.svg) ![MacBookPro16,1 not working](https://img.shields.io/badge/MacBookPro16%2C1-not_working-red.svg) ![MacBookPro16,2 not working](https://img.shields.io/badge/MacBookPro16%2C2-not_working-red.svg)
 
 The MacBook Pro models without Touch Bar come with a `Broadcom Limited BCM4350
 802.11ac Wireless Network Adapter` which works fine out of the box using the
@@ -308,6 +308,27 @@ According to Broadcom releasing a fixed firmware would require verification to
 ensure that it complies with regulatory limits, which is very unlikely to
 happen as it wouldn't provide enough return on investment for them (see
 https://bugzilla.kernel.org/show_bug.cgi?id=193121 for details).
+
+On the MacBookPro14,3 the BCM43602 works with
+[mbp143-wifi](https://github.com/dnlbtz/mbp143-wifi), packaged for Ubuntu and
+for Arch/CachyOS. At install it reads the chip's own factory
+calibration from its SROM and writes the board file brcmfmac looks for,
+`brcm/brcmfmac43602-pcie.Apple Inc.-MacBookPro14,3.txt`. It also patches
+linux-firmware's 7.35.177.61 with Apple's front-end table for this board. Both
+bands then work, 5 GHz at 80 MHz. Measured on a MacBookPro14,3 against the
+MacBookPro13,3 board file from the bug above (medians of two runs each):
+
+| | 13,3 board file | mbp143-wifi |
+|---|---|---|
+| 5 GHz signal | -70.5 dBm | -57.5 dBm |
+| 5 GHz upload | 165 Mbit/s | 289 Mbit/s |
+| 5 GHz download | 225 Mbit/s | 325 Mbit/s |
+| 2.4 GHz signal | -80 dBm | -54.5 dBm |
+| 2.4 GHz upload | 16 Mbit/s | 54 Mbit/s |
+| 2.4 GHz download | 13 Mbit/s | 79 Mbit/s |
+
+The other Touch Bar models would need their own front-end table and board
+file template.
 
 The MacBookPro16,1 comes with a `Broadcom Inc. and subsidiaries BCM4364
 802.11ac Wireless Network Adapter (rev 04)` which is detected with wifi
